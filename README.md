@@ -1,3 +1,3 @@
 # Masquerade
 
-For the latest release, CONFIG.ini should be in the format as mentioned in REFERENCE-CONFIG.ini
+For the latest release, the local copy of CONFIG.ini should have all the fields mentioned in REFERENCE-CONFIG.ini
