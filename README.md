@@ -1,1 +1,1 @@
-# Masquerade
+# Masquerade Emulator
