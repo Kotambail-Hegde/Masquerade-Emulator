@@ -1,6 +1,6 @@
 # Masquerade Emulator
 
-A multi-system emulator which emulated the following platforms (as of now):
+A multi-system emulator which emulates the following platforms (as of now):
 1) Chip8
 2) Space Invaders
 3) Pacman
