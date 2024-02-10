@@ -8,6 +8,3 @@ A multi-system emulator which emulated the following platforms (as of now):
 5) Gameboy
 6) Gameboy Color
 7) Game Of Life
-
-
-TESTING
