@@ -1,6 +1,6 @@
 # Masquerade Emulator
 
-**A multi-system emulator which emulates the following platforms:**
+_**A multi-system emulator which emulates the following consoles:**_
 1) Chip8 (also supports S-CHIP and XO-CHIP)
 2) Space Invaders
 3) Pacman (supports both Midway and Namco roms)
@@ -9,14 +9,14 @@
 6) Gameboy Color (GBC)
 7) Game Of Life
 
-**Below platforms are under developement:**
+_**Below consoles are under developement:**_
 1) Game Boy Advance (GBA)
 2) Nintendo Entertainment System (NES)
 3) Super Nintendo Entertainment System (SNES)
 4) Nintendo DS
 5) Nintendo 3DS
 
-**Few Notable Features:**
+_**Features:**_
 1) Supports Save States and Load States
 2) Support OTA updates
 3) Game Of Life supports Normal Mode and Torroidal Mode
@@ -38,7 +38,7 @@
 19) Internal Menu-bar based UI for platforms other than Windows
 20) Supports dynamic drag and drop of roms (this includes multiple rom files for Space Invaders and Pacman/MsPacman)
 
-**Game Play:**
+# Game Play
 
 _Debugger (Supported by both Gameboy and Gameboy Color)_
 
@@ -68,14 +68,15 @@ _Chip8:_ _(Pong)_
 
 ![Chip8](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/f162afa0-733e-4d4f-8fdf-7a907cb878e2)
 
-_Game Of Life_
+_Game Of Life_ _(Torroidal Mode)_
 
 ![GameOfLife](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/44bd5adf-bbe5-4edc-a47a-eff03cc8faae)
 
-**Host Platforms Supported:**
+# Supported Platforms
+
 As of today, Masquerade is only tested for Windows Based System. There are plans to port this to Linux based system as well.
 
-**User Interface:**
+# User Interface
 
 In Windows, external Menu-bar based UI can be used for using various options of the emulator (Whatever features not available in GUI could be accessed via CONFIG.ini)
 
@@ -85,7 +86,7 @@ In Non-Windows system (when supported), for now, internal Menu-bar based UI whic
 
 ![RetroMode](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/6b6ae213-20ff-44ef-a7af-bd7adcc56df6)
 
-# Credits:
+# Credits
 1) Forked version of One Lone Coder's Pixel Game Engine is used for Graphics (https://github.com/Kotambail-Hegde/olcPixelGameEngine)
 2) One Lone Coder's Sound Wave Engine is used for Audio
 3) Gearboy used for testing (https://github.com/drhelius/Gearboy)
