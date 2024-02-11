@@ -74,7 +74,7 @@ _Game Of Life_ _(Torroidal Mode)_
 
 # Supported Platforms
 
-As of today, Masquerade is only tested for Windows Based System. There are plans to port this to Linux based system as well.
+As of today, Masquerade is only tested for Windows. There are plans to port this to Linux as well.
 
 # User Interface
 
