@@ -1,7 +1,7 @@
 # Masquerade Emulator
 
 **A multi-system emulator which emulates the following platforms:**
-1) Chip8
+1) Chip8 (also includes S-Chip and XO-Chip)
 2) Space Invaders
 3) Pacman (Midway and Namco)
 4) Ms Pacman
@@ -18,21 +18,22 @@
 
 **Few Notable Features:**
 1) Supports Save States and Load States
-2) Chip8 passes Timendus's  chip8-test-suite v4.1 (except for scrolling tests)
-3) Supports many 8080 test roms (Undocumented is still not handled)
-4) Supports many Z80 test roms (Undocumented is still not handled)
-5) Supports GB and GBC Bios
-6) Has UI based debugger support (Only for GB and GBC)
-7) Has command line based debugger support for platforms other than GB and GBC (Note: This is currently disabled)
-8) Options for different palettes for GB
-9) GB / GBC passes most of the Blargg tests (Except for the wave ram tests)
-10) GB / GBC passes many of the Moon Eye tests (There are still many which doesn't pass as it is, but would pass with little tweaks in the CONFIG.ini)
-11) GB / GBC passes the RTC (rtc3test) tests
-12) GB / GBC implements Pixel Fetcher/FIFO
-13) GBC supports GB mode
-14) Able to play a slightly glitchy version of mezase.gbc (with few tweaks in the CONFIG.ini) 
-15) In built GUI for Windows platform
-16) In Game UI for platforms other than Windows
+2) Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
+4) Chip8 passes Timendus's  chip8-test-suite v4.1 (except for scrolling tests)
+5) Supports many 8080 test roms (Undocumented is still not handled)
+6) Supports many Z80 test roms (Undocumented is still not handled)
+7) Supports GB and GBC Bios
+8) Has UI based debugger support (Only for GB and GBC)
+9) Has command line based debugger support for platforms other than GB and GBC (Note: This is currently disabled)
+10) Options for different palettes for GB
+11) GB / GBC passes most of the Blargg tests (Except for the wave ram tests)
+12) GB / GBC passes many of the Moon Eye tests (There are still many which doesn't pass as it is, but would pass with little tweaks in the CONFIG.ini)
+13) GB / GBC passes the RTC (rtc3test) tests
+14) GB / GBC implements Pixel Fetcher/FIFO
+15) GBC supports GB mode
+16) Able to play a slightly glitchy version of mezase.gbc (with few tweaks in the CONFIG.ini) 
+17) In built GUI for Windows platform
+18) In Game UI for platforms other than Windows
 
 **Host Platforms Supported:**
 As of today, Masquerade is only tested for Windows Based System
