@@ -18,67 +18,62 @@
 
 **Few Notable Features:**
 1) Supports Save States and Load States
-2) Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
-4) Chip8 passes Timendus's  chip8-test-suite v4.1 (except for scrolling tests)
-5) Supports many 8080 test roms (Undocumented is still not handled)
-6) Supports many Z80 test roms (Undocumented is still not handled)
-7) Supports GB and GBC Bios
-8) Has UI based debugger support (Only for GB and GBC)
-9) Has command line based debugger support for platforms other than GB and GBC (Note: This is currently disabled)
-10) Options for different palettes for GB
-11) GB / GBC passes most of the Blargg tests (Except for the wave ram tests)
-12) GB / GBC passes many of the Moon Eye tests (There are still many which doesn't pass as it is, but would pass with little tweaks in the CONFIG.ini)
-13) GB / GBC passes the RTC (rtc3test) tests
-14) GB / GBC implements Pixel Fetcher/FIFO
-15) GBC supports GB mode
-16) Able to play a slightly glitchy version of mezase.gbc (with few tweaks in the CONFIG.ini) 
-17) In built GUI for Windows platform
-18) In Game UI for platforms other than Windows
+2) Support OTA updates
+3) Game Of Life supports Normal Mode and Torroidal Mode
+4) Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
+5) Chip8 passes Timendus's chip8-test-suite v4.1 (except for scrolling tests)
+6) Supports many 8080 test roms (Undocumented Opcode Tests are still not handled)
+7) Supports many Z80 test roms (Undocumented Opcode Tests are still not handled)
+8) Supports GB and GBC Bios
+9) Has UI based debugger support (Only for GB and GBC)
+10) Has Command-Line based debugger support for platforms other than GB and GBC (Note: This is currently disabled)
+11) Options for different palettes for GB (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
+12) GB / GBC passes most of the Blargg tests (Except for the wave ram tests)
+13) GB / GBC passes many of the Moon Eye tests (There are still many which doesn't pass as is, but would probably pass with little tweaks in the CONFIG.ini)
+14) GB / GBC passes the RTC (rtc3test) tests
+15) GB / GBC implements Pixel Fetcher/FIFO
+16) GBC supports GB mode
+17) Able to play a slightly glitchy version of mezase.gbc (with few tweaks in the CONFIG.ini) 
+18) External Menu-bar based UI for Windows platform
+19) Internal Menu-bar based UI for platforms other than Windows
+20) Supports dynamic drag and drop of roms (this includes multiple rom files for Space Invaders and Pacman/MsPacman)
 
 **Host Platforms Supported:**
-As of today, Masquerade is only tested for Windows Based System
+As of today, Masquerade is only tested for Windows Based System. There are plans to port this to Linux based system as well.
 
 **User Interface:**
 
-In Windows, inbuilt GUI can be used for using various options of the emulator (Whatever is not supported via GUI could be used via CONFIG.ini)
+In Windows, external Menu-bar based UI can be used for using various options of the emulator (Whatever features not available in GUI could be accessed via CONFIG.ini)
 
 ![WIN32API](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/33d62a3d-9daa-4bfc-b549-4e4bd42b09a3)
 
-In Non-Windows system (when supported), for now, the proposed UI is inbuilt UI independent of host platform (Whatever is not supported via UI could be used via CONFIG.ini)
+In Non-Windows system (when supported), for now, internal Menu-bar based UI which is independent of host platform needs to be used (Whatever features not available in GUI could be accessed via CONFIG.ini)
 
 ![RetroMode](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/6b6ae213-20ff-44ef-a7af-bd7adcc56df6)
 
 **Game Play:**
 
-_Debugger (Gameboy and Gameboy Color)_
+_Debugger (Supported by both Gameboy and Gameboy Color)_
 
 ![GBC-Debugger](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/50e26ee3-abd8-432a-bbaa-0ca8891fc892)
 
-_Gameboy_
+_Gameboy_ _(Prehistorik Man in 'BGB' palette and Pokemon Green in 'Gearboy' palette)_
 
-![PrehistorikMan](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/8819c689-b3ad-444e-bece-d43a993e05b7)
+![PrehistorikMan](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/8819c689-b3ad-444e-bece-d43a993e05b7) ![Green](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/519c7f6e-ebb1-4e60-b677-d860ffb0f8a1)
 
-![Green](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/519c7f6e-ebb1-4e60-b677-d860ffb0f8a1)
+_Gameboy Color_ _(Donkey Kong Country and Pokemon Crystal)_
 
-_Gameboy Color_
+![DonkeyKongCountry](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3d6bfb58-ae88-4b66-b299-ef20faf67112) ![Crystal](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3b318907-dc70-4488-8552-729b98504603)
 
-![DonkeyKongCountry](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3d6bfb58-ae88-4b66-b299-ef20faf67112)
+_Pacman_ and _Ms Pacman_
 
-![Crystal](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3b318907-dc70-4488-8552-729b98504603)
-
-_Pacman_
-
-![Pacman](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/81b421c4-bb53-4985-ae15-90d8dd572b5a)
-
-_Ms Pacman_
-
-![MsPacman](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/b55f29d8-fcfb-4d5b-b30c-fb9b8afe0e35)
+![Pacman](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/81b421c4-bb53-4985-ae15-90d8dd572b5a) ![MsPacman](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/b55f29d8-fcfb-4d5b-b30c-fb9b8afe0e35)
 
 _Space Invader_
 
 ![SpaceInvaders](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/afac2f45-75e0-4a24-b087-1499360cf703)
 
-_Chip8:_
+_Chip8:_ _(Pong)_
 
 ![Chip8](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/f162afa0-733e-4d4f-8fdf-7a907cb878e2)
 
