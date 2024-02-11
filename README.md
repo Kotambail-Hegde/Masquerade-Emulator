@@ -85,6 +85,18 @@ In Non-Windows system (when supported), for now, internal Menu-bar based UI whic
 
 ![RetroMode](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/6b6ae213-20ff-44ef-a7af-bd7adcc56df6)
 
+**Credits:**
+1) Forked version of One Lone Coder's Pixel Game Engine is used for Graphics (https://github.com/Kotambail-Hegde/olcPixelGameEngine)
+2) One Lone Coder's Sound Wave Engine is used for Audio
+3) Gearboy used for testing (https://github.com/drhelius/Gearboy)
+4) gbmulator used for testing (https://github.com/mpostaire/gbmulator)
+5) The Ultimate Gameboy Talk (https://github.com/drhelius/Gearboy)
+6) GB Dev Wiki (https://gbdev.gg8.se/wiki/articles/Memory_Bank_Controllers)
+7) Codeslinger's blog (http://www.codeslinger.co.uk/pages/projects/gameboy.html)
+8) Night Shade's blog for audio implementation (https://nightshade256.github.io/2021/03/27/gb-sound-emulation.html)
+9) Blargg Roms used for testing
+10) Antonio's blog (https://github.com/AntonioND/giibiiadvance/blob/master/docs/TCAGBD.pdf)
+11) Boost for libraries to parse .ini files
 
 
 
