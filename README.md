@@ -1,5 +1,3 @@
-
-https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/48343352-1e8b-46ab-8f76-e81cc9f8ac15
 # Masquerade Emulator
 
 A multi-system emulator which emulates the following platforms (as of now):
