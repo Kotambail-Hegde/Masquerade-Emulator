@@ -3,7 +3,7 @@
 _**A multi-system emulator which emulates the following consoles:**_
 1) Chip8 (also supports S-CHIP and XO-CHIP)
 2) Space Invaders
-3) Pacman (supports both Midway and Namco roms)
+3) Pacman (supports both Midway and Namco ROMs)
 4) Ms Pacman
 5) Gameboy (GB)
 6) Gameboy Color (GBC)
