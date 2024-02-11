@@ -16,6 +16,7 @@
 4) Nintendo DS
 5) Nintendo 3DS
 
+**Host Platforms Supported:**
 As of today, Masquerade is only tested for Windows Based System
 
 **Few Notable Features:**
