@@ -1,6 +1,6 @@
 # Masquerade Emulator
 
-A multi-system emulator which emulates the following platforms:
+**A multi-system emulator which emulates the following platforms:**
 1) Chip8
 2) Space Invaders
 3) Pacman (Midway and Namco)
@@ -9,7 +9,7 @@ A multi-system emulator which emulates the following platforms:
 6) Gameboy Color (GBC)
 7) Game Of Life
 
-Below platforms are under developement:
+**Below platforms are under developement:**
 1) Game Boy Advance (GBA)
 2) Nintendo Entertainment System (NES)
 3) Super Nintendo Entertainment System (SNES)
@@ -18,7 +18,7 @@ Below platforms are under developement:
 
 As of today, Masquerade is only tested for Windows Based System
 
-Few Features:
+**Few Notable Features:**
 1) Supports Save States and Load States
 2) Chip8 passes Timendus's  chip8-test-suite v4.1 (except for scrolling tests)
 3) Supports many 8080 test roms (Undocumented is still not handled)
