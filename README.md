@@ -1,9 +1,9 @@
 # Masquerade Emulator
 
 **A multi-system emulator which emulates the following platforms:**
-1) Chip8 (also includes S-Chip and XO-Chip)
+1) Chip8 (also includes S-CHIP and XO-CHIP)
 2) Space Invaders
-3) Pacman (Midway and Namco)
+3) Pacman (includes both Midway and Namco)
 4) Ms Pacman
 5) Gameboy (GB)
 6) Gameboy Color (GBC)
