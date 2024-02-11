@@ -16,17 +16,6 @@
 4) Nintendo DS
 5) Nintendo 3DS
 
-**Host Platforms Supported:**
-As of today, Masquerade is only tested for Windows Based System
-
-In Windows, inbuit GUI can be used for using various options of the emulator (Whatever is not supported via GUI could be used via CONFIG.ini)
-
-![WIN32API](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/33d62a3d-9daa-4bfc-b549-4e4bd42b09a3)
-
-In Non-Windows system (when supported), for now, the proposed UI is inbuilt UI independent of host platform (Whatever is not supported via GUI could be used via CONFIG.ini)
-
-![RetroMode](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/6b6ae213-20ff-44ef-a7af-bd7adcc56df6)
-
 **Few Notable Features:**
 1) Supports Save States and Load States
 2) Chip8 passes Timendus's  chip8-test-suite v4.1 (except for scrolling tests)
@@ -44,6 +33,19 @@ In Non-Windows system (when supported), for now, the proposed UI is inbuilt UI i
 14) Able to play a slightly glitchy version of mezase.gbc (with few tweaks in the CONFIG.ini) 
 15) In built GUI for Windows platform
 16) In Game UI for platforms other than Windows
+
+**Host Platforms Supported:**
+As of today, Masquerade is only tested for Windows Based System
+
+**User Interface:**
+
+In Windows, inbuit GUI can be used for using various options of the emulator (Whatever is not supported via GUI could be used via CONFIG.ini)
+
+![WIN32API](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/33d62a3d-9daa-4bfc-b549-4e4bd42b09a3)
+
+In Non-Windows system (when supported), for now, the proposed UI is inbuilt UI independent of host platform (Whatever is not supported via GUI could be used via CONFIG.ini)
+
+![RetroMode](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/6b6ae213-20ff-44ef-a7af-bd7adcc56df6)
 
 **Game Play:**
 
