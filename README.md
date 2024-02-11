@@ -1,15 +1,20 @@
 # Masquerade Emulator
 
-A multi-system emulator which emulates the following platforms (as of now):
+A multi-system emulator which emulates the following platforms:
 1) Chip8
 2) Space Invaders
 3) Pacman (Midway and Namco)
 4) Ms Pacman
-5) Gameboy
-6) Gameboy Color
+5) Gameboy (GB)
+6) Gameboy Color (GBC)
 7) Game Of Life
 
-
+Below platforms are under developement:
+1) Game Boy Advance (GBA)
+2) Nintendo Entertainment System (NES)
+3) Super Nintendo Entertainment System (SNES)
+4) Nintendo DS
+5) Nintendo 3DS
 
 **Game Play:**
 
