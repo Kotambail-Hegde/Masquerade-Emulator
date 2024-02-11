@@ -38,19 +38,6 @@
 19) Internal Menu-bar based UI for platforms other than Windows
 20) Supports dynamic drag and drop of roms (this includes multiple rom files for Space Invaders and Pacman/MsPacman)
 
-**Host Platforms Supported:**
-As of today, Masquerade is only tested for Windows Based System. There are plans to port this to Linux based system as well.
-
-**User Interface:**
-
-In Windows, external Menu-bar based UI can be used for using various options of the emulator (Whatever features not available in GUI could be accessed via CONFIG.ini)
-
-![WIN32API](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/33d62a3d-9daa-4bfc-b549-4e4bd42b09a3)
-
-In Non-Windows system (when supported), for now, internal Menu-bar based UI which is independent of host platform needs to be used (Whatever features not available in GUI could be accessed via CONFIG.ini)
-
-![RetroMode](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/6b6ae213-20ff-44ef-a7af-bd7adcc56df6)
-
 **Game Play:**
 
 _Debugger (Supported by both Gameboy and Gameboy Color)_
@@ -81,6 +68,18 @@ _Game Of Life_
 
 ![GameOfLife](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/44bd5adf-bbe5-4edc-a47a-eff03cc8faae)
 
+**Host Platforms Supported:**
+As of today, Masquerade is only tested for Windows Based System. There are plans to port this to Linux based system as well.
+
+**User Interface:**
+
+In Windows, external Menu-bar based UI can be used for using various options of the emulator (Whatever features not available in GUI could be accessed via CONFIG.ini)
+
+![WIN32API](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/33d62a3d-9daa-4bfc-b549-4e4bd42b09a3)
+
+In Non-Windows system (when supported), for now, internal Menu-bar based UI which is independent of host platform needs to be used (Whatever features not available in GUI could be accessed via CONFIG.ini)
+
+![RetroMode](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/6b6ae213-20ff-44ef-a7af-bd7adcc56df6)
 
 
 
