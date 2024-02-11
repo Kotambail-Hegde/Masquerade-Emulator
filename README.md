@@ -88,16 +88,19 @@ In Non-Windows system (when supported), for now, internal Menu-bar based UI whic
 
 # Credits
 1) Forked version of One Lone Coder's Pixel Game Engine is used for Graphics (https://github.com/Kotambail-Hegde/olcPixelGameEngine)
-2) One Lone Coder's Sound Wave Engine is used for Audio
-3) Gearboy used for testing (https://github.com/drhelius/Gearboy)
-4) gbmulator used for testing (https://github.com/mpostaire/gbmulator)
-5) The Ultimate Gameboy Talk (https://github.com/drhelius/Gearboy)
-6) GB Dev Wiki (https://gbdev.gg8.se/wiki/articles/Memory_Bank_Controllers)
-7) Codeslinger's blog (http://www.codeslinger.co.uk/pages/projects/gameboy.html)
-8) Night Shade's blog for audio implementation (https://nightshade256.github.io/2021/03/27/gb-sound-emulation.html)
-9) Blargg Roms used for testing
-10) Antonio's blog (https://github.com/AntonioND/giibiiadvance/blob/master/docs/TCAGBD.pdf)
-11) Boost for libraries to parse .ini files
+2) One Lone Coder's Sound Wave Engine is used for Audio (https://github.com/OneLoneCoder/olcSoundWaveEngine)
+3) Boost libraries to parse .ini files
+4) GB Pacdocs (https://gbdev.io/pandocs/)
+8) GB Dev Wiki (https://gbdev.gg8.se/wiki/articles/Memory_Bank_Controllers)
+9) Codeslinger's blog (http://www.codeslinger.co.uk/pages/projects/gameboy.html)
+10) Night Shade's blog for audio implementation (https://nightshade256.github.io/2021/03/27/gb-sound-emulation.html)
+11) Blargg Roms used for testing
+12) The Ultimate Gameboy Talk (https://github.com/drhelius/Gearboy)
+13) Antonio's blog (https://github.com/AntonioND/giibiiadvance/blob/master/docs/TCAGBD.pdf)
+6) Gearboy used for testing (https://github.com/drhelius/Gearboy)
+7) gbmulator used for testing (https://github.com/mpostaire/gbmulator)
+
+
 
 
 
