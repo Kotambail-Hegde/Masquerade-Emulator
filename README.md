@@ -85,7 +85,7 @@ In Non-Windows system (when supported), for now, internal Menu-bar based UI whic
 
 ![RetroMode](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/6b6ae213-20ff-44ef-a7af-bd7adcc56df6)
 
-**Credits:**
+# Credits:
 1) Forked version of One Lone Coder's Pixel Game Engine is used for Graphics (https://github.com/Kotambail-Hegde/olcPixelGameEngine)
 2) One Lone Coder's Sound Wave Engine is used for Audio
 3) Gearboy used for testing (https://github.com/drhelius/Gearboy)
