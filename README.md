@@ -40,11 +40,11 @@ As of today, Masquerade is only tested for Windows Based System
 
 **User Interface:**
 
-In Windows, inbuit GUI can be used for using various options of the emulator (Whatever is not supported via GUI could be used via CONFIG.ini)
+In Windows, inbuilt GUI can be used for using various options of the emulator (Whatever is not supported via GUI could be used via CONFIG.ini)
 
 ![WIN32API](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/33d62a3d-9daa-4bfc-b549-4e4bd42b09a3)
 
-In Non-Windows system (when supported), for now, the proposed UI is inbuilt UI independent of host platform (Whatever is not supported via GUI could be used via CONFIG.ini)
+In Non-Windows system (when supported), for now, the proposed UI is inbuilt UI independent of host platform (Whatever is not supported via UI could be used via CONFIG.ini)
 
 ![RetroMode](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/6b6ae213-20ff-44ef-a7af-bd7adcc56df6)
 
