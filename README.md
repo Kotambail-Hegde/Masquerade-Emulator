@@ -8,3 +8,6 @@ A multi-system emulator which emulates the following platforms (as of now):
 5) Gameboy
 6) Gameboy Color
 7) Game Of Life
+
+1) Chip8
+![Chip8](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/5587feb1-1e6d-4c72-a759-0f037bad421d)
