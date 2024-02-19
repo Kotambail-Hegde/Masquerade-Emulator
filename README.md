@@ -68,7 +68,7 @@ _Chip8:_ _(Pong)_
 
 ![Chip8](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/f162afa0-733e-4d4f-8fdf-7a907cb878e2)
 
-_Game Of Life_ _(Torroidal Mode)_
+_Game Of Life_ _(Toroidal Mode)_
 
 ![GameOfLife](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/44bd5adf-bbe5-4edc-a47a-eff03cc8faae)
 
