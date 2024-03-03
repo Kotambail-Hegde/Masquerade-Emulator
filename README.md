@@ -16,7 +16,7 @@ _**Below consoles are under developement:**_
 * Nintendo DS
 * Nintendo 3DS
 
-_**Supported Features:**_
+_**Supported features:**_
 * Supports Save States and Load States
 * Support OTA updates
 * Game Of Life supports Normal Mode and Torroidal Mode
