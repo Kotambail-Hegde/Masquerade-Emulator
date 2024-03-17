@@ -72,7 +72,7 @@ _Space Invader_
 
 ![SpaceInvaders](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/afac2f45-75e0-4a24-b087-1499360cf703)
 
-_Chip8:_ _(Pong)_
+_Chip8_ _(Pong)_
 
 ![Chip8](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/f162afa0-733e-4d4f-8fdf-7a907cb878e2)
 
