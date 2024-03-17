@@ -48,7 +48,7 @@ _**Features under developement:**_
 
 # Game Play
 
-_Debugger (Supported by both Gameboy and Gameboy Color)_
+_Debugger (Supported only when emulator runs in Gameboy and Gameboy Color modes)_
 
 ![GBC-Debugger](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/50e26ee3-abd8-432a-bbaa-0ca8891fc892)
 
