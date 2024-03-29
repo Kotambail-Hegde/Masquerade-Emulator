@@ -1,6 +1,6 @@
 # Masquerade Emulator
 
-_**A multi-system emulator which emulates the following gaming consoles:**_
+_**A multi-system emulator which emulates the following gaming consoles**_
 * Gameboy Color (GBC)
 * Gameboy (GB)
 * Ms Pacman
@@ -9,41 +9,41 @@ _**A multi-system emulator which emulates the following gaming consoles:**_
 * CHIP8 (also supports S-CHIP and XO-CHIP)
 * Game Of Life
 
-_**Below mentioned gaming consoles are still under developement:**_
+_**Below mentioned gaming consoles are still under developement**_
 * Game Boy Advance (GBA)
 * Nintendo Entertainment System (NES)
 * Super Nintendo Entertainment System (SNES)
 * Nintendo DS
 * Nintendo 3DS
 
-_**Supported features:**_
+_**Supported features**_
 * Supports Save States and Load States
 * Support OTA updates
 * Game Of Life supports Normal Mode and Torroidal Mode
 * Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
-* Chip8 passes Timendus's chip8-test-suite v4.1 (except for scrolling tests)
-* Supports many 8080 test roms (Undocumented Opcode Tests are still not handled)
-* Supports many Z80 test roms (Undocumented Opcode Tests are still not handled)
+* Chip8 passes Timendus's chip8-test-suite v4.1 (**Except for scrolling tests**)
+* Supports many 8080 test roms (**Undocumented Opcode Tests are still not handled**)
+* Supports many Z80 test roms (**Undocumented Opcode Tests are still not handled**)
 * Supports GB and GBC Bios
-* Has UI based debugger support (Only for GB and GBC)
-* Has Command-Line based debugger support for platforms other than GB and GBC (Note: This is currently disabled)
+* Has GUI based debugger support (Only for GB and GBC)
+* Has CLI based debugger support for platforms other than GB and GBC (**This is currently disabled**)
 * Options for different palettes for GB (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
-* GB / GBC passes most of the Blargg tests (Except for the wave ram tests)
-* GB / GBC passes many of the Moon Eye tests (There are still many which doesn't pass as is, but would probably pass with little tweaks in the CONFIG.ini)
+* GB / GBC passes most of the Blargg tests (**Except for the wave ram tests**)
+* GB / GBC passes many of the Moon Eye tests (**There are still many which doesn't pass as is, but would probably pass with little tweaks in the CONFIG.ini**)
 * GB / GBC passes the RTC (rtc3test) tests
 * GB / GBC implements Pixel Fetcher/FIFO
 * GBC supports GB mode
-* Able to play a slightly glitchy version of mezase.gbc (with few tweaks in the CONFIG.ini) 
-* External Menu-bar based UI for Windows platform
-* Internal Menu-bar based UI for platforms other than Windows
-* Supports dynamic drag and drop of roms (this includes multiple rom files for Space Invaders and Pacman/MsPacman)
+* Able to play a slightly glitchy version of mezase.gbc (**With few tweaks in the CONFIG.ini**) 
+* Menu-bar based UI for Windows platform
+* Internal GUI for platforms other than Windows
+* Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
-_**Features under developement:**_
-* Support Link Cable for Gameboy and Gameboy Color
+_**Features under developement**_
+* Support Link Cable for Gameboy and Gameboy Color (Is partially supported as of now, but this is not nearly enough)
 * Support Super-Gameboy
 * Pass Timendus's chip8-test-suite v4.1's scrolling tests for Chip8
 * Pass blargg's waveram and oam-bug tests for Gameboy
-* Pass all Moon Eye Tests for Gameboy and Gameboy Color
+* Pass all the Moon Eye Tests for Gameboy and Gameboy Color
 * Emulate undocumented opcodes for I8080 and Z80 based platforms
 
 # Game Play
@@ -89,7 +89,7 @@ _Game Of Life_ _(Toroidal Mode)_
 
 # Supported Platforms
 
-As of today, Masquerade is only tested for Windows Platform. There are plans to port this to Linux as well.
+As of now, masquerade is only tested for windows platform. There are plans to port this to other platforms in near future.
 
 # User Interface
 
@@ -114,6 +114,8 @@ In non-windows (and windows) based platforms, for now, only the internal menu-ba
 * Antonio's blog (https://github.com/AntonioND/giibiiadvance/blob/master/docs/TCAGBD.pdf)
 * Gearboy used for testing (https://github.com/drhelius/Gearboy)
 * gbmulator used for testing (https://github.com/mpostaire/gbmulator)
+* BGB and Sameboy for the palettes
+* BGB for providing the inspiration for the GUI based debugger
 
 
 
