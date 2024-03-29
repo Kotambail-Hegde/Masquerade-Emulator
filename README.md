@@ -1,15 +1,15 @@
 # Masquerade Emulator
 
-_**A multi-system emulator which emulates the following consoles:**_
-* Chip8 (also supports S-CHIP and XO-CHIP)
-* Space Invaders
-* Pacman (supports both Midway and Namco)
-* Ms Pacman
-* Gameboy (GB)
+_**A multi-system emulator which emulates the following gaming consoles:**_
 * Gameboy Color (GBC)
+* Gameboy (GB)
+* Ms Pacman
+* Pacman (supports both Midway and Namco versions)
+* Space Invaders
+* CHIP8 (also supports S-CHIP and XO-CHIP)
 * Game Of Life
 
-_**Below consoles are under developement:**_
+_**Below mentioned gaming consoles are still under developement:**_
 * Game Boy Advance (GBA)
 * Nintendo Entertainment System (NES)
 * Super Nintendo Entertainment System (SNES)
@@ -89,15 +89,15 @@ _Game Of Life_ _(Toroidal Mode)_
 
 # Supported Platforms
 
-As of today, Masquerade is only tested for Windows. There are plans to port this to Linux as well.
+As of today, Masquerade is only tested for Windows Platform. There are plans to port this to Linux as well.
 
 # User Interface
 
-In Windows, external Menu-bar based UI can be used for using various options of the emulator (Whatever features not available in GUI could be accessed via CONFIG.ini)
+In windows platform, menu-bar based UI can be used for accessing various options of the emulator (whatever features not available via the menu-bar should be accessible via the CONFIG.ini)
 
 ![WIN32API](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/33d62a3d-9daa-4bfc-b549-4e4bd42b09a3)
 
-In Non-Windows system (when supported), for now, internal Menu-bar based UI which is independent of host platform needs to be used (Whatever features not available in GUI could be accessed via CONFIG.ini)
+In non-windows (and windows) based platforms, for now, only the internal menu-bar is supported (whatever features not available via the internal menu-bar should be accessible via the CONFIG.ini)
 
 ![RetroMode](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/6b6ae213-20ff-44ef-a7af-bd7adcc56df6)
 
