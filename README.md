@@ -99,7 +99,8 @@ In windows platform, menu-bar based UI can be used for accessing various options
 
 In non-windows (and windows) based platforms, for now, only the internal menu-bar is supported (whatever features not available via the internal menu-bar should be accessible via the CONFIG.ini)
 
-![RetroMode](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/6b6ae213-20ff-44ef-a7af-bd7adcc56df6)
+![RetroMode](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/d4a42d78-6264-4bf3-b574-fab219ee88bc)
+
 
 # Credits
 * Forked version of One Lone Coder's Pixel Game Engine is used for Graphics (https://github.com/Kotambail-Hegde/olcPixelGameEngine)
