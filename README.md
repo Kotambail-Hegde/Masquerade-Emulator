@@ -95,7 +95,7 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 
 In windows platform, menu-bar based UI can be used for accessing various options of the emulator (whatever features not available via the menu-bar should be accessible via the CONFIG.ini)
 
-![WIN32API](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/33d62a3d-9daa-4bfc-b549-4e4bd42b09a3)
+![WIN32API](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/8eede049-9db3-48e7-bf88-495378edf06d)
 
 In non-windows (and windows) based platforms, for now, only the internal menu-bar is supported (whatever features not available via the internal menu-bar should be accessible via the CONFIG.ini)
 
