@@ -117,6 +117,7 @@ In non-windows (and windows) based platforms, for now, only the internal menu-ba
 * gbmulator used for testing (https://github.com/mpostaire/gbmulator)
 * BGB and Sameboy for the palettes
 * BGB for providing the inspiration for the GUI based debugger
+* gbatek (http://problemkaputt.de/gbatek-gba-reference.htm)
 * Dillonb/gba used for testing and also for providing the inspiration for the CLI based logger/debugger (https://github.com/Dillonb/gba/tree/master)
 
 
