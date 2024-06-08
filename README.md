@@ -48,10 +48,19 @@ _**Features under developement**_
 
 # Game Play
 
-_Debugger (Supported only when emulator runs in Gameboy and Gameboy Color modes)_
+**Masquerade also provides some debugging facilites for homebrew developement.**
+
+## Game Play with Debugger
+
+_CLI based Debugger (Supported only when emulator runs in Gameboy Advanced mode)_
+
+TBD
+
+_GUI based Debugger (Supported only when emulator runs in Gameboy and Gameboy Color modes)_
 
 ![GBC-Debugger](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/50e26ee3-abd8-432a-bbaa-0ca8891fc892)
 
+## Normal Game Play
 
 _Gameboy Color_ _(Donkey Kong Country and Pokemon Crystal)_
 
