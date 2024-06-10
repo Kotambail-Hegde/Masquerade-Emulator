@@ -1,6 +1,6 @@
 # Masquerade Emulator
 
-_**A multi-system emulator which emulates the following gaming consoles**_
+_**A multi-system emulator which emulates the following gaming consoles and simulators**_
 * Gameboy Color (GBC)
 * Gameboy (GB)
 * Ms Pacman
