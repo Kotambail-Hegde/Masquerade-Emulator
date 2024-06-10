@@ -18,7 +18,7 @@ _**Below mentioned gaming consoles are still under developement**_
 
 _**Supported features**_
 * Supports Save States and Load States
-* Support OTA updates
+* Supports OTA updates
 * Game Of Life supports Normal Mode and Torroidal Mode
 * Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
 * Chip8 passes Timendus's chip8-test-suite v4.1 (**Except for scrolling tests**)
@@ -26,7 +26,7 @@ _**Supported features**_
 * Supports many Z80 test roms (**Undocumented Opcode Tests are still not handled**)
 * Supports GB and GBC Bios
 * Has GUI based debugger support (Only for GB and GBC)
-* Has CLI based debugger support for platforms other than GB and GBC (**This is currently disabled**)
+* Has CLI based debugger support
 * Options for different palettes for GB (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
 * GB / GBC passes most of the Blargg tests (**Except for the wave ram tests**)
 * GB / GBC passes many of the Moon Eye tests (**There are still many which doesn't pass as is, but would probably pass with little tweaks in the CONFIG.ini**)
