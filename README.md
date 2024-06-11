@@ -52,7 +52,7 @@ _**Features under developement**_
 
 ## Game Play with Debugger
 
-_CLI based Debugger (Supported only when emulator runs in Gameboy Advanced mode)_
+_CLI based Debugger
 
 TBD
 
