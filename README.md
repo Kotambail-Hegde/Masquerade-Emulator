@@ -52,7 +52,7 @@ _**Features under developement**_
 
 ## Game Play with Debugger
 
-_CLI based Debugger
+_CLI based Debugger_
 
 TBD
 
