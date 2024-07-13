@@ -102,11 +102,16 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 
 # User Interface
 
-In windows platform, menu-bar based UI can be used for accessing various options of the emulator (whatever features not available via the menu-bar should be accessible via the CONFIG.ini)
+## QT 5.15
+Not supported yet
 
-![WIN32API](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/8eede049-9db3-48e7-bf88-495378edf06d)
+## Windows API
+In windows platform, Windows API based user interface can be used for accessing various options of the emulator (whatever features not available via the menu-bar should be accessible via the CONFIG.ini)
 
-In non-windows (and windows) based platforms, for now, only the internal menu-window is supported (whatever features not available via the internal menu-window should be accessible via the CONFIG.ini)
+![WINAPI](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/8eede049-9db3-48e7-bf88-495378edf06d)
+
+## Bare Metal (OLC)
+In non-windows (and also supported in windows) based platforms, for now, only the bare metal user interface is supported (whatever features not available via the internal menu-window should be accessible via the CONFIG.ini)
 
 ![RetroMode](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/d4a42d78-6264-4bf3-b574-fab219ee88bc)
 
