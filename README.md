@@ -17,34 +17,34 @@ _**Below mentioned gaming consoles are still under developement**_
 * Nintendo 3DS
 
 _**Supported features**_
-* Supports Save States and Load States
-* Supports OTA updates
-* Game Of Life supports Normal Mode and Torroidal Mode
-* Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
-* Chip8 passes Timendus's chip8-test-suite v4.1 (**Except for scrolling tests**)
-* Supports many 8080 test roms (**Undocumented Opcode Tests are still not handled**)
-* Supports many Z80 test roms (**Undocumented Opcode Tests are still not handled**)
-* Supports GB and GBC Bios
-* Has GUI based debugger support (Only for GB and GBC)
-* Has CLI based debugger support
-* Options for different palettes for GB (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
 * GB / GBC passes most of the Blargg tests (**Except for the wave ram tests**)
 * GB / GBC passes many of the Moon Eye tests (**There are still many which doesn't pass as is, but would probably pass with little tweaks in the CONFIG.ini**)
 * GB / GBC passes the RTC (rtc3test) tests
 * GB / GBC implements Pixel Fetcher/FIFO
-* GBC supports GB mode
 * Able to play a slightly glitchy version of mezase.gbc (**With few tweaks in the CONFIG.ini**) 
+* GBC supports GB mode
+* Supports GB and GBC Bios
+* Options for different palettes for GB (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
+* Supports many 8080 test roms (**Undocumented Opcode Tests are still not handled**)
+* Supports many Z80 test roms (**Undocumented Opcode Tests are still not handled**)
+* Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
+* Chip8 passes Timendus's chip8-test-suite v4.1 (**Except for scrolling tests**)
+* Game Of Life supports Normal Mode and Torroidal Mode
+* Supports Save States and Load States
+* Has GUI based debugger support (Only for GB and GBC for now)
+* Has CLI based debugger support
+* Supports OTA updates
 * Menu-bar based UI for Windows platform
 * Internal GUI for platforms other than Windows
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
 _**Features under developement**_
-* Support Link Cable for Gameboy and Gameboy Color (Is partially supported as of now, but this is not nearly enough)
 * Support Super-Gameboy
-* Pass Timendus's chip8-test-suite v4.1's scrolling tests for Chip8
+* Support Link Cable for Gameboy and Gameboy Color (Is partially supported as of now, but this is not nearly enough)
 * Pass blargg's waveram and oam-bug tests for Gameboy
 * Pass all the Moon Eye Tests for Gameboy and Gameboy Color
 * Emulate undocumented opcodes for I8080 and Z80 based platforms
+* Pass Timendus's chip8-test-suite v4.1's scrolling tests for Chip8
 
 # Game Play
 
@@ -115,7 +115,6 @@ In non-windows (and also supported in windows) based platforms, for now, only th
 
 ![RetroMode](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/d4a42d78-6264-4bf3-b574-fab219ee88bc)
 
-
 # Credits
 * Forked version of One Lone Coder's Pixel Game Engine is used for Graphics (https://github.com/Kotambail-Hegde/olcPixelGameEngine)
 * One Lone Coder's Sound Wave Engine is used for Audio (https://github.com/OneLoneCoder/olcSoundWaveEngine)
@@ -131,8 +130,17 @@ In non-windows (and also supported in windows) based platforms, for now, only th
 * gbmulator used for testing (https://github.com/mpostaire/gbmulator)
 * BGB and Sameboy for the palettes
 * BGB for providing the inspiration for the GUI based debugger
+* Emulator Development Discord Channel (https://discord.com/invite/emudev)
 * gbatek (http://problemkaputt.de/gbatek-gba-reference.htm)
-* Dillonb/gba used for testing and also for providing the inspiration for the CLI based logger/debugger (https://github.com/Dillonb/gba/tree/master)
+* TONC (https://gbadev.net/tonc/)
+* NBA HW Docs (https://nba-emu.github.io/hw-docs/)
+* GBA Docs (https://gbadev.net/gbadoc/)
+* Dillonb blog for catridges (https://dillonbeliveau.com/2020/06/05/GBA-FLASH.html)
+* Dillonb used for testing and also for providing the inspiration for the CLI based logger/debugger (https://github.com/Dillonb/gba/tree/master)
+* NBA used for testing (https://github.com/nba-emu/NanoBoyAdvance)
+* SkyEmu used for testing (https://github.com/skylersaleh/SkyEmu)
+* jsmolka and alyosha-tas test roms
+* AGS test roms and their source files from DenSinH (https://github.com/DenSinH/AGSTests/tree/main)
 
 
 
