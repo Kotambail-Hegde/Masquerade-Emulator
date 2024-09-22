@@ -41,6 +41,7 @@ _**Supported features**_
 _**Features under developement**_
 * Support Super-Gameboy
 * Support Link Cable for Gameboy and Gameboy Color (Is partially supported as of now, but this is not nearly enough)
+* GB/GBC audio is still has lot of undesired interference; this needs to be cleaned up
 * Pass blargg's waveram and oam-bug tests for Gameboy
 * Pass all the Moon Eye Tests for Gameboy and Gameboy Color
 * Emulate undocumented opcodes for I8080 and Z80 based platforms
