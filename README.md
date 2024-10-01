@@ -2,8 +2,8 @@
 
 _**A multi-system emulator which emulates the following gaming consoles and simulators**_
 * Game Boy Advance (GBA)
-* Gameboy Color (GBC)
-* Gameboy (GB)
+* Game Boy Color (GBC)
+* Game Boy (GB)
 * Ms Pacman
 * Pacman (supports both Midway and Namco versions)
 * Space Invaders
