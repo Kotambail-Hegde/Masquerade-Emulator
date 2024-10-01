@@ -74,9 +74,9 @@ _GUI based Debugger (Supported only when emulator runs in Gameboy and Gameboy Co
 
 ## Normal Game Play
 
-_Gameboy Advance_ _(Pokemon Emerald, Sapphire and Ruby)_
+_Gameboy Advance_ _(Pokemon Ruby, Emerald and Sapphire)_
 
-![Emerald](https://github.com/user-attachments/assets/d7dea1b2-f6eb-4ebc-a041-4f25b5a191b5) ![Sapphire](https://github.com/user-attachments/assets/8b5a58cb-d602-4b47-9fc9-833e36f6737a) ![Ruby](https://github.com/user-attachments/assets/4d50ea26-2368-46ea-8753-53c470a056d4)
+![Ruby](https://github.com/user-attachments/assets/4d50ea26-2368-46ea-8753-53c470a056d4) ![Emerald](https://github.com/user-attachments/assets/d7dea1b2-f6eb-4ebc-a041-4f25b5a191b5) ![Sapphire](https://github.com/user-attachments/assets/8b5a58cb-d602-4b47-9fc9-833e36f6737a)
 
 _Gameboy Advance_ _(Pokemon Fire Red and Leaf Green)_
 
