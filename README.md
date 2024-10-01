@@ -1,6 +1,7 @@
 # Masquerade Emulator
 
 _**A multi-system emulator which emulates the following gaming consoles and simulators**_
+* Game Boy Advance (GBA)
 * Gameboy Color (GBC)
 * Gameboy (GB)
 * Ms Pacman
@@ -10,13 +11,18 @@ _**A multi-system emulator which emulates the following gaming consoles and simu
 * Game Of Life
 
 _**Below mentioned gaming consoles are still under developement**_
-* Game Boy Advance (GBA)
 * Nintendo Entertainment System (NES)
 * Super Nintendo Entertainment System (SNES)
 * Nintendo DS
 * Nintendo 3DS
 
 _**Supported features**_
+* Supports GBA Bios
+* GBA passes jsmolka/alysoha-tas's arm.gba, thumb.gba, memory.gba, flash and PPU
+* GBA passes FuzzARM.gba
+* GBA passes most of the tonc's test suite
+* GBA is able to play most of the GBA video roms
+* GBA passes most of the AGS test suite
 * GB / GBC passes most of the Blargg tests (**Except for the wave ram tests**)
 * GB / GBC passes many of the Moon Eye tests (**There are still many which doesn't pass as is, but would probably pass with little tweaks in the CONFIG.ini**)
 * GB / GBC passes the RTC (rtc3test) tests
@@ -31,7 +37,7 @@ _**Supported features**_
 * Chip8 passes Timendus's chip8-test-suite v4.1 (**Except for scrolling tests**)
 * Game Of Life supports Normal Mode and Torroidal Mode
 * Supports Save States and Load States
-* Has GUI based debugger support (Only for GB and GBC for now)
+* Has GUI based debugger support (Only for GB and GBC for now; in development for GBA)
 * Has CLI based debugger support
 * Supports OTA updates
 * Menu-bar based UI for Windows platform
@@ -39,13 +45,20 @@ _**Supported features**_
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
 _**Features under developement**_
+* Audio for GBA
+* Backups other than Flash for GBA
+* Pass all mgba test suite
+* Pass all the AGB/AGS test suite
 * Support Super-Gameboy
 * Support Link Cable for Gameboy and Gameboy Color (Is partially supported as of now, but this is not nearly enough)
-* GB/GBC audio is still has lot of undesired interference; this needs to be cleaned up
 * Pass blargg's waveram and oam-bug tests for Gameboy
 * Pass all the Moon Eye Tests for Gameboy and Gameboy Color
 * Emulate undocumented opcodes for I8080 and Z80 based platforms
 * Pass Timendus's chip8-test-suite v4.1's scrolling tests for Chip8
+
+_**Known Issues**_
+* GBA not so often still has some minor graphical glitches
+* GB/GBC audio is still has lot of undesired interference; this needs to be cleaned up
 
 # Game Play
 
@@ -53,15 +66,21 @@ _**Features under developement**_
 
 ## Game Play with Debugger
 
-_CLI based Debugger_
-
-TBD
+_CLI based Debugger (Supported only when emulator runs in Gameboy Advance mode)_
 
 _GUI based Debugger (Supported only when emulator runs in Gameboy and Gameboy Color modes)_
 
 ![GBC-Debugger](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/50e26ee3-abd8-432a-bbaa-0ca8891fc892)
 
 ## Normal Game Play
+
+_Gameboy Advance_ _(Pokemon Emerald, Sapphire and Ruby)_
+
+![Emerald](https://github.com/user-attachments/assets/d7dea1b2-f6eb-4ebc-a041-4f25b5a191b5) ![Sapphire](https://github.com/user-attachments/assets/8b5a58cb-d602-4b47-9fc9-833e36f6737a) ![Ruby](https://github.com/user-attachments/assets/4d50ea26-2368-46ea-8753-53c470a056d4)
+
+_Gameboy Advance_ _(Pokemon Fire Red and Leaf Green)_
+
+![FireRed](https://github.com/user-attachments/assets/c1d64f3a-ff2e-4b36-9adf-612df56e178e) ![leafGreen](https://github.com/user-attachments/assets/471c901a-b278-406b-8b99-41bdb4787188)
 
 _Gameboy Color_ _(Donkey Kong Country and Pokemon Crystal)_
 
@@ -103,18 +122,21 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 
 # User Interface
 
-## QT 5.15
+## QT5
+Not supported yet
+
+## ImGui
 Not supported yet
 
 ## Windows API
 In windows platform, Windows API based user interface can be used for accessing various options of the emulator (whatever features not available via the menu-bar should be accessible via the CONFIG.ini)
 
-![WINAPI](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/8eede049-9db3-48e7-bf88-495378edf06d)
+![Win32api](https://github.com/user-attachments/assets/1262c256-d471-4da8-8e4e-1e7da59f3322)
 
 ## Bare Metal (OLC)
 In non-windows (and also supported in windows) based platforms, for now, only the bare metal user interface is supported (whatever features not available via the internal menu-window should be accessible via the CONFIG.ini)
 
-![RetroMode](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/d4a42d78-6264-4bf3-b574-fab219ee88bc)
+![RetroMode](https://github.com/user-attachments/assets/f7ded931-2798-4fcb-bf37-d80be5c31022)
 
 # Credits
 * Forked version of One Lone Coder's Pixel Game Engine is used for Graphics (https://github.com/Kotambail-Hegde/olcPixelGameEngine)
