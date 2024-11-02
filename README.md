@@ -23,6 +23,7 @@ _**Supported features**_
 * GBA passes most of the tonc's test suite
 * GBA is able to play most of the GBA video roms
 * GBA passes most of the AGS test suite
+* GB / GBC passes Tom Harte's CPU test (**_Was not tested against cycles_**)
 * GB / GBC passes most of the Blargg tests (**_Except for the wave ram tests_**)
 * GB / GBC passes many of the Moon Eye tests (**_There are still many which doesn't pass as is, but would probably pass with little tweaks in the CONFIG.ini_**)
 * GB / GBC passes the RTC (rtc3test) tests
