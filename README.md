@@ -4,6 +4,7 @@ _**A multi-system emulator which emulates the following gaming consoles and simu
 * Game Boy Advance (GBA)
 * Game Boy Color (GBC)
 * Game Boy (GB)
+* Nintendo Entertainment System (NES) (**_TODO : This is implemented in masquerade-NES but not yet ported to masquerade_**)
 * Ms Pacman
 * Pacman (supports both Midway and Namco versions)
 * Space Invaders
@@ -11,7 +12,6 @@ _**A multi-system emulator which emulates the following gaming consoles and simu
 * Game Of Life
 
 _**Below mentioned gaming consoles are still under developement**_
-* Nintendo Entertainment System (NES)
 * Super Nintendo Entertainment System (SNES)
 * Nintendo DS
 * Nintendo 3DS
@@ -23,21 +23,27 @@ _**Supported features**_
 * GBA passes most of the tonc's test suite
 * GBA is able to play most of the GBA video roms
 * GBA passes most of the AGS test suite
-* GB / GBC passes most of the Blargg tests (**Except for the wave ram tests**)
-* GB / GBC passes many of the Moon Eye tests (**There are still many which doesn't pass as is, but would probably pass with little tweaks in the CONFIG.ini**)
+* GB / GBC passes most of the Blargg tests (**_Except for the wave ram tests_**)
+* GB / GBC passes many of the Moon Eye tests (**_There are still many which doesn't pass as is, but would probably pass with little tweaks in the CONFIG.ini_**)
 * GB / GBC passes the RTC (rtc3test) tests
 * GB / GBC implements Pixel Fetcher/FIFO
-* Able to play a slightly glitchy version of mezase.gbc (**With few tweaks in the CONFIG.ini**) 
+* Able to play a slightly glitchy version of mezase.gbc (**_With few tweaks in the CONFIG.ini_**) 
 * GBC supports GB mode
 * Supports GB and GBC Bios
 * Options for different palettes for GB (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
-* Supports many 8080 test roms (**Undocumented Opcode Tests are still not handled**)
-* Supports many Z80 test roms (**Undocumented Opcode Tests are still not handled**)
+* Supports many 8080 test roms (**_Undocumented Opcode Tests are still not handled_**)
+* Supports many Z80 test roms (**_Undocumented Opcode Tests are still not handled_**)
+* Passes Nestest (both official and un-official opcodes)
+* Passes Tom Harte's CPU test (for all official opcodes and un-official opcodes that are implemented)
+* Passes All of Blargg's CPU test (**_Except for the un-official opcodes that are not implemented_**)
+* Passes Blargg's VBL and NMI timing tests
+* Passes all CPU tests mentioned in https://www.nesdev.org/wiki/Emulator_tests (**_Except for the un-official opcodes that are not implemented_**)
+* Supports many c6502 test roms (**_Except for the un-official opcodes that are not implemented_**)
 * Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
-* Chip8 passes Timendus's chip8-test-suite v4.1 (**Except for scrolling tests**)
+* Chip8 passes Timendus's chip8-test-suite v4.1 (**_Except for scrolling tests_**)
 * Game Of Life supports Normal Mode and Torroidal Mode
 * Supports Save States and Load States
-* Has GUI based debugger support (Only for GB and GBC for now; in development for GBA)
+* Has GUI based debugger support (**_Only for GB and GBC for now, in development for GBA_**)
 * Has CLI based debugger support
 * Supports OTA updates
 * Menu-bar based UI for Windows platform
@@ -49,6 +55,8 @@ _**Features under developement**_
 * Backups other than Flash for GBA
 * Pass all mgba test suite
 * Pass all the AGB/AGS test suite
+* Support mappers other than NROM for NES
+* Pass all of the Blargg's sprite 0 hit and sprite overflow tests for NES
 * Support Super-Gameboy
 * Support Link Cable for Gameboy and Gameboy Color (Is partially supported as of now, but this is not nearly enough)
 * Pass blargg's waveram and oam-bug tests for Gameboy
@@ -91,6 +99,12 @@ _Gameboy_ _(Prehistorik Man in 'BGB' palette and Pokemon Green in 'Gearboy' pale
 
 ![PrehistorikMan](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/8819c689-b3ad-444e-bece-d43a993e05b7) ![Green](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/519c7f6e-ebb1-4e60-b677-d860ffb0f8a1)
 
+
+_Nintendo Entertainment System_ _(Super Mario Bros)_
+
+(**_TODO : Replace the masquerade-NES snip with masquerade snip when NES is ported to masquerade_**)
+
+![SMB](https://github.com/user-attachments/assets/34ff51ad-0faf-40cb-bfb8-80168a7d2c9c)
 
 _Ms Pacman_
 
