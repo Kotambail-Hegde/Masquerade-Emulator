@@ -39,6 +39,7 @@ _**Supported features**_
 * NES passes all of Blargg's CPU test (**_Except for the un-official opcodes that are not implemented_**)
 * NES passes Blargg's VBL and NMI timing tests
 * NES passes all CPU tests mentioned in https://www.nesdev.org/wiki/Emulator_tests (**_Except for the un-official opcodes that are not implemented_**)
+* NES passes all but timing test for sprite overflow (sprite overflow bug is also implemented)
 * Supports many c6502 test roms (**_Except for the un-official opcodes that are not implemented_**)
 * Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
 * Chip8 passes Timendus's chip8-test-suite v4.1 (**_Except for scrolling tests_**)
@@ -57,7 +58,8 @@ _**Features under developement**_
 * Pass all mgba test suite
 * Pass all the AGB/AGS test suite
 * Support mappers other than NROM for NES
-* Pass all of the Blargg's sprite 0 hit and sprite overflow tests for NES
+* Audio for NES
+* Pass all of the Blargg's sprite 0 hit and sprite overflow timing test for NES
 * Support Super-Gameboy
 * Support Link Cable for Gameboy and Gameboy Color (Is partially supported as of now, but this is not nearly enough)
 * Pass blargg's waveram and oam-bug tests for Gameboy
