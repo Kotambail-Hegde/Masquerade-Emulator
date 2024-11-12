@@ -35,12 +35,12 @@ _**Supported features**_
 * Supports many 8080 test roms (**_Undocumented Opcode Tests are still not handled_**)
 * Supports many Z80 test roms (**_Undocumented Opcode Tests are still not handled_**)
 * NES passes Nestest (both official and un-official opcodes)
-* NES passes Tom Harte's CPU test including cycles (for all official opcodes and un-official opcodes that are implemented)
-* NES passes all of Blargg's CPU test (**_Except for the un-official opcodes that are not implemented_**)
+* NES passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
+* NES passes all of Blargg's CPU test (both official and un-official opcodes)
 * NES passes Blargg's VBL and NMI timing tests
-* NES passes all CPU tests mentioned in https://www.nesdev.org/wiki/Emulator_tests (**_Except for the un-official opcodes that are not implemented_**)
+* NES passes all CPU tests mentioned in https://www.nesdev.org/wiki/Emulator_tests (both official and un-official opcodes)
 * NES passes all but timing test for sprite overflow (sprite overflow bug is also implemented)
-* Supports many c6502 test roms (**_Except for the un-official opcodes that are not implemented_**)
+* Supports many c6502 test roms (both official and un-official opcodes)
 * Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
 * Chip8 passes Timendus's chip8-test-suite v4.1 (**_Except for scrolling tests_**)
 * Game Of Life supports Normal Mode and Torroidal Mode
