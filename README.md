@@ -23,6 +23,7 @@ _**Supported features**_
 * GBA passes most of the tonc's test suite
 * GBA is able to play most of the GBA video roms
 * GBA passes most of the AGS test suite
+* GB / GBC supports NO MBC, MBC1, MBC2, MBC3 and MBC5
 * GB / GBC passes Tom Harte's CPU test (**_Was not tested against cycles_**)
 * GB / GBC passes most of the Blargg tests (**_Except for the wave ram tests_**)
 * GB / GBC passes many of the Moon Eye tests (**_There are still many which doesn't pass as is, but would probably pass with little tweaks in the CONFIG.ini_**)
@@ -34,6 +35,7 @@ _**Supported features**_
 * Options for different palettes for GB (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
 * Supports many 8080 test roms (**_Undocumented Opcode Tests are still not handled_**)
 * Supports many Z80 test roms (**_Undocumented Opcode Tests are still not handled_**)
+* NES supports NROM, MMC1, UxROM (002) and CNROM
 * NES passes Nestest (both official and un-official opcodes)
 * NES passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
 * NES passes all of Blargg's CPU test (both official and un-official opcodes)
@@ -45,7 +47,7 @@ _**Supported features**_
 * Chip8 passes Timendus's chip8-test-suite v4.1 (**_Except for scrolling tests_**)
 * Game Of Life supports Normal Mode and Torroidal Mode
 * Supports Save States and Load States
-* Has GUI based debugger support (**_Only for GB and GBC for now, in development for GBA_**)
+* Has GUI based debugger support (**_Only for GB and GBC for now, in development for NES and GBA_**)
 * Has CLI based debugger support
 * Supports OTA updates
 * Menu-bar based UI for Windows platform
@@ -70,6 +72,7 @@ _**Features under developement**_
 _**Known Issues**_
 * GBA not so often still has some minor graphical glitches
 * GB/GBC audio is still has lot of undesired interference; this needs to be cleaned up
+* NES still has some minor graphical glitches
 
 # Game Play
 
