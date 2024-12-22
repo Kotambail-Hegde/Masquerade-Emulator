@@ -70,9 +70,8 @@ _**Features under developement**_
 * Pass Timendus's chip8-test-suite v4.1's scrolling tests for Chip8
 
 _**Known Issues**_
-* GBA not so often still has some minor graphical glitches
+* GBA and NES, not so often still has some minor graphical glitches
 * GB/GBC audio is still has lot of undesired interference; this needs to be cleaned up
-* NES still has some minor graphical glitches
 
 # Game Play
 
