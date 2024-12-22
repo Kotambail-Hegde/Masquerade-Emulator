@@ -4,7 +4,7 @@ _**A multi-system emulator which emulates the following gaming consoles and simu
 * Game Boy Advance (GBA)
 * Game Boy Color (GBC)
 * Game Boy (GB)
-* Nintendo Entertainment System (NES) (**_TODO : This is implemented in masquerade-NES but not yet ported to masquerade_**)
+* Nintendo Entertainment System (NES)
 * Ms Pacman
 * Pacman (supports both Midway and Namco versions)
 * Space Invaders
@@ -108,9 +108,16 @@ _Gameboy_ _(Prehistorik Man in 'BGB' palette and Pokemon Green in 'Gearboy' pale
 
 _Nintendo Entertainment System_ _(Super Mario Bros)_
 
-(**_TODO : Replace the masquerade-NES snip with masquerade snip when NES is ported to masquerade_**)
+![SMB](https://github.com/user-attachments/assets/40cb5e26-0033-4243-863b-5adc9bbe72bb)
 
-![SMB](https://github.com/user-attachments/assets/34ff51ad-0faf-40cb-bfb8-80168a7d2c9c)
+_Nintendo Entertainment System_ _(Zelda II: The Adventure of Link)_
+
+![zelda2](https://github.com/user-attachments/assets/0429cac5-3d0d-4205-8ed2-878854601d89)
+
+_Nintendo Entertainment System_ _(Kong Classic)_
+
+![kongClassic](https://github.com/user-attachments/assets/c8784239-7515-45b3-aa55-3a6863669e74)
+
 
 _Ms Pacman_
 
@@ -151,12 +158,12 @@ Not supported yet
 ## Windows API
 In windows platform, Windows API based user interface can be used for accessing various options of the emulator (whatever features not available via the menu-bar should be accessible via the CONFIG.ini)
 
-![Win32api](https://github.com/user-attachments/assets/1262c256-d471-4da8-8e4e-1e7da59f3322)
+![Win32api](https://github.com/user-attachments/assets/e5d14f79-484f-4479-bd25-0efe7b1f0bd4)
 
 ## Bare Metal (OLC)
 In non-windows (and also supported in windows) based platforms, for now, only the bare metal user interface is supported (whatever features not available via the internal menu-window should be accessible via the CONFIG.ini)
 
-![RetroMode](https://github.com/user-attachments/assets/f7ded931-2798-4fcb-bf37-d80be5c31022)
+![RetroMode](https://github.com/user-attachments/assets/ddccb97e-1d2c-4029-9fa4-a231aa77a0d0)
 
 # Credits
 * Forked version of One Lone Coder's Pixel Game Engine is used for Graphics (https://github.com/Kotambail-Hegde/olcPixelGameEngine)
