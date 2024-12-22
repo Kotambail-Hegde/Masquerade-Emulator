@@ -190,7 +190,9 @@ In non-windows (and also supported in windows) based platforms, for now, only th
 * SkyEmu used for testing (https://github.com/skylersaleh/SkyEmu)
 * jsmolka and alyosha-tas test roms
 * AGS test roms and their source files from DenSinH (https://github.com/DenSinH/AGSTests/tree/main)
-
+* NES Dev Wiki (https://www.nesdev.org/wiki/Nesdev_Wiki)
+* Javidx9's NES developement youtube tutorials was used for reference for topics which were not very clear in NES Dev Wiki (https://www.youtube.com/watch?v=F8kx56OZQhg&t=1982s&ab_channel=javidx9)
+* Tom Harte tests for 6502 and SM82 cpu testing
 
 
 
