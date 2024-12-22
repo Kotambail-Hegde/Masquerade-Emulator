@@ -163,7 +163,7 @@ In windows platform, Windows API based user interface can be used for accessing 
 ## Bare Metal (OLC)
 In non-windows (and also supported in windows) based platforms, for now, only the bare metal user interface is supported (whatever features not available via the internal menu-window should be accessible via the CONFIG.ini)
 
-![RetroMode](https://github.com/user-attachments/assets/ddccb97e-1d2c-4029-9fa4-a231aa77a0d0)
+![RetroMode](https://github.com/user-attachments/assets/35f4caee-2601-4211-97b6-44afc6f57b3f)
 
 # Credits
 * Forked version of One Lone Coder's Pixel Game Engine is used for Graphics (https://github.com/Kotambail-Hegde/olcPixelGameEngine)
