@@ -33,21 +33,21 @@ _**Supported features**_
 * GBC supports GB mode
 * Supports GB and GBC Bios
 * Options for different palettes for GB (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
-* Supports many 8080 test roms (**_Undocumented Opcode Tests are still not handled_**)
-* Supports many Z80 test roms (**_Undocumented Opcode Tests are still not handled_**)
 * NES supports NROM, MMC1, UxROM (002) and CNROM
 * NES passes Nestest (both official and un-official opcodes)
 * NES passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
 * NES passes all of Blargg's CPU test (both official and un-official opcodes)
 * NES passes Blargg's VBL and NMI timing tests
-* NES passes all CPU tests mentioned in https://www.nesdev.org/wiki/Emulator_tests (both official and un-official opcodes)
+* NES passes all CPU tests mentioned in Nes Dev Wiki (both official and un-official opcodes)
 * NES passes all but timing test for sprite overflow (sprite overflow bug is also implemented)
+* Supports many Z80 test roms (**_Undocumented Opcode Tests are still not handled_**)
 * Supports many c6502 test roms (both official and un-official opcodes)
+* Supports many 8080 test roms (**_Undocumented Opcode Tests are still not handled_**)
 * Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
 * Chip8 passes Timendus's chip8-test-suite v4.1 (**_Except for scrolling tests_**)
 * Game Of Life supports Normal Mode and Torroidal Mode
 * Supports Save States and Load States
-* Has GUI based debugger support (**_Only for GB and GBC for now, in development for NES and GBA_**)
+* Has GUI based debugger support (**_For now, only for GB and GBC, currently in development for NES and GBA_**)
 * Has CLI based debugger support
 * Supports OTA updates
 * Menu-bar based UI for Windows platform
