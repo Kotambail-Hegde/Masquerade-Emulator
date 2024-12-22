@@ -80,7 +80,7 @@ _**Known Issues**_
 
 ## Game Play with Debugger
 
-_CLI based Debugger (Supported only when emulator runs in Gameboy Advance mode)_
+_CLI based Debugger (Supported only when emulator runs in Gameboy Advance and Nintendo Entertainment System modes)_
 
 _GUI based Debugger (Supported only when emulator runs in Gameboy and Gameboy Color modes)_
 
