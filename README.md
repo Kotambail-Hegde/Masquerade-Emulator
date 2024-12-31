@@ -44,7 +44,7 @@ _**Supported features**_
 * NES passes all the Blargg's blargg_ppu_tests_2005.09.15b tests
 * NES passes all the Blargg's blargg_apu_2005.07.30
 * NES passes all the Blargg's sprite_overflow_tests
-* NES passes all the Blargg's sprite_hit_tests_2005.10.05 except for the last timing test (**_Last timing test that is failing is under debug_**)
+* NES passes all the Blargg's sprite_hit_tests_2005.10.05 tests
 * NES passes all other APU tests except for DMC (**_DMC is not implemented yet_**)
 * NES passes Blargg's vbl_nmi_timing and ppu_vbl_nmi tests
 * NES passes the OAM stress tests
