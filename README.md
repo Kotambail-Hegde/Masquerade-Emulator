@@ -34,12 +34,22 @@ _**Supported features**_
 * Supports GB and GBC Bios
 * Options for different palettes for GB (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
 * NES supports NROM, MMC1, UxROM (002) and CNROM
+* NES supports battery backed PRG RAM
 * NES passes Nestest (both official and un-official opcodes)
 * NES passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
-* NES passes all of Blargg's CPU test (both official and un-official opcodes)
-* NES passes Blargg's VBL and NMI timing tests
+* NES passes all of Blargg's CPU tests (both official and un-official opcodes)
+* NES passes all of Blargg's CPU timing tests (both official and un-official opcodes)
+* NES passes all of Blargg's CPU dummy read/write tests (both official and un-official opcodes)
 * NES passes all CPU tests mentioned in Nes Dev Wiki (both official and un-official opcodes)
-* NES passes all but timing test for sprite overflow (sprite overflow bug is also implemented)
+* NES passes all the Blargg's blargg_ppu_tests_2005.09.15b tests
+* NES passes all the Blargg's blargg_apu_2005.07.30
+* NES passes all the Blargg's sprite_overflow_tests
+* NES passes all the Blargg's sprite_hit_tests_2005.10.05 except for the last timing test (**Last timing test that is failing is under debug**)
+* NES passes all other APU tests except for DMC (**DMC is not implemented yet**)
+* NES passes Blargg's vbl_nmi_timing and ppu_vbl_nmi tests
+* NES passes the OAM stress tests
+* NES passes both Blargg's and Bisqwit's ppu_open_bus tests
+* NES passes Bisqwit's cpu_exec_space tests
 * Supports many Z80 test roms (**_Undocumented Opcode Tests are still not handled_**)
 * Supports many c6502 test roms (both official and un-official opcodes)
 * Supports many 8080 test roms (**_Undocumented Opcode Tests are still not handled_**)
