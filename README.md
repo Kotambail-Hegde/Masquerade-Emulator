@@ -18,21 +18,21 @@ _**Below mentioned gaming consoles are still under developement**_
 
 _**Supported features**_
 * Supports GBA Bios
-* GBA passes jsmolka/alysoha-tas's arm.gba, thumb.gba, memory.gba, flash and PPU
+* GBA passes jsmolka/alysoha-tas's arm.gba, thumb.gba, memory.gba, flash and PPU tests
 * GBA passes FuzzARM.gba
 * GBA passes most of the tonc's test suite
 * GBA is able to play most of the GBA video roms
 * GBA passes most of the AGS test suite
 * GB / GBC supports NO MBC, MBC1, MBC2, MBC3 and MBC5
+* Supports GB and GBC Bios
+* GB / GBC implements Pixel Fetcher/FIFO
+* GBC supports GB mode
 * GB / GBC passes Tom Harte's CPU test (**_Was not tested against cycles_**)
-* GB / GBC passes most of the Blargg tests (**_Except for the wave ram tests_**)
+* GB / GBC passes all of the Blargg tests except for Wave RAM tests (**_Wave Ram tests are under debug_**)
 * GB / GBC passes many of the Moon Eye tests (**_There are still many which doesn't pass as is, but would probably pass with little tweaks in the CONFIG.ini_**)
 * GB / GBC passes the RTC (rtc3test) tests
-* GB / GBC implements Pixel Fetcher/FIFO
-* Able to play a slightly glitchy version of mezase.gbc (**_With few tweaks in the CONFIG.ini_**) 
-* GBC supports GB mode
-* Supports GB and GBC Bios
-* Options for different palettes for GB (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
+* GBC is able to play a slightly glitchy version of mezase.gbc (**_With few tweaks in the CONFIG.ini_**) 
+* GB has options for different palettes (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
 * NES supports NROM, MMC1, UxROM (002) and CNROM
 * NES supports battery backed PRG RAM
 * NES passes Nestest (both official and un-official opcodes)
@@ -44,8 +44,8 @@ _**Supported features**_
 * NES passes all the Blargg's blargg_ppu_tests_2005.09.15b tests
 * NES passes all the Blargg's blargg_apu_2005.07.30
 * NES passes all the Blargg's sprite_overflow_tests
-* NES passes all the Blargg's sprite_hit_tests_2005.10.05 except for the last timing test (**Last timing test that is failing is under debug**)
-* NES passes all other APU tests except for DMC (**DMC is not implemented yet**)
+* NES passes all the Blargg's sprite_hit_tests_2005.10.05 except for the last timing test (**_Last timing test that is failing is under debug_**)
+* NES passes all other APU tests except for DMC (**_DMC is not implemented yet_**)
 * NES passes Blargg's vbl_nmi_timing and ppu_vbl_nmi tests
 * NES passes the OAM stress tests
 * NES passes both Blargg's and Bisqwit's ppu_open_bus tests
@@ -54,11 +54,11 @@ _**Supported features**_
 * Supports many c6502 test roms (both official and un-official opcodes)
 * Supports many 8080 test roms (**_Undocumented Opcode Tests are still not handled_**)
 * Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
-* Chip8 passes Timendus's chip8-test-suite v4.1 (**_Except for scrolling tests_**)
+* Chip8 passes all Timendus's chip8-test-suite v4.1 expect for scrolling tests (**_The scrolling tests that is failing is under debug_**)
 * Game Of Life supports Normal Mode and Torroidal Mode
 * Supports Save States and Load States
-* Has GUI based debugger support (**_For now, only for GB and GBC, currently in development for NES and GBA_**)
-* Has CLI based debugger support
+* Has GUI based debugger support (**_For now, this is supported only in GB and GBC, currently in development for NES and GBA_**)
+* Has CLI based debugger support (**_For now, this is supported only in NES and GBA, currently in developement for GBC_**)
 * Supports OTA updates
 * Menu-bar based UI for Windows platform
 * Internal GUI for platforms other than Windows
@@ -67,21 +67,14 @@ _**Supported features**_
 _**Features under developement**_
 * Audio for GBA
 * Backups other than Flash for GBA
-* Pass all mgba test suite
-* Pass all the AGB/AGS test suite
-* Support mappers other than NROM for NES
-* Audio for NES
-* Pass all of the Blargg's sprite 0 hit and sprite overflow timing test for NES
 * Support Super-Gameboy
 * Support Link Cable for Gameboy and Gameboy Color (Is partially supported as of now, but this is not nearly enough)
-* Pass blargg's waveram and oam-bug tests for Gameboy
-* Pass all the Moon Eye Tests for Gameboy and Gameboy Color
-* Emulate undocumented opcodes for I8080 and Z80 based platforms
-* Pass Timendus's chip8-test-suite v4.1's scrolling tests for Chip8
+* Support mappers other than NROM, MMC1 and UxROM (002) for NES
+* Audio for NES
 
 _**Known Issues**_
-* GBA and NES, not so often still has some minor graphical glitches
-* GB/GBC audio is still has lot of undesired interference; this needs to be cleaned up
+* GBA not so frequently exibits some minor graphical glitches
+* GB/GBC audio is still has lot of undesired interference. This needs to be cleaned up
 
 # Game Play
 
