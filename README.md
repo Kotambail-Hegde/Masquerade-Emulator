@@ -47,6 +47,7 @@ _**Supported features**_
 * NES passes all the Blargg's sprite_hit_tests_2005.10.05 tests
 * NES passes all other APU tests except for DMC (**_DMC is not implemented yet_**)
 * NES passes Blargg's vbl_nmi_timing and ppu_vbl_nmi tests
+* NES passes Blargg's cpu_interrupt_v2 tests
 * NES passes the OAM stress tests
 * NES passes both Blargg's and Bisqwit's ppu_open_bus tests
 * NES passes Bisqwit's cpu_exec_space tests
