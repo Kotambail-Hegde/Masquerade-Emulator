@@ -11,7 +11,7 @@ _**A multi-system emulator which emulates the following gaming consoles and simu
 * CHIP8 (also supports S-CHIP and XO-CHIP)
 * Game Of Life
 
-_**Below mentioned gaming consoles are still under developement**_
+_**Below mentioned gaming consoles are in roadmap**_
 * Super Nintendo Entertainment System (SNES)
 * Nintendo DS
 * Nintendo 3DS
@@ -67,16 +67,13 @@ _**Supported features**_
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
 _**Features under developement**_
-* Audio for GBA
-* Backups other than Flash for GBA
-* Support Super-Gameboy
-* Support Link Cable for Gameboy and Gameboy Color (Is partially supported as of now, but this is not nearly enough)
-* Support mappers other than NROM, MMC1 and UxROM (002) for NES
-* Audio for NES
+* Support MMC3 for NES
+* Support Link Cable for Gameboy and Gameboy Color
+* Implement "_Sync to Audio Playback Rate_" to support audio for GBA and NES
 
 _**Known Issues**_
 * GBA not so frequently exibits some minor graphical glitches
-* GB/GBC audio is still has lot of undesired interference. This needs to be cleaned up
+* GB/GBC audio is still has lot of undesired interference. "_Sync to Audio Playback Rate_" is expected to help in resolving these issue.
 
 # Game Play
 
