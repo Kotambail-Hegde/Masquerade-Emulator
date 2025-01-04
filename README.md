@@ -34,6 +34,7 @@ _**Supported features**_
 * GBC is able to play a slightly glitchy version of mezase.gbc (**_With few tweaks in the CONFIG.ini_**) 
 * GB has options for different palettes (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
 * NES supports NROM, MMC1, UxROM (002), CNROM, AxROM and GxROM
+* NES supports Zapper in Port 2 (using mouse clicks)
 * NES supports battery backed PRG RAM
 * NES passes Nestest (both official and un-official opcodes)
 * NES passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
