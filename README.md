@@ -29,11 +29,11 @@ _**Supported features**_
 * GBC supports GB mode
 * GB / GBC passes Tom Harte's CPU test (**_Was not tested against cycles_**)
 * GB / GBC passes all of the Blargg tests except for Wave RAM tests (**_Wave Ram tests are under debug_**)
-* GB / GBC passes many of the Moon Eye tests (**_There are still many which doesn't pass as is, but would probably pass with little tweaks in the CONFIG.ini_**)
+* GB / GBC passes many of the Moon Eye tests (**_Failing tests probably would pass with tweaks in the CONFIG.ini file_**)
 * GB / GBC passes the RTC (rtc3test) tests
 * GBC is able to play a slightly glitchy version of mezase.gbc (**_With few tweaks in the CONFIG.ini_**) 
 * GB has options for different palettes (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
-* NES supports NROM, MMC1, UxROM (002) and CNROM
+* NES supports NROM, MMC1, UxROM (002), CNROM, AxROM and GxROM
 * NES supports battery backed PRG RAM
 * NES passes Nestest (both official and un-official opcodes)
 * NES passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
@@ -55,11 +55,11 @@ _**Supported features**_
 * Supports many c6502 test roms (both official and un-official opcodes)
 * Supports many 8080 test roms (**_Undocumented Opcode Tests are still not handled_**)
 * Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
-* Chip8 passes all Timendus's chip8-test-suite v4.1 expect for scrolling tests (**_The scrolling tests that is failing is under debug_**)
+* Chip8 passes all Timendus's chip8-test-suite v4.1 expect for scrolling tests (**_The failing scrolling tests are under debug_**)
 * Game Of Life supports Normal Mode and Torroidal Mode
 * Supports Save States and Load States
 * Has GUI based debugger support (**_For now, this is supported only in GB and GBC, currently in development for NES and GBA_**)
-* Has CLI based debugger support (**_For now, this is supported only in NES and GBA, currently in developement for GBC_**)
+* Has CLI based debugger support (**_For now, this is supported only in NES and GBA, currently in developement for GB and GBC_**)
 * Supports OTA updates
 * Menu-bar based UI for Windows platform
 * Internal GUI for platforms other than Windows
