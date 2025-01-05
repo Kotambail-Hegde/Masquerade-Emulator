@@ -81,11 +81,27 @@ _**Known Issues**_
 
 ## Game Play with Debugger
 
-_CLI based Debugger (Supported only when emulator runs in Gameboy Advance and Nintendo Entertainment System modes)_
+**QT5 based Debugger**
 
-_GUI based Debugger (Supported only when emulator runs in Gameboy and Gameboy Color modes)_
+_Not supported yet_
+
+**ImGui based Debugger**
+
+_Not supported yet_
+
+**Windows API based Debugger**
+
+_Not supported yet_
+
+**Bare Metal (OLC) based Debugger**
+
+_Currently supported only when emulator runs in Gameboy and Gameboy Color modes_
 
 ![GBC-Debugger](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/50e26ee3-abd8-432a-bbaa-0ca8891fc892)
+
+**_CLI based Debugger_**
+
+_Currently supported only when emulator runs in Gameboy Advance and Nintendo Entertainment System modes_
 
 ## Normal Game Play
 
