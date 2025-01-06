@@ -52,6 +52,8 @@ _**Supported features**_
 * NES passes the OAM stress tests
 * NES passes both Blargg's and Bisqwit's ppu_open_bus tests
 * NES passes Bisqwit's cpu_exec_space tests
+* NES passes Blargg's mmc3_irq_tests
+* NES passes all of Blargg's mmc3_test/mmc3_test_2 expect for 4-scanline_timing.nes (**_4-scanline_timing.nes failure is under debug_**)
 * Supports many Z80 test roms (**_Undocumented Opcode Tests are still not handled_**)
 * Supports many c6502 test roms (both official and un-official opcodes)
 * Supports many 8080 test roms (**_Undocumented Opcode Tests are still not handled_**)
