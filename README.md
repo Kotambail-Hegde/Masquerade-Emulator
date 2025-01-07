@@ -69,6 +69,7 @@ _**Supported features**_
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
 _**Features under developement**_
+* Support for scrolling requirement by Timendus's chip8-test-suite v4.1
 * Support Link Cable for Gameboy and Gameboy Color
 * Implement "_Sync to Audio Playback Rate_" to support audio for GBA and NES
 
