@@ -73,8 +73,8 @@ _**Features under developement**_
 * Implement "_Sync to Audio Playback Rate_" to support audio for GBA and NES
 
 _**Known Issues**_
-* GBA not so frequently exibits some minor graphical glitches
 * GB/GBC audio is still has lot of undesired interference. "_Sync to Audio Playback Rate_" is expected to help in resolving these issue.
+* Glitchy controller input behaviour observed during the intro scene of SMB3 in NES
 
 # Game Play
 
