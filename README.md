@@ -127,7 +127,7 @@ _Gameboy_ _(Prehistorik Man in 'BGB' palette and Pokemon Green in 'Gearboy' pale
 
 _Nintendo Entertainment System_ _(Super Mario Bros 3)_
 
-![smb3-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/28373045-16b9-4e12-a3b2-1da39258491b)
+![smb3-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/e57d0412-043f-4fe5-89b6-2b6b157289cf)
 
 _Nintendo Entertainment System_ _(Super Mario Bros)_
 
