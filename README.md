@@ -33,7 +33,7 @@ _**Supported features**_
 * GB / GBC passes the RTC (rtc3test) tests
 * GBC is able to play a slightly glitchy version of mezase.gbc (**_With few tweaks in the CONFIG.ini_**) 
 * GB has options for different palettes (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
-* NES supports NROM, MMC1, UxROM (002), CNROM, AxROM and GxROM
+* NES supports NROM, MMC1, UxROM (002), CNROM, MMC3, AxROM and GxROM
 * NES supports Zapper in Port 2 (using mouse clicks)
 * NES supports battery backed PRG RAM
 * NES passes Nestest (both official and un-official opcodes)
@@ -69,7 +69,6 @@ _**Supported features**_
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
 _**Features under developement**_
-* Support MMC3 for NES
 * Support Link Cable for Gameboy and Gameboy Color
 * Implement "_Sync to Audio Playback Rate_" to support audio for GBA and NES
 
@@ -124,6 +123,10 @@ _Gameboy_ _(Prehistorik Man in 'BGB' palette and Pokemon Green in 'Gearboy' pale
 
 ![PrehistorikMan](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/8819c689-b3ad-444e-bece-d43a993e05b7) ![Green](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/519c7f6e-ebb1-4e60-b677-d860ffb0f8a1)
 
+
+_Nintendo Entertainment System_ _(Super Mario Bros 3)_
+
+![smb3-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/28373045-16b9-4e12-a3b2-1da39258491b)
 
 _Nintendo Entertainment System_ _(Super Mario Bros)_
 
