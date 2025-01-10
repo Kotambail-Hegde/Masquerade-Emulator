@@ -76,7 +76,6 @@ _**Features under developement**_
 _**Known Major Issues**_
 * GBA not so often exibits few minor graphical glitches. Suspected to be related to some startup or initialization not happening as expected.
 * GB/GBC audio is still has lot of undesired interference. "_Sync to Audio Playback Rate_" is expected to help in resolving these issue.
-* Sometimes, a glitchy controller input behaviour which results in a hang is observed only during the intro scene of SMB3 in NES. Only way to recover is to reset the emulator.
 
 # Game Play
 
