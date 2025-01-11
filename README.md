@@ -8,7 +8,9 @@ _**A multi-system emulator which emulates the following gaming consoles and simu
 * Ms Pacman
 * Pacman (supports both Midway and Namco versions)
 * Space Invaders
-* CHIP8 (also supports S-CHIP and XO-CHIP)
+* CHIP8
+* S-CHIP
+* XO-CHIP
 * Game Of Life
 
 _**Below mentioned gaming consoles are in roadmap**_
@@ -58,7 +60,7 @@ _**Supported features**_
 * Supports many c6502 test roms (both official and un-official opcodes)
 * Supports many 8080 test roms (**_Undocumented Opcode Tests are still not handled_**)
 * Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
-* Chip8 passes all Timendus's chip8-test-suite v4.2 expect for scrolling tests (**_The failing scrolling tests are under debug_**)
+* Chip8 passes all Timendus's chip8-test-suite v4.2 expect for scrolling tests (**_Support is not implemented yet_**)
 * Game Of Life supports Normal Mode and Torroidal Mode
 * Supports Save States and Load States
 * Has GUI based debugger support (**_For now, this is supported only in GB and GBC, currently in development for NES and GBA_**)
