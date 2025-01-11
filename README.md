@@ -22,8 +22,8 @@ _**Supported features**_
 * Supports GBA Bios
 * GBA passes jsmolka/alysoha-tas's arm.gba, thumb.gba, memory.gba, flash and PPU tests
 * GBA passes FuzzARM.gba
+* GBA passes all the AGS test suite except for Prefetch and Wait Control Memory tests
 * GBA passes most of the tonc's test suite
-* GBA passes most of the AGS test suite
 * GBA is able to play most of the GBA video roms
 * GB / GBC supports NO MBC, MBC1, MBC2, MBC3 and MBC5
 * Supports GB and GBC Bios
