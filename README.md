@@ -58,7 +58,7 @@ _**Supported features**_
 * Supports many c6502 test roms (both official and un-official opcodes)
 * Supports many 8080 test roms (**_Undocumented Opcode Tests are still not handled_**)
 * Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
-* Chip8 passes all Timendus's chip8-test-suite v4.1 expect for scrolling tests (**_The failing scrolling tests are under debug_**)
+* Chip8 passes all Timendus's chip8-test-suite v4.2 expect for scrolling tests (**_The failing scrolling tests are under debug_**)
 * Game Of Life supports Normal Mode and Torroidal Mode
 * Supports Save States and Load States
 * Has GUI based debugger support (**_For now, this is supported only in GB and GBC, currently in development for NES and GBA_**)
@@ -69,7 +69,7 @@ _**Supported features**_
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
 _**Features under developement**_
-* Support for scrolling requirement by Timendus's chip8-test-suite v4.1
+* Support for scrolling requirement by Timendus's chip8-test-suite v4.2
 * Support Link Cable for Gameboy and Gameboy Color
 * Implement "_Sync to Audio Playback Rate_" to support audio for GBA and NES
 
