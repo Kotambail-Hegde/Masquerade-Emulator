@@ -74,6 +74,7 @@ _**Features under developement**_
 * Support for scrolling requirement by Timendus's chip8-test-suite v4.2
 * Support Link Cable for Gameboy and Gameboy Color
 * Implement "_Sync to Audio Playback Rate_" to support audio for GBA and NES
+* Implement ROM prefetch and review the currently implemented sequential and non sequential wait cycles
 
 _**Known Major Issues**_
 * GBA not so often exibits few minor graphical glitches. Suspected to be related to some startup or initialization not happening as expected.
