@@ -24,6 +24,7 @@ _**Supported features**_
 * GBA passes FuzzARM.gba
 * GBA passes all the AGS test suite except for Prefetch and Wait Control Memory tests
 * GBA passes most of the tonc's test suite
+* GBA mostly implements cycle accurate PPU access patterns documented by fleroviux
 * GBA is able to play most of the GBA video roms
 * GB / GBC supports NO MBC, MBC1, MBC2, MBC3 and MBC5
 * Supports GB and GBC Bios
@@ -218,6 +219,7 @@ In non-windows (and also supported in windows) based platforms, for now, only th
 * jsmolka and alyosha-tas test roms
 * AGS test roms and their source files from DenSinH (https://github.com/DenSinH/AGSTests/tree/main)
 * NES Dev Wiki (https://www.nesdev.org/wiki/Nesdev_Wiki)
+* GBA PPU access pattern (https://nba-emu.github.io/hw-docs/ppu/ppu.html)
 * Tom Harte tests for 6502 and SM82 cpu testing
 
 
