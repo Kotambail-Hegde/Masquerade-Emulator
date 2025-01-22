@@ -177,10 +177,10 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 # User Interface
 
 ## QT5
-Not supported yet
+_Not supported yet_
 
 ## ImGui
-Not supported yet
+_Not supported yet_
 
 ## Windows API
 In windows platform, Windows API based user interface can be used for accessing various options of the emulator (whatever features not available via the menu-bar should be accessible via the CONFIG.ini)
