@@ -30,7 +30,7 @@ _**Supported features**_
 * Supports GB and GBC Bios
 * GB / GBC implements Pixel Fetcher/FIFO
 * GBC supports GB mode
-* GB / GBC passes Tom Harte's CPU test (**_Was not tested against cycles_**)
+* GB / GBC passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
 * GB / GBC passes all of the Blargg tests except for Wave RAM tests (**_Wave Ram tests are under debug_**)
 * GB / GBC passes many of the Moon Eye tests (**_Failing tests probably would pass with tweaks in the CONFIG.ini file_**)
 * GB / GBC passes the RTC (rtc3test) tests
