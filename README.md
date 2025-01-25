@@ -34,6 +34,7 @@ _**Supported features**_
 * GB / GBC passes all of the Blargg tests except for Wave RAM tests (**_Wave Ram tests are under debug_**)
 * GB / GBC passes most of the Moon Eye tests
 * GB / GBC passes the RTC (rtc3test) tests
+* GB / GBC passes the TurtleTests
 * GBC is able to play a slightly glitchy version of mezase.gbc (**_With few tweaks in the CONFIG.ini_**) 
 * GB has options for different palettes (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
 * NES supports NROM, MMC1, UxROM (002), CNROM, MMC3, AxROM and GxROM
