@@ -22,7 +22,7 @@ _**Supported features**_
 * Supports GBA Bios
 * GBA passes jsmolka/alysoha-tas's arm.gba, thumb.gba, memory.gba, flash and PPU tests
 * GBA passes FuzzARM.gba
-* GBA passes all the AGS test suite except for Prefetch and Wait Control Memory tests
+* GBA passes all the AGS test suite except for Prefetch and few Wait Cycles based memory tests
 * GBA passes most of the tonc's test suite
 * GBA mostly implements cycle accurate PPU access patterns documented by fleroviux
 * GBA is able to play most of the GBA video roms
@@ -32,13 +32,13 @@ _**Supported features**_
 * GBC supports GB mode
 * GB / GBC passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
 * GB / GBC passes all of the Blargg tests except few Wave-RAM tests
-* GB / GBC passes most of the Moon Eye tests
+* GB / GBC passes most of the Moon Eye tests (some of the PPU tests fail with few T cycles differences)
 * GB / GBC passes DMG Aging Catridge test
 * GB / GBC passes the RTC (rtc3test) test
 * GB / GBC passes all of the scribbltests tests except for few nops in statcount
 * GB / GBC passes the TurtleTests
 * GB / GBC passes mbc3-tester for both MBC3 and MBC30
-* GBC is able to play a slightly glitchy version of mezase.gbc :sweat_smile:
+* GBC is able to play a glitchy version of mezase.gbc :sweat_smile:
 * GB has options for different palettes (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
 * NES supports NROM, MMC1, UxROM (002), CNROM, MMC3, AxROM and GxROM
 * NES supports Zapper in Port 2 (using mouse clicks)
@@ -79,11 +79,20 @@ _**Features under developement**_
 * Support for scrolling requirement by Timendus's chip8-test-suite v4.2
 * Support Link Cable for Gameboy and Gameboy Color
 * Implement "_Sync to Audio Playback Rate_" to support audio for GBA and NES
-* Implement ROM prefetch and review the currently implemented sequential and non sequential wait cycles
 
 _**Known Major Issues**_
-* GBA not so often exibits few minor graphical glitches. Suspected to be related to some startup or initialization not happening as expected.
-* GB/GBC audio is still has lot of undesired interference. "_Sync to Audio Playback Rate_" is expected to help in resolving these issue.
+* GBA still doesn't support audio output (only GB/GBC based APU is implemented)
+* GBA not so often exibits few minor graphical glitches. Suspected to be related to some startup/initialization not happening as expected.
+* GB/GBC still fails blargg's wave-ram tests
+* GB/GBC audio is still has lot of undesired contexts. "_Sync to Audio Playback Rate_" is expected to help in resolving these issue.
+* GB/GBC still doesn't support LIJI32's full motion videos other than the glitchy version of mezase.gbc
+* NES still doesn't support audio output (APU is implemented other DMC)
+
+_**Other Known Issues**_
+* GBA still fails a lot of 'Wait Cycles' and 'Catridge Prefetch (this is not even implemented yet)' based tests present in AGS and mgba-test-suite
+* GB/GBC still fails many of the Wilbertpol's 'non Moon Eye tests'
+* GB/GBC still fails many roms in the AGE test suite
+
 
 # Game Play
 
