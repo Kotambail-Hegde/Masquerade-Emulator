@@ -26,7 +26,7 @@ _**Supported features**_
 * GBA passes most of the tonc's test suite
 * GBA mostly implements cycle accurate PPU access patterns documented by fleroviux
 * GBA is able to play most of the GBA video roms
-* GB / GBC supports NO MBC, MBC1, MBC2, MBC3 and MBC5
+* GB / GBC supports NO MBC, MBC1, MBC2, MBC3, MBC5 and MBC30
 * Supports GB and GBC Bios
 * GB / GBC implements Pixel Fetcher/FIFO
 * GBC supports GB mode
@@ -35,6 +35,7 @@ _**Supported features**_
 * GB / GBC passes most of the Moon Eye tests
 * GB / GBC passes the RTC (rtc3test) tests
 * GB / GBC passes the TurtleTests
+* GB / GBC passes mbc3-tester for both MBC3 and MBC30
 * GBC is able to play a slightly glitchy version of mezase.gbc (**_With few tweaks in the CONFIG.ini_**) 
 * GB has options for different palettes (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
 * NES supports NROM, MMC1, UxROM (002), CNROM, MMC3, AxROM and GxROM
