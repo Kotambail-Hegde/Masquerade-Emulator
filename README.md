@@ -1,11 +1,11 @@
 # Masquerade Emulator
 
 
-_This was just a hobby project that I started for fun, but was not able to put much effort into this because of my busy schedule._
+_This was just a hobby project that I started for fun, but was not able to put much effort because of my busy schedule._
 
-_But still, the emulator tries to be as accurate as possible but since I don't have the actual any of the actual hardware that I am trying to emulate for test purpose, I am completely relying on the others research available in discord, blogposts and emulator specific wiki pages for emulating the corner cases. I myself have done very minimal original research for these platforms._
+_But still, the emulator tries to be as accurate as possible but since I don't have the actual hardware for any of the systems that I am trying to emulate, I am completely relying on the other's research readily available on discord, blogposts and emulator specific wiki pages for emulating the corner cases. I myself have done very minimal 'original research' for these platforms._
 
-_I have avoided referencing/looking up other emulator's source code and only rely on online information as much as possible, but still had to rely on tweaking few cycle accurate emulators (mentioned in credict section below) already out there to either extract debug logs or to run my own custom roms_
+_I have avoided referencing/looking up other emulator's source code and only rely on online information as much as possible, but still had to rely on tweaking few cycle accurate emulators (mentioned in credict section below) to either extract debug logs or to run my own custom roms_
 
 **_So, what is Masquerade ?_**
 
