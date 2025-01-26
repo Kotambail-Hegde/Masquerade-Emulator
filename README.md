@@ -38,7 +38,7 @@ _**Supported features**_
 * GB / GBC passes all of the scribbltests tests except for few nops in statcount
 * GB / GBC passes the TurtleTests
 * GB / GBC passes mbc3-tester for both MBC3 and MBC30
-* GBC is able to play a slightly glitchy version of mezase.gbc (:|)
+* GBC is able to play a slightly glitchy version of mezase.gbc :sweat_smile:
 * GB has options for different palettes (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
 * NES supports NROM, MMC1, UxROM (002), CNROM, MMC3, AxROM and GxROM
 * NES supports Zapper in Port 2 (using mouse clicks)
