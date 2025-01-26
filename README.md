@@ -13,7 +13,7 @@ _**A multi-system emulator which emulates the following gaming consoles and simu
 * XO-CHIP
 * Game Of Life
 
-_**Below mentioned gaming consoles are in roadmap**_
+_**Below mentioned gaming consoles MAY PROBABLY be looked at in future**_
 * Super Nintendo Entertainment System (SNES)
 * Nintendo DS
 * Nintendo 3DS
