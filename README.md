@@ -212,10 +212,8 @@ In non-windows (and also supported in windows) based platforms, for now, only th
 * Blargg Roms used for testing
 * The Ultimate Gameboy Talk (https://github.com/drhelius/Gearboy)
 * Antonio's blog (https://github.com/AntonioND/giibiiadvance/blob/master/docs/TCAGBD.pdf)
-* Gearboy used for testing (https://github.com/drhelius/Gearboy)
-* gbmulator used for testing (https://github.com/mpostaire/gbmulator)
-* BGB and Sameboy for the palettes
-* BGB for providing the inspiration for the GUI based debugger
+* Gearboy used for testing as I don't have the actual GBC (https://github.com/drhelius/Gearboy)
+* gbmulator used for testing as I don't have the actual GBC (https://github.com/mpostaire/gbmulator)
 * Emulator Development Discord Channel (https://discord.com/invite/emudev)
 * gbatek (http://problemkaputt.de/gbatek-gba-reference.htm)
 * TONC (https://gbadev.net/tonc/)
@@ -223,7 +221,7 @@ In non-windows (and also supported in windows) based platforms, for now, only th
 * GBA Docs (https://gbadev.net/gbadoc/)
 * Dillonb blog for catridges (https://dillonbeliveau.com/2020/06/05/GBA-FLASH.html)
 * Dillonb used for testing and also for providing the inspiration for the CLI based logger/debugger (https://github.com/Dillonb/gba/tree/master)
-* NBA used for testing (https://github.com/nba-emu/NanoBoyAdvance)
+* NBA used for testing as I don't have the actual GBA (https://github.com/nba-emu/NanoBoyAdvance)
 * SkyEmu used for testing (https://github.com/skylersaleh/SkyEmu)
 * jsmolka and alyosha-tas test roms
 * AGS test roms and their source files from DenSinH (https://github.com/DenSinH/AGSTests/tree/main)
