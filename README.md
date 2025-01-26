@@ -93,19 +93,19 @@ _**Known Major Issues**_
 * GBA still doesn't support audio output (only GB/GBC based APU is implemented)
 * GBA not so often exibits few minor graphical glitches. Suspected to be related to some startup/initialization not happening as expected.
 * GB/GBC still fails blargg's wave-ram tests
-* GB/GBC audio is still has lot of undesired contexts. "_Sync to Audio Playback Rate_" is expected to help in resolving these issue.
+* GB/GBC audio is still has lot of undesired contexts. "_Sync to Audio Playback Rate_" is expected to help in resolving these issue
 * GB/GBC still doesn't support LIJI32's full motion videos other than the glitchy version of mezase.gbc
-* NES still doesn't support audio output (APU is implemented other DMC)
+* NES still doesn't support audio output (APU is implemented except for DMC)
 
 _**Other Known Issues**_
-* GBA still fails a lot of 'Wait Cycles' and 'Catridge Prefetch (this is not even implemented yet)' based tests present in AGS and mgba-test-suite
+* GBA still fails a lot of 'Wait Cycles' and 'Catridge Prefetch (this is not even implemented yet)' based tests present in AGS and mgba test-suite
 * GB/GBC still fails many of the Wilbertpol's 'non Moon Eye tests'
 * GB/GBC still fails many roms in the AGE test suite
 
 
 # Game Play
 
-**Masquerade also provides some debugging facilites for homebrew developement.**
+Masquerade also provides some debugging facilites for homebrew developement.
 
 ## Game Play with Debugger
 
