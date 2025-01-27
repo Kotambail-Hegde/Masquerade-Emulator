@@ -146,36 +146,32 @@ _Gameboy Color_ _(Donkey Kong Country and Pokemon Crystal)_
 ![DonkeyKongCountry](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3d6bfb58-ae88-4b66-b299-ef20faf67112) ![Crystal](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3b318907-dc70-4488-8552-729b98504603)
 
 
-_Gameboy_ _(Prehistorik Man in 'BGB' palette and Pokemon Green in 'Gearboy' palette)_
+_Gameboy_ _(Prehistorik Man in 'BGB' palette, Pokemon Green in 'Gearboy' palette and Altered Space in 'Sameboy' palette)_
 
-![PrehistorikMan](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/8819c689-b3ad-444e-bece-d43a993e05b7) ![Green](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/519c7f6e-ebb1-4e60-b677-d860ffb0f8a1)
-
-
-_Nintendo Entertainment System_ _(Super Mario Bros 3)_
-
-![smb3-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/e57d0412-043f-4fe5-89b6-2b6b157289cf)
-
-_Nintendo Entertainment System_ _(Super Mario Bros)_
-
-![SMB](https://github.com/user-attachments/assets/40cb5e26-0033-4243-863b-5adc9bbe72bb)
-
-_Nintendo Entertainment System_ _(Zelda II: The Adventure of Link)_
-
-![zelda2](https://github.com/user-attachments/assets/0429cac5-3d0d-4205-8ed2-878854601d89)
-
-_Nintendo Entertainment System_ _(Kong Classic)_
-
-![kongClassic](https://github.com/user-attachments/assets/c8784239-7515-45b3-aa55-3a6863669e74)
+![PrehistorikMan](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/8819c689-b3ad-444e-bece-d43a993e05b7) ![Green](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/519c7f6e-ebb1-4e60-b677-d860ffb0f8a1) ![alteredSpace](https://github.com/user-attachments/assets/b6c38587-8d40-4f41-ab1a-e921194ebf53)
 
 
-_Ms Pacman_
 
-![MsPacman](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/b55f29d8-fcfb-4d5b-b30c-fb9b8afe0e35) 
+
+_Nintendo Entertainment System_ _(Super Mario Bros 3 and Zelda II: The Adventure of Link)_
+
+![smb3-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/ddd2fc8c-bd61-4ed2-b8f3-0bacdcd08987) ![zelda2](https://github.com/user-attachments/assets/fd9da1bc-8ecb-4922-95fb-512b984cfabd)
+
+
+_Nintendo Entertainment System_ _(Super Mario Bros and Kong Classic)_
+
+ ![SMB](https://github.com/user-attachments/assets/0d7448a5-e353-46e1-8635-6d37cce576d8) ![kongClassic](https://github.com/user-attachments/assets/42b79a0a-b867-4734-88de-dd9efe273193)
+
+
 
 
 _Pacman_
 
 ![Pacman](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/81b421c4-bb53-4985-ae15-90d8dd572b5a) 
+
+_Ms Pacman_
+
+![MsPacman](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/b55f29d8-fcfb-4d5b-b30c-fb9b8afe0e35) 
 
 
 _Space Invader_
