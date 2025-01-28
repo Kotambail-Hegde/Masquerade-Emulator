@@ -91,7 +91,6 @@ _**Features under developement**_
 
 _**Known Major Issues**_
 * GBA still doesn't support audio output (only GB/GBC based APU is implemented)
-* GBA not so often exibits few minor graphical glitches. Suspected to be related to some startup/initialization not happening as expected.
 * GB/GBC still fails blargg's waveram read/write test for DMG
 * GB/GBC audio is still has some undesired contents. "_Sync to Audio Playback Rate_" is expected to help in resolving these issue
 * GB/GBC still doesn't support LIJI32's full motion videos other than the glitchy version of mezase.gbc
@@ -99,6 +98,7 @@ _**Known Major Issues**_
 
 _**Other Known Issues**_
 * GBA still fails a lot of 'Wait Cycles' and 'Catridge Prefetch (this is not even implemented yet)' based tests present in AGS and mgba test-suite
+* GBA not so often / rarely exibits few minor graphical glitches. Suspected to be related to some startup/initialization not happening as expected.
 * GB/GBC still fails many of the Wilbertpol's 'non Moon Eye tests'
 * GB/GBC still fails many roms in the AGE test suite
 
