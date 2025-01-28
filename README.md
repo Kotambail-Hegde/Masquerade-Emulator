@@ -40,7 +40,7 @@ _**Supported features**_
 * GB / GBC implements Pixel Fetcher/FIFO
 * GBC supports GB mode
 * GB / GBC passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
-* GB / GBC passes all of the Blargg tests except DMG waveram read/write test
+* GB / GBC passes all of the Blargg tests except for waveram read/write test in DMG mode
 * GB / GBC passes most of the Moon Eye tests (some of the PPU tests fail with few T cycles differences)
 * GB / GBC passes DMG Aging Catridge test
 * GB / GBC passes the RTC (rtc3test) test
