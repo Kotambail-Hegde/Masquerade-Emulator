@@ -40,7 +40,7 @@ _**Supported features**_
 * GB / GBC implements Pixel Fetcher/FIFO
 * GBC supports GB mode
 * GB / GBC passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
-* GB / GBC passes all of the Blargg tests except for waveram read/write test in DMG mode
+* GB / GBC passes all of the Blargg tests except for oam bug
 * GB / GBC passes most of the Moon Eye tests (some of the PPU tests fail with few T cycles differences)
 * GB / GBC passes DMG Aging Catridge test
 * GB / GBC passes the RTC (rtc3test) test
@@ -91,7 +91,6 @@ _**Features under developement**_
 
 _**Known Major Issues**_
 * GBA still doesn't support audio output (only GB/GBC based APU is implemented)
-* GB/GBC still fails blargg's waveram read/write test for DMG
 * GB/GBC audio is still has some undesired contents. "_Sync to Audio Playback Rate_" is expected to help in resolving these issue
 * GB/GBC still doesn't support LIJI32's full motion videos other than the glitchy version of mezase.gbc
 * NES still doesn't support audio output (APU is implemented except for DMC)
