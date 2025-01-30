@@ -120,7 +120,7 @@ Masquerade also provides some debugging facilites for homebrew developement.
 
   - _Not supported yet_
 
-* **Bare Metal (OLC) based Debugger**
+* **OLC based Debugger**
 
   - _Currently supported only when emulator runs in Gameboy and Gameboy Color modes_
 
@@ -202,8 +202,8 @@ _Not supported yet_
 ## Windows API
 In windows platform, Windows API based user interface can be used for accessing various options of the emulator (whatever features not available via the menu-bar should be accessible via the CONFIG.ini)
 
-## Bare Metal (OLC)
-In non-windows (and also supported in windows) based platforms, for now, only the bare metal user interface is supported (whatever features not available via the internal menu-window should be accessible via the CONFIG.ini)
+## OLC
+In non-windows and windows platforms, OLC based user interface is supported (whatever features not available via the internal menu-window should be accessible via the CONFIG.ini)
 
 # Credits
 * Forked version of One Lone Coder's Pixel Game Engine is used for Graphics (https://github.com/Kotambail-Hegde/olcPixelGameEngine)
