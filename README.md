@@ -38,6 +38,10 @@ _**Supported features**_
 * GB / GBC supports NO MBC, MBC1, MBC2, MBC3, MBC5 and MBC30
 * Supports GB and GBC Bios
 * GB / GBC implements Pixel Fetcher/FIFO
+* GB / GBC provides an upgraded version of PPU (v2), which tries to be 'PPU Dot Cycle Accurate'<br />
+  * This particular version of PPU can be enabled via **Options->PPU Version->GB/GBC**<br />
+  * Note that PPU v1 is set as default as PPU v2 is still under developement, so you might observe some graphical glitches.
+  * PPU v2 will be made default once it is stable
 * GBC supports GB mode
 * GB / GBC passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
 * GB / GBC passes all of the Blargg tests except for oam bug
@@ -47,7 +51,7 @@ _**Supported features**_
 * GB / GBC passes all of the scribbltests tests except for few nops in statcount
 * GB / GBC passes the TurtleTests
 * GB / GBC passes mbc3-tester for both MBC3 and MBC30
-* GBC is able to play a glitchy version of mezase.gbc :sweat_smile:
+* GBC is able to play a glitchy version of mezase.gbc (most of the glitch can be avoided if using PPU v2) :sweat_smile:
 * GB has options for different palettes (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
 * NES supports NROM, MMC1, UxROM (002), CNROM, MMC3, AxROM and GxROM
 * NES supports Zapper in Port 2 (using mouse clicks)
