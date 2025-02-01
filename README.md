@@ -88,9 +88,9 @@ _**Supported features**_
 * Internal GUI for platforms other than Windows
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
-_**Features under developement**_
+_**Features under developement (and issues under debug)**_
 * Support Link Cable for Gameboy and Gameboy Color
-* Stabilize Gameboy and Gameboy Color's ${\textsf{\color{red}PPU v2}}$, expecially the graphical issues seen while handling mid-scaline SCX and SCY changes
+* Stabilize Gameboy and Gameboy Color's ${\textsf{\color{red}PPU v2}}$, expecially the graphical issues seen while handling mid-scanline SCX and SCY changes
 * Support for scrolling test needed by Timendus's chip8-test-suite v4.2
 * Implement "_Sync to Audio Playback Rate_" to support audio for GB/GBC and NES
 
