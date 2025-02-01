@@ -157,18 +157,13 @@ _Gameboy_ _(Prehistorik Man in 'BGB' palette, Pokemon Green in 'Gearboy' palette
 
 ![PrehistorikMan](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/8819c689-b3ad-444e-bece-d43a993e05b7) ![Green](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/519c7f6e-ebb1-4e60-b677-d860ffb0f8a1) ![alteredSpace](https://github.com/user-attachments/assets/b6c38587-8d40-4f41-ab1a-e921194ebf53)
 
-
 _Nintendo Entertainment System_ _(Super Mario Bros 3 and Zelda II: The Adventure of Link)_
 
 ![smb3-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/ddd2fc8c-bd61-4ed2-b8f3-0bacdcd08987) ![zelda2](https://github.com/user-attachments/assets/fd9da1bc-8ecb-4922-95fb-512b984cfabd)
 
-
 _Nintendo Entertainment System_ _(Super Mario Bros and Kong Classic)_
 
  ![SMB](https://github.com/user-attachments/assets/0d7448a5-e353-46e1-8635-6d37cce576d8) ![kongClassic](https://github.com/user-attachments/assets/42b79a0a-b867-4734-88de-dd9efe273193)
-
-
-
 
 _Pacman_
 
@@ -178,16 +173,13 @@ _Ms Pacman_
 
 ![MsPacman](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/b55f29d8-fcfb-4d5b-b30c-fb9b8afe0e35) 
 
-
 _Space Invader_
 
 ![SpaceInvaders](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/afac2f45-75e0-4a24-b087-1499360cf703)
 
-
 _Chip8_ _(Pong)_
 
 ![Chip8](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/f162afa0-733e-4d4f-8fdf-7a907cb878e2)
-
 
 _Game Of Life_ _(Toroidal Mode)_
 
@@ -212,18 +204,18 @@ In windows platform, Windows API based user interface can be used for accessing 
 In non-windows and windows platforms, OLC based user interface is supported (whatever features not available via the internal menu-window should be accessible via the CONFIG.ini)
 
 # Credits
-* Forked version of One Lone Coder's Pixel Game Engine is used for Graphics (https://github.com/Kotambail-Hegde/olcPixelGameEngine)
-* One Lone Coder's Sound Wave Engine is used for Audio (https://github.com/OneLoneCoder/olcSoundWaveEngine)
+* Forked version of One Lone Coder's Pixel Game Engine is used for graphics (https://github.com/Kotambail-Hegde/olcPixelGameEngine)
+* One Lone Coder's Sound Wave Engine is used for audio (https://github.com/OneLoneCoder/olcSoundWaveEngine)
 * Boost libraries to parse .ini files
-* GB Pacdocs (https://gbdev.io/pandocs/)
+* GB Pandocs (https://gbdev.io/pandocs/)
 * GB Dev Wiki (https://gbdev.gg8.se/wiki/articles/Memory_Bank_Controllers)
 * Codeslinger's blog (http://www.codeslinger.co.uk/pages/projects/gameboy.html)
 * Night Shade's blog for audio implementation (https://nightshade256.github.io/2021/03/27/gb-sound-emulation.html)
 * Blargg Roms used for testing
 * The Ultimate Gameboy Talk (https://github.com/drhelius/Gearboy)
 * Antonio's blog (https://github.com/AntonioND/giibiiadvance/blob/master/docs/TCAGBD.pdf)
-* Gearboy used for testing as I don't have the actual GBC (https://github.com/drhelius/Gearboy)
-* gbmulator used for testing as I don't have the actual GBC (https://github.com/mpostaire/gbmulator)
+* Gearboy used for testing as I don't have the actual Gameboy or Gameboy Color (https://github.com/drhelius/Gearboy)
+* gbmulator used for testing as I don't have the actual Gameboy or Gameboy Color (https://github.com/mpostaire/gbmulator)
 * Emulator Development Discord Channel (https://discord.com/invite/emudev)
 * gbatek (http://problemkaputt.de/gbatek-gba-reference.htm)
 * TONC (https://gbadev.net/tonc/)
@@ -231,8 +223,8 @@ In non-windows and windows platforms, OLC based user interface is supported (wha
 * GBA Docs (https://gbadev.net/gbadoc/)
 * Dillonb blog for catridges (https://dillonbeliveau.com/2020/06/05/GBA-FLASH.html)
 * Dillonb used for testing and also for providing the inspiration for the CLI based logger/debugger (https://github.com/Dillonb/gba/tree/master)
-* NBA used for testing as I don't have the actual GBA (https://github.com/nba-emu/NanoBoyAdvance)
-* SkyEmu used for testing (https://github.com/skylersaleh/SkyEmu)
+* NBA used for testing as I don't have the actual Gameboy Advance (https://github.com/nba-emu/NanoBoyAdvance)
+* SkyEmu used for testing as I don't have the actual Gameboy Advance (https://github.com/skylersaleh/SkyEmu)
 * jsmolka and alyosha-tas test roms
 * AGS test roms and their source files from DenSinH (https://github.com/DenSinH/AGSTests/tree/main)
 * NES Dev Wiki (https://www.nesdev.org/wiki/Nesdev_Wiki)
