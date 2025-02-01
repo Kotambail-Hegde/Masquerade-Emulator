@@ -90,7 +90,8 @@ _**Supported features**_
 
 _**Features under developement**_
 * Support Link Cable for Gameboy and Gameboy Color
-* Support for scrolling requirement by Timendus's chip8-test-suite v4.2
+* Stabilize Gameboy and Gameboy Color's ${\textsf{\color{red}PPU v2}}$, expecially the graphical issues seen while handling mid-scaline SCX and SCY changes
+* Support for scrolling test needed by Timendus's chip8-test-suite v4.2
 * Implement "_Sync to Audio Playback Rate_" to support audio for GB/GBC and NES
 
 _**Known Major Issues**_
@@ -101,7 +102,7 @@ _**Known Major Issues**_
 
 _**Other Known Issues**_
 * GBA still fails a lot of 'Wait Cycles' and 'Catridge Prefetch (this is not even implemented yet)' based tests present in AGS and mgba test-suite
-* GBA not so often / rarely exibits few minor graphical glitches. Suspected to be related to some startup/initialization not happening as expected.
+* GBA not so often / rarely exibits few minor graphical glitches. Suspected to be related to some startup/initialization not happening as expected
 * GB/GBC still fails many of the Wilbertpol's 'non Moon Eye tests'
 * GB/GBC still fails many roms in the AGE test suite
 
