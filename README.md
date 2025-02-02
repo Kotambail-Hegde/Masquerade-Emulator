@@ -149,10 +149,6 @@ _Gameboy Color_ _(Donkey Kong Country and Pokemon Crystal)_
 
 ![DonkeyKongCountry](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3d6bfb58-ae88-4b66-b299-ef20faf67112) ![Crystal](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3b318907-dc70-4488-8552-729b98504603)
 
-_Gameboy Color_ _(Mezaze using the experimental_ ${\textsf{\color{red}PPU v2}}$ _mode)_
-
-![mezaze_ppuv2](https://github.com/user-attachments/assets/1898d078-2de5-4a99-b664-4ca1c72c806d)
-
 _Gameboy_ _(Prehistorik Man in 'BGB' palette, Pokemon Green in 'Gearboy' palette and Altered Space in 'Sameboy' palette)_
 
 ![PrehistorikMan](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/8819c689-b3ad-444e-bece-d43a993e05b7) ![Green](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/519c7f6e-ebb1-4e60-b677-d860ffb0f8a1) ![alteredSpace](https://github.com/user-attachments/assets/b6c38587-8d40-4f41-ab1a-e921194ebf53)
