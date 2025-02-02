@@ -38,10 +38,6 @@ _**Supported features**_
 * GB / GBC supports NO MBC, MBC1, MBC2, MBC3, MBC5 and MBC30
 * Supports GB and GBC Bios
 * GB / GBC implements Pixel Fetcher/FIFO
-* GB / GBC provides an upgraded version of PPU (v2), which tries to be 'PPU Dot Cycle Accurate'<br />
-  * This particular version of PPU can be enabled via **Options->PPU Version->GB/GBC**<br />
-  * Note that ${\textsf{\color{green}PPU v1}}$ will remain as default mode as ${\textsf{\color{red}PPU v2}}$ is still under developement.
-  * ${\textsf{\color{red}PPU v2}}$ will be made default once it is stable and free of all undesired graphical artifacts
 * GBC supports GB mode
 * GB / GBC passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
 * GB / GBC passes all of the Blargg tests except for oam bug
@@ -51,7 +47,7 @@ _**Supported features**_
 * GB / GBC passes all of the scribbltests tests except for few nops in statcount
 * GB / GBC passes the TurtleTests
 * GB / GBC passes mbc3-tester for both MBC3 and MBC30
-* GBC is able to play a glitchy version of mezase.gbc (most of the glitch can be avoided if using PPU v2) :sweat_smile:
+* GBC is able to play a glitchy version of mezase.gbc (These glitch can be avoided via hacks within CONFIG.ini files :sweat_smile:)
 * GB has options for different palettes (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
 * NES supports NROM, MMC1, UxROM (002), CNROM, MMC3, AxROM and GxROM
 * NES supports Zapper in Port 2 (using mouse clicks)
@@ -90,7 +86,6 @@ _**Supported features**_
 
 _**Features under developement (and issues under debug)**_
 * Support Link Cable for Gameboy and Gameboy Color
-* Stabilize Gameboy and Gameboy Color's ${\textsf{\color{red}PPU v2}}$, expecially the graphical issues seen while handling mid-scanline SCX and SCY changes
 * Support for scrolling test needed by Timendus's chip8-test-suite v4.2
 * Implement "_Sync to Audio Playback Rate_" to support audio for GB/GBC and NES
 
@@ -149,7 +144,7 @@ _Gameboy Color_ _(Donkey Kong Country and Pokemon Crystal)_
 
 ![DonkeyKongCountry](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3d6bfb58-ae88-4b66-b299-ef20faf67112) ![Crystal](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3b318907-dc70-4488-8552-729b98504603)
 
-_Gameboy Color_ _(Mezaze using the experimental_ ${\textsf{\color{red}PPU v2}}$ _mode)_
+_Gameboy Color_ _(Mezaze)_
 
 ![mezaze_ppuv2_1](https://github.com/user-attachments/assets/0905b689-b126-4027-817d-afb4179a7886)
 
