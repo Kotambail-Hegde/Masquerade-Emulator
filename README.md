@@ -91,7 +91,7 @@ _**Features under developement (and issues under debug)**_
 
 _**Known Major Issues**_
 * GBA still doesn't support audio output (only GB/GBC based APU is implemented)
-* GB/GBC audio is still has some undesired contents. "_Sync to Audio Playback Rate_" is expected to help in resolving these issue
+* GB/GBC audio is still has glitches. "_Sync to Audio Playback Rate_" is expected to help in resolving these issue
 * GB/GBC still doesn't support LIJI32's full motion videos other than the glitchy version of mezase.gbc
 * NES still doesn't support audio output (APU is implemented except for DMC)
 
