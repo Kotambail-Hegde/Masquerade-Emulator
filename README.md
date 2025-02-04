@@ -47,7 +47,7 @@ _**Supported features**_
 * GB / GBC passes all of the scribbltests tests except for few nops in statcount
 * GB / GBC passes the TurtleTests
 * GB / GBC passes mbc3-tester for both MBC3 and MBC30
-* GBC is able to play a glitchy version of mezase.gbc (These glitches can be avoided via hacks within CONFIG.ini files :sweat_smile:)
+* GBC supports LIJI32's GBVideoPlayer2 (Note that non-intentional screen offset is still seen in few roms)
 * GB has options for different palettes (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
 * NES supports NROM, MMC1, UxROM (002), CNROM, MMC3, AxROM and GxROM
 * NES supports Zapper in Port 2 (using mouse clicks)
@@ -92,7 +92,6 @@ _**Features under developement (and issues under debug)**_
 _**Known Major Issues**_
 * GBA still doesn't support audio output (only GB/GBC based APU is implemented)
 * GB/GBC audio is still has glitches. "_Sync to Audio Playback Rate_" is expected to help in resolving these issue
-* GB/GBC still doesn't support LIJI32's full motion videos other than the glitchy version of mezase.gbc
 * NES still doesn't support audio output (APU is implemented except for DMC)
 
 _**Other Known Issues**_
@@ -144,7 +143,7 @@ _Gameboy Color_ _(Donkey Kong Country and Pokemon Crystal)_
 
 ![DonkeyKongCountry](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3d6bfb58-ae88-4b66-b299-ef20faf67112) ![Crystal](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3b318907-dc70-4488-8552-729b98504603)
 
-_Gameboy Color_ _(Mezaze)_
+_Gameboy Color_ _(Mezase Unpadded)_
 
 ![mezaze_ppuv2_1](https://github.com/user-attachments/assets/0905b689-b126-4027-817d-afb4179a7886)
 
