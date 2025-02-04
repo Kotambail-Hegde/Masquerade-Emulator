@@ -176,11 +176,9 @@ _Not supported yet_
 ## ImGui
 _Not supported yet_
 
-## Windows API
-In windows platform, Windows API based user interface can be used for accessing various options of the emulator (whatever features not available via the menu-bar should be accessible via the CONFIG.ini)
-
 ## OLC
-In non-windows and windows platforms, OLC based user interface is supported (whatever features not available via the internal menu-window should be accessible via the CONFIG.ini)
+In windows platform, the standard winAPI based user interface can be used for accessing various options of the emulator, where as in non-windows (and windows) platforms, an internal OLC specific user interface is provided.</br>
+Can toggle b/w "winAPI" or "OLC specific" user interfaces via pressing 'esc' or 'R' keys respectively.
 
 # Credits
 * Forked version of One Lone Coder's Pixel Game Engine is used for graphics (https://github.com/Kotambail-Hegde/olcPixelGameEngine)
