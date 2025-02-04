@@ -103,31 +103,16 @@ _**Other Known Issues**_
 
 # Game Play
 
-Masquerade also provides some debugging facilites for homebrew developement.
-
-## Game Play with Debugger
-
-* **QT5 based Debugger**
+## Debugger
 
   - _Not supported yet_
 
-* **ImGui based Debugger**
-
-  - _Not supported yet_
-
-* **Windows API based Debugger**
-
-  - _Not supported yet_
-
-* **OLC based Debugger**
+## PPU Viewer
 
   - _Currently supported only when emulator runs in Gameboy and Gameboy Color modes_
 
-![GBC-Debugger](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/50e26ee3-abd8-432a-bbaa-0ca8891fc892)
+![GBC-PPUViewer2](https://github.com/user-attachments/assets/0e932666-f4d4-4633-ad0a-0c7b0f9751ad)
 
-* **CLI based Debugger**
-
-  - _Currently supported only when emulator runs in Gameboy Advance and Nintendo Entertainment System modes_
 
 ## Normal Game Play
 
