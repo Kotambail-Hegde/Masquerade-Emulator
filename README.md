@@ -65,14 +65,14 @@ _**Supported features**_
   * NES passes the blargg_apu_2005.07.30 tests
   * NES passes the Blargg's sprite_overflow_test suite
   * NES passes the Blargg's sprite_hit_tests_2005.10.05 test suite
-  * NES passes all APU tests except for DMC (**_DMC is not implemented yet_**)
+  * NES passes all APU tests **except for DMC tests**
   * NES passes Blargg's vbl_nmi_timing and ppu_vbl_nmi tests
   * NES passes Blargg's cpu_interrupt_v2 tests
   * NES passes the OAM stress tests
   * NES passes both Blargg's / Bisqwit's ppu_open_bus tests
   * NES passes Bisqwit's cpu_exec_space tests
   * NES passes the Blargg's mmc3_irq_tests suite
-  * NES passes all of Blargg's mmc3_test/mmc3_test_2 expect for 4-scanline_timing.nes (**_This is under debug_**)
+  * NES passes all of Blargg's mmc3_test/mmc3_test_2 **expect for 4-scanline_timing.nes**
 * Pacman and MsPacman
   * Supports both Midway and Namco variant
   * Supports MsPacman
