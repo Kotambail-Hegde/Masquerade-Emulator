@@ -107,18 +107,18 @@ _**Other Known Issues**_
 
 ## Debugger
 
-  - _Not supported yet_
+  - Not supported yet
 
 ## PPU Viewer
 
 ### QT5
-  - _Not supported yet_
+  - Not supported yet
 
 ### ImGui
-  - _Not supported yet_
+  - Not supported yet
 
 ### OLC
-  - _Currently supported only when emulator runs in Gameboy and Gameboy Color modes_
+  - Currently supported only when emulator runs in Gameboy and Gameboy Color modes
 
 ![GBC-PPUViewer2](https://github.com/user-attachments/assets/0e932666-f4d4-4633-ad0a-0c7b0f9751ad)
 
@@ -180,10 +180,10 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 # User Interface
 
 ## QT5
-_Not supported yet_
+Not supported yet
 
 ## ImGui
-_Not supported yet_
+Not supported yet
 
 ## OLC
 In windows platform, the standard "winAPI" based user interface can be used for accessing various options of the emulator.</br>
