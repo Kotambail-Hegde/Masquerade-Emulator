@@ -111,6 +111,13 @@ _**Other Known Issues**_
 
 ## PPU Viewer
 
+### QT5
+  - _Not supported yet_
+
+### ImGui
+  - _Not supported yet_
+
+### OLC
   - _Currently supported only when emulator runs in Gameboy and Gameboy Color modes_
 
 ![GBC-PPUViewer2](https://github.com/user-attachments/assets/0e932666-f4d4-4633-ad0a-0c7b0f9751ad)
@@ -179,8 +186,9 @@ _Not supported yet_
 _Not supported yet_
 
 ## OLC
-In windows platform, the standard winAPI based user interface can be used for accessing various options of the emulator, where as in non-windows (and windows) platforms, an internal OLC specific user interface is provided.</br>
-Can toggle b/w "winAPI" or "OLC specific" user interfaces via pressing 'esc' or 'R' keys respectively.
+In windows platform, the standard "winAPI" based user interface can be used for accessing various options of the emulator.</br>
+In non-windows (and windows) platforms, an "inbuilt OLC specific" user interface is also provided.</br>
+In windows platform, user can toggle b/w "winAPI" or "inbuilt OLC specific" user interfaces via pressing 'esc' or 'R' keys respectively.
 
 # Credits
 * Forked version of One Lone Coder's Pixel Game Engine is used for graphics (https://github.com/Kotambail-Hegde/olcPixelGameEngine)
