@@ -47,7 +47,7 @@ _**Supported features**_
 * GB / GBC passes all of the scribbltests tests except for few nops in statcount
 * GB / GBC passes the TurtleTests
 * GB / GBC passes mbc3-tester for both MBC3 and MBC30
-* GB / GBC is able to play few notable demo-scenes like oh.gb, 20y.gb, pocket.gb and demotronic.gbc flawlessly
+* GB / GBC is able to play few notable demo-scenes like oh.gb, 20y.gb, pocket.gb and demotronic.gbc without any (noticable) glitches
 * GBC supports LIJI32's GBVideoPlayer2 (Note that non-intentional screen offset is still seen in few roms)
 * GB has options for different palettes (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
 * NES supports NROM, MMC1, UxROM (002), CNROM, MMC3, AxROM and GxROM
