@@ -186,9 +186,8 @@ Not supported yet
 Not supported yet
 
 ## OLC
-In windows platform, the standard "winAPI" based user interface can be used for accessing various options of the emulator.</br>
-In non-windows (and windows) platforms, an "inbuilt OLC specific" user interface is also provided.</br>
-In windows platform, user can toggle b/w "winAPI" or "inbuilt OLC specific" user interfaces via pressing 'esc' or 'R' keys respectively.
+* In **windows** platform, the standard "winAPI" based user interface can be used for accessing various options of the emulator.</br>
+* In **non-windows** (and windows) platforms, an "inbuilt OLC specific" user interface is also provided. Windows user can hence use both interfaces and can toggle b/w "winAPI" or "inbuilt OLC specific" interfaces by pressing 'esc' or 'R' keys respectively.
 
 # Credits
 * Forked version of One Lone Coder's Pixel Game Engine is used for graphics (https://github.com/Kotambail-Hegde/olcPixelGameEngine)
