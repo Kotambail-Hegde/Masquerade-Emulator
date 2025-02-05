@@ -53,7 +53,7 @@ _**Supported features**_
   * GB / GBC is able to play few notable demo-scenes like oh.gb, 20y.gb, pocket.gb and demotronic.gbc without any (noticable) glitches
   * GBC supports LIJI32's GBVideoPlayer2 (Note that non-intentional screen offset is still seen in few roms)
   * GB has options for different palettes (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
-  * GB / GBC supports [PPU Viewer](https://github.com/Kotambail-Hegde/Masquerade-Emulator/edit/main/README.md#ppu-viewer)
+  * GB / GBC supports [PPU Viewer](https://github.com/Kotambail-Hegde/Masquerade-Emulator/tree/main?tab=readme-ov-file#ppu-viewer)
 * NES
   * NES supports NROM, MMC1, UxROM (002), CNROM, MMC3, AxROM and GxROM
   * NES supports Zapper in Port 2 (using mouse clicks)
