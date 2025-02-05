@@ -74,7 +74,7 @@ _**Supported features**_
   * NES passes the Blargg's mmc3_irq_tests suite
   * NES passes all of Blargg's mmc3_test/mmc3_test_2 **expect for 4-scanline_timing.nes**
 * Pacman and MsPacman
-  * Supports both Midway and Namco variant
+  * Supports both Midway and Namco variants
   * Supports MsPacman
 * Space Invader
   * Supports color overlays
