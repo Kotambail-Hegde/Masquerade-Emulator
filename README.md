@@ -123,7 +123,7 @@ _**Other Known Issues**_
 ![GBC-PPUViewer2](https://github.com/user-attachments/assets/0e932666-f4d4-4633-ad0a-0c7b0f9751ad)
 
 
-## Normal Game Play
+## Normal Game Play (Below snaps were taken on an OLC build)
 
 _Gameboy Advance_ _(Pokemon Ruby, Emerald and Sapphire)_
 
