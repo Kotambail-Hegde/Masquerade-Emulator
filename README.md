@@ -40,11 +40,11 @@ _**Supported features**_
   * GB / GBC implements Pixel Fetcher/FIFO
   * GBC supports GB mode
   * GB / GBC passes the complete Tom Harte's CPU test (both official and un-official opcodes)
-  * GB / GBC passes the Blargg test suite except for oam bug
+  * GB / GBC passes the Blargg test suite **except for oam bug**
   * GB / GBC passes most of the Moon Eye tests
   * GB / GBC passes DMG Aging Catridge test
   * GB / GBC passes the RTC (rtc3test) test
-  * GB / GBC passes the scribbltests suite except for few nops in statcount
+  * GB / GBC passes the scribbltests suite **except for few nops in statcount**
   * GB / GBC passes the TurtleTests
   * GBC passes MagenTests
   * GB / GBC passes mbc3-tester
