@@ -28,62 +28,68 @@ _**Below mentioned gaming consoles MAY PROBABLY be looked at in future**_
 * Nintendo 3DS
 
 _**Supported features**_
-* Supports GBA Bios
-* GBA passes jsmolka/alysoha-tas's arm.gba, thumb.gba, memory.gba, flash and PPU tests
-* GBA passes FuzzARM.gba
-* GBA passes all the AGS test suite except for Prefetch and few Wait Cycles based memory tests
-* GBA passes most of the tonc's test suite
-* GBA mostly implements cycle accurate PPU access patterns documented by fleroviux
-* GBA is able to play most of the GBA video roms
-* GB / GBC supports NO MBC, MBC1, MBC2, MBC3, MBC5 and MBC30
-* Supports GB and GBC Bios
-* GB / GBC implements Pixel Fetcher/FIFO
-* GBC supports GB mode
-* GB / GBC passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
-* GB / GBC passes all of the Blargg tests except for oam bug
-* GB / GBC passes most of the Moon Eye tests (some of the PPU tests fail with few T cycles differences)
-* GB / GBC passes DMG Aging Catridge test
-* GB / GBC passes the RTC (rtc3test) test
-* GB / GBC passes all of the scribbltests tests except for few nops in statcount
-* GB / GBC passes the TurtleTests
-* GB / GBC passes mbc3-tester for both MBC3 and MBC30
-* GBC passes MagenTests
-* GB / GBC is able to play few notable demo-scenes like oh.gb, 20y.gb, pocket.gb and demotronic.gbc without any (noticable) glitches
-* GBC supports LIJI32's GBVideoPlayer2 (Note that non-intentional screen offset is still seen in few roms)
-* GB has options for different palettes (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
-* NES supports NROM, MMC1, UxROM (002), CNROM, MMC3, AxROM and GxROM
-* NES supports Zapper in Port 2 (using mouse clicks)
-* NES supports battery backed PRG RAM
-* NES passes Nestest (both official and un-official opcodes)
-* NES passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
-* NES passes all of Blargg's CPU tests (both official and un-official opcodes)
-* NES passes all of Blargg's CPU timing tests (both official and un-official opcodes)
-* NES passes all of Blargg's CPU dummy read/write tests (both official and un-official opcodes)
-* NES passes all CPU tests mentioned in Nes Dev Wiki (both official and un-official opcodes)
-* NES passes all the Blargg's blargg_ppu_tests_2005.09.15b tests
-* NES passes all the Blargg's blargg_apu_2005.07.30
-* NES passes all the Blargg's sprite_overflow_tests
-* NES passes all the Blargg's sprite_hit_tests_2005.10.05 tests
-* NES passes all other APU tests except for DMC (**_DMC is not implemented yet_**)
-* NES passes Blargg's vbl_nmi_timing and ppu_vbl_nmi tests
-* NES passes Blargg's cpu_interrupt_v2 tests
-* NES passes the OAM stress tests
-* NES passes both Blargg's and Bisqwit's ppu_open_bus tests
-* NES passes Bisqwit's cpu_exec_space tests
-* NES passes all of Blargg's mmc3_irq_tests
+* GBA
+  * Supports GBA Bios
+  * GBA passes jsmolka/alysoha-tas's arm.gba, thumb.gba, memory.gba, flash and PPU tests
+  * GBA passes FuzzARM.gba
+  * GBA passes all the AGS test suite except for Prefetch and few Wait Cycles based memory tests
+  * GBA passes most of the tonc's test suite
+  * GBA mostly implements cycle accurate PPU access patterns documented by fleroviux
+  * GBA is able to play most of the GBA video roms
+* GB / GBC
+  * GB / GBC supports NO MBC, MBC1, MBC2, MBC3, MBC5 and MBC30
+  * Supports GB and GBC Bios
+  * GB / GBC implements Pixel Fetcher/FIFO
+  * GBC supports GB mode
+  * GB / GBC passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
+  * GB / GBC passes all of the Blargg tests except for oam bug
+  * GB / GBC passes most of the Moon Eye tests (some of the PPU tests fail with few T cycles differences)
+  * GB / GBC passes DMG Aging Catridge test
+  * GB / GBC passes the RTC (rtc3test) test
+  * GB / GBC passes all of the scribbltests tests except for few nops in statcount
+  * GB / GBC passes the TurtleTests
+  * GB / GBC passes mbc3-tester for both MBC3 and MBC30
+  * GBC passes MagenTests
+  * GB / GBC is able to play few notable demo-scenes like oh.gb, 20y.gb, pocket.gb and demotronic.gbc without any (noticable) glitches
+  * GBC supports LIJI32's GBVideoPlayer2 (Note that non-intentional screen offset is still seen in few roms)
+  * GB has options for different palettes (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
+  * GB / GBC supports [PPU Viewer](https://github.com/Kotambail-Hegde/Masquerade-Emulator/edit/main/README.md#ppu-viewer)
+* NES
+  * NES supports NROM, MMC1, UxROM (002), CNROM, MMC3, AxROM and GxROM
+  * NES supports Zapper in Port 2 (using mouse clicks)
+  * NES supports battery backed PRG RAM
+  * NES passes Nestest (both official and un-official opcodes)
+  * NES passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
+  * NES passes all of Blargg's CPU tests (both official and un-official opcodes)
+  * NES passes all of Blargg's CPU timing tests (both official and un-official opcodes)
+  * NES passes all of Blargg's CPU dummy read/write tests (both official and un-official opcodes)
+  * NES passes all CPU tests mentioned in Nes Dev Wiki (both official and un-official opcodes)
+  * NES passes all the Blargg's blargg_ppu_tests_2005.09.15b tests
+  * NES passes all the Blargg's blargg_apu_2005.07.30
+  * NES passes all the Blargg's sprite_overflow_tests
+  * NES passes all the Blargg's sprite_hit_tests_2005.10.05 tests
+  * NES passes all other APU tests except for DMC (**_DMC is not implemented yet_**)
+  * NES passes Blargg's vbl_nmi_timing and ppu_vbl_nmi tests
+  * NES passes Blargg's cpu_interrupt_v2 tests
+  * NES passes the OAM stress tests
+  * NES passes both Blargg's and Bisqwit's ppu_open_bus tests
+  * NES passes Bisqwit's cpu_exec_space tests
+  * NES passes all of Blargg's mmc3_irq_tests
 * NES passes all of Blargg's mmc3_test/mmc3_test_2 expect for 4-scanline_timing.nes (**_This is under debug_**)
+* Pacman and MsPacman
+  * Supports both Midway and Namco variant
+  * Supports MsPacman
+* Space Invader
+  * Supports color overlays
 * Supports many Z80 test roms (**_Undocumented Opcode Tests are still not handled_**)
 * Supports many c6502 test roms (both official and un-official opcodes)
 * Supports many 8080 test roms (**_Undocumented Opcode Tests are still not handled_**)
-* Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
-* Chip8 passes all Timendus's chip8-test-suite v4.0 (**_Most of v4.2 tests pass as well except for scrolling tests which is not implemented yet_**)
+* Chip8
+  * Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
+  * Chip8 passes all Timendus's chip8-test-suite v4.0 (**_Most of v4.2 tests pass as well except for scrolling tests which is not implemented yet_**)
 * Game Of Life supports Normal Mode and Torroidal Mode
 * Supports Save States and Load States
-* Has GUI based debugger support (**_For now, this is supported only in GB and GBC, currently in development for NES and GBA_**)
-* Has CLI based debugger support (**_For now, this is supported only in NES and GBA, currently in developement for GB and GBC_**)
 * Supports OTA updates
-* Menu-bar based UI for Windows platform
-* Internal GUI for platforms other than Windows
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
 _**Features under developement (and issues under debug)**_
