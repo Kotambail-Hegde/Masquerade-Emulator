@@ -32,49 +32,46 @@ _**Supported features**_
   * Supports GBA Bios
   * GBA passes jsmolka/alysoha-tas's arm.gba, thumb.gba, memory.gba, flash and PPU tests
   * GBA passes FuzzARM.gba
-  * GBA passes all the AGS test suite except for Prefetch and few Wait Cycles based memory tests
-  * GBA passes most of the tonc's test suite
-  * GBA mostly implements cycle accurate PPU access patterns documented by fleroviux
-  * GBA is able to play most of the GBA video roms
+  * GBA passes all the tests within the  AGS suite **except for Prefetch and Wait Cycles based memory tests**
+  * GBA passes the tonc's test suite
 * GB / GBC
-  * GB / GBC supports NO MBC, MBC1, MBC2, MBC3, MBC5 and MBC30
   * Supports GB and GBC Bios
+  * GB / GBC supports NO MBC, MBC1, MBC2, MBC3, MBC5 and MBC30
   * GB / GBC implements Pixel Fetcher/FIFO
   * GBC supports GB mode
-  * GB / GBC passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
-  * GB / GBC passes all of the Blargg tests except for oam bug
-  * GB / GBC passes most of the Moon Eye tests except for few PPU tests
+  * GB / GBC passes the complete Tom Harte's CPU test (both official and un-official opcodes)
+  * GB / GBC passes the Blargg test suite except for oam bug
+  * GB / GBC passes most of the Moon Eye tests
   * GB / GBC passes DMG Aging Catridge test
   * GB / GBC passes the RTC (rtc3test) test
-  * GB / GBC passes all of the scribbltests tests except for few nops in statcount
+  * GB / GBC passes the scribbltests suite except for few nops in statcount
   * GB / GBC passes the TurtleTests
-  * GB / GBC passes mbc3-tester for both MBC3 and MBC30
   * GBC passes MagenTests
-  * GB / GBC is able to play few notable demo-scenes like oh.gb, 20y.gb, pocket.gb and demotronic.gbc without any (noticable) glitches
-  * GBC supports LIJI32's GBVideoPlayer2 (Note that non-intentional screen offset is still seen in few roms)
-  * GB has options for different palettes (Includes 'Gearboy', 'Sameboy' and 'BGB' palettes)
+  * GB / GBC passes mbc3-tester
+  * GB / GBC is able to play severaldemo scenes including notable ones like oh.gb, 20y.gb, pocket.gb and demotronic.gbc
+  * GB supports multiple palettes
+  * GBC support color correction to be more in line with the actual HW
   * GB / GBC supports [PPU Viewer](https://github.com/Kotambail-Hegde/Masquerade-Emulator/tree/main?tab=readme-ov-file#ppu-viewer)
 * NES
   * NES supports NROM, MMC1, UxROM (002), CNROM, MMC3, AxROM and GxROM
   * NES supports Zapper in Port 2 (using mouse clicks)
-  * NES supports battery backed PRG RAM
   * NES passes Nestest (both official and un-official opcodes)
-  * NES passes Tom Harte's CPU test including cycles (both official and un-official opcodes)
-  * NES passes all of Blargg's CPU tests (both official and un-official opcodes)
-  * NES passes all of Blargg's CPU timing tests (both official and un-official opcodes)
-  * NES passes all of Blargg's CPU dummy read/write tests (both official and un-official opcodes)
+  * NES passes the complete Tom Harte's CPU test (both official and un-official opcodes)
+  * NES passes the Blargg CPU tests (both official and un-official opcodes)
+  * NES passes the Blargg's CPU timing tests (both official and un-official opcodes)
+  * NES passes the Blargg's CPU dummy read/write tests (both official and un-official opcodes)
   * NES passes all CPU tests mentioned in Nes Dev Wiki (both official and un-official opcodes)
-  * NES passes all the Blargg's blargg_ppu_tests_2005.09.15b tests
-  * NES passes all the Blargg's blargg_apu_2005.07.30
-  * NES passes all the Blargg's sprite_overflow_tests
-  * NES passes all the Blargg's sprite_hit_tests_2005.10.05 tests
-  * NES passes all other APU tests except for DMC (**_DMC is not implemented yet_**)
+  * NES passes the blargg_ppu_tests_2005.09.15b tests
+  * NES passes the blargg_apu_2005.07.30 tests
+  * NES passes the Blargg's sprite_overflow_test suite
+  * NES passes the Blargg's sprite_hit_tests_2005.10.05 test suite
+  * NES passes all APU tests except for DMC (**_DMC is not implemented yet_**)
   * NES passes Blargg's vbl_nmi_timing and ppu_vbl_nmi tests
   * NES passes Blargg's cpu_interrupt_v2 tests
   * NES passes the OAM stress tests
-  * NES passes both Blargg's and Bisqwit's ppu_open_bus tests
+  * NES passes both Blargg's / Bisqwit's ppu_open_bus tests
   * NES passes Bisqwit's cpu_exec_space tests
-  * NES passes all of Blargg's mmc3_irq_tests
+  * NES passes the Blargg's mmc3_irq_tests suite
   * NES passes all of Blargg's mmc3_test/mmc3_test_2 expect for 4-scanline_timing.nes (**_This is under debug_**)
 * Pacman and MsPacman
   * Supports both Midway and Namco variant
