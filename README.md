@@ -41,7 +41,7 @@ _**Supported features**_
   * GBC supports GB mode
   * GB / GBC passes the complete Tom Harte's CPU test (both official and un-official opcodes)
   * GB / GBC passes the Blargg test suite **except for oam bug**
-  * GB / GBC passes most of the Moon Eye tests
+  * GB / GBC passes **most** of the Moon Eye tests. **Fails few PPU timing tests by 1-M cycle**.
   * GB / GBC passes DMG Aging Catridge test
   * GB / GBC passes the rtc3test suite
   * GB / GBC passes the scribbltests suite **except for few nops in statcount**
