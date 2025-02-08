@@ -75,7 +75,26 @@ _**Supported features**_
   * NES passes all of Blargg's mmc3_test/mmc3_test_2 **expect for 4-scanline_timing.nes**
 * Pacman and MsPacman
   * Supports both Midway and Namco variants
+  * Also tested again the following boot-legs
+    * Hangly Man
+    * Streaking
+    * Titan
+    * Caterpillar
+    * Abscam
+    * Joyman
+    * Piranha
+    * Galaxian Hardware Variant
+    * Uniprom Variant
+    * Baracuda
+    * NewPuc
+    * After Dark
+    * Snatcher Set 1 and 2
   * Supports MsPacman
+  * Also tested again the following boot-legs
+    * MsPacPlus
+    * After Dark
+    * MsPacAttackNew
+    * MsPacAtackOld
 * Space Invader
   * Supports color overlays
 * Supports many Z80 test roms (**_Undocumented Opcode Tests are still not handled_**)
