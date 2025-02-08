@@ -41,7 +41,7 @@ _**Supported features**_
   * GBC supports GB mode
   * GB / GBC passes the complete Tom Harte's CPU test (both official and un-official opcodes)
   * GB / GBC passes the Blargg test suite **except for oam bug**
-  * GB / GBC passes **most** of the Moon Eye tests. **Fails few PPU timing tests by 1-M cycle**.
+  * GB / GBC passes **almost** all of the Moon Eye tests. **Only fails the Lcd On tests**.
   * GB / GBC passes DMG Aging Catridge test
   * GB / GBC passes the rtc3test suite
   * GB / GBC passes the scribbltests suite **except for few nops in statcount**
@@ -122,7 +122,7 @@ _**Known Major Issues**_
 _**Other Known Issues**_
 * GBA still fails a lot of 'Wait Cycles' and 'Catridge Prefetch (this is not even implemented yet)' based tests present in AGS and mgba test-suite
 * GBA not so often / rarely exibits few minor graphical glitches. Suspected to be related to some startup/initialization not happening as expected
-* GB/GBC still fails many of the Wilbertpol's 'non Moon Eye tests'
+* GB/GBC still fails few of the Wilbertpol's 'non Moon Eye tests'
 * GB/GBC still fails many roms in the AGE test suite
 
 
