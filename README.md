@@ -89,7 +89,8 @@ _**Supported features**_
 * Supports OTA updates
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
-_**Features under developement (and issues under debug)**_
+_**Features under developement (or issues under debug)**_
+* Deviation of GBC's (above model D) STAT timings from DMG is yet to me emulated. We can see its effect in LIJI32's GBVideoPlayer2
 * Support Link Cable for Gameboy and Gameboy Color
 * Support for scrolling test needed by Timendus's chip8-test-suite v4.2
 * Implement "_Sync to Audio Playback Rate_" to support audio for GB/GBC and NES
@@ -139,10 +140,6 @@ _Gameboy Advance_ _(Pokemon Fire Red and Leaf Green)_
 _Gameboy Color_ _(Donkey Kong Country and Pokemon Crystal)_
 
 ![DonkeyKongCountry](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3d6bfb58-ae88-4b66-b299-ef20faf67112) ![Crystal](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3b318907-dc70-4488-8552-729b98504603)
-
-_Gameboy Color_ _(Mezase Unpadded)_
-
-![mezaze_ppuv2_1](https://github.com/user-attachments/assets/0905b689-b126-4027-817d-afb4179a7886)
 
 _Gameboy_ _(Prehistorik Man in 'BGB' palette, Pokemon Green in 'Gearboy' palette and Altered Space in 'Sameboy' palette)_
 
