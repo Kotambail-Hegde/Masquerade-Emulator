@@ -41,7 +41,7 @@ _**Supported features**_
   * GBC supports GB mode
   * GB / GBC passes the complete Tom Harte's CPU test (both official and un-official opcodes)
   * GB / GBC passes the Blargg test suite **except for oam bug**
-  * GB / GBC passes **almost** all of the Moon Eye tests. Fails the following tests:
+  * GB / GBC passes all of the Moon Eye tests except for the following:
     * **lcdon_timing-GS.gb**
     * **lcdon_write_timing-GS.gb**
     * **intr_2_mode0_timing_sprites.gb**
