@@ -77,13 +77,13 @@ _**Supported features**_
   * Supports both Midway and Namco variants
   * Also tested again the following boot-legs
     * Hangly Man
-    * Streaking
-    * Titan
-    * Caterpillar
-    * Abscam
-    * Joyman
-    * Piranha
-    * Galaxian Hardware Variant
+    * ~~Streaking~~
+    * ~~Titan~~
+    * ~~Caterpillar~~
+    * ~~Abscam~~
+    * ~~Joyman~~
+    * ~~Piranha~~
+    * ~~Galaxian Hardware Variant~~
     * Uniprom Variant
     * Baracuda
     * NewPuc
@@ -91,10 +91,10 @@ _**Supported features**_
     * Snatcher Set 1 and 2
   * Supports MsPacman
   * Also tested again the following boot-legs
-    * MsPacPlus
-    * After Dark
-    * MsPacAttackNew
-    * MsPacAtackOld
+    * ~~MsPacPlus~~
+    * ~~After Dark~~
+    * ~~MsPacAttackNew~~
+    * ~~MsPacAtackOld~~
 * Space Invader
   * Supports color overlays
 * Supports many Z80 test roms (**_Undocumented Opcode Tests are still not handled_**)
