@@ -7,6 +7,8 @@ _But still, the emulator tries to be as accurate as possible but since I don't h
 
 _I have avoided referencing other emulator's source code and tried to only rely on online information as much as possible, but still had to rely on a few cycle accurate emulators (mentioned in credit section below) and tweak them to either extract debug logs or to run my own custom roms and analyse the behaviour._
 
+_**The source code will be made open-source soon** (once the code cleanup is complete)_
+
 **_So, what is Masquerade ?_**
 
 _**A multi-system emulator which emulates the following gaming consoles and simulators**_
