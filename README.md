@@ -168,7 +168,7 @@ _Gameboy Color_ _(Donkey Kong Country and Pokemon Crystal)_
 
 ![DonkeyKongCountry](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3d6bfb58-ae88-4b66-b299-ef20faf67112) ![Crystal](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3b318907-dc70-4488-8552-729b98504603)
 
-_Gameboy_ _(Prehistorik Man in 'BGB' palette, Pinbal Deluxe in 'Gearboy' palette and Altered Space in 'Sameboy' palette)_
+_Gameboy_ _(Prehistorik Man in 'BGB' palette, Pinball Deluxe in 'Gearboy' palette and Altered Space in 'Sameboy' palette)_
 
 ![PrehistorikMan](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/8819c689-b3ad-444e-bece-d43a993e05b7) ![pinball](https://github.com/user-attachments/assets/85f488ce-09e3-4624-b98f-73de539d051c) ![alteredSpace](https://github.com/user-attachments/assets/b6c38587-8d40-4f41-ab1a-e921194ebf53)
 
