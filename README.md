@@ -49,7 +49,7 @@ _**Supported features**_
     * **lcdon_write_timing-GS.gb**
     * **halt_ime1_timing2-GS.gb**
     * **di_timing-GS.gb**
-    * **~~hblank_ly_scx_timing-GS.gb~~**
+    * **hblank_ly_scx_timing-GS.gb**
   * GB / GBC passes DMG Aging Catridge test
   * GB / GBC passes the rtc3test suite
   * GB / GBC passes the scribbltests suite **except for few nops in statcount**
