@@ -24,7 +24,7 @@ _**A multi-system emulator which emulates the following gaming consoles and simu
 * XO-CHIP
 * Game Of Life
 
-_**Below mentioned gaming consoles MAY PROBABLY be looked at in future**_
+_**Below mentioned gaming consoles MAY PROBABLY be looked at in the future**_
 * Super Nintendo Entertainment System (SNES)
 * Nintendo DS
 * Nintendo 3DS
@@ -42,7 +42,8 @@ _**Supported features**_
   * GB / GBC implements Pixel Fetcher/FIFO
   * GBC supports GB mode
   * GB / GBC passes the complete Tom Harte's CPU test (both official and un-official opcodes)
-  * GB / GBC passes the Blargg test suite **except for oam bug**
+  * GB / GBC passes the all the Blargg test suite except for the following
+    * **oam bug.gb**
   * GB / GBC passes all of the Moon Eye tests except for the following:
     * **intr_2_mode0_timing_sprites.gb**
     * **lcdon_timing-GS.gb**
@@ -52,7 +53,8 @@ _**Supported features**_
     * **hblank_ly_scx_timing-GS.gb**
   * GB / GBC passes DMG Aging Catridge test
   * GB / GBC passes the rtc3test suite
-  * GB / GBC passes the scribbltests suite **except for few nops in statcount**
+  * GB / GBC passes all the scribbltests suite except for the following
+    * **Few nops in statcount.gb**
   * GB / GBC passes the TurtleTests
   * GBC passes MagenTests
   * GB / GBC passes mbc3-tester
@@ -117,7 +119,7 @@ _**Supported features**_
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
 _**Features under developement (or issues under debug)**_
-* Deviation of GBC's STAT timings w.r.t DMG is yet to me emulated. We can see its effect in LIJI32's GBVideoPlayer2
+* Deviation of CGB's STAT timings w.r.t DMG is yet to me emulated. We can see its effect in LIJI32's GBVideoPlayer2
 * Support Link Cable for Gameboy and Gameboy Color
 * Support for scrolling test needed by Timendus's chip8-test-suite v4.2
 * Implement "_Sync to Audio Playback Rate_" to support audio for GB/GBC and NES
