@@ -7,7 +7,7 @@ _But still, the emulator tries to be as accurate as possible but since I don't h
 
 _I have avoided referencing other emulator's source code and tried to only rely on online information as much as possible, but still had to rely on a few cycle accurate emulators (mentioned in credit section below) and tweak them to either extract debug logs or to run my own custom roms and analyse the behaviour._
 
-_**The source code will be made open-source soon** (once the code cleanup is complete)_
+_<ins>**The source code will be made open-source soon**</ins> (once the code cleanup is complete)_
 
 **_So, what is Masquerade ?_**
 
@@ -151,6 +151,9 @@ _**Other Known Issues**_
 ### SDL2
   - Not supported yet
 
+### ImGui
+  - Not supported yet
+
 ### OLC
   - Currently supported only when emulator runs in Gameboy and Gameboy Color modes
 
@@ -213,6 +216,9 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 Not supported yet
 
 ## SDL2
+Not supported yet
+
+### ImGui
 Not supported yet
 
 ## OLC
