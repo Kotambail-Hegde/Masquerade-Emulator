@@ -148,10 +148,10 @@ _**Other Known Issues**_
 ### QT5
   - Not supported yet
 
-### SDL2
+### SDL3
   - Not supported yet
 
-### ImGui
+### ImGui + SDL3
   - Not supported yet
 
 ### OLC
@@ -215,10 +215,10 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 ## QT5
 Not supported yet
 
-## SDL2
+## SDL3
 Not supported yet
 
-### ImGui
+### ImGui + SDL3
 Not supported yet
 
 ## OLC
