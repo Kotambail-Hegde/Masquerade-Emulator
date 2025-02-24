@@ -120,6 +120,7 @@ _**Supported features**_
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
 _**Features under developement (or issues under debug)**_
+* ImGui Support
 * Deviation of CGB's STAT timings w.r.t DMG is yet to be emulated
 * Support Link Cable for Gameboy and Gameboy Color
 * Support for scrolling test needed by Timendus's chip8-test-suite v4.2
@@ -220,7 +221,7 @@ Not supported yet
 ## SDL3
 Not supported yet
 
-### ImGui + SDL3
+## ImGui + SDL3
 Not supported yet
 
 ## OLC
