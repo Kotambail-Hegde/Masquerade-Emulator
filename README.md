@@ -146,16 +146,17 @@ _**Other Known Issues**_
 
 ## PPU Viewer
 
-### QT5
+### :no_entry: QT5
   - Not supported yet
 
-### SDL3
+### :no_entry: SDL3
   - Not supported yet
 
-### ImGui + SDL3
+### :construction: ImGui + SDL3
   - Not supported yet
 
-### OLC (Obsolete)
+### :warning: OLC
+  - Note that OLC is **<ins>deprecated</ins>**
   - Currently supported only when emulator runs in Gameboy and Gameboy Color modes
 
 ![GBC-PPUViewer2](https://github.com/user-attachments/assets/0e932666-f4d4-4633-ad0a-0c7b0f9751ad)
@@ -163,7 +164,7 @@ _**Other Known Issues**_
 
 ## Normal Game Play 
 
-**_<ins>Note : Below snips were taken on an OLC build which is now Obsolete</ins>_**
+**_:warning: Below snips were taken on an OLC build which is now deprecated_**
 
 _Gameboy Advance_ _(Pokemon Ruby, Emerald and Sapphire)_
 
@@ -215,16 +216,17 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 
 # User Interface
 
-## QT5
+## :no_entry: QT5
 Not supported yet
 
-## SDL3
+## :no_entry: SDL3
 Not supported yet
 
-## ImGui + SDL3
+## :construction: ImGui + SDL3
 Not supported yet
 
-## OLC (Obsolete)
+## :warning: OLC
+* Note that OLC is **<ins>deprecated</ins>**
 * In **windows** platform, the standard "winAPI" based user interface can be used for accessing various options of the emulator.</br>
 * In **non-windows** (and windows) platforms, an "inbuilt OLC specific" user interface is also provided. Windows user can hence use both interfaces and can toggle b/w "winAPI" or "inbuilt OLC specific" interfaces by pressing 'esc' or 'R' keys respectively.
 
