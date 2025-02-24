@@ -120,7 +120,7 @@ _**Supported features**_
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
 _**Features under developement (or issues under debug)**_
-* Deviation of CGB's STAT timings w.r.t DMG is yet to me emulated. We can see its effect in LIJI32's GBVideoPlayer2
+* Deviation of CGB's STAT timings w.r.t DMG is yet to be emulated
 * Support Link Cable for Gameboy and Gameboy Color
 * Support for scrolling test needed by Timendus's chip8-test-suite v4.2
 * Implement "_Sync to Audio Playback Rate_" to support audio for GB/GBC and NES
