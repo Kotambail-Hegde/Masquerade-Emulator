@@ -155,7 +155,7 @@ _**Other Known Issues**_
 ### ImGui + SDL3
   - Not supported yet
 
-### OLC
+### OLC (Obsolete)
   - Currently supported only when emulator runs in Gameboy and Gameboy Color modes
 
 ![GBC-PPUViewer2](https://github.com/user-attachments/assets/0e932666-f4d4-4633-ad0a-0c7b0f9751ad)
@@ -163,7 +163,7 @@ _**Other Known Issues**_
 
 ## Normal Game Play 
 
-**_<ins>Note : Below snips were taken on an OLC build</ins>_**
+**_<ins>Note : Below snips were taken on an OLC build which is now Obsolete</ins>_**
 
 _Gameboy Advance_ _(Pokemon Ruby, Emerald and Sapphire)_
 
@@ -224,7 +224,7 @@ Not supported yet
 ## ImGui + SDL3
 Not supported yet
 
-## OLC
+## OLC (Obsolete)
 * In **windows** platform, the standard "winAPI" based user interface can be used for accessing various options of the emulator.</br>
 * In **non-windows** (and windows) platforms, an "inbuilt OLC specific" user interface is also provided. Windows user can hence use both interfaces and can toggle b/w "winAPI" or "inbuilt OLC specific" interfaces by pressing 'esc' or 'R' keys respectively.
 
@@ -255,6 +255,8 @@ Not supported yet
 * NES Dev Wiki (https://www.nesdev.org/wiki/Nesdev_Wiki)
 * GBA PPU access pattern (https://nba-emu.github.io/hw-docs/ppu/ppu.html)
 * Tom Harte tests for 6502 and SM82 cpu testing
+* Optionally, we use ImGui (https://github.com/ocornut/imgui)
+* Optionally, we use SDL (https://github.com/libsdl-org/SDL)
 
 
 
