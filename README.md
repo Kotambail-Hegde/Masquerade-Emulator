@@ -217,13 +217,13 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 # User Interface
 
 ## :no_entry: QT5
-Not supported yet
+* Not supported yet
 
 ## :no_entry: SDL3
-Not supported yet
+* Not supported yet
 
 ## :construction: ImGui + SDL3
-Not supported yet
+* Not supported yet
 
 ## :warning: OLC
 * Note that OLC is **<ins>deprecated</ins>**
