@@ -7,7 +7,7 @@ _But still, the emulator tries to be as accurate as possible but since I don't h
 
 _I have avoided referencing other emulator's source code and tried to only rely on online information as much as possible, but still had to rely on a few cycle accurate emulators (mentioned in credit section below) and tweak them to either extract debug logs or to run my own custom roms and analyse the behaviour._
 
-_<ins>**The source code will be made open-source soon**</ins> (once the code cleanup is complete)_
+_<ins>**Note : The source code will be made open-source soon**</ins> (once the code cleanup is complete)_
 
 **_So, what is Masquerade ?_**
 
@@ -160,7 +160,9 @@ _**Other Known Issues**_
 ![GBC-PPUViewer2](https://github.com/user-attachments/assets/0e932666-f4d4-4633-ad0a-0c7b0f9751ad)
 
 
-## Normal Game Play (Below snaps were taken on an OLC build)
+## Normal Game Play 
+
+**_<ins>Note : Below snips were taken on an OLC build</ins>_**
 
 _Gameboy Advance_ _(Pokemon Ruby, Emerald and Sapphire)_
 
