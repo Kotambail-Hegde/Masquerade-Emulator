@@ -127,13 +127,12 @@ _**Features under developement (or issues under debug)**_
 
 _**Known Major Issues**_
 * GBA still doesn't support audio output (only GB/GBC based APU is implemented)
-* GB/GBC audio is still has glitches. "_Sync to Audio Playback Rate_" is expected to help in resolving these issue
 * NES still doesn't support audio output (APU is implemented except for DMC)
 
 _**Other Known Issues**_
 * GBA still fails a lot of 'Wait Cycles' and 'Catridge Prefetch (this is not even implemented yet)' based tests present in AGS and mgba test-suite
 * GBA not so often / rarely exibits few minor graphical glitches. Suspected to be related to some startup/initialization not happening as expected
-* GB/GBC still fails few of the Wilbertpol's 'non Moon Eye tests'
+* GB/GBC still fails few of the Wilbertpol's 'Non Moon Eye Tests'
 * GB/GBC still fails many roms in the AGE test suite
 
 
