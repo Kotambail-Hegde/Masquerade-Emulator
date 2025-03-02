@@ -62,7 +62,6 @@ _**Supported features**_
   * GB / GBC is able to play severaldemo scenes including notable ones like oh.gb, 20y.gb, pocket.gb and demotronic.gbc
   * GB supports multiple palettes
   * GBC support color correction to be more in line with the actual HW
-  * GB / GBC supports [PPU Viewer](https://github.com/Kotambail-Hegde/Masquerade-Emulator/tree/main?tab=readme-ov-file#ppu-viewer)
 * NES
   * NES supports NROM, MMC1, UxROM (002), CNROM, MMC3, AxROM and GxROM
   * NES supports Zapper in Port 2 (using mouse clicks)
@@ -149,10 +148,7 @@ _**Other Known Issues**_
 ### :no_entry: QT5
   - Not supported yet
 
-### :no_entry: SDL3
-  - Not supported yet
-
-### :construction: ImGui + SDL3
+### :construction: ImGui + SDL3 + OpenGL3
   - Not supported yet
 
 ### :warning: OLC
@@ -219,10 +215,7 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 ## :no_entry: QT5
 * Not supported yet
 
-## :no_entry: SDL3
-* Not supported yet
-
-## :construction: ImGui + SDL3
+## :construction: ImGui + SDL3 + OpenGL3
 * Not supported yet
 
 ## :warning: OLC
