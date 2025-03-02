@@ -139,7 +139,6 @@ _**Other Known Issues**_
 # Game Play
 
 ## Debugger
-
   - Not supported yet
 
 ## PPU Viewer
@@ -148,7 +147,7 @@ _**Other Known Issues**_
   - Not supported yet
 
 ### :construction: ImGui + SDL3 + OpenGL3
-  - Not supported yet
+  - Under Progress
 
 ### :warning: OLC
   - Note that OLC is **<ins>deprecated</ins>**
@@ -215,7 +214,7 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 * Not supported yet
 
 ## :construction: ImGui + SDL3 + OpenGL3
-* Not supported yet
+* Under Progress
 
 ## :warning: OLC
 * Note that OLC is **<ins>deprecated</ins>**
