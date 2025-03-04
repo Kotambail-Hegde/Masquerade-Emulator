@@ -161,15 +161,20 @@ _**Other Known Issues**_
 
 ## Normal Game Play 
 
+_Gameboy Color_ _(Pokemon Crystal)_, _Gameboy Advance_ _(Pokemon Emerald)_ _and_ _Gameboy_ _(Pokemon Blue)_
+
+![imgui_Crystal](https://github.com/user-attachments/assets/3011b49f-45c6-4f18-bbc5-6ede797e81ad) ![imgui_Emerald](https://github.com/user-attachments/assets/d668bc27-9589-4897-bc92-8e1ca14c5d7b) ![imgui_Blue](https://github.com/user-attachments/assets/3fa02907-9902-4b73-a75a-af8e74df8ef6)
+
+
+
 :warning: **<ins>Disclaimer</ins>:**
 
-* **_Below 'in-game snapshots' were taken on a windows PC using an <ins>OLC build</ins> (v0.6036 or lower) which is now <ins>deprecated</ins>_**</br>
-* **_<ins>ImGui build is recomended</ins> as OLC build does have all the features enabled and also will not be supported for further updates_**
-</br>
-
+* **_Below 'in-game snapshots' were taken on a windows PC using an OLC build (v0.6036 or lower) which is now <ins>deprecated</ins>_**</br>
+* **_Masquerade users is always recomended to use ImGui build is as OLC build will not be supported for further updates_**
+  
 _Gameboy Advance_ _(Pokemon Ruby, Emerald and Sapphire)_
 
-![Ruby](https://github.com/user-attachments/assets/4d50ea26-2368-46ea-8753-53c470a056d4) ![Emerald](https://github.com/user-attachments/assets/d7dea1b2-f6eb-4ebc-a041-4f25b5a191b5) ![Sapphire](https://github.com/user-attachments/assets/8b5a58cb-d602-4b47-9fc9-833e36f6737a)
+![Ruby](https://github.com/user-attachments/assets/4d50ea26-2368-46ea-8753-53c470a056d4)  ![Emerald](https://github.com/user-attachments/assets/511e90e0-aa1b-491c-9937-40c9d1e57ee6) ![Sapphire](https://github.com/user-attachments/assets/8b5a58cb-d602-4b47-9fc9-833e36f6737a)
 
 _Gameboy Advance_ _(Pokemon Fire Red and Leaf Green)_
 
