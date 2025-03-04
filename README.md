@@ -140,25 +140,11 @@ _**Other Known Issues**_
 
 ## Debugger
   - Not supported yet
-
-## PPU Viewer
-
-### :no_entry: QT5
-  - Not supported yet
-
-### :construction: ImGui + SDL3 + OpenGL3
-  - Under Progress
-
-### :warning: OLC
-  - Note that OLC is **<ins>deprecated</ins>**
-  - Currently supported only when emulator runs in Gameboy and Gameboy Color modes
-
-![GBC-PPUViewer2](https://github.com/user-attachments/assets/0e932666-f4d4-4633-ad0a-0c7b0f9751ad)
-
+  - 
 
 ## Normal Game Play 
 
-**_:warning: Below snips were taken on an OLC build which is now deprecated_**
+### **_:warning: Below snips were taken on a windows PC using an OLC build (v0.6036 or lower version) which is now deprecated_**
 
 _Gameboy Advance_ _(Pokemon Ruby, Emerald and Sapphire)_
 
