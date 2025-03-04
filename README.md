@@ -139,12 +139,33 @@ _**Other Known Issues**_
 # Game Play
 
 ## Debugger
-  - Not supported yet
-  - 
+
+## :construction: ImGui (+ SDL3 + OpenGL3)
+* _Gameboy Advance_
+   * Under Development
+* _Gameboy_ / _Gameboy Color_
+   * Under Development
+* _Nintendo Entertainment System_
+   * Under Development
+* _Pacman_
+   * No Support
+* _Ms Pacman_
+   * No Support
+* _Space Invader_
+   * No Support
+* _Chip8_
+   * No Support
+
+## :warning: OLC
+* No Support
 
 ## Normal Game Play 
 
-### **_:warning: Below snips were taken on a windows PC using an OLC build (v0.6036 or lower version) which is now deprecated_**
+:warning: **<ins>Disclaimer</ins>:**
+
+* **_Below 'in-game snapshots' were taken on a windows PC using an <ins>OLC build</ins> (v0.6036 or lower) which is now <ins>deprecated</ins>_**</br>
+* **_<ins>ImGui build is recomended</ins> as OLC build does have all the features enabled and also will not be supported for further updates_**
+</br>
 
 _Gameboy Advance_ _(Pokemon Ruby, Emerald and Sapphire)_
 
@@ -196,10 +217,7 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 
 # User Interface
 
-## :no_entry: QT5
-* Not supported yet
-
-## :construction: ImGui + SDL3 + OpenGL3
+## :construction: ImGui (+ SDL3 + OpenGL3)
 * Under Progress
 
 ## :warning: OLC
