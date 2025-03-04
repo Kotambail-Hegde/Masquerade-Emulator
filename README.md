@@ -147,7 +147,7 @@ _**Other Known Issues**_
    * Under Development
 * _Nintendo Entertainment System_
    * Under Development
-* _Any other console/simulators_
+* _Any other consoles/simulators_
    * No Support
 
 ## :warning: OLC
@@ -164,7 +164,7 @@ _Gameboy Color_ _(Pokemon Crystal)_, _Gameboy Advance_ _(Pokemon Emerald)_ _and_
 :warning: **<ins>Disclaimer</ins>:**
 
 * **_Below 'in-game snapshots' were taken on a windows PC using an OLC build (v0.6036 or lower) which is now <ins>deprecated</ins>_**</br>
-* **_Masquerade users is always recomended to use ImGui build as OLC build will not be supported for further updates_**
+* **_Masquerade users are always recomended to use ImGui build as OLC build will not be supported for further updates_**
   
 _Gameboy Advance_ _(Pokemon Ruby, Emerald and Sapphire)_
 
