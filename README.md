@@ -136,6 +136,7 @@ _**Other Known Issues**_
 # Variants
 
 As of today, there are 2 variants of masquerade available, P52 and P10.
+The major differences between the two variants is w.r.t the supporting libraries used.
 * _P52 : Is based on ImGui (+ SDL3 + OpenGL3)_
 * _P10 : Is based on OLC_
 
@@ -220,7 +221,7 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 # User Interface
 
 ## :construction: P52 : ImGui (+ SDL3 + OpenGL3)
-* Under Progress
+* Imgui and nativefiledialog-extended are used for user interface
 
 ## :warning: P10 : OLC
 * Note that OLC is **<ins>deprecated</ins>**
