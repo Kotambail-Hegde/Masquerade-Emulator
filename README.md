@@ -135,9 +135,9 @@ _**Other Known Issues**_
 * GB/GBC still fails few of the Wilbertpol's 'Non Moon Eye Tests'
 * GB/GBC still fails many roms in the AGE test suite
 
-# Builds
+# Variants
 
-As of today, there are 2 versions of masquerade available, P52 and P10.
+As of today, there are 2 variants of masquerade available, P52 and P10.
 * _P52 : Is based on ImGui (+ SDL3 + OpenGL3)_
 * _P10 : Is based on OLC_
 
