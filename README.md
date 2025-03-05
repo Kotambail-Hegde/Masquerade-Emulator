@@ -232,6 +232,7 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 * ImGui
 * SDL3
 * OpenGL3
+* nativefiledialog-extended
 * Boost libraries to parse .ini files
 
 ## :warning: P10 : OLC
