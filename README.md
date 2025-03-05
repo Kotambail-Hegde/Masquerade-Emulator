@@ -135,12 +135,17 @@ _**Other Known Issues**_
 * GB/GBC still fails few of the Wilbertpol's 'Non Moon Eye Tests'
 * GB/GBC still fails many roms in the AGE test suite
 
+# Builds
+
+As of today, there are 2 versions of masquerade available, P52 and P10.
+* _P52 : Is based on ImGui (+ SDL3 + OpenGL3)_
+* _P10 : Is based on OLC_
 
 # Game Play
 
 ## Debugger
 
-## :construction: ImGui (+ SDL3 + OpenGL3)
+## :construction: P52 : ImGui (+ SDL3 + OpenGL3)
 * _Gameboy Advance_
    * Under Development
 * _Gameboy_ / _Gameboy Color_
@@ -150,7 +155,7 @@ _**Other Known Issues**_
 * _Any other consoles/simulators_
    * No Support
 
-## :warning: OLC
+## :warning: P10 : OLC
 * No Support
 
 ## Normal Game Play 
@@ -163,8 +168,8 @@ _Gameboy Color_ _(Pokemon Crystal)_, _Gameboy Advance_ _(Pokemon Emerald)_ _and_
 
 :warning: **<ins>Disclaimer</ins>:**
 
-* **_Below 'in-game snapshots' were taken on a windows PC using an OLC build (v0.6036 or lower) which is now <ins>deprecated</ins>_**</br>
-* **_Masquerade users are always recomended to use ImGui build as OLC build will not be supported for further updates_**
+* **_Below 'in-game snapshots' were taken on a windows PC using a P10 build i.e. an OLC build (v0.6036 or lower) which is now <ins>deprecated</ins>_**</br>
+* **_Masquerade users are always recomended to use ImGui build (P52) as OLC build (P10) will not be supported for further updates_**
   
 _Gameboy Advance_ _(Pokemon Ruby, Emerald and Sapphire)_
 
@@ -216,10 +221,10 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 
 # User Interface
 
-## :construction: ImGui (+ SDL3 + OpenGL3)
+## :construction: P52 : ImGui (+ SDL3 + OpenGL3)
 * Under Progress
 
-## :warning: OLC
+## :warning: P10 : OLC
 * Note that OLC is **<ins>deprecated</ins>**
 * In **windows** platform, the standard "winAPI" based user interface can be used for accessing various options of the emulator.</br>
 * In **non-windows** (and windows) platforms, an "inbuilt OLC specific" user interface is also provided. Windows user can hence use both interfaces and can toggle b/w "winAPI" or "inbuilt OLC specific" interfaces by pressing 'esc' or 'R' keys respectively.
