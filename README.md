@@ -119,19 +119,17 @@ _**Supported features**_
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
 _**Features under developement (or issues under debug)**_
-* ImGui Support
 * Deviation of CGB's STAT timings w.r.t DMG is yet to be emulated
 * Support Link Cable for Gameboy and Gameboy Color
 * Support for scrolling test needed by Timendus's chip8-test-suite v4.2
-* Implement "_Sync to Audio Playback Rate_" to support audio for GB/GBC and NES
 
 _**Known Major Issues**_
 * GBA still doesn't support audio output (only GB/GBC based APU is implemented)
 * NES still doesn't support audio output (APU is implemented except for DMC)
 
 _**Other Known Issues**_
-* GBA still fails a lot of 'Wait Cycles' and 'Catridge Prefetch (this is not even implemented yet)' based tests present in AGS and mgba test-suite
-* GBA not so often / rarely exibits few minor graphical glitches. Suspected to be related to some startup/initialization not happening as expected
+* GBA still fails a lot of 'Wait Cycles' and 'Catridge Prefetch' (this is not even implemented yet) based tests present in AGS and mgba test-suite
+* GBA not so often / rarely exibits few minor graphical glitches. Suspected to be related to some startup/initialization which is not happening as expected
 * GB/GBC still fails few of the Wilbertpol's 'Non Moon Eye Tests'
 * GB/GBC still fails many roms in the AGE test suite
 
