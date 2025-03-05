@@ -227,10 +227,19 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 * In **windows** platform, the standard "winAPI" based user interface can be used for accessing various options of the emulator.</br>
 * In **non-windows** (and windows) platforms, an "inbuilt OLC specific" user interface is also provided. Windows user can hence use both interfaces and can toggle b/w "winAPI" or "inbuilt OLC specific" interfaces by pressing 'esc' or 'R' keys respectively.
 
-# Credits
-* Forked version of One Lone Coder's Pixel Game Engine is used for graphics (https://github.com/Kotambail-Hegde/olcPixelGameEngine)
-* One Lone Coder's Sound Wave Engine is used for audio (https://github.com/OneLoneCoder/olcSoundWaveEngine)
+# Additional Libaries Used
+## :construction: P52 : ImGui (+ SDL3 + OpenGL3)
+* ImGui
+* SDL3
+* OpenGL3
 * Boost libraries to parse .ini files
+
+## :warning: P10 : OLC
+* Forked version of One Lone Coder's Pixel Game Engine
+* One Lone Coder's Sound Wave Engine
+* Boost libraries to parse .ini files
+
+# Credits
 * GB Pandocs (https://gbdev.io/pandocs/)
 * GB Dev Wiki (https://gbdev.gg8.se/wiki/articles/Memory_Bank_Controllers)
 * Codeslinger's blog (http://www.codeslinger.co.uk/pages/projects/gameboy.html)
@@ -254,8 +263,6 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 * NES Dev Wiki (https://www.nesdev.org/wiki/Nesdev_Wiki)
 * GBA PPU access pattern (https://nba-emu.github.io/hw-docs/ppu/ppu.html)
 * Tom Harte tests for 6502 and SM82 cpu testing
-* Optionally, we use ImGui (https://github.com/ocornut/imgui)
-* Optionally, we use SDL (https://github.com/libsdl-org/SDL)
 
 
 
