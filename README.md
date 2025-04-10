@@ -118,14 +118,14 @@ _**Supported features**_
 * Supports OTA updates
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
-_**Features under developement (or issues under debug)**_
-* Deviation of CGB's STAT timings w.r.t DMG is yet to be emulated
-* Support Link Cable for Gameboy and Gameboy Color
-* Support for scrolling test needed by Timendus's chip8-test-suite v4.2
-
-_**Known Major Issues**_
+_**Known Major Issues/Features under Debug/Implementation**_
 * GBA still doesn't support audio output (only GB/GBC based APU is implemented)
 * NES still doesn't support audio output (APU is implemented except for DMC)
+  
+_**Other Issues/Features under Debug/Implementation**_
+* Support Link Cable for Gameboy and Gameboy Color
+* Support for scrolling test needed by Timendus's chip8-test-suite v4.2
+* Deviation of CGB's STAT timings w.r.t DMG is yet to be emulated
 
 _**Other Known Issues**_
 * GBA still fails a lot of 'Wait Cycles' and 'Catridge Prefetch' (this is not even implemented yet) based tests present in AGS and mgba test-suite
