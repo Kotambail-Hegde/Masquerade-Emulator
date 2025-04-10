@@ -144,7 +144,7 @@ The major differences between the two variants is w.r.t the supporting libraries
 
 ## Debugger
 
-## :construction: P52 : ImGui (+ SDL3 + OpenGL3)
+## :white_check_mark: P52 : ImGui (+ SDL3 + OpenGL3)
 * _Gameboy Advance_
    * Under Development
 * _Gameboy_ / _Gameboy Color_
@@ -155,7 +155,7 @@ The major differences between the two variants is w.r.t the supporting libraries
    * No Support
 
 ## :warning: P10 : OLC
-* No Support
+* Not Supported
 
 ## Normal Game Play 
 
@@ -220,7 +220,7 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 
 # User Interface
 
-## :construction: P52 : ImGui (+ SDL3 + OpenGL3)
+## :white_check_mark: P52 : ImGui (+ SDL3 + OpenGL3)
 * Imgui and nativefiledialog-extended are used for user interface
 
 ## :warning: P10 : OLC
@@ -229,7 +229,7 @@ As of now, masquerade is only tested for windows platform. There are plans to po
 * In **non-windows** (and windows) platforms, an "inbuilt OLC specific" user interface is also provided. Windows user can hence use both interfaces and can toggle b/w "winAPI" or "inbuilt OLC specific" interfaces by pressing 'esc' or 'R' keys respectively.
 
 # Additional Libaries Used
-## :construction: P52 : ImGui (+ SDL3 + OpenGL3)
+## :white_check_mark: P52 : ImGui (+ SDL3 + OpenGL3)
 * ImGui
 * SDL3
 * OpenGL3
