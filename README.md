@@ -120,7 +120,8 @@ _**Supported features**_
 
 _**Known Major Issues/Features under Debug/Implementation**_
 * GBA still doesn't support audio output (only GB/GBC based APU is implemented)
-* NES still doesn't support audio output (APU is implemented except for DMC)
+* NES audio still has some undesired artifacts
+* NES doesn't support DMC yet.
   
 _**Other Issues/Features under Debug/Implementation**_
 * Support Link Cable for Gameboy and Gameboy Color
