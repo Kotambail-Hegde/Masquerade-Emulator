@@ -120,13 +120,11 @@ _**Supported features**_
 
 _**Known Major Issues/Features under Debug/Implementation**_
 * GBA still doesn't support audio output (only GB/GBC based APU is implemented)
-* NES audio still has some undesired artifacts
 * NES doesn't support DMC yet.
   
 _**Other Issues/Features under Debug/Implementation**_
 * Support Link Cable for Gameboy and Gameboy Color
 * Support for scrolling test needed by Timendus's chip8-test-suite v4.2
-* Deviation of CGB's STAT timings w.r.t DMG is yet to be emulated
 
 _**Other Known Issues**_
 * GBA still fails a lot of 'Wait Cycles' and 'Catridge Prefetch' (this is not even implemented yet) based tests present in AGS and mgba test-suite
