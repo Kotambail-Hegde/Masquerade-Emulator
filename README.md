@@ -122,7 +122,6 @@ _**Known Major Issues/Features under Debug/Implementation**_
 * GBA still doesn't support audio output (only GB/GBC based APU is implemented)
   
 _**Other Issues/Features under Debug/Implementation**_
-* NES DMA's obscure timing quirks needs to be properly emulated
 * Support Link Cable for Gameboy and Gameboy Color
 * Support for scrolling test needed by Timendus's chip8-test-suite v4.2
 
@@ -131,6 +130,8 @@ _**Other Known Issues**_
 * GBA not so often / rarely exibits few minor graphical glitches. Suspected to be related to some startup/initialization which is not happening as expected
 * GB/GBC still fails few of the Wilbertpol's 'Non Moon Eye Tests'
 * GB/GBC still fails many roms in the AGE test suite
+* GB/GBC still has many quirks unique to CGB which needs to be implemented
+* NES's DMC DMA's obscure timing quirks needs to be properly emulated
 
 # Variants
 
