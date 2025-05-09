@@ -119,6 +119,7 @@ _**Supported features**_
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
 _**Known Major Issues/Features under Debug/Implementation**_
+* NES is still not able to boot Dragon Warrior III
 * GBA still doesn't support audio output (only GB/GBC based APU is implemented)
   
 _**Other Issues/Features under Debug/Implementation**_
