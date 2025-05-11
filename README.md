@@ -63,7 +63,7 @@ _**Supported features**_
   * GB supports multiple palettes
   * GBC support color correction to be more in line with the actual HW
 * NES
-  * NES supports NROM, MMC1, SuROM, UxROM (002), CNROM, MMC3, AxROM and GxROM
+  * NES supports NROM, MMC1, SEROM, SHROM, SH1ROM, SuROM, UxROM (002), CNROM, MMC3, AxROM and GxROM
   * NES supports Zapper in Port 2 (using mouse clicks)
   * NES passes Nestest (both official and un-official opcodes)
   * NES passes the complete Tom Harte's CPU test (both official and un-official opcodes)
