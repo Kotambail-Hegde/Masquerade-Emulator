@@ -30,6 +30,7 @@ _**Below mentioned gaming consoles MAY PROBABLY be looked at in the future**_
 * Nintendo 3DS
 
 _**Supported features**_
+* Masquerade is now available as a Web version!
 * GBA
   * Supports GBA Bios
   * GBA passes jsmolka/alysoha-tas's arm.gba, thumb.gba, memory.gba, flash and PPU tests
@@ -216,8 +217,12 @@ _Game Of Life_ _(Toroidal Mode)_
 ![GameOfLife](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/44bd5adf-bbe5-4edc-a47a-eff03cc8faae)
 
 # Supported Platforms
-
-As of now, masquerade is only tested for windows platform. There are plans to port this to other platforms in near future.
+## Currently Supported
+- 🪟 **Windows**
+- 🌐 **Web** – Now available as a browser-based version. No installation needed! (_Supported only in P0052 builds_)
+## Future Support
+- 🍎 **macOS**
+- 🐧 **Linux**
 
 # User Interface
 
