@@ -64,7 +64,7 @@ _**Supported features**_
   * GB supports multiple palettes
   * GBC support color correction to be more in line with the actual HW
 * NES
-  * NES supports NROM, MMC1, SEROM, SHROM, SH1ROM, SuROM, UxROM (002), CNROM, MMC3, AxROM and GxROM
+  * NES supports NROM, MMC1, SEROM, SHROM, SH1ROM, SuROM, UxROM (002), CNROM, MMC3, AxROM, GxROM and Nanjian FC-001 (Mapper 163)
   * NES supports Zapper in Port 2 (using mouse clicks)
   * NES passes Nestest (both official and un-official opcodes)
   * NES passes the complete Tom Harte's CPU test (both official and un-official opcodes)
@@ -219,7 +219,7 @@ _Game Of Life_ _(Toroidal Mode)_
 # Supported Platforms
 ## Currently Supported
 - 🪟 **Windows**
-- 🌐 **Web** – Now available as a browser-based version. No installation needed! (_Supported only in P0052 builds_)
+- 🌐 **Web** – Now available as a browser-based version. No installation needed!
 ## Future Support
 - 🍎 **macOS**
 - 🐧 **Linux**
