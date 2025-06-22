@@ -219,7 +219,7 @@ _Game Of Life_ _(Toroidal Mode)_
 # Supported Platforms
 ## Currently Supported
 - 🪟 **Windows**
-- 🌐 **Web** – Now available as a browser-based version. No installation needed!
+- 🌐 **Web** – Now available as a browser-based version!
 ## Future Support
 - 🍎 **macOS**
 - 🐧 **Linux**
