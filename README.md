@@ -42,6 +42,7 @@ _**Supported features**_
   * GB / GBC supports NO MBC, MBC1, MBC2, MBC3, MBC5 and MBC30
   * GB / GBC implements Pixel Fetcher/FIFO
   * GBC supports GB mode
+  * GB / GBC support GameGenie and GameShark cheats
   * GB / GBC passes the complete Tom Harte's CPU test (both official and un-official opcodes)
   * GB / GBC passes the all the Blargg test suite except for the following
     * **oam bug.gb**
@@ -65,6 +66,7 @@ _**Supported features**_
   * GBC support color correction to be more in line with the actual HW
 * NES
   * NES supports NROM, MMC1, SEROM, SHROM, SH1ROM, SuROM, UxROM (002), CNROM, MMC3, AxROM, GxROM and Nanjian FC-001 (Mapper 163)
+  * NES support GameGenie cheats
   * NES supports Zapper in Port 2 (using mouse clicks)
   * NES passes Nestest (both official and un-official opcodes)
   * NES passes the complete Tom Harte's CPU test (both official and un-official opcodes)
