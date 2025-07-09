@@ -37,6 +37,7 @@ _**Supported features**_
   * GBA passes FuzzARM.gba
   * GBA passes all the tests within the  AGS suite **except for Prefetch and Wait Cycles based memory tests**
   * GBA passes the tonc's test suite
+  * GBA passes belogic's audio tests
 * GB / GBC
   * Supports GB and GBC Bios
   * GB / GBC supports NO MBC, MBC1, MBC2, MBC3, MBC5 and MBC30
@@ -123,9 +124,9 @@ _**Supported features**_
 
 _**Known Major Issues/Features under Debug/Implementation**_
 * NES is still not able to boot Dragon Warrior III
-* GBA still doesn't support audio output (only GB/GBC based APU is implemented)
   
 _**Other Issues/Features under Debug/Implementation**_
+* GBA audio still has some undesired artifacts which needs to be cleaned up
 * Support Link Cable for Gameboy and Gameboy Color
 * Support for scrolling test needed by Timendus's chip8-test-suite v4.2
 
