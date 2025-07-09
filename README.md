@@ -132,7 +132,6 @@ _**Other Issues/Features under Debug/Implementation**_
 
 _**Other Known Issues**_
 * GBA still fails a lot of 'Wait Cycles' and 'Catridge Prefetch' (this is not even implemented yet) based tests present in AGS and mgba test-suite
-* GBA not so often / rarely exibits few minor graphical glitches. Suspected to be related to some startup/initialization which is not happening as expected
 * GB/GBC still fails few of the Wilbertpol's 'Non Moon Eye Tests'
 * GB/GBC still fails many roms in the AGE test suite
 * GB/GBC still has many quirks unique to CGB which needs to be implemented
