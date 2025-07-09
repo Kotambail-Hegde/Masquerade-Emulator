@@ -123,6 +123,7 @@ _**Supported features**_
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
 _**Known Major Issues/Features under Debug/Implementation**_
+* GBA is still not able to play few video roms like Dragon Ball GT 
 * NES is still not able to boot Dragon Warrior III
   
 _**Other Issues/Features under Debug/Implementation**_
