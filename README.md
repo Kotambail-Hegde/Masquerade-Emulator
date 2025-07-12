@@ -35,9 +35,9 @@ _**Supported features**_
   * Supports GBA Bios
   * GBA passes jsmolka/alysoha-tas's arm.gba, thumb.gba, memory.gba, flash and PPU tests
   * GBA passes FuzzARM.gba
-  * GBA passes all the tests within the  AGS suite **except for Prefetch and Wait Cycles based memory tests**
-  * GBA passes the tonc's test suite
-  * GBA passes belogic's audio tests
+  * GBA passes all the tests within the AGS suite **except for Prefetch and Wait Cycles based memory tests**
+  * GBA passes all the tests in tonc's test suite
+  * GBA passes all of the belogic's audio tests
 * GB / GBC
   * Supports GB and GBC Bios
   * GB / GBC supports NO MBC, MBC1, MBC2, MBC3, MBC5 and MBC30
