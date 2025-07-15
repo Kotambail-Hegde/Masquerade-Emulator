@@ -141,40 +141,28 @@ _**Other Known Issues**_
 # Variants
 
 As of today, there are 2 variants of masquerade available, P0052 and P0010.
-The major differences between the two variants is w.r.t the supporting libraries used.
-* _P0052 : Is based on ImGui (+ SDL3 + OpenGL3)_
+The major differences between the two variants is the libraries used
+* _P0052 : Is based on ImGui + SDL3 + OpenGL3_
 * _P0010 : Is based on OLC_
 
 # Game Play
 
-## Debugger
+## :white_check_mark: P0052 : ImGui + SDL3 + OpenGL3 (_Recommended_)
 
-## :white_check_mark: P0052 : ImGui (+ SDL3 + OpenGL3)
-* _Gameboy Advance_
-   * Under Development
-* _Gameboy_ / _Gameboy Color_
-   * Under Development
-* _Nintendo Entertainment System_
-   * Under Development
-* _Any other consoles/simulators_
-   * No Support
+_UI_
 
-## :warning: P0010 : OLC
-* Not Supported
-
-## Normal Game Play 
+<img width="446" height="317" alt="image" src="https://github.com/user-attachments/assets/3732d0a3-7af1-4e1c-b1f8-b6da2b5688e9" /> <img width="444" height="319" alt="image" src="https://github.com/user-attachments/assets/9c076d8a-6ba8-47c3-9b5c-bd00e86e6508" />
 
 _Gameboy Color_ _(Pokemon Crystal)_, _Gameboy Advance_ _(Pokemon Emerald)_ _and_ _Gameboy_ _(Pokemon Blue)_
 
 ![imgui_Crystal](https://github.com/user-attachments/assets/3011b49f-45c6-4f18-bbc5-6ede797e81ad) ![imgui_Emerald](https://github.com/user-attachments/assets/d668bc27-9589-4897-bc92-8e1ca14c5d7b) ![imgui_Blue](https://github.com/user-attachments/assets/3fa02907-9902-4b73-a75a-af8e74df8ef6)
 
+## :warning: P0010 : OLC (_Not supported anymore, please switch to P0052_)
 
+_UI_
 
-:warning: **<ins>Disclaimer</ins>:**
+<img width="443" height="315" alt="image" src="https://github.com/user-attachments/assets/331178df-2d66-4fba-8d10-dc5c186acb86" />
 
-* **_Below 'in-game snapshots' were taken on a windows PC using a P0010 build i.e. an OLC build (v0.6036 or lower) which is now <ins>deprecated</ins>_**</br>
-* **_Masquerade users are always recomended to use ImGui build (P0052) as OLC build (P0010) will not be supported for further updates_**
-  
 _Gameboy Advance_ _(Pokemon Ruby, Emerald and Sapphire)_
 
 ![Ruby](https://github.com/user-attachments/assets/4d50ea26-2368-46ea-8753-53c470a056d4)  ![Emerald](https://github.com/user-attachments/assets/511e90e0-aa1b-491c-9937-40c9d1e57ee6) ![Sapphire](https://github.com/user-attachments/assets/8b5a58cb-d602-4b47-9fc9-833e36f6737a)
@@ -227,18 +215,8 @@ _Game Of Life_ _(Toroidal Mode)_
 - 🍎 **macOS**
 - 🐧 **Linux**
 
-# User Interface
-
-## :white_check_mark: P0052 : ImGui (+ SDL3 + OpenGL3)
-* Imgui and nativefiledialog-extended are used for user interface
-
-## :warning: P0010 : OLC
-* Note that OLC is **<ins>deprecated</ins>**
-* In **windows** platform, the standard "winAPI" based user interface can be used for accessing various options of the emulator.</br>
-* In **non-windows** (and windows) platforms, an "inbuilt OLC specific" user interface is also provided. Windows user can hence use both interfaces and can toggle b/w "winAPI" or "inbuilt OLC specific" interfaces by pressing 'esc' or 'R' keys respectively.
-
 # Additional Libaries Used
-## :white_check_mark: P0052 : ImGui (+ SDL3 + OpenGL3)
+## :white_check_mark: P0052 : ImGui + SDL3 + OpenGL3
 * ImGui
 * SDL3
 * OpenGL3
