@@ -151,8 +151,8 @@ The major differences between the two variants is the libraries used
 
 _UI_
 
-<img width="446" height="317" alt="image" src="https://github.com/user-attachments/assets/3732d0a3-7af1-4e1c-b1f8-b6da2b5688e9" /> <img width="444" height="319" alt="image" src="https://github.com/user-attachments/assets/9c076d8a-6ba8-47c3-9b5c-bd00e86e6508" />
-
+<img width="440" height="319" alt="image" src="https://github.com/user-attachments/assets/f7af5623-f801-4d18-bcda-f18f7470454f" /> <img width="442" height="318" alt="image" src="https://github.com/user-attachments/assets/115f97b2-5858-4e2c-80b9-f6ba3049aa4a" />
+  
 _Gameboy Color_ _(Pokemon Crystal)_, _Gameboy Advance_ _(Pokemon Emerald)_ _and_ _Gameboy_ _(Pokemon Blue)_
 
 ![imgui_Crystal](https://github.com/user-attachments/assets/3011b49f-45c6-4f18-bbc5-6ede797e81ad) ![imgui_Emerald](https://github.com/user-attachments/assets/d668bc27-9589-4897-bc92-8e1ca14c5d7b) ![imgui_Blue](https://github.com/user-attachments/assets/3fa02907-9902-4b73-a75a-af8e74df8ef6)
