@@ -247,6 +247,7 @@ _Game Of Life_ _(Toroidal Mode)_
 * Dillonb used for testing and also for providing the inspiration for the CLI based logger/debugger (https://github.com/Dillonb/gba/tree/master)
 * NBA used for testing as I don't have the actual Gameboy Advance (https://github.com/nba-emu/NanoBoyAdvance)
 * SkyEmu used for testing as I don't have the actual Gameboy Advance (https://github.com/skylersaleh/SkyEmu)
+* SkyEmu for inspiring the themes for the frontend (https://github.com/skylersaleh/SkyEmu)
 * jsmolka and alyosha-tas test roms
 * AGS test roms and their source files from DenSinH (https://github.com/DenSinH/AGSTests/tree/main)
 * NES Dev Wiki (https://www.nesdev.org/wiki/Nesdev_Wiki)
