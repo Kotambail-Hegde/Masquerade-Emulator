@@ -44,7 +44,7 @@ _**Supported features**_
   * GB / GBC implements Pixel Fetcher/FIFO
   * GBC supports GB mode
   * GB / GBC support GameGenie and GameShark cheats
-  * GB / GBC passes the complete Tom Harte's CPU test (both official and un-official opcodes)
+  * GB / GBC completely passes Tom Harte's SingleStepTests (both official and un-official opcodes) for SM83
   * GB / GBC passes the all the Blargg test suite except for the following
     * **oam bug.gb**
   * GB / GBC passes all of the Moon Eye tests except for the following:
@@ -70,7 +70,7 @@ _**Supported features**_
   * NES support GameGenie cheats
   * NES supports Zapper in Port 2 (using mouse clicks)
   * NES passes Nestest (both official and un-official opcodes)
-  * NES passes the complete Tom Harte's CPU test (both official and un-official opcodes)
+  * NES completely passes Tom Harte's SingleStepTests (both official and un-official opcodes) for NES6502
   * NES passes the Blargg CPU tests (both official and un-official opcodes)
   * NES passes the Blargg's CPU timing tests (both official and un-official opcodes)
   * NES passes the Blargg's CPU dummy read/write tests (both official and un-official opcodes)
