@@ -3,11 +3,11 @@
 
 _This was just a hobby project that I started for fun, but was not able to put much effort because of my busy schedule._
 
-_But still, the emulator tries to be as accurate as possible but since I don't have the actual hardware for any of the systems that I am trying to emulate, I was completely relying on other's research that I could readily find on discord, blogposts or other emulator specific wiki pages for implementing the corner cases. I personally have done very minimal 'original research' for these platforms._
+_But still, the emulator tries to be as accurate as possible but since I don't have the actual hardware for any of the systems that I am trying to emulate, I am completely relying on other's research that is available in discord, blogposts or other emulator specific wiki pages. I personally have done very minimal 'original research' for these platforms due to the lack of hardware._
 
-_I have avoided referencing other emulator's source code and tried to only rely on online information as much as possible, but still had to rely on a few cycle accurate emulators (mentioned in credit section below) and tweak them to either extract debug logs or to run my own custom roms and analyse the behaviour._
+_I have avoided referencing other emulator's source code and tried to only rely only on available documentation and QnA in discord as much as possible, but still had to tweak a few accurate emulators (mentioned in credit section below) to either extract debug logs or to run my own custom roms and analyse the behaviour._
 
-_<ins>**Note : The source code will be made open-source soon**</ins> (once the code cleanup is complete)_
+_<ins>**Note : The source code will be made open-source soon**</ins> (once I believe the code is in a shape to shared with other)_
 
 **_So, what is Masquerade ?_**
 
