@@ -88,6 +88,8 @@ _**Supported features**_
   * NES passes the Blargg's mmc3_irq_tests suite
   * NES passes all of Blargg's mmc3_test/mmc3_test_2 **expect for 4-scanline_timing.nes**
 * Pacman and MsPacman
+  * Pacman and MsPacman passes Tom Harte's SingleStepTests (both official and un-official opcodes) for Z80
+  * Pacman and MsPacman passes the zexdoc and zexall tests
   * Supports both Midway and Namco variants
   * Also tested again the following boot-legs
     * Hangly Man
@@ -111,9 +113,10 @@ _**Supported features**_
     * ~~MsPacAtackOld~~
 * Space Invader
   * Supports color overlays
-* Supports many Z80 test roms (**_Undocumented Opcode Tests are still not handled_**)
-* Supports many c6502 test roms (both official and un-official opcodes)
-* Supports many 8080 test roms (**_Undocumented Opcode Tests are still not handled_**)
+* Supports and passes a huge number of 8080 test roms (**_Few undocumented opcodes that are not tested by above mentioned test roms are still not implemented_**)
+* Supports and passes a huge number of Z80 test roms (**_Few undocumented opcodes that are not tested by above mentioned test roms are still not implemented_**)
+* Supports and passes a huge number of SM83 test roms (both official and un-official opcodes)
+* Supports and passes a huge number of c6502 test roms (both official and un-official opcodes)
 * Chip8
   * Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
   * Chip8 passes all Timendus's chip8-test-suite v4.0 (**_Most of v4.2 tests pass as well except for scrolling tests which is not implemented yet_**)
