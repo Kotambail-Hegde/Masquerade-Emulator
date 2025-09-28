@@ -66,6 +66,7 @@ _**Supported features**_
   * GB supports multiple palettes
   * GBC support color correction to be more in line with the actual HW
 * NES
+  * 6502 passes Klaus Dormann's 6502_65C02_functional_tests including BCD tests
   * NES supports NROM, MMC1, SEROM, SHROM, SH1ROM, SuROM, UxROM (002), CNROM, MMC3, AxROM, GxROM and Nanjian FC-001 (Mapper 163)
   * NES support GameGenie cheats
   * NES supports Zapper in Port 2 (using mouse clicks)
