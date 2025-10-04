@@ -121,7 +121,7 @@ _**Supported features**_
 * Chip8
   * Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
   * Chip8 completely passes Timendus's chip8-test-suite v4.2
-  * Chip8 completely passes CubeChip test suite
+  * Chip8 mostly passes the CubeChip test suite
 * Game Of Life supports Normal Mode and Torroidal Mode
 * Supports Save States and Load States
 * Supports OTA updates
