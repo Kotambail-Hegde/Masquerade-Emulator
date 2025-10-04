@@ -134,7 +134,6 @@ _**Known Major Issues/Features under Debug/Implementation**_
 _**Other Issues/Features under Debug/Implementation**_
 * GBA audio still has some undesired artifacts which needs to be cleaned up
 * Support Link Cable for Gameboy and Gameboy Color
-* Support for scrolling test needed by Timendus's chip8-test-suite v4.2
 
 _**Other Known Issues**_
 * GBA still fails a lot of 'Wait Cycles' and 'Catridge Prefetch' (this is not even implemented yet) based tests present in AGS and mgba test-suite
