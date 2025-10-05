@@ -119,9 +119,9 @@ _**Supported features**_
 * Supports and passes a huge number of SM83 test roms (both official and un-official opcodes)
 * Supports and passes a huge number of c6502 test roms (both official and un-official opcodes)
 * Chip8
-  * Chip8 supports CHIP8, S-CHIP and XO-CHIP modes
+  * Chip8 supports CHIP8, S-CHIP (Legacy and Modern) and XO-CHIP modes
   * Chip8 completely passes Timendus's chip8-test-suite v4.2
-  * Chip8 mostly passes the CubeChip test suite
+  * Chip8 completely passes the CubeChip test suite
 * Game Of Life supports Normal Mode and Torroidal Mode
 * Supports Save States and Load States
 * Supports OTA updates
