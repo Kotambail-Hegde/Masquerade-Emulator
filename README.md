@@ -120,18 +120,18 @@ _**Supported features**_
 * Supports and passes a huge number of c6502 test roms (both official and un-official opcodes)
 * Chip8
   * Chip8 supports following variants
-   * Chip8
-   * S-Chip Legacy
-   * S-Chip Modern
-   * XO-Chip (Supports audio and upto 4 planes)
+    * Chip8
+    * S-Chip Legacy
+    * S-Chip Modern
+    * XO-Chip (Supports audio and upto 4 planes)
   * Chip8 completely passes Timendus's chip8-test-suite v4.2
   * Chip8 completely passes the CubeChip test suite
-  * Chip8 supports auto-detection of the following for most of the games
-   * Variants
-   * Quirks
-   * Recommended Palettes
-   * Recommended Keybindings
-   * Recommended Rate
+  * Chip8 supports ROM database which is used for auto-detection of the following
+    * Variants
+    * Quirks
+    * Recommended Palettes
+    * Recommended Keybindings
+    * Recommended Rate
 * Game Of Life supports Normal Mode and Torroidal Mode
 * Supports Save States and Load States
 * Supports OTA updates
