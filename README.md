@@ -46,7 +46,7 @@ _**Supported features**_
   * GB / GBC support GameGenie and GameShark cheats
   * GB / GBC completely passes Tom Harte's SingleStepTests (both official and un-official opcodes) for SM83
   * GB / GBC passes the all the Blargg test suite except for the following
-    * **oam bug.gb**
+    * **oam_bug.gb**
   * GB / GBC passes all of the Moon Eye tests except for the following:
     * **intr_2_mode0_timing_sprites.gb**
     * **lcdon_timing-GS.gb**
@@ -58,7 +58,7 @@ _**Supported features**_
   * GB / GBC passes DMG Aging Catridge test
   * GB / GBC passes the rtc3test suite
   * GB / GBC passes all the scribbltests suite except for the following
-    * **Few nops in statcount.gb**
+    * **statcount.gb**
   * GB / GBC passes the TurtleTests
   * GBC passes MagenTests
   * GB / GBC passes mbc3-tester
