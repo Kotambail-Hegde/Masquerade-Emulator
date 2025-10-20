@@ -12,22 +12,22 @@ _<ins>**Note : The source code will be made open-source soon**</ins> (once I fee
 **_So, what is Masquerade ?_**
 
 _**A multi-system emulator which emulates the following gaming consoles and simulators**_
-* Game Boy Advance (GBA)
-* Game Boy Color (GBC)
-* Game Boy (GB)
-* Nintendo Entertainment System (NES)
-* Ms Pacman
-* Pacman (supports both Midway and Namco versions)
-* Space Invaders
-* CHIP8
-* S-CHIP
-* XO-CHIP
-* Game Of Life
+- [x] Game Boy Advance (GBA)
+- [x] Game Boy Color (GBC)
+- [x] Game Boy (GB)
+- [x] Nintendo Entertainment System (NES)
+- [x] Ms Pacman
+- [x] Pacman (supports both Midway and Namco versions)
+- [x] Space Invaders
+- [x] CHIP8
+- [x] S-CHIP
+- [x] XO-CHIP
+- [x] Game Of Life
 
 _**Below mentioned gaming consoles MAY PROBABLY be looked at in the future**_
-* Super Nintendo Entertainment System (SNES)
-* Nintendo DS
-* Nintendo 3DS
+- [ ] Super Nintendo Entertainment System (SNES)
+- [ ] Nintendo DS
+- [ ] Nintendo 3DS
 
 _**Supported features**_
 * Masquerade is now available as a Web version!
@@ -40,25 +40,31 @@ _**Supported features**_
   * GBA passes all of the belogic's audio tests
 * GB / GBC
   * Supports GB and GBC Bios
-  * GB / GBC supports NO MBC, MBC1, MBC2, MBC3, MBC5 and MBC30
-  * GB / GBC implements Pixel Fetcher/FIFO
+  * GB / GBC supports following MBCs
+    - [x] NO MBC
+    - [x] MBC1
+    - [x] MBC2
+    - [x] MBC3
+    - [x] MBC5
+    - [x] MBC30
+  * GB / GBC implements Pixel-Fetcher/Pixel-FIFO
   * GBC supports GB mode
   * GB / GBC support GameGenie and GameShark cheats
   * GB / GBC completely passes Tom Harte's SingleStepTests (both official and un-official opcodes) for SM83
   * GB / GBC passes the all the Blargg test suite except for the following
-    * **oam_bug.gb**
+    - [ ] **oam_bug.gb**
   * GB / GBC passes all of the Moon Eye tests except for the following:
-    * **intr_2_mode0_timing_sprites.gb**
-    * **lcdon_timing-GS.gb**
-    * **lcdon_write_timing-GS.gb**
-    * **halt_ime1_timing2-GS.gb**
-    * **di_timing-GS.gb**
-    * **hblank_ly_scx_timing-GS.gb**
-  * GB passes all the PeachyHardwareAbuse tests including **CTF.gb**
+    - [ ] **intr_2_mode0_timing_sprites.gb**
+    - [ ] **lcdon_timing-GS.gb**
+    - [ ] **lcdon_write_timing-GS.gb**
+    - [ ] **halt_ime1_timing2-GS.gb**
+    - [ ] **di_timing-GS.gb**
+    - [ ] **hblank_ly_scx_timing-GS.gb**
+  * GB passes all the PeachyHardwareAbuse tests including ctf.gb
   * GB / GBC passes DMG Aging Catridge test
   * GB / GBC passes the rtc3test suite
   * GB / GBC passes all the scribbltests suite except for the following
-    * **statcount.gb**
+    - [ ] **statcount.gb/statcount-auto.gb**
   * GB / GBC passes the TurtleTests
   * GBC passes MagenTests
   * GB / GBC passes mbc3-tester
@@ -66,10 +72,22 @@ _**Supported features**_
   * GB / GBC supports GBVideoPlayer2 video roms with audio support
   * GB / GBC APU is able to play ISSOtm's smooth-player.gb
   * GB supports multiple palettes
-  * GBC support color correction to be more in line with the actual HW
+  * GBC support color correction to be more in line with the actual hardware
 * NES
   * 6502 passes Klaus Dormann's 6502_65C02_functional_tests including BCD tests
-  * NES supports NROM, MMC1, SEROM, SHROM, SH1ROM, SuROM, UxROM (002), CNROM, MMC3, AxROM, GxROM and Nanjian FC-001 (Mapper 163)
+  * NES supports following mappers
+    - [x] NROM
+    - [x] MMC1
+    - [x] SEROM
+    - [x] SHROM
+    - [x] SH1ROM
+    - [x] SuROM
+    - [x] UxROM (002)
+    - [x] CNROM
+    - [x] MMC3
+    - [x] AxROM
+    - [x] GxROM
+    - [x] Nanjian FC-001 (Mapper 163)
   * NES support GameGenie cheats
   * NES supports Zapper in Port 2 (using mouse clicks)
   * NES passes Nestest (both official and un-official opcodes)
@@ -89,31 +107,32 @@ _**Supported features**_
   * NES passes both Blargg's / Bisqwit's ppu_open_bus tests
   * NES passes Bisqwit's cpu_exec_space tests
   * NES passes the Blargg's mmc3_irq_tests suite
-  * NES passes all of Blargg's mmc3_test/mmc3_test_2 **expect for 4-scanline_timing.nes**
+  * NES passes all of Blargg's mmc3_test/mmc3_test_2 expect for the following
+    - [ ] **4-scanline_timing.nes**
 * Pacman and MsPacman
   * Pacman and MsPacman passes Tom Harte's SingleStepTests (both official and un-official opcodes) for Z80
   * Pacman and MsPacman passes the zexdoc and zexall tests
   * Supports both Midway and Namco variants
-  * Also tested again the following boot-legs
-    * Hangly Man
-    * ~~Streaking~~
-    * ~~Titan~~
-    * ~~Caterpillar~~
-    * ~~Abscam~~
-    * ~~Joyman~~
-    * ~~Piranha~~
-    * ~~Galaxian Hardware Variant~~
-    * Uniprom Variant
-    * Baracuda
-    * NewPuc
-    * After Dark
-    * Snatcher Set 1 and 2
+  * Pacman currently supports following boot-legs
+    - [x] Hangly Man
+    - [ ] Streaking
+    - [ ] Titan
+    - [ ] Caterpillar
+    - [ ] Abscam
+    - [ ] Joyman
+    - [ ] Piranha
+    - [ ] Galaxian Hardware Variant
+    - [x] Uniprom Variant
+    - [x] Baracuda
+    - [x] NewPuc
+    - [x] After Dark
+    - [x] Snatcher Set 1 and 2
   * Supports MsPacman
-  * Also tested again the following boot-legs
-    * ~~MsPacPlus~~
-    * ~~After Dark~~
-    * ~~MsPacAttackNew~~
-    * ~~MsPacAtackOld~~
+  * MsPacman currently supports following boot-legs
+    - [ ] MsPacPlus
+    - [ ] After Dark
+    - [ ] MsPacAttackNew
+    - [ ] MsPacAtackOld
 * Space Invader
   * Supports color overlays
 * Supports and passes a huge number of 8080 test roms (**_Few undocumented opcodes that are not tested by above mentioned test roms are still not implemented_**)
@@ -122,18 +141,18 @@ _**Supported features**_
 * Supports and passes a huge number of c6502 test roms (both official and un-official opcodes)
 * Chip8
   * Chip8 supports following variants
-    * Chip8
-    * S-Chip Legacy
-    * S-Chip Modern
-    * XO-Chip (Supports audio and upto 4 planes)
+    - [x] Chip8
+    - [x] S-Chip Legacy
+    - [x] S-Chip Modern
+    - [x] XO-Chip (Supports audio and upto 4 planes)
   * Chip8 completely passes Timendus's chip8-test-suite v4.2
   * Chip8 completely passes the CubeChip test suite
   * Chip8 supports ROM database which is used for auto-detection of the following
-    * Variants
-    * Quirks
-    * Recommended Palettes
-    * Recommended Keybindings
-    * Recommended Rate
+    - [x] Variants
+    - [x] Quirks
+    - [x] Recommended Palettes
+    - [x] Recommended Keybindings
+    - [x] Recommended Rate
 * Game Of Life supports Normal Mode and Torroidal Mode
 * Supports Save States and Load States
 * Supports OTA updates
