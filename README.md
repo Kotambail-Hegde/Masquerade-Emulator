@@ -62,7 +62,9 @@ _**Supported features**_
   * GB / GBC passes the TurtleTests
   * GBC passes MagenTests
   * GB / GBC passes mbc3-tester
-  * GB / GBC is able to play severaldemo scenes including notable ones like oh.gb, 20y.gb, pocket.gb and demotronic.gbc
+  * GB / GBC is able to play several demo scenes including notable ones like oh.gb, 20y.gb, pocket.gb and demotronic.gbc
+  * GB / GBC supports GBVideoPlayer2 video roms with audio support
+  * GB / GBC APU is able to play ISSOtm's smooth-player.gb
   * GB supports multiple palettes
   * GBC support color correction to be more in line with the actual HW
 * NES
