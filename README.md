@@ -150,8 +150,8 @@ _**Supported features**_
     * Recommended Keybindings
     * Recommended Rate
 * Game Of Life supports following modes
- - [x] Normal Mode
- - [x] Torroidal Mode
+  - [x] Normal Mode
+  - [x] Torroidal Mode
 * Supports and passes a huge number of 8080 test roms (both official and un-official opcodes)
 * Supports and passes a huge number of Z80 test roms (both official and un-official opcodes)
 * Supports and passes a huge number of SM83 test roms (both official and un-official opcodes)
