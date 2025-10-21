@@ -74,7 +74,7 @@ _**Supported features**_
     - [ ] hblank_ly_scx_timing-GS.gb
   * GB passes all the PeachyHardwareAbuse tests including ctf.gb
   * GB / GBC passes DMG Aging Catridge test
-  * GB / GBC passes the rtc3test suite
+  * GB / GBC passes the ax6's rtc3test suite
   * GB / GBC passes all the scribbltests suite except for the following
     - [ ] statcount.gb/statcount-auto.gb
   * GB / GBC passes the TurtleTests
@@ -179,7 +179,11 @@ _**Known Major Issues / Features under Debug / Implementations, other than the o
   - [ ] GBA still has very minor artifacts at top left corner in mode 3 while playing few video roms like Pokemon
   - [ ] GBA audio still has some undesired artifacts (expected to be fixed in **_P0152_** variant)
   - [ ] GBA is still not able to run at full speed (expected to be fixed in **_P0152_** variant)
+  - [ ] GB/GBC still fails daid test suite
+  - [ ] GB/GBC still fails Hactix tests
   - [ ] GB/GBC still fails many of Wilbertpol's 'Non Moon Eye' tests
+  - [ ] GB/GBC still fails cgb-acid-hell
+  - [ ] GB/GBC still fails samesuite tests
   - [ ] GBC still has some 'shift' while playing GBC Video Player 2 roms
   - [ ] GBC still has some audio artifact while playing GBC Video Player 2 roms
   - [ ] GB/GBC still has many quirks unique to CGB which needs to be implemented
