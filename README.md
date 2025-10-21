@@ -177,7 +177,7 @@ _**Supported features**_
 _**Known Major Issues / Features under Debug / Implementations, other than the ones mentioned above**_
   - [ ] GBA is still not able to play few video roms like Dragon Ball GT
   - [ ] GBA still has very minor artifacts at top left corner in mode 3 while playing few video roms like Pokemon
-  - [ ] GBA audio still has some undesired artifacts
+  - [ ] GBA audio still has some undesired artifacts (expected to be fixed in **_P0152_** variant)
   - [ ] GBA is still not able to run at full speed (expected to be fixed in **_P0152_** variant)
   - [ ] GB/GBC still fails many of Wilbertpol's 'Non Moon Eye' tests
   - [ ] GBC still has some 'shift' while playing GBC Video Player 2 roms
