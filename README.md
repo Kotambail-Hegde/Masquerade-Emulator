@@ -24,7 +24,8 @@ _**A multi-system emulator which emulates the following gaming consoles and simu
 - [x] XO-CHIP
 - [x] Game Of Life
 
-_**Below mentioned gaming consoles MAY PROBABLY be looked at in the future**_
+_**Below mentioned gaming consoles may probably be looked at in the future**_
+- [ ] Super Game Boy
 - [ ] Super Nintendo Entertainment System (SNES)
 - [ ] Nintendo DS
 - [ ] Nintendo 3DS
@@ -35,7 +36,18 @@ _**Supported features**_
   * Supports GBA Bios
   * GBA passes jsmolka/alysoha-tas's arm.gba, thumb.gba, memory.gba, flash and PPU tests
   * GBA passes FuzzARM.gba
-  * GBA passes all the tests within the AGS suite **except for Prefetch and Wait Cycles based memory tests**
+  * GBA passes all the tests within the AGS suite except for the following:
+    - [ ] PREFETCH BUFFER
+    - [ ] WAIT STATE WAIT CONTROL
+    - [ ] CARTRIDGE RAM WAIT CONTROL
+    - [ ] TIMER PRESCALER 0
+  * GBA passes all the mgba-suite tests except for few subtests within the following tests:
+    - [ ] Timing Tests
+    - [ ] Timer Count-Up Tests
+    - [ ] Timer IRQ Tests
+    - [ ] DMA Tests
+    - [ ] SIO Tests
+    - [ ] MISC Edge Case Tests
   * GBA passes all the tests in tonc's test suite
   * GBA passes all of the belogic's audio tests
 * GB / GBC
@@ -151,6 +163,7 @@ _**Supported features**_
     * Recommended Rate
 * Game Of Life supports following modes
   - [x] Normal Mode
+  - [ ] Normal Mode with Pan/Zoom support
   - [x] Torroidal Mode
 * Supports and passes a huge number of 8080 test roms (both official and un-official opcodes)
 * Supports and passes a huge number of Z80 test roms (both official and un-official opcodes)
@@ -160,20 +173,14 @@ _**Supported features**_
 * Supports OTA updates
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
-_**Known Major Issues/Features under Debug/Implementation**_
-* GBA is still not able to play few video roms like Dragon Ball GT 
-* NES is still not able to boot Dragon Warrior III
-  
-_**Other Issues/Features under Debug/Implementation**_
-* GBA audio still has some undesired artifacts
-* Support Link Cable for Gameboy and Gameboy Color
-
-_**Other Known Issues**_
-* GBA still fails a lot of 'Wait Cycles' and 'Catridge Prefetch' based tests present in AGS and mgba test-suite
-* GB/GBC still fails few of the Wilbertpol's 'Non Moon Eye Tests'
-* GB/GBC still fails many roms in the AGE test suite
-* GB/GBC still has many quirks unique to CGB which needs to be implemented
-* NES's DMC DMA's obscure timing quirks needs to be properly emulated
+_**Known Major Issues / Features under Debug / Implementations, other than the ones mentioned above**_
+  - [ ] GBA is still not able to play few video roms like Dragon Ball GT 
+  - [ ] GB/GBC still fails many of Wilbertpol's 'Non Moon Eye' tests
+  - [ ] GB/GBC still has many quirks unique to CGB which needs to be implemented
+  - [ ] NES is still not able to boot Dragon Warrior III
+  - [ ] NES's DMC DMA's obscure timing quirks needs to be properly emulated
+  - [ ] GBA audio still has some undesired artifacts
+  - [ ] Support Link Cable for Gameboy and Gameboy Color
 
 # Variants
 
