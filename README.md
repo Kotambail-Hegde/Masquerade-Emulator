@@ -80,6 +80,7 @@ _**Supported features**_
   * GB / GBC passes the TurtleTests
   * GBC passes MagenTests
   * GB / GBC passes mbc3-tester
+  * GB/GBC supports BESS specification as option to be used for save/load states
   * GB / GBC is able to play several demo scenes including notable ones like oh.gb, 20y.gb, pocket.gb and demotronic.gbc
   * GB / GBC supports GBVideoPlayer2 video roms with audio support
   * GB / GBC APU is able to play ISSOtm's smooth-player.gb
@@ -174,12 +175,16 @@ _**Supported features**_
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
 _**Known Major Issues / Features under Debug / Implementations, other than the ones mentioned above**_
-  - [ ] GBA is still not able to play few video roms like Dragon Ball GT 
+  - [ ] GBA is still not able to play few video roms like Dragon Ball GT
+  - [ ] GBA still has very minor artifacts at top left corner in mode 3 while playing few video roms like Pokemon
+  - [ ] GBA audio still has some undesired artifacts
+  - [ ] GBA is still not able to run at full speed (expected to be fixed in **_P0152_** variant)
   - [ ] GB/GBC still fails many of Wilbertpol's 'Non Moon Eye' tests
+  - [ ] GBC still has some 'shift' while playing GBC Video Player 2 roms
+  - [ ] GBC still has some audio artifact while playing GBC Video Player 2 roms
   - [ ] GB/GBC still has many quirks unique to CGB which needs to be implemented
   - [ ] NES is still not able to boot Dragon Warrior III
   - [ ] NES's DMC DMA's obscure timing quirks needs to be properly emulated
-  - [ ] GBA audio still has some undesired artifacts
   - [ ] Support Link Cable for Gameboy and Gameboy Color
 
 # Variants
