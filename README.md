@@ -113,30 +113,30 @@ _**Supported features**_
   * Pacman and MsPacman passes Tom Harte's SingleStepTests (both official and un-official opcodes) for Z80
   * Pacman and MsPacman passes the zexdoc and zexall tests
   * Supports both Midway and Namco variants
-   * Pacman currently supports following boot-legs
-     - [x] Hangly Man
-     - [ ] Streaking
-     - [ ] Titan
-     - [ ] Caterpillar
-     - [ ] Abscam
-     - [ ] Joyman
-     - [ ] Piranha
-     - [ ] Galaxian Hardware Variant
-     - [x] Uniprom Variant
-     - [x] Baracuda
-     - [x] NewPuc
-     - [x] After Dark
-     - [x] Snatcher Set 1 and 2
+    * Pacman currently supports following boot-legs
+      - [x] Hangly Man
+      - [ ] Streaking
+      - [ ] Titan
+      - [ ] Caterpillar
+      - [ ] Abscam
+      - [ ] Joyman
+      - [ ] Piranha
+      - [ ] Galaxian Hardware Variant
+      - [x] Uniprom Variant
+      - [x] Baracuda
+      - [x] NewPuc
+      - [x] After Dark
+      - [x] Snatcher Set 1 and 2
   * Supports MsPacman
-   * MsPacman currently supports following boot-legs
-     - [ ] MsPacPlus
-     - [ ] After Dark
-     - [ ] MsPacAttackNew
-     - [ ] MsPacAtackOld
+    * MsPacman currently supports following boot-legs
+      - [ ] MsPacPlus
+      - [ ] After Dark
+      - [ ] MsPacAttackNew
+      - [ ] MsPacAtackOld
 * Space Invader
   * Supports color overlays
-* Supports and passes a huge number of 8080 test roms (**_Few undocumented opcodes that are not tested by above mentioned test roms are still not implemented_**)
-* Supports and passes a huge number of Z80 test roms (**_Few undocumented opcodes that are not tested by above mentioned test roms are still not implemented_**)
+* Supports and passes a huge number of 8080 test roms (both official and un-official opcodes)
+* Supports and passes a huge number of Z80 test roms (both official and un-official opcodes)
 * Supports and passes a huge number of SM83 test roms (both official and un-official opcodes)
 * Supports and passes a huge number of c6502 test roms (both official and un-official opcodes)
 * Chip8
