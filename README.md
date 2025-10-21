@@ -182,6 +182,7 @@ _**Known Major Issues / Features under Debug / Implementations, other than the o
   - [ ] GB/GBC still fails daid test suite
   - [ ] GB/GBC still fails Hactix tests
   - [ ] GB/GBC still fails many of Wilbertpol's 'Non Moon Eye' tests
+  - [ ] GB/GBC still fails many of Mealybug Tearoom tests
   - [ ] GB/GBC still fails cgb-acid-hell
   - [ ] GB/GBC still fails samesuite tests
   - [ ] GBC still has some 'shift' while playing GBC Video Player 2 roms
