@@ -52,19 +52,19 @@ _**Supported features**_
   * GB / GBC support GameGenie and GameShark cheats
   * GB / GBC completely passes Tom Harte's SingleStepTests (both official and un-official opcodes) for SM83
   * GB / GBC passes the all the Blargg test suite except for the following
-    - [ ] **oam_bug.gb**
+    - [ ] oam_bug.gb
   * GB / GBC passes all of the Moon Eye tests except for the following:
-    - [ ] **intr_2_mode0_timing_sprites.gb**
-    - [ ] **lcdon_timing-GS.gb**
-    - [ ] **lcdon_write_timing-GS.gb**
-    - [ ] **halt_ime1_timing2-GS.gb**
-    - [ ] **di_timing-GS.gb**
-    - [ ] **hblank_ly_scx_timing-GS.gb**
+    - [ ] intr_2_mode0_timing_sprites.gb
+    - [ ] lcdon_timing-GS.gb
+    - [ ] lcdon_write_timing-GS.gb
+    - [ ] halt_ime1_timing2-GS.gb
+    - [ ] di_timing-GS.gb
+    - [ ] hblank_ly_scx_timing-GS.gb
   * GB passes all the PeachyHardwareAbuse tests including ctf.gb
   * GB / GBC passes DMG Aging Catridge test
   * GB / GBC passes the rtc3test suite
   * GB / GBC passes all the scribbltests suite except for the following
-    - [ ] **statcount.gb/statcount-auto.gb**
+    - [ ] statcount.gb/statcount-auto.gb
   * GB / GBC passes the TurtleTests
   * GBC passes MagenTests
   * GB / GBC passes mbc3-tester
@@ -108,7 +108,7 @@ _**Supported features**_
   * NES passes Bisqwit's cpu_exec_space tests
   * NES passes the Blargg's mmc3_irq_tests suite
   * NES passes all of Blargg's mmc3_test/mmc3_test_2 expect for the following
-    - [ ] **4-scanline_timing.nes**
+    - [ ] 4-scanline_timing.nes
 * Pacman and MsPacman
   * Pacman and MsPacman passes Tom Harte's SingleStepTests (both official and un-official opcodes) for Z80
   * Pacman and MsPacman passes the zexdoc and zexall tests
@@ -148,12 +148,14 @@ _**Supported features**_
   * Chip8 completely passes Timendus's chip8-test-suite v4.2
   * Chip8 completely passes the CubeChip test suite
   * Chip8 supports ROM database which is used for auto-detection of the following
-    - [x] Variants
-    - [x] Quirks
-    - [x] Recommended Palettes
-    - [x] Recommended Keybindings
-    - [x] Recommended Rate
-* Game Of Life supports Normal Mode and Torroidal Mode
+    * Variants
+    * Quirks
+    * Recommended Palettes
+    * Recommended Keybindings
+    * Recommended Rate
+* Game Of Life supports following modes
+ - [x] Normal Mode
+ - [x] Torroidal Mode
 * Supports Save States and Load States
 * Supports OTA updates
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
@@ -163,7 +165,7 @@ _**Known Major Issues/Features under Debug/Implementation**_
 * NES is still not able to boot Dragon Warrior III
   
 _**Other Issues/Features under Debug/Implementation**_
-* GBA audio still has some undesired artifacts which needs to be cleaned up
+* GBA audio still has some undesired artifacts
 * Support Link Cable for Gameboy and Gameboy Color
 
 _**Other Known Issues**_
