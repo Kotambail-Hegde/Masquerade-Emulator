@@ -186,10 +186,10 @@ _**Known Major Issues / Features under Debug / Implementations, other than the o
   - [ ] GB/GBC still fails samesuite tests
   - [ ] GBC still has some 'shift' while playing GBC Video Player 2 roms
   - [ ] GBC still has some audio artifact while playing GBC Video Player 2 roms
+  - [ ] GB/GBC still doesnt support Link Cable
   - [ ] GB/GBC still has many quirks unique to CGB which needs to be implemented
   - [ ] NES is still not able to boot Dragon Warrior III
   - [ ] NES's DMC DMA's obscure timing quirks needs to be properly emulated
-  - [ ] Support Link Cable for Gameboy and Gameboy Color
 
 # Variants
 
