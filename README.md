@@ -169,7 +169,7 @@ _**Other Issues/Features under Debug/Implementation**_
 * Support Link Cable for Gameboy and Gameboy Color
 
 _**Other Known Issues**_
-* GBA still fails a lot of 'Wait Cycles' and 'Catridge Prefetch' (this is not even implemented yet) based tests present in AGS and mgba test-suite
+* GBA still fails a lot of 'Wait Cycles' and 'Catridge Prefetch' based tests present in AGS and mgba test-suite
 * GB/GBC still fails few of the Wilbertpol's 'Non Moon Eye Tests'
 * GB/GBC still fails many roms in the AGE test suite
 * GB/GBC still has many quirks unique to CGB which needs to be implemented
