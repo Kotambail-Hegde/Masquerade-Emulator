@@ -75,8 +75,10 @@ _**Supported features**_
   * GB passes all the PeachyHardwareAbuse tests including ctf.gb
   * GB / GBC passes DMG Aging Catridge test
   * GB / GBC passes the ax6's rtc3test suite
-  * GB / GBC passes all the scribbltests suite except for the following
-    - [ ] statcount.gb/statcount-auto.gb
+  * GB / GBC passes all the Hacktix's tests except for the following
+    - [ ] scribbltests - statcount.gb/statcount-auto.gb
+    - [ ] bully.gb
+    - [ ] strikethrough.gb
   * GB / GBC passes the TurtleTests
   * GBC passes MagenTests
   * GB / GBC passes mbc3-tester
@@ -180,7 +182,6 @@ _**Known Major Issues / Features under Debug / Implementations, other than the o
   - [ ] GBA audio still has some undesired artifacts (expected to be fixed in **_P0152_** variant)
   - [ ] GBA is still not able to run at full speed (expected to be fixed in **_P0152_** variant)
   - [ ] GB/GBC still fails daid test suite
-  - [ ] GB/GBC still fails Hactix tests
   - [ ] GB/GBC still fails many of Wilbertpol's 'Non Moon Eye' tests
   - [ ] GB/GBC still fails many of Mealybug Tearoom tests
   - [ ] GB/GBC still fails cgb-acid-hell
