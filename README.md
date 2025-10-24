@@ -67,8 +67,6 @@ _**Supported features**_
     - [ ] oam_bug.gb
   * GB / GBC passes all of the Moon Eye tests except for the following:
     - [ ] intr_2_mode0_timing_sprites.gb
-    - [ ] lcdon_timing-GS.gb
-    - [ ] lcdon_write_timing-GS.gb
     - [ ] halt_ime1_timing2-GS.gb
     - [ ] di_timing-GS.gb
     - [ ] hblank_ly_scx_timing-GS.gb
@@ -76,7 +74,6 @@ _**Supported features**_
   * GB / GBC passes DMG Aging Catridge test
   * GB / GBC passes the ax6's rtc3test suite
   * GB / GBC passes all the Hacktix's tests except for the following
-    - [ ] scribbltests - statcount.gb/statcount-auto.gb
     - [ ] bully.gb
     - [ ] strikethrough.gb
   * GB / GBC passes the TurtleTests
@@ -178,17 +175,15 @@ _**Supported features**_
 
 _**Known Major Issues / Features under Debug / Implementations, other than the ones mentioned above**_
   - [ ] GBA is still not able to play few video roms like Dragon Ball GT
-  - [ ] GBA still has very minor artifacts at top left corner in mode 3 while playing few video roms like Pokemon
-  - [ ] GBA audio still has some undesired artifacts (expected to be fixed in **_P0152_** variant)
-  - [ ] GBA is still not able to run at full speed (expected to be fixed in **_P0152_** variant)
+  - [ ] GBA still has very minor visual artifacts at top left corner in mode 3 while playing few video roms like Pokemon
+  - [ ] GBA still has some undesired audio artifacts (expected to be fixed in **_P0152_** variant)
+  - [ ] GBA is still not able to run at full speed consistenly without PGOs (expected to be fixed in **_P0152_** variant)
   - [ ] GB/GBC still fails daid test suite
   - [ ] GB/GBC still fails many of Wilbertpol's 'Non Moon Eye' tests
   - [ ] GB/GBC still fails many of Mealybug Tearoom tests
   - [ ] GB/GBC still fails cgb-acid-hell
   - [ ] GB/GBC still fails samesuite tests
-  - [ ] GBC still has some 'shift' while playing GBC Video Player 2 roms
-  - [ ] GBC still has some audio artifact while playing GBC Video Player 2 roms
-  - [ ] GB/GBC still doesnt support Link Cable
+  - [ ] GB/GBC still doesn't support Link Cable
   - [ ] GB/GBC still has many quirks unique to CGB which needs to be implemented
   - [ ] NES is still not able to boot Dragon Warrior III
   - [ ] NES's DMC DMA's obscure timing quirks needs to be properly emulated
