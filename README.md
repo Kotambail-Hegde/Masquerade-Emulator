@@ -69,7 +69,6 @@ _**Supported features**_
     - [ ] intr_2_mode0_timing_sprites.gb
   * GB / GBC passes all of the Wilbert Pol's tests except for the following:
     - [ ] hblank_ly_scx_timing_variant_nops.gb
-    - [ ] intr_0_timing.gb
     - [ ] intr_2_mode0_timing_sprites.gb
     - [ ] intr_2_mode0_timing_sprites_nops.gb
     - [ ] intr_2_mode0_timing_sprites_scx1_nops.gb
