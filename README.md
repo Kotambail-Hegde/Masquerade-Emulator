@@ -68,7 +68,6 @@ _**Supported features**_
   * GB / GBC passes all of the Moon Eye tests except for the following:
     - [ ] intr_2_mode0_timing_sprites.gb
   * GB / GBC passes all of the Wilbert Pol's tests except for the following:
-    - [ ] hblank_ly_scx_timing_nops.gb
     - [ ] hblank_ly_scx_timing_variant_nops.gb
     - [ ] intr_0_timing.gb
     - [ ] intr_2_mode0_timing_sprites.gb
@@ -77,6 +76,7 @@ _**Supported features**_
     - [ ] intr_2_mode0_timing_sprites_scx2_nops.gb
     - [ ] intr_2_mode0_timing_sprites_scx3_nops.gb
     - [ ] intr_2_mode0_timing_sprites_scx4_nops.gb
+    - [ ] ly_lyc_153_write-GS.gb
   * GB passes all the PeachyHardwareAbuse tests including ctf.gb
   * GB / GBC passes DMG Aging Catridge test
   * GB / GBC passes the ax6's rtc3test suite
