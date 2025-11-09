@@ -76,7 +76,6 @@ _**Supported features**_
     - [ ] intr_2_mode0_timing_sprites_scx2_nops.gb
     - [ ] intr_2_mode0_timing_sprites_scx3_nops.gb
     - [ ] intr_2_mode0_timing_sprites_scx4_nops.gb
-    - [ ] ly_lyc_153_write-GS.gb
   * GB passes all the PeachyHardwareAbuse tests including ctf.gb
   * GB / GBC passes DMG Aging Catridge test
   * GB / GBC passes the ax6's rtc3test suite
