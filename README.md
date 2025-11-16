@@ -41,7 +41,7 @@ _**Supported features**_
     - [ ] WAIT STATE WAIT CONTROL
     - [ ] CARTRIDGE RAM WAIT CONTROL
     - [ ] TIMER PRESCALER 0
-  * GBA passes all the mgba-suite tests except for few subtests within the following tests:
+  * GBA passes all the mgba-suite tests except for the following tests:
     - [ ] Timing Tests
     - [ ] Timer Count-Up Tests
     - [ ] Timer IRQ Tests
