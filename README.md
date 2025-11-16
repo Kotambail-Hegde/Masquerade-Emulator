@@ -68,18 +68,21 @@ _**Supported features**_
   * GB / GBC passes all of the Moon Eye tests except for the following:
     - [ ] intr_2_mode0_timing_sprites.gb
   * GB / GBC passes all of the Wilbert Pol's tests except for the following:
-    - [ ] intr_2_mode0_timing_sprites.gb
-    - [ ] intr_2_mode0_timing_sprites_nops.gb
-    - [ ] intr_2_mode0_timing_sprites_scx1_nops.gb
-    - [ ] intr_2_mode0_timing_sprites_scx2_nops.gb
-    - [ ] intr_2_mode0_timing_sprites_scx3_nops.gb
-    - [ ] intr_2_mode0_timing_sprites_scx4_nops.gb
-    - [ ] ly_lyc_153_write-GS.gb (passing this conflicts with ly_new_frame-GS.gb)
-    - [ ] ly_lyc_153_write-C.gb
-    - [ ] ly_lyc_write-C.gb
-    - [ ] stat_irq_blocking.gb in DMG mode (passing this conflicts with ly00_mode0_2-GS.gb and ly_lyc_0-GS.gb)
-    - [ ] stat_write_if-GS.gb
-    - [ ] stat_write_if-C.gb
+    * GB and GBC
+      - [ ] intr_2_mode0_timing_sprites.gb
+      - [ ] intr_2_mode0_timing_sprites_nops.gb
+      - [ ] intr_2_mode0_timing_sprites_scx1_nops.gb
+      - [ ] intr_2_mode0_timing_sprites_scx2_nops.gb
+      - [ ] intr_2_mode0_timing_sprites_scx3_nops.gb
+      - [ ] intr_2_mode0_timing_sprites_scx4_nops.gb
+      - [ ] ly_lyc_153_write-GS.gb (passing this conflicts with ly_new_frame-GS.gb)
+      - [ ] stat_irq_blocking.gb in DMG mode (passing this conflicts with ly00_mode0_2-GS.gb and ly_lyc_0-GS.gb)
+      - [ ] stat_write_if-GS.gb
+    * GBC only
+      - [ ] rapid_toggle.gb
+      - [ ] ly_lyc_153_write-C.gb
+      - [ ] ly_lyc_write-C.gb
+      - [ ] stat_write_if-C.gb
   * GB passes all the PeachyHardwareAbuse tests including ctf.gb
   * GB / GBC passes DMG Aging Catridge test
   * GB / GBC passes the ax6's rtc3test suite
@@ -205,6 +208,7 @@ _**Known Major Issues / Features under Debug / Implementations, other than the o
   - [ ] GBA still has very minor visual artifacts at top left corner in mode 3 while playing few video roms like Pokemon
   - [ ] GBA still has some undesired audio artifacts (expected to be fixed in **_P0152_** variant)
   - [ ] GBA is still not able to run at full speed consistenly without PGOs (expected to be fixed in **_P0152_** variant)
+  - [ ] GBC fails MMIO_exec_1.gb
   - [ ] GB/GBC still fails daid test suite
   - [ ] GB/GBC still fails cgb-acid-hell
   - [ ] GB/GBC still fails many of the samesuite tests
