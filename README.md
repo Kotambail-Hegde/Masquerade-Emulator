@@ -79,7 +79,6 @@ _**Supported features**_
       - [ ] stat_irq_blocking.gb in DMG mode (passing this conflicts with ly00_mode0_2-GS.gb and ly_lyc_0-GS.gb)
       - [ ] stat_write_if-GS.gb
     * GBC only
-      - [ ] rapid_toggle.gb
       - [ ] ly_lyc_153_write-C.gb
       - [ ] ly_lyc_write-C.gb
       - [ ] stat_write_if-C.gb
