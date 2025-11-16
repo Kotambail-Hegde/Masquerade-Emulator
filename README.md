@@ -67,6 +67,7 @@ _**Supported features**_
     - [ ] oam_bug.gb
   * GB / GBC passes all of the Moon Eye tests except for the following:
     - [ ] intr_2_mode0_timing_sprites.gb
+    - [ ] boot_sclk_align-dmgABCmgb.gb
   * GB / GBC passes all of the Wilbert Pol's tests except for the following:
     * GB and GBC
       - [ ] intr_2_mode0_timing_sprites.gb
@@ -76,8 +77,9 @@ _**Supported features**_
       - [ ] intr_2_mode0_timing_sprites_scx3_nops.gb
       - [ ] intr_2_mode0_timing_sprites_scx4_nops.gb
       - [ ] ly_lyc_153_write-GS.gb (passing this conflicts with ly_new_frame-GS.gb)
-      - [ ] stat_irq_blocking.gb in DMG mode (passing this conflicts with ly00_mode0_2-GS.gb and ly_lyc_0-GS.gb)
       - [ ] stat_write_if-GS.gb
+    * GB only
+      - [ ] stat_irq_blocking.gb (passing this conflicts with ly00_mode0_2-GS.gb and ly_lyc_0-GS.gb)
     * GBC only
       - [ ] ly_lyc_153_write-C.gb
       - [ ] ly_lyc_write-C.gb
