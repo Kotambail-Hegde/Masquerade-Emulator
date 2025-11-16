@@ -205,20 +205,23 @@ _**Supported features**_
 * Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
 
 _**Known Major Issues / Features under Debug / Implementations, other than the ones mentioned above**_
-  - [ ] GBA is still not able to play few video roms like Dragon Ball GT
-  - [ ] GBA still has very minor visual artifacts at top left corner in mode 3 while playing few video roms like Pokemon
-  - [ ] GBA still has some undesired audio artifacts (expected to be fixed in **_P0152_** variant)
-  - [ ] GBA is still not able to run at full speed consistenly without PGOs (expected to be fixed in **_P0152_** variant)
-  - [ ] GBC fails MMIO_exec_1.gb
-  - [ ] GB/GBC still fails daid test suite
-  - [ ] GB/GBC still fails cgb-acid-hell
-  - [ ] GB/GBC still fails many of the samesuite tests
-  - [ ] GB/GBC still fails many of the age-test-roms tests
-  - [ ] GB/GBC still fails many of the Mealybug Tearoom tests
-  - [ ] GB/GBC still doesn't support Link Cable
-  - [ ] GB/GBC still has many quirks unique to CGB which needs to be implemented
-  - [ ] NES is still not able to boot Dragon Warrior III
-  - [ ] NES's DMC DMA's obscure timing quirks needs to be properly emulated
+  * GBA
+    - [ ] GBA is still not able to play few video roms like Dragon Ball GT
+    - [ ] GBA still has very minor visual artifacts at top left corner in mode 3 while playing few video roms like Pokemon
+    - [ ] GBA still has some undesired audio artifacts (expected to be fixed in **_P0152_** variant)
+    - [ ] GBA is still not able to run at full speed consistenly without PGOs (expected to be fixed in **_P0152_** variant)
+  * GB/GBC
+    - [ ] GBC fails MMIO_exec_1.gb
+    - [ ] GB/GBC still fails daid test suite
+    - [ ] GB/GBC still fails cgb-acid-hell
+    - [ ] GB/GBC still fails many of the samesuite tests
+    - [ ] GB/GBC still fails many of the age-test-roms tests
+    - [ ] GB/GBC still fails many of the Mealybug Tearoom tests
+    - [ ] GB/GBC still doesn't support Link Cable
+    - [ ] GB/GBC still has many quirks unique to CGB which needs to be implemented
+  * NES
+    - [ ] NES is still not able to boot Dragon Warrior III
+    - [ ] NES's DMC DMA's obscure timing quirks needs to be properly emulated
 
 # Variants
 
