@@ -74,10 +74,10 @@ _**Supported features**_
     - [ ] intr_2_mode0_timing_sprites_scx2_nops.gb
     - [ ] intr_2_mode0_timing_sprites_scx3_nops.gb
     - [ ] intr_2_mode0_timing_sprites_scx4_nops.gb
-    - [ ] ly_lyc_0-C.gb
-    - [ ] ly_lyc_153_write-GS.gb
+    - [ ] ly_lyc_153_write-GS.gb (passing this conflicts with ly_new_frame-GS.gb)
     - [ ] ly_lyc_153_write-C.gb
     - [ ] ly_lyc_write-C.gb
+    - [ ] stat_irq_blocking.gb in DMG mode (passing this conflicts with ly00_mode0_2-GS.gb and ly_lyc_0-GS.gb)
     - [ ] stat_write_if-GS.gb
     - [ ] stat_write_if-C.gb
   * GB passes all the PeachyHardwareAbuse tests including ctf.gb
@@ -89,6 +89,23 @@ _**Supported features**_
   * GB / GBC passes the TurtleTests
   * GBC passes MagenTests
   * GB / GBC passes mbc3-tester
+  * GB / GBC still fails the following same-suite tests
+    - [ ] apu
+    - [ ] dma
+    - [ ] ppu
+    - [ ] sgb
+  * GB / GBC still fails the following age-test-roms tests
+    - [ ] lcd-align-ly
+    - [ ] m3-bg-bgp
+    - [ ] m3-bg-lcdc
+    - [ ] m3-bg-scx
+    - [ ] oam
+    - [ ] speed-switch
+    - [ ] stat-interrupt
+    - [ ] stat-mode
+    - [ ] stat-mode-sprites
+    - [ ] stat-mode-window
+    - [ ] vram
   * GB/GBC supports BESS specification as option to be used for save/load states
   * GB / GBC is able to play several demo scenes including notable ones like oh.gb, 20y.gb, pocket.gb and demotronic.gbc
   * GB / GBC supports GBVideoPlayer2 video roms with audio support
@@ -191,6 +208,7 @@ _**Known Major Issues / Features under Debug / Implementations, other than the o
   - [ ] GB/GBC still fails daid test suite
   - [ ] GB/GBC still fails cgb-acid-hell
   - [ ] GB/GBC still fails many of the samesuite tests
+  - [ ] GB/GBC still fails many of the age-test-roms tests
   - [ ] GB/GBC still fails many of the Mealybug Tearoom tests
   - [ ] GB/GBC still doesn't support Link Cable
   - [ ] GB/GBC still has many quirks unique to CGB which needs to be implemented
