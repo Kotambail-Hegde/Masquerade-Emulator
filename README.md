@@ -78,7 +78,6 @@ _**Supported features**_
       - [ ] intr_2_mode0_timing_sprites_scx4_nops.gb
     * GB only
       - [ ] ly_lyc_153_write-GS.gb (passing this conflicts with ly_new_frame-GS.gb)
-      - [ ] stat_irq_blocking.gb (passing this conflicts with ly00_mode0_2-GS.gb and ly_lyc_0-GS.gb)
       - [ ] stat_write_if-GS.gb
     * GBC only
       - [ ] ly_lyc_153_write-C.gb
