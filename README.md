@@ -66,11 +66,8 @@ _**Supported features**_
   * GB / GBC passes the all the Blargg test suite except for the following
     - [ ] oam_bug.gb
   * GB / GBC passes all of the Moon Eye tests except for the following:
-    * GB and GBC
-      - [ ] intr_2_mode0_timing_sprites.gb
-      - [ ] boot_sclk_align-dmgABCmgb.gb
-    * GBC only
-      - [ ] rapid_toggle.gb
+    - [ ] intr_2_mode0_timing_sprites.gb
+    - [ ] boot_sclk_align-dmgABCmgb.gb
   * GB / GBC passes all of the Wilbert Pol's tests except for the following:
     * GB and GBC
       - [ ] intr_2_mode0_timing_sprites.gb
@@ -80,13 +77,12 @@ _**Supported features**_
       - [ ] intr_2_mode0_timing_sprites_scx3_nops.gb
       - [ ] intr_2_mode0_timing_sprites_scx4_nops.gb
     * GB only
-      - [ ] ly_lyc_153_write-GS.gb (conflicts with ly_new_frame-GS.gb)
+      - [ ] ly_lyc_153_write-GS.gb
       - [ ] stat_write_if-GS.gb
     * GBC only
       - [ ] ly_lyc_153_write-C.gb
       - [ ] ly_lyc_write-C.gb
       - [ ] stat_write_if-C.gb
-      - [ ] rapid_toggle.gb
   * GB passes all the PeachyHardwareAbuse tests including ctf.gb
   * GB / GBC passes DMG Aging Catridge test
   * GB / GBC passes the ax6's rtc3test suite
