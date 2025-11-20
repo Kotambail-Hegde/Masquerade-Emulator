@@ -7,7 +7,7 @@ _But still, the emulator tries to be as accurate as possible but since I don't h
 
 _I have avoided referencing other emulator's source code and tried to only rely only on available documentation and QnA in discord as much as possible, but still had to tweak a few accurate emulators (mentioned in credit section below) to either extract debug logs or to run my own custom roms and analyse the behaviour._
 
-_<ins>**Note : The source code will be made open-source soon**</ins> (once I feel the code is in a shape to be shared with others)_
+_<ins>**Note : The source code for the masquerade emulator will be made open-source as soon as _P0152_ builds are ready**</ins>_
 
 **_So, what is Masquerade ?_**
 
