@@ -2,4 +2,4 @@
 masquerade.exe filter=lfs diff=lfs merge=lfs -text
 
 # Exclude submodule from language detection
-assets/c8/db/chip-8-database/* linguist-vendored
+assets/* linguist-vendored
