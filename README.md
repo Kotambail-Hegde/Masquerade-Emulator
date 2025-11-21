@@ -336,7 +336,7 @@ _Game Of Life_ _(Toroidal Mode)_
 * AGS test roms and their source files from DenSinH (https://github.com/DenSinH/AGSTests/tree/main)
 * NES Dev Wiki (https://www.nesdev.org/wiki/Nesdev_Wiki)
 * GBA PPU access pattern (https://nba-emu.github.io/hw-docs/ppu/ppu.html)
-* Tom Harte tests for 6502 and SM82 cpu testing
+* Tom Harte tests for 6502 and SM84 cpu testing
 
 
 
