@@ -84,6 +84,7 @@ _**Supported features**_
       - [ ] ly_lyc_153_write-C.gb
       - [ ] ly_lyc_write-C.gb
       - [ ] stat_write_if-C.gb
+  * GB / GBC passes the Daid's GBEmulatorShootout test suite
   * GB passes all the PeachyHardwareAbuse tests including ctf.gb
   * GB / GBC passes DMG Aging Catridge test
   * GB / GBC passes the ax6's rtc3test suite
