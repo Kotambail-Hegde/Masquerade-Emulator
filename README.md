@@ -66,8 +66,9 @@ _**Supported features**_
   * GB / GBC passes the all the Blargg test suite except for the following
     - [ ] oam_bug.gb
   * GB / GBC passes all of the Moon Eye tests except for the following:
+    - [ ] boot_div-dmgABCmgb.gb
+    - [ ] boot_hwio-dmgABCmgb.gb
     - [ ] intr_2_mode0_timing_sprites.gb
-    - [ ] boot_sclk_align-dmgABCmgb.gb
   * GB / GBC passes all of the Wilbert Pol's tests except for the following:
     * GB and GBC
       - [ ] intr_2_mode0_timing_sprites.gb
@@ -87,7 +88,6 @@ _**Supported features**_
   * GB / GBC passes DMG Aging Catridge test
   * GB / GBC passes the ax6's rtc3test suite
   * GB / GBC passes all the Hacktix's tests except for the following
-    - [ ] bully.gb
     - [ ] strikethrough.gb
   * GB / GBC passes the TurtleTests
   * GBC passes MagenTests
