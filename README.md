@@ -94,7 +94,6 @@ _**Supported features**_
   * GB / GBC passes mbc3-tester
   * GB / GBC still fails the following same-suite tests
     - [ ] apu
-    - [ ] dma
     - [ ] ppu
     - [ ] sgb
   * GB / GBC still fails the following age-test-roms tests
