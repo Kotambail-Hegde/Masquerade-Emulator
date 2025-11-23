@@ -210,11 +210,9 @@ _**Known Major Issues / Features under Debug / Implementations, other than the o
     - [ ] GBA is still not able to run at full speed consistenly without PGOs (expected to be fixed in **_P0152_** variant)
   * GB/GBC
     - [ ] GBC fails MMIO_exec_1.gb
-    - [ ] GB/GBC still fails daid test suite
     - [ ] GB/GBC still fails cgb-acid-hell
-    - [ ] GB/GBC still fails many of the samesuite tests
     - [ ] GB/GBC still fails many of the age-test-roms tests
-    - [ ] GB/GBC still fails a lot of docboy-test-suite's APU tests
+    - [ ] GB/GBC still fails many of the docboy-test-suite roms
     - [ ] GB/GBC still fails many of the Mealybug Tearoom tests
     - [ ] GB/GBC still doesn't support Link Cable
     - [ ] GB/GBC still has many quirks unique to CGB which needs to be implemented
