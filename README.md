@@ -96,8 +96,6 @@ _**Supported features**_
   * GB / GBC passes mbc3-tester
   * GB / GBC still fails the following same-suite tests
     - [ ] apu
-    - [ ] ppu
-    - [ ] sgb
   * GB / GBC still fails the following age-test-roms tests
     - [ ] lcd-align-ly
     - [ ] m3-bg-bgp
@@ -216,6 +214,7 @@ _**Known Major Issues / Features under Debug / Implementations, other than the o
     - [ ] GB/GBC still fails cgb-acid-hell
     - [ ] GB/GBC still fails many of the samesuite tests
     - [ ] GB/GBC still fails many of the age-test-roms tests
+    - [ ] GB/GBC still fails many of the docboy-test-suite roms
     - [ ] GB/GBC still fails many of the Mealybug Tearoom tests
     - [ ] GB/GBC still doesn't support Link Cable
     - [ ] GB/GBC still has many quirks unique to CGB which needs to be implemented
