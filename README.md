@@ -79,11 +79,9 @@ _**Supported features**_
       - [ ] intr_2_mode0_timing_sprites_scx4_nops.gb
     * GB only
       - [ ] ly_lyc_153_write-GS.gb
-      - [ ] stat_write_if-GS.gb
     * GBC only
       - [ ] ly_lyc_153_write-C.gb
       - [ ] ly_lyc_write-C.gb
-      - [ ] stat_write_if-C.gb
   * GB / GBC passes all the Daid's GBEmulatorShootout tests except for the following
       - [ ] ppu_scanline_bgp.gb
   * GB passes all the PeachyHardwareAbuse tests including ctf.gb
@@ -212,7 +210,7 @@ _**Known Major Issues / Features under Debug / Implementations, other than the o
     - [ ] GBC fails MMIO_exec_1.gb
     - [ ] GB/GBC still fails cgb-acid-hell
     - [ ] GB/GBC still fails many of the age-test-roms tests
-    - [ ] GB/GBC still fails many of the docboy-test-suite roms
+    - [ ] GB/GBC still fails many of the docboy-test-suite's APU and CGB test roms
     - [ ] GB/GBC still fails many of the Mealybug Tearoom tests
     - [ ] GB/GBC still doesn't support Link Cable
     - [ ] GB/GBC still has many quirks unique to CGB which needs to be implemented
