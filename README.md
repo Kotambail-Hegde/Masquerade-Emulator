@@ -77,6 +77,7 @@ _**Supported features**_
     * GB only
       - [ ] ly_lyc_153_write-GS.gb
     * GBC only
+      - [ ] ly_lyc_0_write-C.gb
       - [ ] ly_lyc_153_write-C.gb
       - [ ] ly_lyc_write-C.gb
   * GB / GBC passes all the Daid's GBEmulatorShootout tests except for the following
