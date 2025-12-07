@@ -69,11 +69,6 @@ _**Supported features**_
     - [ ] boot_div-dmgABCmgb.gb
     - [ ] boot_hwio-dmgABCmgb.gb
   * GB / GBC passes all of the Wilbert Pol's tests except for the following:
-    * GB and GBC
-      - [ ] intr_2_mode0_timing_sprites_scx1_nops.gb
-      - [ ] intr_2_mode0_timing_sprites_scx2_nops.gb
-      - [ ] intr_2_mode0_timing_sprites_scx3_nops.gb
-      - [ ] intr_2_mode0_timing_sprites_scx4_nops.gb
     * GB only
       - [ ] ly_lyc_153_write-GS.gb
     * GBC only
@@ -93,14 +88,11 @@ _**Supported features**_
   * GB / GBC still fails the following same-suite tests
     - [ ] apu
   * GB / GBC still fails the following age-test-roms tests
-    - [ ] lcd-align-ly
-    - [ ] m3-bg-bgp
-    - [ ] m3-bg-lcdc
-    - [ ] m3-bg-scx
+    - [ ] m3-bg-lcdc (few differences)
+    - [ ] m3-bg-scx (few differences)
     - [ ] oam
     - [ ] speed-switch
-    - [ ] stat-interrupt
-    - [ ] stat-mode
+    - [ ] stat-mode (few differences)
     - [ ] stat-mode-sprites
     - [ ] stat-mode-window
     - [ ] vram
@@ -206,10 +198,18 @@ _**Known Major Issues / Features under Debug / Implementations, other than the o
     - [ ] GBA is still not able to run at full speed consistenly without PGOs (expected to be fixed in **_P0152_** variant)
   * GB/GBC
     - [ ] GBC fails MMIO_exec_1.gb
+    - [ ] GB/GBC still fails some of the Mealybug Tearoom tests by a very slight margin (a single pixel offset is seen from the expected!)
     - [ ] GB/GBC still fails cgb-acid-hell
-    - [ ] GB/GBC still fails many of the age-test-roms tests
     - [ ] GB/GBC still fails many of the docboy-test-suite's APU and CGB test roms
-    - [ ] GB/GBC still fails many of the Mealybug Tearoom tests
+    - [ ] GB / GBC still fails the following age-test-roms tests
+      - [ ] m3-bg-lcdc (few differences)
+      - [ ] m3-bg-scx (few differences)
+      - [ ] oam
+      - [ ] speed-switch
+      - [ ] stat-mode (few differences)
+      - [ ] stat-mode-sprites
+      - [ ] stat-mode-window
+      - [ ] vram
     - [ ] GB/GBC still doesn't support Link Cable
     - [ ] GB/GBC still has many quirks unique to CGB which needs to be implemented
   * NES
