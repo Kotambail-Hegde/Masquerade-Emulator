@@ -68,11 +68,8 @@ _**Supported features**_
   * GB / GBC passes all of the Moon Eye tests except for the following:
     - [ ] boot_div-dmgABCmgb.gb
     - [ ] boot_hwio-dmgABCmgb.gb
-    - [ ] intr_2_mode0_timing_sprites.gb
   * GB / GBC passes all of the Wilbert Pol's tests except for the following:
     * GB and GBC
-      - [ ] intr_2_mode0_timing_sprites.gb
-      - [ ] intr_2_mode0_timing_sprites_nops.gb
       - [ ] intr_2_mode0_timing_sprites_scx1_nops.gb
       - [ ] intr_2_mode0_timing_sprites_scx2_nops.gb
       - [ ] intr_2_mode0_timing_sprites_scx3_nops.gb
