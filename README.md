@@ -87,15 +87,6 @@ _**Supported features**_
   * GB / GBC passes mbc3-tester
   * GB / GBC still fails the following same-suite tests
     - [ ] apu
-  * GB / GBC still fails the following age-test-roms tests
-    - [ ] m3-bg-lcdc (few differences)
-    - [ ] m3-bg-scx (few differences)
-    - [ ] oam
-    - [ ] speed-switch
-    - [ ] stat-mode (few differences)
-    - [ ] stat-mode-sprites
-    - [ ] stat-mode-window
-    - [ ] vram
   * GB/GBC supports BESS specification as option to be used for save/load states
   * GB / GBC is able to play several demo scenes including notable ones like oh.gb, 20y.gb, pocket.gb and demotronic.gbc
   * GB / GBC supports GBVideoPlayer2 video roms with audio support
