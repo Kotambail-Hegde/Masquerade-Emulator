@@ -1,12 +1,4 @@
-_This was just a hobby project that I started for fun, but was not able to put much effort because of my busy schedule._
-
-_But still, the emulator tries to be as accurate as possible but since I don't have the actual hardware for any of the systems that I am trying to emulate, I am completely relying on other's research that is available in discord, blogposts or other emulator specific wiki pages. I personally have done very minimal 'original research' for these platforms due to the lack of hardware._
-
-_I have avoided referencing other emulator's source code and tried to only rely only on available documentation and QnA in discord as much as possible, but still had to tweak a few accurate emulators (mentioned in credit section below) to either extract debug logs or to run my own custom roms and analyse the behaviour._
-
-_<ins>**Note : The source code for the masquerade emulator will be made open-source as soon as _P0152_ builds are ready**</ins>_
-
-**_So, what is Masquerade ?_**
+# _So, what is Masquerade ?_
 
 _**A multi-system emulator which emulates the following gaming consoles and simulators**_
 - [x] Game Boy Advance (GBA)
