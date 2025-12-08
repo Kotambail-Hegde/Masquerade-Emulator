@@ -2,7 +2,7 @@
 
 A multi-system emulator supporting classic gaming consoles and simulators.
 
-[![Web Version](https://img.shields.io/badge/web-online-blue?style=flat-square)](https://kotambail-hegde.github.io/Masquerade-Emulator/web/)
+[![Web Version](https://img.shields.io/badge/web-online-blue?style=flat-square)](https://kotambail-hegde.github.io/Masquerade-Emulator/hosting/)
 [![Releases](https://img.shields.io/badge/download-releases-green?style=flat-square)](https://github.com/Kotambail-Hegde/Masquerade-Emulator/releases)
 
 ---
@@ -27,7 +27,7 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 
 ### Quick Access
 
-- **[Try Web Version](https://kotambail-hegde.github.io/Masquerade-Emulator/web/)** - Play directly in your browser
+- **[Try Web Version](https://kotambail-hegde.github.io/Masquerade-Emulator/hosting/)** - Play directly in your browser
 - **[Download Desktop Build](https://github.com/Kotambail-Hegde/Masquerade-Emulator/releases)** - Available for Windows
 
 ---
@@ -375,7 +375,7 @@ Legacy variant based on One Lone Coder's Pixel Game Engine.
 ---
 
 ## Automated Test Reports
-- Game Boy / Game Boy Color (GB/GBC) : [GB Emulator Shootout](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/GBEmulatorShootout/)
+- Game Boy / Game Boy Color (GB/GBC) : [GB Emulator Shootout](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/gb/GBEmulatorShootout/)
 
 ---
 
@@ -429,4 +429,4 @@ See the repository for license information.
 
 ---
 
-**[Web Version](https://kotambail-hegde.github.io/Masquerade-Emulator/web/)** | **[Downloads](https://github.com/Kotambail-Hegde/Masquerade-Emulator/releases)** | **[Report Issues](https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues)**
+**[Web Version](https://kotambail-hegde.github.io/Masquerade-Emulator/hosting/)** | **[Downloads](https://github.com/Kotambail-Hegde/Masquerade-Emulator/releases)** | **[Report Issues](https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues)**
