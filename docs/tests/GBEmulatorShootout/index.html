@@ -47,7 +47,15 @@ function displayResults(data) {
     }
     
     let html = '<tr><th style="text-align:left">Updated On<br>' + dateStr + '</th>';
-    html += "<th class='emulator'>" + emulatorName + " (" + passCount + "/" + testCount + ")</th></tr>";
+	html += `
+	<th class="emulator">
+		<a href="https://github.com/Kotambail-Hegde/Masquerade-Emulator"
+		   target="_blank"
+		   style="text-decoration:none;">
+		   ${emulatorName}
+		</a> (${passCount}/${testCount})
+	</th></tr>`;
+
     
     for (const [testName, testInfo] of Object.entries(tests)) {
         const result = testInfo.result || 'No result';
