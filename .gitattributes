@@ -3,4 +3,4 @@ masquerade.exe filter=lfs diff=lfs merge=lfs -text
 # Exclude submodule from language detection
 assets/** linguist-vendored
 tests/** linguist-vendored
-web/** linguist-vendored
+hosting/** linguist-vendored
