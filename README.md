@@ -129,7 +129,7 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 - Unable to play few video ROMs like Dragon Ball GT
 - Minor visual artifacts top left corner in Mode 3 for some video ROMs like Pokemon
 - Some undesired audio artifacts (expected fix in **_P0152_** variant)
-- Unable to consistently run at full speed without PGOs (expected fix in **_P0152_** variant)
+- Low end devices still need PGOs to run at full speed (expected fix in **_P0152_** variant)
 
 ---
 
