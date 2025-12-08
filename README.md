@@ -207,6 +207,9 @@ _**Known Major Issues / Features under Debug / Implementations, other than the o
     - [ ] NES is still not able to boot Dragon Warrior III
     - [ ] NES's DMC DMA's obscure timing quirks needs to be properly emulated
 
+_**Test Reports**_
+  * [GB Emulator Shootout](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/GBEmulatorShootout/)
+
 # Variants
 
 As of today, there are 2 variants of masquerade available, P0052 and P0010.
