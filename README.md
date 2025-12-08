@@ -13,12 +13,6 @@ _**A multi-system emulator which emulates the following gaming consoles and simu
 - [x] XO-CHIP
 - [x] Game Of Life
 
-_**Below mentioned gaming consoles may probably be looked at in the future**_
-- [ ] Super Game Boy
-- [ ] Super Nintendo Entertainment System (SNES)
-- [ ] Nintendo DS
-- [ ] Nintendo 3DS
-
 _**Getting started**_
 * _Open the web version and try online_ [_here_](https://kotambail-hegde.github.io/Masquerade-Emulator/web/)
 * _Download the desktop build from_ [_releases_](https://github.com/Kotambail-Hegde/Masquerade-Emulator/releases)
