@@ -104,148 +104,149 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 
 #### Features
 - Supports GBA BIOS
-- Comprehensive PPU implementation
-- Flash memory emulation
-- Accurate open-bus behavior
-- Full VRAM, OAM, Palette mirroring behavior
-- DMA, timers, interrupts closely match hardware
-- Sprite mosaic, blending, windowing supported
-- BIOS SWI implementation with correct edge cases
-- VRAM prefetch behavior partially implemented
+- Supports all 5 PPU modes
+- Supports all APU channels
 
 #### Test Results
-- Passes jsmolka/alyosha-tas arm.gba, thumb.gba, memory.gba, flash and PPU tests
+- Passes jsmolka/alyosha-tas's arm.gba, thumb.gba, memory.gba, flash and PPU tests
 - Passes FuzzARM.gba
-- Passes all tonc test suite tests
-- Passes all belogic audio tests
-- Passes most AGS suite tests (exceptions: PREFETCH BUFFER, WAIT STATE WAIT CONTROL, CARTRIDGE RAM WAIT CONTROL, TIMER PRESCALER 0)
-- Passes most mgba-suite tests (exceptions: Timing, Timer Count-Up, Timer IRQ, DMA, SIO, MISC Edge Case tests)
-- Passes CowBite GBA tests except prefetch and some DMA timing tests
-- Passes gba-tests by denier123 (except pipeline hazard cases)
-- Passes LCD controller tests except FIFO stall patterns
+- Passes all tests within the AGS suite except:
+  - PREFETCH BUFFER
+  - WAIT STATE WAIT CONTROL
+  - CARTRIDGE RAM WAIT CONTROL
+  - TIMER PRESCALER 0
+- Passes all mgba-suite tests except following tests:
+  - Timing Tests
+  - Timer Count-Up Tests
+  - Timer IRQ Tests
+  - DMA Tests
+  - SIO Tests
+  - MISC Edge Case Tests
+- Passes all tests in tonc's test suite
+- Passes all belogic's audio tests
 
 #### Known Issues
-- Unable to play some video ROMs (e.g., Dragon Ball GT)
-- Minor visual artifacts in Mode 3 for certain video ROMs
-- Some audio artifacts present (fix planned for P0152 variant)
-- Performance optimization ongoing (targeted for P0152 variant)
-- Cycle-exact CPU timing under review
-- Some DMA edge-case timings not fully accurate
-- SIO not yet cycle-accurate
-- Cache/pipeline prefetch behavior incomplete
+- Unable to play few video ROMs like Dragon Ball GT
+- Minor visual artifacts top left corner in Mode 3 for some video ROMs like Pokemon
+- Some undesired audio artifacts (expected fix in **_P0152_** variant)
+- Unable to consistently run at full speed without PGOs (expected fix in **_P0152_** variant)
 
 ---
 
-### Game Boy / Game Boy Color (GB/GBC)
+### Game Boy / Game Boy Color (GB / GBC)
 
 #### Features
-- GB and GBC BIOS support
-- Pixel-Fetcher/Pixel-FIFO implementation
+- Supports GB and GBC BIOS
+- Implements Pixel-Fetcher/Pixel-FIFO
 - GBC supports GB mode
-- Multiple palette support for GB
-- Color correction for GBC to match actual hardware
-- GameGenie and GameShark cheat support
-- BESS specification support for save/load states
-- GBVideoPlayer2 video ROM support with audio
-- Accurate OAM DMA timing (HDMA and GDMA)
-- STAT interrupt timing matches hardware closely
-- Accurate open-bus behavior
-- Mid-scanline palette change support
-- All GBC VRAM bank behaviors implemented
-
-#### Supported Memory Bank Controllers
-- NO MBC
-- MBC1, MBC2, MBC3, MBC5, MBC30
-- Partial support for HuC1 and HuC3 (RTC not fully implemented)
-- Supports multicarts with MBC5 variants
+- Supports multiple palettes on GB
+- Supports GameGenie and GameShark cheats
+- Supports BESS specification for save/load states
+- Supports GBVideoPlayer2 video ROMs with audio
+- GBC supports color correction closely matching real hardware
+- Supports following Memory Bank Controllers:
+  - NO MBC
+  - MBC1
+  - MBC2
+  - MBC3
+  - MBC5
+  - MBC30
 
 #### Test Results
 - Completely passes Tom Harte's SingleStepTests (official and unofficial opcodes) for SM83
-- Passes all Blargg test suite except oam_bug.gb
-- Passes all Mooneye tests except boot_div-dmgABCmgb.gb and boot_hwio-dmgABCmgb.gb
+- Passes all Blargg test suite except:
+  - oam_bug.gb
+- Passes Moon Eye tests except:
+  - boot_div-dmgABCmgb.gb
+  - boot_hwio-dmgABCmgb.gb
+- Passes Wilbert Pol's tests except:
+  - GB and GBC:
+    - intr_2_mode0_timing_sprites_scx1_nops.gb
+    - intr_2_mode0_timing_sprites_scx2_nops.gb
+    - intr_2_mode0_timing_sprites_scx3_nops.gb
+    - intr_2_mode0_timing_sprites_scx4_nops.gb
+  - GB only:
+    - ly_lyc_153_write-GS.gb
+  - GBC only:
+    - ly_lyc_0_write-C.gb
+    - ly_lyc_153_write-C.gb
+    - ly_lyc_write-C.gb
+- Passes Daid's GBEmulatorShootout tests except:
+  - ppu_scanline_bgp.gb
+- Passes PeachyHardwareAbuse tests including ctf.gb
+- Passes MMIO_exec_1.gb
 - Passes DMG Aging Cartridge test
 - Passes ax6's rtc3test suite
-- Passes TurtleTests and MagenTests
-- Passes mbc3-tester
-- Passes PeachyHardwareAbuse tests including ctf.gb
-- Able to play demo scenes including oh.gb, 20y.gb, pocket.gb, and demotronic.gbc
 - APU plays ISSOtm's smooth-player.gb
-- Passes dmg-acid2 (DMG and CGB)
-- Passes CGB acid2 (except minor palette drift)
-- Passes CGB timing suite except STAT mode-change race
-- Passes MemTiming tests except OAM bug variants
+- Passes all Hacktix's tests except:
+  - strikethrough.gb
+- Passes TurtleTests
+- Passes MagenTests (GBC)
+- Passes mbc3-tester
+- Fails some same-suite tests:
+  - apu
+- Fails many age-test-roms tests:
+  - lcd-align-ly
+  - m3-bg-bgp
+  - m3-bg-lcdc
+  - m3-bg-scx
+  - oam
+  - speed-switch
+  - stat-interrupt
+  - stat-mode
+  - stat-mode-sprites
+  - stat-mode-window
+  - vram
 
 #### Known Issues
-- Fails MMIO_exec_1.gb
-- Some Mealybug Tearoom tests fail by single pixel offset
 - Fails cgb-acid-hell
-- Fails many docboy-test-suite APU and CGB tests
-- Multiple age-test-roms failures
-- Link Cable not yet supported
-- Some CGB-specific quirks remain unimplemented
-- APU tests still failing from same-suite
-- Minor sprite-priority race conditions remain
-- Some HDMA timing edge cases inaccurate
-- BOOT ROM disable edge case not exact
-- OAM corruption behavior not fully cycle-accurate
+- Fails many age-test-rom tests
+- Fails many docboy-test-suite's APU and CGB tests
+- Fails Mealybug Tearoom tests by small margin
+- Link Cable not supported
+- Multiple CGB-specific quirks remain unimplemented
 
 ---
 
 ### Nintendo Entertainment System (NES)
 
 #### Features
-- Zapper support in Port 2 (using mouse clicks)
-- GameGenie cheat support
-- Comprehensive mapper support
-- Accurate PPU address bus behavior (open bus, palette mirroring)
-- Correct sprite overflow and sprite-0 hit timing
-- APU frame counter supports both modes (4-step, 5-step)
-- DMC DMA behavior partially cycle accurate
-- CPU/PPU alignment (pre-render offset) correct
-
-#### Supported Mappers
-- NROM
-- MMC1 (with variants: SEROM, SHROM, SH1ROM, SuROM)
-- UxROM (002)
-- CNROM
-- MMC3
-- AxROM
-- GxROM
-- Nanjian FC-001 (Mapper 163)
-- ANROM variants
-- GNROM
-- UNROM clones (180/181)
-- Partial support for MMC2/MMC4 (latch timing WIP)
+- 6502 CPU passes Klaus Dormann's 6502_65C02_functional_tests including BCD tests
+- Supports mappers:
+  - NROM
+  - MMC1 (including SEROM, SHROM, SH1ROM, SuROM variants)
+  - UxROM (002)
+  - CNROM
+  - MMC3
+  - AxROM
+  - GxROM
+  - Nanjian FC-001 (Mapper 163)
+- Supports GameGenie cheats
+- Supports Zapper in Port 2 (mouse clicks)
 
 #### Test Results
-- 6502 passes Klaus Dormann's 6502_65C02_functional_tests including BCD tests
 - Passes Nestest (official and unofficial opcodes)
 - Completely passes Tom Harte's SingleStepTests for NES6502
-- Passes all Blargg CPU tests (official and unofficial opcodes)
-- Passes all Blargg CPU timing tests
-- Passes all Blargg CPU dummy read/write tests
-- Passes all CPU tests mentioned in NES Dev Wiki
+- Passes Blargg CPU tests (official and unofficial opcodes)
+- Passes Blargg CPU timing tests
+- Passes Blargg CPU dummy read/write tests
+- Passes NES Dev Wiki CPU tests
 - Passes blargg_ppu_tests_2005.09.15b
 - Passes blargg_apu_2005.07.30
-- Passes Blargg's sprite_overflow_test suite
-- Passes Blargg's sprite_hit_tests_2005.10.05
-- Passes all APU tests including DMC tests
-- Passes Blargg's vbl_nmi_timing and ppu_vbl_nmi tests
-- Passes Blargg's cpu_interrupt_v2 tests
+- Passes Blargg sprite_overflow_test suite
+- Passes Blargg sprite_hit_tests_2005.10.05
+- Passes all APU tests including DMC
+- Passes Blargg vbl_nmi_timing and ppu_vbl_nmi tests
+- Passes Blargg cpu_interrupt_v2 tests
 - Passes OAM stress tests
-- Passes Blargg's and Bisqwit's ppu_open_bus tests
+- Passes Blargg and Bisqwit's ppu_open_bus tests
 - Passes Bisqwit's cpu_exec_space tests
-- Passes most Blargg's mmc3_irq_tests (exception: 4-scanline_timing.nes)
-- Passes unofficial instructions behavior tests
-- Passes reset/irq/nmi timing test ROMs except MMC3 race cases
+- Passes Blargg mmc3_irq_tests suite except:
+  - 4-scanline_timing.nes
 
 #### Known Issues
 - Unable to boot Dragon Warrior III
-- DMC DMA obscure timing quirks need proper emulation
-- MMC3 scanline counter not perfectly accurate for some pirate carts
-- Some PAL timing edge cases remain
-- MMC5 not yet supported
-- Lightgun inaccuracy on high-refresh monitors
+- DMC DMA timing quirks need proper emulation
 
 ---
 
@@ -253,17 +254,9 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 
 #### Features
 - Z80 CPU emulation
-- Support for both Midway and Namco variants
-- Accurate color PROM decoding
-- Accurate maze redraw timing
-- Sound emulation (Namco WSG) partially implemented
-- Cocktail mode supported
-
-#### Test Results
-- Passes Tom Harte's SingleStepTests for Z80
+- Passes Tom Harte's SingleStepTests for Z80 (official and unofficial opcodes)
 - Passes zexdoc and zexall tests
-- Passes Pac-Man hardware test benches
-- Verified correct maze timings, blinking, sprite priority
+- Supports both Midway and Namco variants
 
 #### Supported Pac-Man Boot-legs
 - Hangly Man
@@ -272,28 +265,28 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 - NewPuc
 - After Dark
 - Snatcher Set 1 and 2
-- MsPacAttack
-- Bobbypac
-- Corkscrew
-- VoidPac
 
-#### Future Support
-Planned support for additional boot-legs: Streaking, Titan, Caterpillar, Abscam, Joyman, Piranha, Galaxian Hardware Variant, MsPacPlus, MsPacAttackNew, MsPacAtackOld
+#### Planned Support (Pac-Man Boot-legs)
+- Streaking
+- Titan
+- Caterpillar
+- Abscam
+- Joyman
+- Piranha
+- Galaxian Hardware Variant
+
+#### Supported Ms Pac-Man Boot-legs (planned/partial)
+- MsPacPlus
+- After Dark
+- MsPacAttackNew
+- MsPacAtackOld
 
 ---
 
 ### Space Invaders
 
 #### Features
-- Color overlay support
-- 8080 CPU emulation
-- Accurate shift register emulation
-- Correct input port timing
-
-#### Test Results
-- Passes extensive suite of 8080 test ROMs (official and unofficial opcodes)
-- Passes Space Invaders diagnostic ROM
-- Passes all 8080 flag-behavior edge-case tests
+- Supports color overlays
 
 ---
 
@@ -301,24 +294,19 @@ Planned support for additional boot-legs: Streaking, Titan, Caterpillar, Abscam,
 
 #### Supported Variants
 - CHIP-8
-- S-CHIP (Legacy and Modern)
-- XO-CHIP (with audio support and up to 4 planes)
+- S-Chip Legacy
+- S-Chip Modern
+- XO-Chip (supporting audio and up to 4 planes)
 
 #### Features
-- ROM database for auto-detection of:
+- Completely passes Timendus's chip8-test-suite v4.2
+- Completely passes CubeChip test suite
+- Supports ROM database auto-detection of:
   - Variants
   - Quirks
   - Recommended palettes
   - Recommended keybindings
   - Recommended execution rate
-- Correct SCHIP clipping and scroll quirks
-- XO-CHIP extended pitch and waveform support
-
-#### Test Results
-- Completely passes Timendus's chip8-test-suite v4.2
-- Completely passes CubeChip test suite
-- Passes SCHIP and XO-CHIP extended graphics tests
-- Passes audio timing tests for XO-CHIP
 
 ---
 
@@ -327,21 +315,20 @@ Planned support for additional boot-legs: Streaking, Titan, Caterpillar, Abscam,
 #### Supported Modes
 - Normal Mode
 - Toroidal Mode
-
-#### Planned Features
-- Normal Mode with Pan/Zoom support
-- Save/load board state
-- Custom rule support (Life-like, Generations)
+- Pan/Zoom support planned
 
 ---
 
 ### Additional CPU Test Coverage
 
-- **8080**: Passes extensive test ROM suite (official and unofficial opcodes)
-- **Z80**: Passes extensive test ROM suite (official and unofficial opcodes)
-- **SM83**: Passes extensive test ROM suite (official and unofficial opcodes)
-- **6502**: Passes extensive test ROM suite (official and unofficial opcodes)
-- **ARM7TDMI**: Passes ARM/Thumb instruction tests, barrel shifter edge cases
+- Passes extensive test ROM suites for:
+  - 8080 (official and unofficial opcodes)
+  - Z80 (official and unofficial opcodes)
+  - SM83 (official and unofficial opcodes)
+  - 6502 (official and unofficial opcodes)
+- Supports Save States and Load States
+- Supports OTA updates
+- Supports dynamic drag and drop of ROMs including multipart ROMs for Space Invaders and Pacman/MsPacman
 
 ---
 
