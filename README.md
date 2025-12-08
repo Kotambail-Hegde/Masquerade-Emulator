@@ -1,4 +1,4 @@
-# Masquerade Emulator
+# So, what's masquerade ?
 
 A multi-system emulator supporting classic gaming consoles and simulators.
 
@@ -342,7 +342,6 @@ Planned support for additional boot-legs: Streaking, Titan, Caterpillar, Abscam,
 - **SM83**: Passes extensive test ROM suite (official and unofficial opcodes)
 - **6502**: Passes extensive test ROM suite (official and unofficial opcodes)
 - **ARM7TDMI**: Passes ARM/Thumb instruction tests, barrel shifter edge cases
-- **8086 (internal test core not released)**: Passes most instruction decoder tests
 
 ---
 
