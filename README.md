@@ -1,6 +1,3 @@
-# Masquerade Emulator
-
-
 _This was just a hobby project that I started for fun, but was not able to put much effort because of my busy schedule._
 
 _But still, the emulator tries to be as accurate as possible but since I don't have the actual hardware for any of the systems that I am trying to emulate, I am completely relying on other's research that is available in discord, blogposts or other emulator specific wiki pages. I personally have done very minimal 'original research' for these platforms due to the lack of hardware._
@@ -31,7 +28,7 @@ _**Below mentioned gaming consoles may probably be looked at in the future**_
 - [ ] Nintendo 3DS
 
 _**Getting started**_
-* Open the web version and try online [_here_](https://kotambail-hegde.github.io/Masquerade-Emulator/)
+* Open the web version and try online [_here_](https://kotambail-hegde.github.io/Masquerade-Emulator/web/)
 * Download the desktop build from [_releases_](https://github.com/Kotambail-Hegde/Masquerade-Emulator/releases)
 
 _**Supported features**_
