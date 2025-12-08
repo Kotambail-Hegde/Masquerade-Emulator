@@ -160,11 +160,6 @@ A multi-system emulator supporting classic gaming consoles and simulators.
   - boot_div-dmgABCmgb.gb
   - boot_hwio-dmgABCmgb.gb
 - Passes Wilbert Pol's tests except:
-  - GB and GBC:
-    - intr_2_mode0_timing_sprites_scx1_nops.gb
-    - intr_2_mode0_timing_sprites_scx2_nops.gb
-    - intr_2_mode0_timing_sprites_scx3_nops.gb
-    - intr_2_mode0_timing_sprites_scx4_nops.gb
   - GB only:
     - ly_lyc_153_write-GS.gb
   - GBC only:
@@ -186,23 +181,19 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 - Fails some same-suite tests:
   - apu
 - Fails many age-test-roms tests:
-  - lcd-align-ly
-  - m3-bg-bgp
-  - m3-bg-lcdc
-  - m3-bg-scx
+  - m3-bg-lcdc (few differences)
+  - m3-bg-scx (few differences)
   - oam
   - speed-switch
-  - stat-interrupt
-  - stat-mode
+  - stat-mode (few differences)
   - stat-mode-sprites
   - stat-mode-window
   - vram
 
 #### Known Issues
 - Fails cgb-acid-hell
-- Fails many age-test-rom tests
 - Fails many docboy-test-suite's APU and CGB tests
-- Fails Mealybug Tearoom tests by small margin
+- Fails some of the Mealybug Tearoom tests by a very slight margin (a single pixel offset is seen from the expected!)
 - Link Cable not supported
 - Multiple CGB-specific quirks remain unimplemented
 
