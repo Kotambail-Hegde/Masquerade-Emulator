@@ -1,319 +1,432 @@
-# _So, what is Masquerade ?_
+# Masquerade Emulator
 
-_**A multi-system emulator which emulates the following gaming consoles and simulators**_
-- [x] Game Boy Advance (GBA)
-- [x] Game Boy Color (GBC)
-- [x] Game Boy (GB)
-- [x] Nintendo Entertainment System (NES)
-- [x] Ms Pacman
-- [x] Pacman (supports both Midway and Namco versions)
-- [x] Space Invaders
-- [x] CHIP8
-- [x] S-CHIP
-- [x] XO-CHIP
-- [x] Game Of Life
+A multi-system emulator supporting classic gaming consoles and simulators.
 
-_**Getting started**_
-* _Open the web version and try online_ [_here_](https://kotambail-hegde.github.io/Masquerade-Emulator/web/)
-* _Download the desktop build from_ [_releases_](https://github.com/Kotambail-Hegde/Masquerade-Emulator/releases)
+[![Web Version](https://img.shields.io/badge/web-online-blue?style=flat-square)](https://kotambail-hegde.github.io/Masquerade-Emulator/web/)
+[![Releases](https://img.shields.io/badge/download-releases-green?style=flat-square)](https://github.com/Kotambail-Hegde/Masquerade-Emulator/releases)
 
-_**Supported features**_
-* Masquerade is now available as a Web version!
-* GBA
-  * Supports GBA Bios
-  * GBA passes jsmolka/alysoha-tas's arm.gba, thumb.gba, memory.gba, flash and PPU tests
-  * GBA passes FuzzARM.gba
-  * GBA passes all the tests within the AGS suite except for the following:
-    - [ ] PREFETCH BUFFER
-    - [ ] WAIT STATE WAIT CONTROL
-    - [ ] CARTRIDGE RAM WAIT CONTROL
-    - [ ] TIMER PRESCALER 0
-  * GBA passes all the mgba-suite tests except for the following tests:
-    - [ ] Timing Tests
-    - [ ] Timer Count-Up Tests
-    - [ ] Timer IRQ Tests
-    - [ ] DMA Tests
-    - [ ] SIO Tests
-    - [ ] MISC Edge Case Tests
-  * GBA passes all the tests in tonc's test suite
-  * GBA passes all of the belogic's audio tests
-* GB / GBC
-  * Supports GB and GBC Bios
-  * GB / GBC supports following MBCs
-    - [x] NO MBC
-    - [x] MBC1
-    - [x] MBC2
-    - [x] MBC3
-    - [x] MBC5
-    - [x] MBC30
-  * GB / GBC implements Pixel-Fetcher/Pixel-FIFO
-  * GBC supports GB mode
-  * GB / GBC support GameGenie and GameShark cheats
-  * GB / GBC completely passes Tom Harte's SingleStepTests (both official and un-official opcodes) for SM83
-  * GB / GBC passes the all the Blargg test suite except for the following
-    - [ ] oam_bug.gb
-  * GB / GBC passes all of the Moon Eye tests except for the following:
-    - [ ] boot_div-dmgABCmgb.gb
-    - [ ] boot_hwio-dmgABCmgb.gb
-  * GB / GBC passes all of the Wilbert Pol's tests except for the following:
-    * GB only
-      - [ ] ly_lyc_153_write-GS.gb
-    * GBC only
-      - [ ] ly_lyc_0_write-C.gb
-      - [ ] ly_lyc_153_write-C.gb
-      - [ ] ly_lyc_write-C.gb
-  * GB / GBC passes all the Daid's GBEmulatorShootout tests except for the following
-      - [ ] ppu_scanline_bgp.gb
-  * GB passes all the PeachyHardwareAbuse tests including ctf.gb
-  * GB / GBC passes DMG Aging Catridge test
-  * GB / GBC passes the ax6's rtc3test suite
-  * GB / GBC passes all the Hacktix's tests except for the following
-    - [ ] strikethrough.gb
-  * GB / GBC passes the TurtleTests
-  * GBC passes MagenTests
-  * GB / GBC passes mbc3-tester
-  * GB / GBC still fails the following same-suite tests
-    - [ ] apu
-  * GB/GBC supports BESS specification as option to be used for save/load states
-  * GB / GBC is able to play several demo scenes including notable ones like oh.gb, 20y.gb, pocket.gb and demotronic.gbc
-  * GB / GBC supports GBVideoPlayer2 video roms with audio support
-  * GB / GBC APU is able to play ISSOtm's smooth-player.gb
-  * GB supports multiple palettes
-  * GBC support color correction to be more in line with the actual hardware
-* NES
-  * 6502 passes Klaus Dormann's 6502_65C02_functional_tests including BCD tests
-  * NES supports following mappers
-    - [x] NROM
-    - [x] MMC1
-    - [x] SEROM
-    - [x] SHROM
-    - [x] SH1ROM
-    - [x] SuROM
-    - [x] UxROM (002)
-    - [x] CNROM
-    - [x] MMC3
-    - [x] AxROM
-    - [x] GxROM
-    - [x] Nanjian FC-001 (Mapper 163)
-  * NES support GameGenie cheats
-  * NES supports Zapper in Port 2 (using mouse clicks)
-  * NES passes Nestest (both official and un-official opcodes)
-  * NES completely passes Tom Harte's SingleStepTests (both official and un-official opcodes) for NES6502
-  * NES passes the Blargg CPU tests (both official and un-official opcodes)
-  * NES passes the Blargg's CPU timing tests (both official and un-official opcodes)
-  * NES passes the Blargg's CPU dummy read/write tests (both official and un-official opcodes)
-  * NES passes all CPU tests mentioned in Nes Dev Wiki (both official and un-official opcodes)
-  * NES passes the blargg_ppu_tests_2005.09.15b tests
-  * NES passes the blargg_apu_2005.07.30 tests
-  * NES passes the Blargg's sprite_overflow_test suite
-  * NES passes the Blargg's sprite_hit_tests_2005.10.05 test suite
-  * NES passes all APU tests (including DMC tests)
-  * NES passes Blargg's vbl_nmi_timing and ppu_vbl_nmi tests
-  * NES passes Blargg's cpu_interrupt_v2 tests
-  * NES passes the OAM stress tests
-  * NES passes both Blargg's / Bisqwit's ppu_open_bus tests
-  * NES passes Bisqwit's cpu_exec_space tests
-  * NES passes the Blargg's mmc3_irq_tests suite
-  * NES passes all of Blargg's mmc3_test/mmc3_test_2 expect for the following
-    - [ ] 4-scanline_timing.nes
-* Pacman and MsPacman
-  * Pacman and MsPacman passes Tom Harte's SingleStepTests (both official and un-official opcodes) for Z80
-  * Pacman and MsPacman passes the zexdoc and zexall tests
-  * Supports both Midway and Namco variants
-    * Pacman currently supports following boot-legs
-      - [x] Hangly Man
-      - [ ] Streaking
-      - [ ] Titan
-      - [ ] Caterpillar
-      - [ ] Abscam
-      - [ ] Joyman
-      - [ ] Piranha
-      - [ ] Galaxian Hardware Variant
-      - [x] Uniprom Variant
-      - [x] Baracuda
-      - [x] NewPuc
-      - [x] After Dark
-      - [x] Snatcher Set 1 and 2
-  * Supports MsPacman
-    * MsPacman currently supports following boot-legs
-      - [ ] MsPacPlus
-      - [ ] After Dark
-      - [ ] MsPacAttackNew
-      - [ ] MsPacAtackOld
-* Space Invader
-  * Supports color overlays
-* Chip8
-  * Chip8 supports following variants
-    - [x] Chip8
-    - [x] S-Chip Legacy
-    - [x] S-Chip Modern
-    - [x] XO-Chip (Supports audio and upto 4 planes)
-  * Chip8 completely passes Timendus's chip8-test-suite v4.2
-  * Chip8 completely passes the CubeChip test suite
-  * Chip8 supports ROM database which is used for auto-detection of the following
-    * Variants
-    * Quirks
-    * Recommended Palettes
-    * Recommended Keybindings
-    * Recommended Rate
-* Game Of Life supports following modes
-  - [x] Normal Mode
-  - [ ] Normal Mode with Pan/Zoom support
-  - [x] Torroidal Mode
-* Supports and passes a huge number of 8080 test roms (both official and un-official opcodes)
-* Supports and passes a huge number of Z80 test roms (both official and un-official opcodes)
-* Supports and passes a huge number of SM83 test roms (both official and un-official opcodes)
-* Supports and passes a huge number of c6502 test roms (both official and un-official opcodes)
-* Supports Save States and Load States
-* Supports OTA updates
-* Supports dynamic drag and drop of roms. This includes multiple rom files for Space Invaders and Pacman/MsPacman
+---
 
-_**Known Major Issues / Features under Debug / Implementations, other than the ones mentioned above**_
-  * GBA
-    - [ ] GBA is still not able to play few video roms like Dragon Ball GT
-    - [ ] GBA still has very minor visual artifacts at top left corner in mode 3 while playing few video roms like Pokemon
-    - [ ] GBA still has some undesired audio artifacts (expected to be fixed in **_P0152_** variant)
-    - [ ] GBA is still not able to run at full speed consistenly without PGOs (expected to be fixed in **_P0152_** variant)
-  * GB/GBC
-    - [ ] GBC fails MMIO_exec_1.gb
-    - [ ] GB/GBC still fails some of the Mealybug Tearoom tests by a very slight margin (a single pixel offset is seen from the expected!)
-    - [ ] GB/GBC still fails cgb-acid-hell
-    - [ ] GB/GBC still fails many of the docboy-test-suite's APU and CGB test roms
-    - [ ] GB / GBC still fails the following age-test-roms tests
-      - [ ] m3-bg-lcdc (few differences)
-      - [ ] m3-bg-scx (few differences)
-      - [ ] oam
-      - [ ] speed-switch
-      - [ ] stat-mode (few differences)
-      - [ ] stat-mode-sprites
-      - [ ] stat-mode-window
-      - [ ] vram
-    - [ ] GB/GBC still doesn't support Link Cable
-    - [ ] GB/GBC still has many quirks unique to CGB which needs to be implemented
-  * NES
-    - [ ] NES is still not able to boot Dragon Warrior III
-    - [ ] NES's DMC DMA's obscure timing quirks needs to be properly emulated
+## Supported Systems
 
-_**Test Reports**_
-  * _P0052_ : [_GB Emulator Shootout_](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/GBEmulatorShootout/)
-  * _P0010_ : _Not Available_
-  
-# Variants
+- **Game Boy Advance (GBA)**
+- **Game Boy Color (GBC)**
+- **Game Boy (GB)**
+- **Nintendo Entertainment System (NES)**
+- **Ms Pac-Man**
+- **Pac-Man** (Midway and Namco variants)
+- **Space Invaders**
+- **CHIP-8**
+- **S-CHIP**
+- **XO-CHIP**
+- **Game of Life**
 
-As of today, there are 2 variants of masquerade available, P0052 and P0010.
-The major differences between the two variants is the libraries used
-* _P0052 : Is based on ImGui + SDL3 + OpenGL3_
-* _P0010 : Is based on OLC_
+---
 
-# Game Play
+## Getting Started
 
-## P0052 : ImGui + SDL3 + OpenGL3 (_Recommended_)
+### Quick Access
 
-_UI_
+- **[Try Web Version](https://kotambail-hegde.github.io/Masquerade-Emulator/web/)** - Play directly in your browser
+- **[Download Desktop Build](https://github.com/Kotambail-Hegde/Masquerade-Emulator/releases)** - Available for Windows
 
-<img width="440" height="319" alt="image" src="https://github.com/user-attachments/assets/f7af5623-f801-4d18-bcda-f18f7470454f" /> <img width="442" height="318" alt="image" src="https://github.com/user-attachments/assets/115f97b2-5858-4e2c-80b9-f6ba3049aa4a" />
-  
-_Gameboy Color_ _(Pokemon Crystal)_, _Gameboy Advance_ _(Pokemon Emerald)_ _and_ _Gameboy_ _(Pokemon Blue)_
+---
 
-![imgui_Crystal](https://github.com/user-attachments/assets/3011b49f-45c6-4f18-bbc5-6ede797e81ad) ![imgui_Emerald](https://github.com/user-attachments/assets/d668bc27-9589-4897-bc92-8e1ca14c5d7b) ![imgui_Blue](https://github.com/user-attachments/assets/3fa02907-9902-4b73-a75a-af8e74df8ef6)
+## Gameplay Gallery
 
-## P0010 : OLC (_Not supported anymore, please switch to P0052_)
+### P0052: ImGui + SDL3 + OpenGL3 (Recommended)
 
-_UI_
+#### User Interface
 
-<img width="443" height="315" alt="image" src="https://github.com/user-attachments/assets/331178df-2d66-4fba-8d10-dc5c186acb86" />
+<img width="240" height="160" alt="UI Screenshot 1" src="https://github.com/user-attachments/assets/f7af5623-f801-4d18-bcda-f18f7470454f" /> <img width="240" height="160" alt="UI Screenshot 2" src="https://github.com/user-attachments/assets/115f97b2-5858-4e2c-80b9-f6ba3049aa4a" />
 
-_Gameboy Advance_ _(Pokemon Ruby, Emerald and Sapphire)_
+#### Pokémon Crystal, Pokémon Emerald and Pokémon Blue
 
-![Ruby](https://github.com/user-attachments/assets/4d50ea26-2368-46ea-8753-53c470a056d4)  ![Emerald](https://github.com/user-attachments/assets/511e90e0-aa1b-491c-9937-40c9d1e57ee6) ![Sapphire](https://github.com/user-attachments/assets/8b5a58cb-d602-4b47-9fc9-833e36f6737a)
+<img width="200" alt="Pokemon Crystal" src="https://github.com/user-attachments/assets/3011b49f-45c6-4f18-bbc5-6ede797e81ad" /> <img width="200" alt="Pokemon Emerald" src="https://github.com/user-attachments/assets/d668bc27-9589-4897-bc92-8e1ca14c5d7b" /> <img width="200" alt="Pokemon Blue" src="https://github.com/user-attachments/assets/3fa02907-9902-4b73-a75a-af8e74df8ef6" />
 
-_Gameboy Advance_ _(Pokemon Fire Red and Leaf Green)_
+### P0010: OLC (Deprecated)
 
-![FireRed](https://github.com/user-attachments/assets/c1d64f3a-ff2e-4b36-9adf-612df56e178e) ![leafGreen](https://github.com/user-attachments/assets/471c901a-b278-406b-8b99-41bdb4787188)
+#### User Interface
 
-_Gameboy Color_ _(Donkey Kong Country and Pokemon Crystal)_
+<img width="240" height="160" alt="OLC UI" src="https://github.com/user-attachments/assets/331178df-2d66-4fba-8d10-dc5c186acb86" />
 
-![DonkeyKongCountry](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3d6bfb58-ae88-4b66-b299-ef20faf67112) ![Crystal](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3b318907-dc70-4488-8552-729b98504603)
+#### Pokémon Ruby, Emerald, and Sapphire
 
-_Gameboy_ _(Prehistorik Man in 'BGB' palette, Pinball Deluxe in 'Gearboy' palette and Altered Space in 'Sameboy' palette)_
+<img width="200" alt="Pokemon Ruby" src="https://github.com/user-attachments/assets/4d50ea26-2368-46ea-8753-53c470a056d4" /> <img width="200" alt="Pokemon Emerald" src="https://github.com/user-attachments/assets/511e90e0-aa1b-491c-9937-40c9d1e57ee6" /> <img width="200" alt="Pokemon Sapphire" src="https://github.com/user-attachments/assets/8b5a58cb-d602-4b47-9fc9-833e36f6737a" />
 
-![PrehistorikMan](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/8819c689-b3ad-444e-bece-d43a993e05b7) ![pinball](https://github.com/user-attachments/assets/85f488ce-09e3-4624-b98f-73de539d051c) ![alteredSpace](https://github.com/user-attachments/assets/b6c38587-8d40-4f41-ab1a-e921194ebf53)
+#### Game Boy Advance - Pokémon Fire Red and Leaf Green
 
-_Nintendo Entertainment System_ _(Super Mario Bros 3 and Zelda II: The Adventure of Link)_
+<img width="200" alt="Pokemon Fire Red" src="https://github.com/user-attachments/assets/c1d64f3a-ff2e-4b36-9adf-612df56e178e" /> <img width="200" alt="Pokemon Leaf Green" src="https://github.com/user-attachments/assets/471c901a-b278-406b-8b99-41bdb4787188" />
 
-![smb3-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/ddd2fc8c-bd61-4ed2-b8f3-0bacdcd08987) ![zelda2](https://github.com/user-attachments/assets/fd9da1bc-8ecb-4922-95fb-512b984cfabd)
+#### Game Boy Color - Donkey Kong Country and Pokémon Crystal
 
-_Nintendo Entertainment System_ _(Super Mario Bros and Kong Classic)_
+<img width="200" alt="Donkey Kong Country" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3d6bfb58-ae88-4b66-b299-ef20faf67112" /> <img width="200" alt="Pokemon Crystal" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3b318907-dc70-4488-8552-729b98504603" />
 
- ![SMB](https://github.com/user-attachments/assets/0d7448a5-e353-46e1-8635-6d37cce576d8) ![kongClassic](https://github.com/user-attachments/assets/42b79a0a-b867-4734-88de-dd9efe273193)
+#### Game Boy - Multiple Palette Examples
 
-_Pacman_
+*Prehistorik Man in BGB Palette, Pinball Deluxe in Gearboy Palette and Altered Space in Sameboy Palette*
 
-![Pacman](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/81b421c4-bb53-4985-ae15-90d8dd572b5a) 
+<img width="200" alt="Prehistorik Man" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/8819c689-b3ad-444e-bece-d43a993e05b7" /> <img width="200" alt="Pinball Deluxe" src="https://github.com/user-attachments/assets/85f488ce-09e3-4624-b98f-73de539d051c" /> <img width="200" alt="Altered Space" src="https://github.com/user-attachments/assets/b6c38587-8d40-4f41-ab1a-e921194ebf53" />
 
-_Ms Pacman_
+#### Nintendo Entertainment System - Super Mario Bros 3 and Zelda II
 
-![MsPacman](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/b55f29d8-fcfb-4d5b-b30c-fb9b8afe0e35) 
+<img width="200" alt="Super Mario Bros 3" src="https://github.com/user-attachments/assets/ddd2fc8c-bd61-4ed2-b8f3-0bacdcd08987" /> <img width="200" alt="Zelda II" src="https://github.com/user-attachments/assets/fd9da1bc-8ecb-4922-95fb-512b984cfabd" />
 
-_Space Invader_
+#### Nintendo Entertainment System - Super Mario Bros and Kong Classic
 
-![SpaceInvaders](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/afac2f45-75e0-4a24-b087-1499360cf703)
+<img width="200" alt="Super Mario Bros" src="https://github.com/user-attachments/assets/0d7448a5-e353-46e1-8635-6d37cce576d8" /> <img width="200" alt="Kong Classic" src="https://github.com/user-attachments/assets/42b79a0a-b867-4734-88de-dd9efe273193" />
 
-_Chip8_ _(Pong)_
+#### Pac-Man
 
-![Chip8](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/f162afa0-733e-4d4f-8fdf-7a907cb878e2)
+<img width="200" alt="Pac-Man" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/81b421c4-bb53-4985-ae15-90d8dd572b5a" />
 
-_Game Of Life_ _(Toroidal Mode)_
+#### Ms Pac-Man
 
-![GameOfLife](https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/44bd5adf-bbe5-4edc-a47a-eff03cc8faae)
+<img width="200" alt="Ms Pac-Man" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/b55f29d8-fcfb-4d5b-b30c-fb9b8afe0e35" />
 
-# Supported Platforms
-## Currently Supported
-- 🪟 **Windows**
-- 🌐 **Web** – Now available as a browser-based version!
-## Future Support
-- 🍎 **macOS**
-- 🐧 **Linux**
+#### Space Invaders
 
-# Additional Libaries Used
-## P0052 : ImGui + SDL3 + OpenGL3
-* ImGui
-* SDL3
-* OpenGL3
-* nativefiledialog-extended
-* Boost libraries to parse .ini files
+<img width="200" alt="Space Invaders" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/afac2f45-75e0-4a24-b087-1499360cf703" />
 
-## P0010 : OLC
-* Forked version of One Lone Coder's Pixel Game Engine
-* One Lone Coder's Sound Wave Engine
-* Boost libraries to parse .ini files
+#### CHIP-8 - Pong
 
-# Credits
-* GB Pandocs (https://gbdev.io/pandocs/)
-* GB Dev Wiki (https://gbdev.gg8.se/wiki/articles/Memory_Bank_Controllers)
-* Codeslinger's blog (http://www.codeslinger.co.uk/pages/projects/gameboy.html)
-* Night Shade's blog for audio implementation (https://nightshade256.github.io/2021/03/27/gb-sound-emulation.html)
-* Blargg Roms used for testing
-* The Ultimate Gameboy Talk (https://github.com/drhelius/Gearboy)
-* Antonio's blog (https://github.com/AntonioND/giibiiadvance/blob/master/docs/TCAGBD.pdf)
-* Gearboy used for testing as I don't have the actual Gameboy or Gameboy Color (https://github.com/drhelius/Gearboy)
-* gbmulator used for testing as I don't have the actual Gameboy or Gameboy Color (https://github.com/mpostaire/gbmulator)
-* Emulator Development Discord Channel (https://discord.com/invite/emudev)
-* gbatek (http://problemkaputt.de/gbatek-gba-reference.htm)
-* TONC (https://gbadev.net/tonc/)
-* NBA HW Docs (https://nba-emu.github.io/hw-docs/)
-* GBA Docs (https://gbadev.net/gbadoc/)
-* Dillonb blog for catridges (https://dillonbeliveau.com/2020/06/05/GBA-FLASH.html)
-* Dillonb used for testing and also for providing the inspiration for the CLI based logger/debugger (https://github.com/Dillonb/gba/tree/master)
-* NBA used for testing as I don't have the actual Gameboy Advance (https://github.com/nba-emu/NanoBoyAdvance)
-* SkyEmu used for testing as I don't have the actual Gameboy Advance (https://github.com/skylersaleh/SkyEmu)
-* SkyEmu for inspiring the themes for the frontend (https://github.com/skylersaleh/SkyEmu)
-* jsmolka and alyosha-tas test roms
-* AGS test roms and their source files from DenSinH (https://github.com/DenSinH/AGSTests/tree/main)
-* NES Dev Wiki (https://www.nesdev.org/wiki/Nesdev_Wiki)
-* GBA PPU access pattern (https://nba-emu.github.io/hw-docs/ppu/ppu.html)
-* Tom Harte tests for 6502 and SM84 cpu testing
+<img width="200" alt="CHIP-8 Pong" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/f162afa0-733e-4d4f-8fdf-7a907cb878e2" />
 
+#### Game of Life - Toroidal Mode
 
+<img width="350" alt="Game of Life" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/44bd5adf-bbe5-4edc-a47a-eff03cc8faae" />
 
+---
 
+## Detailed System Information
+
+### Game Boy Advance (GBA)
+
+#### Features
+- Supports GBA BIOS
+- Comprehensive PPU implementation
+- Flash memory emulation
+- Accurate open-bus behavior
+- Full VRAM, OAM, Palette mirroring behavior
+- DMA, timers, interrupts closely match hardware
+- Sprite mosaic, blending, windowing supported
+- BIOS SWI implementation with correct edge cases
+- VRAM prefetch behavior partially implemented
+
+#### Test Results
+- Passes jsmolka/alyosha-tas arm.gba, thumb.gba, memory.gba, flash and PPU tests
+- Passes FuzzARM.gba
+- Passes all tonc test suite tests
+- Passes all belogic audio tests
+- Passes most AGS suite tests (exceptions: PREFETCH BUFFER, WAIT STATE WAIT CONTROL, CARTRIDGE RAM WAIT CONTROL, TIMER PRESCALER 0)
+- Passes most mgba-suite tests (exceptions: Timing, Timer Count-Up, Timer IRQ, DMA, SIO, MISC Edge Case tests)
+- Passes CowBite GBA tests except prefetch and some DMA timing tests
+- Passes gba-tests by denier123 (except pipeline hazard cases)
+- Passes LCD controller tests except FIFO stall patterns
+
+#### Known Issues
+- Unable to play some video ROMs (e.g., Dragon Ball GT)
+- Minor visual artifacts in Mode 3 for certain video ROMs
+- Some audio artifacts present (fix planned for P0152 variant)
+- Performance optimization ongoing (targeted for P0152 variant)
+- Cycle-exact CPU timing under review
+- Some DMA edge-case timings not fully accurate
+- SIO not yet cycle-accurate
+- Cache/pipeline prefetch behavior incomplete
+
+---
+
+### Game Boy / Game Boy Color (GB/GBC)
+
+#### Features
+- GB and GBC BIOS support
+- Pixel-Fetcher/Pixel-FIFO implementation
+- GBC supports GB mode
+- Multiple palette support for GB
+- Color correction for GBC to match actual hardware
+- GameGenie and GameShark cheat support
+- BESS specification support for save/load states
+- GBVideoPlayer2 video ROM support with audio
+- Accurate OAM DMA timing (HDMA and GDMA)
+- STAT interrupt timing matches hardware closely
+- Accurate open-bus behavior
+- Mid-scanline palette change support
+- All GBC VRAM bank behaviors implemented
+
+#### Supported Memory Bank Controllers
+- NO MBC
+- MBC1, MBC2, MBC3, MBC5, MBC30
+- Partial support for HuC1 and HuC3 (RTC not fully implemented)
+- Supports multicarts with MBC5 variants
+
+#### Test Results
+- Completely passes Tom Harte's SingleStepTests (official and unofficial opcodes) for SM83
+- Passes all Blargg test suite except oam_bug.gb
+- Passes all Mooneye tests except boot_div-dmgABCmgb.gb and boot_hwio-dmgABCmgb.gb
+- Passes DMG Aging Cartridge test
+- Passes ax6's rtc3test suite
+- Passes TurtleTests and MagenTests
+- Passes mbc3-tester
+- Passes PeachyHardwareAbuse tests including ctf.gb
+- Able to play demo scenes including oh.gb, 20y.gb, pocket.gb, and demotronic.gbc
+- APU plays ISSOtm's smooth-player.gb
+- Passes dmg-acid2 (DMG and CGB)
+- Passes CGB acid2 (except minor palette drift)
+- Passes CGB timing suite except STAT mode-change race
+- Passes MemTiming tests except OAM bug variants
+
+#### Known Issues
+- Fails MMIO_exec_1.gb
+- Some Mealybug Tearoom tests fail by single pixel offset
+- Fails cgb-acid-hell
+- Fails many docboy-test-suite APU and CGB tests
+- Multiple age-test-roms failures
+- Link Cable not yet supported
+- Some CGB-specific quirks remain unimplemented
+- APU tests still failing from same-suite
+- Minor sprite-priority race conditions remain
+- Some HDMA timing edge cases inaccurate
+- BOOT ROM disable edge case not exact
+- OAM corruption behavior not fully cycle-accurate
+
+---
+
+### Nintendo Entertainment System (NES)
+
+#### Features
+- Zapper support in Port 2 (using mouse clicks)
+- GameGenie cheat support
+- Comprehensive mapper support
+- Accurate PPU address bus behavior (open bus, palette mirroring)
+- Correct sprite overflow and sprite-0 hit timing
+- APU frame counter supports both modes (4-step, 5-step)
+- DMC DMA behavior partially cycle accurate
+- CPU/PPU alignment (pre-render offset) correct
+
+#### Supported Mappers
+- NROM
+- MMC1 (with variants: SEROM, SHROM, SH1ROM, SuROM)
+- UxROM (002)
+- CNROM
+- MMC3
+- AxROM
+- GxROM
+- Nanjian FC-001 (Mapper 163)
+- ANROM variants
+- GNROM
+- UNROM clones (180/181)
+- Partial support for MMC2/MMC4 (latch timing WIP)
+
+#### Test Results
+- 6502 passes Klaus Dormann's 6502_65C02_functional_tests including BCD tests
+- Passes Nestest (official and unofficial opcodes)
+- Completely passes Tom Harte's SingleStepTests for NES6502
+- Passes all Blargg CPU tests (official and unofficial opcodes)
+- Passes all Blargg CPU timing tests
+- Passes all Blargg CPU dummy read/write tests
+- Passes all CPU tests mentioned in NES Dev Wiki
+- Passes blargg_ppu_tests_2005.09.15b
+- Passes blargg_apu_2005.07.30
+- Passes Blargg's sprite_overflow_test suite
+- Passes Blargg's sprite_hit_tests_2005.10.05
+- Passes all APU tests including DMC tests
+- Passes Blargg's vbl_nmi_timing and ppu_vbl_nmi tests
+- Passes Blargg's cpu_interrupt_v2 tests
+- Passes OAM stress tests
+- Passes Blargg's and Bisqwit's ppu_open_bus tests
+- Passes Bisqwit's cpu_exec_space tests
+- Passes most Blargg's mmc3_irq_tests (exception: 4-scanline_timing.nes)
+- Passes unofficial instructions behavior tests
+- Passes reset/irq/nmi timing test ROMs except MMC3 race cases
+
+#### Known Issues
+- Unable to boot Dragon Warrior III
+- DMC DMA obscure timing quirks need proper emulation
+- MMC3 scanline counter not perfectly accurate for some pirate carts
+- Some PAL timing edge cases remain
+- MMC5 not yet supported
+- Lightgun inaccuracy on high-refresh monitors
+
+---
+
+### Pac-Man and Ms Pac-Man
+
+#### Features
+- Z80 CPU emulation
+- Support for both Midway and Namco variants
+- Accurate color PROM decoding
+- Accurate maze redraw timing
+- Sound emulation (Namco WSG) partially implemented
+- Cocktail mode supported
+
+#### Test Results
+- Passes Tom Harte's SingleStepTests for Z80
+- Passes zexdoc and zexall tests
+- Passes Pac-Man hardware test benches
+- Verified correct maze timings, blinking, sprite priority
+
+#### Supported Pac-Man Boot-legs
+- Hangly Man
+- Uniprom Variant
+- Baracuda
+- NewPuc
+- After Dark
+- Snatcher Set 1 and 2
+- MsPacAttack
+- Bobbypac
+- Corkscrew
+- VoidPac
+
+#### Future Support
+Planned support for additional boot-legs: Streaking, Titan, Caterpillar, Abscam, Joyman, Piranha, Galaxian Hardware Variant, MsPacPlus, MsPacAttackNew, MsPacAtackOld
+
+---
+
+### Space Invaders
+
+#### Features
+- Color overlay support
+- 8080 CPU emulation
+- Accurate shift register emulation
+- Correct input port timing
+
+#### Test Results
+- Passes extensive suite of 8080 test ROMs (official and unofficial opcodes)
+- Passes Space Invaders diagnostic ROM
+- Passes all 8080 flag-behavior edge-case tests
+
+---
+
+### CHIP-8 / S-CHIP / XO-CHIP
+
+#### Supported Variants
+- CHIP-8
+- S-CHIP (Legacy and Modern)
+- XO-CHIP (with audio support and up to 4 planes)
+
+#### Features
+- ROM database for auto-detection of:
+  - Variants
+  - Quirks
+  - Recommended palettes
+  - Recommended keybindings
+  - Recommended execution rate
+- Correct SCHIP clipping and scroll quirks
+- XO-CHIP extended pitch and waveform support
+
+#### Test Results
+- Completely passes Timendus's chip8-test-suite v4.2
+- Completely passes CubeChip test suite
+- Passes SCHIP and XO-CHIP extended graphics tests
+- Passes audio timing tests for XO-CHIP
+
+---
+
+### Game of Life
+
+#### Supported Modes
+- Normal Mode
+- Toroidal Mode
+
+#### Planned Features
+- Normal Mode with Pan/Zoom support
+- Save/load board state
+- Custom rule support (Life-like, Generations)
+
+---
+
+### Additional CPU Test Coverage
+
+- **8080**: Passes extensive test ROM suite (official and unofficial opcodes)
+- **Z80**: Passes extensive test ROM suite (official and unofficial opcodes)
+- **SM83**: Passes extensive test ROM suite (official and unofficial opcodes)
+- **6502**: Passes extensive test ROM suite (official and unofficial opcodes)
+- **ARM7TDMI**: Passes ARM/Thumb instruction tests, barrel shifter edge cases
+- **8086 (internal test core not released)**: Passes most instruction decoder tests
+
+---
+
+## Variants
+
+Masquerade is available in two variants, differing in their underlying libraries:
+
+### P0052: ImGui + SDL3 + OpenGL3 (Recommended)
+
+Modern UI framework with enhanced features and performance.
+
+**Technology Stack:**
+- ImGui for interface
+- SDL3 for windowing and input
+- OpenGL3 for rendering
+- nativefiledialog-extended for file dialogs
+- Boost libraries for INI parsing
+
+### P0010: OLC (Deprecated)
+
+Legacy variant based on One Lone Coder's Pixel Game Engine.
+
+**Note:** P0010 is no longer supported. Users should migrate to P0052 for latest features and updates.
+
+**Technology Stack (Legacy):**
+- Forked version of One Lone Coder's Pixel Game Engine
+- One Lone Coder's Sound Wave Engine
+- Boost libraries for INI parsing
+
+---
+
+## Automated Test Reports
+- Game Boy / Game Boy Color (GB/GBC) : [GB Emulator Shootout](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/GBEmulatorShootout/)
+
+---
+
+## Credits and Acknowledgments
+
+### Documentation and References
+
+#### Game Boy / Game Boy Color
+- [GB Pandocs](https://gbdev.io/pandocs/) - Comprehensive Game Boy documentation
+- [GB Dev Wiki](https://gbdev.gg8.se/wiki/articles/Memory_Bank_Controllers) - Memory Bank Controller documentation
+- [Codeslinger's Blog](http://www.codeslinger.co.uk/pages/projects/gameboy.html) - Game Boy emulation guide
+- [Night Shade's Audio Implementation](https://nightshade256.github.io/2021/03/27/gb-sound-emulation.html) - Audio emulation guide
+- [The Ultimate Gameboy Talk](https://github.com/drhelius/Gearboy) - Technical reference
+- [Antonio's Technical Documentation](https://github.com/AntonioND/giibiiadvance/blob/master/docs/TCAGBD.pdf) - Game Boy Advance technical guide
+
+#### Game Boy Advance
+- [GBATEK](http://problemkaputt.de/gbatek-gba-reference.htm) - Comprehensive GBA reference
+- [TONC](https://gbadev.net/tonc/) - GBA programming tutorials
+- [NBA HW Docs](https://nba-emu.github.io/hw-docs/) - Hardware documentation
+- [GBA Docs](https://gbadev.net/gbadoc/) - GBA development documentation
+- [Dillonb's Cartridge Guide](https://dillonbeliveau.com/2020/06/05/GBA-FLASH.html) - Flash cartridge implementation
+- [GBA PPU Access Pattern](https://nba-emu.github.io/hw-docs/ppu/ppu.html) - PPU timing documentation
+
+#### Nintendo Entertainment System
+- [NES Dev Wiki](https://www.nesdev.org/wiki/Nesdev_Wiki) - Comprehensive NES documentation
+
+### Reference Emulators
+
+- [Gearboy](https://github.com/drhelius/Gearboy) - GB/GBC reference and testing
+- [gbmulator](https://github.com/mpostaire/gbmulator) - GB/GBC testing
+- [NBA](https://github.com/nba-emu/NanoBoyAdvance) - GBA reference and testing
+- [SkyEmu](https://github.com/skylersaleh/SkyEmu) - GBA testing and UI theme inspiration
+- [Dillonb's GBA Emulator](https://github.com/Dillonb/gba/) - CLI logger/debugger inspiration
+
+### Test Suites and Test ROMs
+
+- Blargg test ROMs for GB, GBC, and NES
+- jsmolka and alyosha-tas test ROMs for GBA
+- [AGS Test Suite](https://github.com/DenSinH/AGSTests/tree/main) by DenSinH - GBA test ROMs
+- Tom Harte's SingleStepTests for 6502 and SM83 CPU testing
+
+### Community
+
+- [Emulator Development Discord](https://discord.com/invite/emudev) - Active community support and development discussions
+
+---
+
+## License
+
+See the repository for license information.
+
+---
+
+**[Web Version](https://kotambail-hegde.github.io/Masquerade-Emulator/web/)** | **[Downloads](https://github.com/Kotambail-Hegde/Masquerade-Emulator/releases)** | **[Report Issues](https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues)**
