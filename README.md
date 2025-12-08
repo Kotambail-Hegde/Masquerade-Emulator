@@ -213,7 +213,7 @@ The major differences between the two variants is the libraries used
 
 # Game Play
 
-## :white_check_mark: P0052 : ImGui + SDL3 + OpenGL3 (_Recommended_)
+## P0052 : ImGui + SDL3 + OpenGL3 (_Recommended_)
 
 _UI_
 
@@ -223,7 +223,7 @@ _Gameboy Color_ _(Pokemon Crystal)_, _Gameboy Advance_ _(Pokemon Emerald)_ _and_
 
 ![imgui_Crystal](https://github.com/user-attachments/assets/3011b49f-45c6-4f18-bbc5-6ede797e81ad) ![imgui_Emerald](https://github.com/user-attachments/assets/d668bc27-9589-4897-bc92-8e1ca14c5d7b) ![imgui_Blue](https://github.com/user-attachments/assets/3fa02907-9902-4b73-a75a-af8e74df8ef6)
 
-## :warning: P0010 : OLC (_Not supported anymore, please switch to P0052_)
+## P0010 : OLC (_Not supported anymore, please switch to P0052_)
 
 _UI_
 
@@ -282,14 +282,14 @@ _Game Of Life_ _(Toroidal Mode)_
 - 🐧 **Linux**
 
 # Additional Libaries Used
-## :white_check_mark: P0052 : ImGui + SDL3 + OpenGL3
+## P0052 : ImGui + SDL3 + OpenGL3
 * ImGui
 * SDL3
 * OpenGL3
 * nativefiledialog-extended
 * Boost libraries to parse .ini files
 
-## :warning: P0010 : OLC
+## P0010 : OLC
 * Forked version of One Lone Coder's Pixel Game Engine
 * One Lone Coder's Sound Wave Engine
 * Boost libraries to parse .ini files
