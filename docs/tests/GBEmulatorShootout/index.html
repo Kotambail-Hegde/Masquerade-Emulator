@@ -1,367 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GB Emulator Test Report Viewer</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            background: white;
-            line-height: 1.4;
-        }
-        
-        .input-section {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #f9f9f9;
-            border: 1px solid #ddd;
-        }
-        
-        .input-section h2 {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            color: #333;
-        }
-        
-        textarea {
-            width: 100%;
-            height: 120px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            font-family: monospace;
-            font-size: 12px;
-            resize: vertical;
-        }
-        
-        .button-group {
-            margin-top: 10px;
-            display: flex;
-            gap: 8px;
-        }
-        
-        button {
-            padding: 8px 16px;
-            background: #0066cc;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 14px;
-        }
-        
-        button:hover {
-            background: #0052a3;
-        }
-        
-        button.secondary {
-            background: #666;
-        }
-        
-        button.secondary:hover {
-            background: #555;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-        }
-        
-        .results-table {
-            width: 100%;
-            border-collapse: collapse;
-            border: 3px solid #000;
-            background: white;
-        }
-        
-        .results-table thead th {
-            background: #ddd;
-            border: 1px solid #000;
-            padding: 8px;
-            font-weight: bold;
-            text-align: left;
-            font-size: 14px;
-        }
-        
-        .results-table thead th:first-child {
-            width: 50%;
-        }
-        
-        .results-table thead .emulator-header {
-            text-align: center;
-            font-size: 16px;
-        }
-        
-        .results-table thead .emulator-header a {
-            color: #0000EE;
-            text-decoration: underline;
-        }
-        
-        .results-table tbody td {
-            border: 1px solid #000;
-            padding: 8px;
-            vertical-align: top;
-        }
-        
-        .results-table tbody td:first-child {
-            text-align: center;
-            font-weight: bold;
-            background: #f5f5f5;
-        }
-        
-        .test-name {
-            font-family: monospace;
-            font-size: 13px;
-        }
-        
-        .test-name a {
-            color: #0000EE;
-            text-decoration: underline;
-        }
-        
-        .test-description {
-            font-size: 11px;
-            color: #333;
-            margin-top: 4px;
-            font-family: Arial, sans-serif;
-        }
-        
-        .result-cell {
-            text-align: center;
-            font-weight: bold;
-            padding: 20px 8px;
-        }
-        
-        .result-cell.pass {
-            background: #90EE90;
-            color: #000;
-        }
-        
-        .result-cell.fail {
-            background: #FFB6C1;
-            color: #000;
-        }
-        
-        .result-cell.info {
-            background: #ddd;
-            color: #000;
-        }
-        
-        .result-cell.no-result {
-            background: #fff;
-            color: #666;
-        }
-        
-        .screenshot {
-            max-width: 100%;
-            height: auto;
-            margin-top: 5px;
-        }
-        
-        .empty-state {
-            text-align: center;
-            padding: 60px 20px;
-            color: #666;
-            border: 2px solid #ddd;
-            background: #f9f9f9;
-        }
-        
-        .stats-info {
-            font-size: 12px;
-            color: #666;
-            margin-bottom: 5px;
-        }
-    </style>
+<style>
+table { border-collapse: collapse }
+.emulator { position: sticky; top: 0px; }
+.test { position: sticky; left: 0px; }
+.tooltiptext { visibility: hidden; width: 200px; background-color: black; color: #fff; text-align: center; padding: 5px 0; border-radius: 6px; position: absolute; z-index: 1; left: 102%; }
+tr:hover .tooltiptext { visibility: visible; }
+td, th { border: #333 solid 1px; text-align: center; line-height: 1.5}
+.PASS { background-color: #6e2 }
+.FAIL { background-color: #e44 }
+.INFO { background-color: #ddd }
+td {font-size:80%}
+th{background:#eee}
+th:first-child{text-align:right; padding-right:4px}
+.screenshot { width: 160; height: 144; }
+body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif}
+</style>
 </head>
 <body>
-    <div class="container">
-        <div id="resultsContainer">
-            <div class="empty-state">
-                <h3>No Test Results</h3>
-                <p>Paste your JSON test results above and click "Generate Report"</p>
-            </div>
-        </div>
-    </div>
+<table id="resultsTable"></table>
 
-    <script>
-        let testData = null;
-
-        // Try to auto-load masquerade.json on page load (requires web server)
-        window.addEventListener('DOMContentLoaded', async () => {
-            try {
-                const response = await fetch('masquerade.json');
-                if (response.ok) {
-                    const json = await response.json();
-                    console.log('Loaded JSON:', json);
-                    console.log('Tests object:', json.tests);
-                    console.log('Number of tests:', Object.keys(json.tests).length);
-                    testData = json;
-                    displayResults();
-                    document.getElementById('testInput').value = JSON.stringify(json, null, 2);
-                    // Hide input section if successfully loaded
-                    document.querySelector('.input-section').style.display = 'none';
-                }
-            } catch (e) {
-                // If fetch fails, show instructions
-                console.log('To auto-load: Run from web server (e.g., python -m http.server)');
-                console.error('Error:', e);
-            }
-        });
-
-        function loadFile() {
-            const fileInput = document.getElementById('fileInput');
-            const file = fileInput.files[0];
-            
-            if (!file) return;
-            
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                try {
-                    const json = JSON.parse(e.target.result);
-                    testData = json;
-                    displayResults();
-                    //document.getElementById('testInput').value = JSON.stringify(json, null, 2);
-                } catch (err) {
-                    alert('Error parsing JSON file: ' + err.message);
-                }
-            };
-            reader.readAsText(file);
+<script>
+window.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const response = await fetch('masquerade.json');
+        if (response.ok) {
+            const json = await response.json();
+            displayResults(json);
         }
+    } catch (e) {
+        console.log('masquerade.json not found');
+    }
+});
 
-        function parseResults() {
-            const input = document.getElementById('testInput').value.trim();
-            if (!input) {
-                alert('Please paste your test results first!');
-                return;
-            }
-
-            try {
-                testData = JSON.parse(input);
-                
-                if (!testData.tests) {
-                    alert('Invalid format: JSON must have a "tests" object');
-                    return;
-                }
-                
-                displayResults();
-            } catch (e) {
-                alert('Invalid JSON format. Please check your input.');
-                console.error(e);
-            }
+function displayResults(data) {
+    const tests = data.tests;
+    const testCount = Object.keys(tests).length;
+    const passCount = Object.values(tests).filter(t => t.result === 'PASS').length;
+    
+    let emulatorName = data.emulator || 'Emulator';
+    let dateStr = '';
+    if (data.date) {
+        const date = new Date(data.date * 1000);
+        dateStr = date.toUTCString();
+    }
+    
+    let html = '<tr><th style="text-align:left">Updated On<br>' + dateStr + '</th>';
+    html += "<th class='emulator'>" + emulatorName + " (" + passCount + "/" + testCount + ")</th></tr>";
+    
+    for (const [testName, testInfo] of Object.entries(tests)) {
+        const result = testInfo.result || 'No result';
+        
+        html += "<tr><th class='test'>" + escapeHtml(testName) + "</th>";
+        html += "<td class='" + result + "'>" + result;
+        
+        if (testInfo.screenshot) {
+            html += "<br><img class='screenshot' src='data:image/png;base64," + testInfo.screenshot + "'>";
         }
+        
+        html += "</td></tr>";
+    }
+    
+    document.getElementById('resultsTable').innerHTML = html;
+}
 
-        function displayResults() {
-            const container = document.getElementById('resultsContainer');
-            
-            if (!testData || !testData.tests) {
-                console.log('No test data available');
-                return;
-            }
-            
-            const tests = testData.tests;
-            const testCount = Object.keys(tests).length;
-            console.log('Total tests found:', testCount);
-            
-            const passCount = Object.values(tests).filter(t => t.result === 'PASS').length;
-            const failCount = Object.values(tests).filter(t => t.result === 'FAIL').length;
-            const infoCount = Object.values(tests).filter(t => t.result === 'INFO').length;
-            
-            let emulatorName = testData.emulator || 'Emulator';
-            let dateStr = '';
-            if (testData.date) {
-                const date = new Date(testData.date * 1000);
-                dateStr = date.toUTCString();
-            }
-            
-            let html = '<table class="results-table">';
-            
-            // Header
-            html += '<thead>';
-            html += '<tr>';
-            html += `<th rowspan="2">${dateStr ? 'Updated On<br>' + dateStr : ''}</th>`;
-            html += `<th class="emulator-header">${escapeHtml(emulatorName)} (${passCount}/${testCount})</th>`;
-            html += '</tr>';
-            html += '</thead>';
-            
-            // Body
-            html += '<tbody>';
-            
-            let rowCount = 0;
-            for (const [testName, testInfo] of Object.entries(tests)) {
-                rowCount++;
-                const result = testInfo.result || 'No result';
-                const resultClass = getResultClass(result);
-                const description = extractDescription(testName);
-                
-                html += '<tr>';
-                html += `<td>
-                    <div class="test-name">${escapeHtml(testName)}</div>
-                    ${description ? `<div class="test-description">${escapeHtml(description)}</div>` : ''}
-                </td>`;
-                html += `<td class="result-cell ${resultClass}">${escapeHtml(result)}`;
-                
-                // Add screenshot if available
-                if (testInfo.screenshot) {
-                    html += `<br><img src="data:image/png;base64,${testInfo.screenshot}" class="screenshot" alt="Screenshot">`;
-                }
-                
-                html += '</td>';
-                html += '</tr>';
-            }
-            
-            console.log('Rendered rows:', rowCount);
-            
-            html += '</tbody></table>';
-            
-            container.innerHTML = html;
-        }
-
-        function getResultClass(result) {
-            const r = result.toUpperCase();
-            if (r === 'PASS') return 'pass';
-            if (r === 'FAIL') return 'fail';
-            if (r === 'INFO') return 'info';
-            return 'no-result';
-        }
-
-        function extractDescription(testName) {
-            // Extract descriptions from common test patterns
-            const descriptions = {
-                'dmg-acid2': 'Rendering test for classic GameBoy.',
-                'cgb-acid2': 'Rendering test for color GameBoy.',
-                'cgb-acid-hell': 'Very specific rendering test of mid scanline writes, very hard to pass.',
-            };
-            
-            for (const [key, desc] of Object.entries(descriptions)) {
-                if (testName.includes(key)) {
-                    return desc;
-                }
-            }
-            return '';
-        }
-
-        function escapeHtml(text) {
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
-        }
-
-        function clearResults() {
-            document.getElementById('testInput').value = '';
-            document.getElementById('resultsContainer').innerHTML = `
-                <div class="empty-state">
-                    <h3>No Test Results</h3>
-                    <p>Paste your JSON test results above and click "Generate Report"</p>
-                </div>
-            `;
-            testData = null;
-        }
-    </script>
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+</script>
 </body>
 </html>
