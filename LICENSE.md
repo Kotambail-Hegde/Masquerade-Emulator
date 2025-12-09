@@ -1,7 +1,7 @@
 # Masquerade Emulator
 
 © 2017–2025 Saurabh S. Hegde  
-Homepage: https://github.com/Kotambail-Hegde/Masquerade-Emulator
+Homepage: https://kotambail-hegde.github.io/Masquerade-Emulator/
 
 ---
 
