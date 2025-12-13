@@ -38,63 +38,63 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 
 #### User Interface
 
-<img width="240" height="160" alt="UI Screenshot 1" src="https://github.com/user-attachments/assets/f7af5623-f801-4d18-bcda-f18f7470454f" /> <img width="240" height="160" alt="UI Screenshot 2" src="https://github.com/user-attachments/assets/115f97b2-5858-4e2c-80b9-f6ba3049aa4a" />
+<kbd><img width="240" height="160" alt="UI Screenshot 1" src="https://github.com/user-attachments/assets/f7af5623-f801-4d18-bcda-f18f7470454f" /></kbd> <kbd><img width="240" height="160" alt="UI Screenshot 2" src="https://github.com/user-attachments/assets/115f97b2-5858-4e2c-80b9-f6ba3049aa4a" /></kbd>
 
 #### Pokémon Crystal, Pokémon Emerald and Pokémon Blue
 
-<img width="200" alt="Pokemon Crystal" src="https://github.com/user-attachments/assets/3011b49f-45c6-4f18-bbc5-6ede797e81ad" /> <img width="200" alt="Pokemon Emerald" src="https://github.com/user-attachments/assets/d668bc27-9589-4897-bc92-8e1ca14c5d7b" /> <img width="200" alt="Pokemon Blue" src="https://github.com/user-attachments/assets/3fa02907-9902-4b73-a75a-af8e74df8ef6" />
+<kbd><img width="200" alt="Pokemon Crystal" src="https://github.com/user-attachments/assets/3011b49f-45c6-4f18-bbc5-6ede797e81ad" /></kbd> <kbd><img width="200" alt="Pokemon Emerald" src="https://github.com/user-attachments/assets/d668bc27-9589-4897-bc92-8e1ca14c5d7b" /></kbd> <kbd><img width="200" alt="Pokemon Blue" src="https://github.com/user-attachments/assets/3fa02907-9902-4b73-a75a-af8e74df8ef6" /></kbd>
 
 ### P0010: OLC (Deprecated)
 
 #### User Interface
 
-<img width="240" height="160" alt="OLC UI" src="https://github.com/user-attachments/assets/331178df-2d66-4fba-8d10-dc5c186acb86" />
+<kbd><img width="240" height="160" alt="OLC UI" src="https://github.com/user-attachments/assets/331178df-2d66-4fba-8d10-dc5c186acb86" /></kbd>
 
 #### Pokémon Ruby, Emerald, and Sapphire
 
-<img width="200" alt="Pokemon Ruby" src="https://github.com/user-attachments/assets/4d50ea26-2368-46ea-8753-53c470a056d4" /> <img width="200" alt="Pokemon Emerald" src="https://github.com/user-attachments/assets/511e90e0-aa1b-491c-9937-40c9d1e57ee6" /> <img width="200" alt="Pokemon Sapphire" src="https://github.com/user-attachments/assets/8b5a58cb-d602-4b47-9fc9-833e36f6737a" />
+<kbd><img width="200" alt="Pokemon Ruby" src="https://github.com/user-attachments/assets/4d50ea26-2368-46ea-8753-53c470a056d4" /></kbd> <kbd><img width="200" alt="Pokemon Emerald" src="https://github.com/user-attachments/assets/511e90e0-aa1b-491c-9937-40c9d1e57ee6" /></kbd> <kbd><img width="200" alt="Pokemon Sapphire" src="https://github.com/user-attachments/assets/8b5a58cb-d602-4b47-9fc9-833e36f6737a" /></kbd>
 
 #### Game Boy Advance - Pokémon Fire Red and Leaf Green
 
-<img width="200" alt="Pokemon Fire Red" src="https://github.com/user-attachments/assets/c1d64f3a-ff2e-4b36-9adf-612df56e178e" /> <img width="200" alt="Pokemon Leaf Green" src="https://github.com/user-attachments/assets/471c901a-b278-406b-8b99-41bdb4787188" />
+<kbd><img width="200" alt="Pokemon Fire Red" src="https://github.com/user-attachments/assets/c1d64f3a-ff2e-4b36-9adf-612df56e178e" /></kbd> <kbd><img width="200" alt="Pokemon Leaf Green" src="https://github.com/user-attachments/assets/471c901a-b278-406b-8b99-41bdb4787188" /></kbd>
 
 #### Game Boy Color - Donkey Kong Country and Pokémon Crystal
 
-<img width="200" alt="Donkey Kong Country" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3d6bfb58-ae88-4b66-b299-ef20faf67112" /> <img width="200" alt="Pokemon Crystal" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3b318907-dc70-4488-8552-729b98504603" />
+<kbd><img width="200" alt="Donkey Kong Country" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3d6bfb58-ae88-4b66-b299-ef20faf67112" /></kbd> <kbd><img width="200" alt="Pokemon Crystal" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/3b318907-dc70-4488-8552-729b98504603" /></kbd>
 
 #### Game Boy - Multiple Palette Examples
 
 *Prehistorik Man in BGB Palette, Pinball Deluxe in Gearboy Palette and Altered Space in Sameboy Palette*
 
-<img width="200" alt="Prehistorik Man" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/8819c689-b3ad-444e-bece-d43a993e05b7" /> <img width="200" alt="Pinball Deluxe" src="https://github.com/user-attachments/assets/85f488ce-09e3-4624-b98f-73de539d051c" /> <img width="200" alt="Altered Space" src="https://github.com/user-attachments/assets/b6c38587-8d40-4f41-ab1a-e921194ebf53" />
+<kbd><img width="200" alt="Prehistorik Man" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/8819c689-b3ad-444e-bece-d43a993e05b7" /></kbd> <kbd><img width="200" alt="Pinball Deluxe" src="https://github.com/user-attachments/assets/85f488ce-09e3-4624-b98f-73de539d051c" /></kbd> <kbd><img width="200" alt="Altered Space" src="https://github.com/user-attachments/assets/b6c38587-8d40-4f41-ab1a-e921194ebf53" /></kbd>
 
 #### Nintendo Entertainment System - Super Mario Bros 3 and Zelda II
 
-<img width="200" alt="Super Mario Bros 3" src="https://github.com/user-attachments/assets/ddd2fc8c-bd61-4ed2-b8f3-0bacdcd08987" /> <img width="200" alt="Zelda II" src="https://github.com/user-attachments/assets/fd9da1bc-8ecb-4922-95fb-512b984cfabd" />
+<kbd><img width="200" alt="Super Mario Bros 3" src="https://github.com/user-attachments/assets/ddd2fc8c-bd61-4ed2-b8f3-0bacdcd08987" /></kbd> <kbd><img width="200" alt="Zelda II" src="https://github.com/user-attachments/assets/fd9da1bc-8ecb-4922-95fb-512b984cfabd" /></kbd>
 
 #### Nintendo Entertainment System - Super Mario Bros and Kong Classic
 
-<img width="200" alt="Super Mario Bros" src="https://github.com/user-attachments/assets/0d7448a5-e353-46e1-8635-6d37cce576d8" /> <img width="200" alt="Kong Classic" src="https://github.com/user-attachments/assets/42b79a0a-b867-4734-88de-dd9efe273193" />
+<kbd><img width="200" alt="Super Mario Bros" src="https://github.com/user-attachments/assets/0d7448a5-e353-46e1-8635-6d37cce576d8" /></kbd> <kbd><img width="200" alt="Kong Classic" src="https://github.com/user-attachments/assets/42b79a0a-b867-4734-88de-dd9efe273193" /></kbd>
 
 #### Pac-Man
 
-<img width="200" alt="Pac-Man" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/81b421c4-bb53-4985-ae15-90d8dd572b5a" />
+<kbd><img width="200" alt="Pac-Man" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/81b421c4-bb53-4985-ae15-90d8dd572b5a" /></kbd>
 
 #### Ms Pac-Man
 
-<img width="200" alt="Ms Pac-Man" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/b55f29d8-fcfb-4d5b-b30c-fb9b8afe0e35" />
+<kbd><img width="200" alt="Ms Pac-Man" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/b55f29d8-fcfb-4d5b-b30c-fb9b8afe0e35" /></kbd>
 
 #### Space Invaders
 
-<img width="200" alt="Space Invaders" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/afac2f45-75e0-4a24-b087-1499360cf703" />
+<kbd><img width="200" alt="Space Invaders" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/afac2f45-75e0-4a24-b087-1499360cf703" /></kbd>
 
 #### CHIP-8 - Pong
 
-<img width="200" alt="CHIP-8 Pong" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/f162afa0-733e-4d4f-8fdf-7a907cb878e2" />
+<kbd><img width="200" alt="CHIP-8 Pong" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/f162afa0-733e-4d4f-8fdf-7a907cb878e2" /></kbd>
 
 #### Game of Life - Toroidal Mode
 
-<img width="350" alt="Game of Life" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/44bd5adf-bbe5-4edc-a47a-eff03cc8faae" />
+<kbd><img width="350" alt="Game of Life" src="https://github.com/Kotambail-Hegde/Masquerade-Emulator/assets/29670073/44bd5adf-bbe5-4edc-a47a-eff03cc8faae" /></kbd>
 
 ---
 
@@ -192,6 +192,7 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 
 #### Known Issues
 - Fails cgb-acid-hell
+- Fails windesync-validate.gb
 - Fails many docboy-test-suite's APU and CGB tests
 - Fails some of the Mealybug Tearoom tests by a very slight margin (a single pixel offset is seen from the expected!)
 - Link Cable not supported
