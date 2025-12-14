@@ -18,11 +18,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository and submodules
         uses: actions/checkout@v4
         with:
-          submodules: recursive
           token: ${{ secrets.SUBMODULE_TOKEN }}
+          submodules: recursive
           
       - name: Setup Pages
         uses: actions/configure-pages@v5
