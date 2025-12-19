@@ -4,6 +4,9 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 
 [![Web Version](https://img.shields.io/badge/web-online-blue?style=flat-square)](https://kotambail-hegde.github.io/Masquerade-Emulator/hosting/)
 [![Releases](https://img.shields.io/badge/download-releases-green?style=flat-square)](https://github.com/Kotambail-Hegde/Masquerade-Emulator/releases)
+[![Linux](https://img.shields.io/github/actions/workflow/status/Kotambail-Hegde/Masquerade-Source/build.yml?branch=master&label=Linux)](https://github.com/Kotambail-Hegde/Masquerade-Source/actions/workflows/build.yml)
+[![Windows](https://img.shields.io/github/actions/workflow/status/Kotambail-Hegde/Masquerade-Source/build.yml?branch=master&label=Windows)](https://github.com/Kotambail-Hegde/Masquerade-Source/actions/workflows/build.yml)
+[![Emscripten](https://img.shields.io/github/actions/workflow/status/Kotambail-Hegde/Masquerade-Source/build.yml?branch=master&label=Emscripten)](https://github.com/Kotambail-Hegde/Masquerade-Source/actions/workflows/build.yml)
 
 ---
 
