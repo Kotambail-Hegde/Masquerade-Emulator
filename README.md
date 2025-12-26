@@ -113,10 +113,8 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 #### Test Results
 - Passes jsmolka/alyosha-tas's arm.gba, thumb.gba, memory.gba, flash and PPU tests
 - Passes FuzzARM.gba
-- Passes all tests within the AGS suite except:
+- Passes all tests within the AGB aging catridge test suite except:
   - PREFETCH BUFFER
-  - WAIT STATE WAIT CONTROL
-  - CARTRIDGE RAM WAIT CONTROL
   - TIMER PRESCALER 0
 - Passes all mgba-suite tests except following tests:
   - Timing Tests
@@ -129,6 +127,7 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 - Passes all belogic's audio tests
 
 #### Known Issues
+- Fails many AGBEEG aging catridge tests
 - Unable to play few video ROMs like Dragon Ball GT
 - Minor visual artifacts top left corner in Mode 3 for some video ROMs like Pokemon
 - Some undesired audio artifacts (expected fix in **_P0152_** variant)
