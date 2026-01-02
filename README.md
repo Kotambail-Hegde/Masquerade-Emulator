@@ -128,6 +128,7 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 
 #### Known Issues
 - Fails many AGBEEG aging catridge tests
+- Doesn't support GBS
 - Unable to play few video ROMs like Dragon Ball GT
 - Minor visual artifacts top left corner in Mode 3 for some video ROMs like Pokemon
 - Some undesired audio artifacts (expected fix in **_P0152_** variant)
