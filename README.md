@@ -115,7 +115,6 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 - Passes FuzzARM.gba
 - Passes all tests within the AGB aging catridge test suite except:
   - PREFETCH BUFFER
-  - TIMER PRESCALER 0
 - Passes all mgba-suite tests except following tests:
   - Timing Tests
   - Timer Count-Up Tests
