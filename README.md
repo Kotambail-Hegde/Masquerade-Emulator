@@ -313,13 +313,18 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 
 ---
 
-### Additional CPU Test Coverage
+### CPUs
 
 - Passes extensive test ROM suites for:
   - 8080 (official and unofficial opcodes)
   - Z80 (official and unofficial opcodes)
   - SM83 (official and unofficial opcodes)
-  - 6502 (official and unofficial opcodes)
+  - Ricoh 2A03 (NES-6502) (official and unofficial opcodes)
+  - ARM7TDMI (ARMv4T instruction set)
+
+---
+
+### Additional
 - Supports Save States and Load States
 - Supports OTA updates
 - Supports dynamic drag and drop of ROMs including multipart ROMs for Space Invaders and Pacman/MsPacman
