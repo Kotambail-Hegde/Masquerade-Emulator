@@ -17,7 +17,7 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 - **Game Boy (GB)**
 - **Nintendo Entertainment System (NES)**
 - **Ms Pac-Man**
-- **Pac-Man** (Midway and Namco variants)
+- **Pac-Man (Midway and Namco variants)**
 - **Space Invaders**
 - **CHIP-8**
 - **S-CHIP**
