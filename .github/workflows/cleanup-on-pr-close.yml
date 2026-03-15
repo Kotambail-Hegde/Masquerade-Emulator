@@ -1,0 +1,111 @@
+name: Cleanup on Emulator PR Close
+
+# Fires in Masquerade-Emulator when a release PR is closed WITHOUT merging
+# (i.e. manually rejected). Cleans up the branch, tags, and reverts the
+# Source bump commit so the release can be re-triggered cleanly.
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    name: Cleanup rejected release PR
+    runs-on: ubuntu-latest
+    # Only run if:
+    # 1. PR was closed WITHOUT merging (rejected)
+    # 2. It's a release/* branch
+    if: |
+      github.event.pull_request.merged == false &&
+      startsWith(github.event.pull_request.head.ref, 'release/')
+
+    steps:
+      - name: Extract version from branch name
+        id: version
+        run: |
+          BRANCH="${{ github.event.pull_request.head.ref }}"
+          VERSION="${BRANCH#release/}"
+          echo "value=$VERSION" >> $GITHUB_OUTPUT
+          echo "Version: $VERSION"
+
+      # ── Delete Emulator release branch ────────────────────────────────────
+      - name: Delete Emulator release branch
+        env:
+          GH_TOKEN: ${{ secrets.EMULATOR_CLEANUP_PAT }}
+        run: |
+          BRANCH="${{ github.event.pull_request.head.ref }}"
+          gh api \
+            --method DELETE \
+            -H "Accept: application/vnd.github+json" \
+            /repos/${{ github.repository }}/git/refs/heads/$BRANCH
+          echo "✅ Emulator branch $BRANCH deleted"
+
+      # ── Delete Emulator tag ────────────────────────────────────────────────
+      - name: Delete Emulator tag
+        env:
+          GH_TOKEN: ${{ secrets.EMULATOR_CLEANUP_PAT }}
+        run: |
+          TAG="${{ steps.version.outputs.value }}"
+          if gh api \
+            -H "Accept: application/vnd.github+json" \
+            /repos/${{ github.repository }}/git/ref/tags/$TAG \
+            > /dev/null 2>&1; then
+            gh api \
+              --method DELETE \
+              -H "Accept: application/vnd.github+json" \
+              /repos/${{ github.repository }}/git/refs/tags/$TAG
+            echo "✅ Emulator tag $TAG deleted"
+          else
+            echo "ℹ️  No Emulator tag $TAG found"
+          fi
+
+      # ── Delete Source tag ──────────────────────────────────────────────────
+      - name: Delete Source tag
+        env:
+          GH_TOKEN: ${{ secrets.EMULATOR_CLEANUP_PAT }}
+        run: |
+          TAG="${{ steps.version.outputs.value }}"
+          if gh api \
+            -H "Accept: application/vnd.github+json" \
+            /repos/Kotambail-Hegde/Masquerade-Source/git/ref/tags/$TAG \
+            > /dev/null 2>&1; then
+            gh api \
+              --method DELETE \
+              -H "Accept: application/vnd.github+json" \
+              /repos/Kotambail-Hegde/Masquerade-Source/git/refs/tags/$TAG
+            echo "✅ Source tag $TAG deleted"
+          else
+            echo "ℹ️  No Source tag $TAG found"
+          fi
+
+      # ── Revert bump commit on Source master ───────────────────────────────
+      - name: Revert version bump on Masquerade-Source
+        env:
+          GH_TOKEN: ${{ secrets.EMULATOR_CLEANUP_PAT }}
+        run: |
+          # Clone Source, find the bump commit, revert it
+          git clone https://x-access-token:${{ secrets.EMULATOR_CLEANUP_PAT }}@github.com/Kotambail-Hegde/Masquerade-Source.git source-repo
+          cd source-repo
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Find the most recent bump commit for this version
+          BUMP_SHA=$(git log --oneline --diff-filter=M -- helpers/helpers.h | \
+            grep "bump VERSION to ${{ steps.version.outputs.value }}" | \
+            head -1 | awk '{print $1}')
+
+          if [ -n "$BUMP_SHA" ]; then
+            echo "Reverting bump commit: $BUMP_SHA"
+            git revert --no-edit "$BUMP_SHA"
+            git push origin master
+            echo "✅ Version bump ${{ steps.version.outputs.value }} reverted on Source master"
+          else
+            echo "ℹ️  No bump commit found for ${{ steps.version.outputs.value }} — may have already been reverted"
+          fi
+          
