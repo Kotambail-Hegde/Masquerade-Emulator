@@ -114,8 +114,8 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 - Passes jsmolka/alyosha-tas's arm.gba, thumb.gba, memory.gba, flash and PPU tests
 - Passes FuzzARM.gba
 - Passes all tests within the AGB aging catridge test suite except:
-  - PREFETCH BUFFER
-- Passes all mgba-suite tests except following tests:
+  - Prefetch Buffer
+- Passes all mgba-suite tests except for few test-cases within the following tests:
   - Timing Tests
   - Timer Count-Up Tests
   - Timer IRQ Tests
