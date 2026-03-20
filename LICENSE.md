@@ -1,16 +1,54 @@
 # Masquerade Emulator
 
-© 2017–2025 Saurabh S. Hegde  
+© 2017–2026 Saurabh S. Hegde  
+All Rights Reserved.  
 Homepage: https://github.com/Kotambail-Hegde/Masquerade-Emulator
 
 ---
 
 ## LICENSE SUMMARY
 
-This software is **proprietary and closed source**.  
-You may not copy, modify, distribute, or reverse-engineer any part of the source or binary without explicit written consent.
+This project is a **source-available proprietary software**.
 
-However, this project uses several open-source libraries, each of which is governed by its own license. All efforts have been made to comply with their respective licenses.
+The source code is publicly visible for **reference, study, and personal use only**.  
+However, no rights are granted to:
+
+- Copy, redistribute, or mirror the source code
+- Modify or create derivative works
+- Use the code in other projects (open-source or commercial)
+- Distribute compiled binaries
+- Reverse-engineer or reuse parts of the implementation
+
+**Explicit written permission from the author is required** for any of the above.
+
+---
+
+### What is allowed:
+
+- Viewing the source code on the official repository
+- Cloning/forking strictly for **personal, non-distributed use**
+- Learning from the implementation
+
+---
+
+### What is NOT allowed (without permission):
+
+- Reuploading the repository (even unmodified)
+- Using code snippets in your own projects
+- Creating forks for public distribution
+- Commercial or non-commercial redistribution
+- Publishing modified versions
+
+---
+
+This repository being public **does NOT imply open-source licensing**.
+
+---
+
+## Third-party components
+
+This project includes third-party open-source libraries, each governed by its own license.  
+Their terms apply **only to those respective components**, not to the Masquerade Emulator itself.
 
 ### Open-source libraries used:
 
@@ -27,7 +65,7 @@ However, this project uses several open-source libraries, each of which is gover
 
 ---
 
-## LICENSES OF INCLUDED LIBRARIES
+## LICENSES OF THIRD-PARTY LIBRARIES
 
 ---
 
@@ -36,7 +74,7 @@ However, this project uses several open-source libraries, each of which is gover
 ```
 The MIT License (MIT)
 
-Copyright (c) 2014-2025 Omar Cornut
+Copyright (c) 2014-2026 Omar Cornut
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
