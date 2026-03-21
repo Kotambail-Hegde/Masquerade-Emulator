@@ -116,12 +116,11 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 - Passes all tests within the AGB aging catridge test suite except:
   - Prefetch Buffer
 - Passes all mgba-suite tests except for few test-cases within the following tests:
-  - Timing Tests
-  - Timer Count-Up Tests
-  - Timer IRQ Tests
-  - DMA Tests
-  - SIO Tests
-  - MISC Edge Case Tests
+  - GamePAK prefetch related timing tests
+  - Few timer count-up tests
+  - Few timer IRQ tests
+  - Few SIO tests
+  - Few MISC edge case tests
 - Passes all tests in tonc's test suite
 - Passes all belogic's audio tests
 
