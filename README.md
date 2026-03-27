@@ -121,13 +121,12 @@ A multi-system emulator supporting classic gaming consoles and simulators.
   - Few timer IRQ tests
   - Few SIO tests
   - Few MISC edge case tests
+- Passes CPU subtests of AGBEEG aging catridge test suite (still fails the Catridge and DMA subtests)
 - Passes all tests in tonc's test suite
 - Passes all belogic's audio tests
 
-#### Known Issues
-- Fails many AGBEEG aging catridge tests
-- Doesn't support GBS
-- Unable to play few video ROMs like Dragon Ball GT
+#### Known Issues (other than the ones mentioned above)
+- No audio issue while running GBS
 - Minor visual artifacts top left corner in Mode 3 for some video ROMs like Pokemon
 - Some undesired audio artifacts (expected fix in **_P0152_** variant)
 - Low end devices still need PGOs to run at full speed (expected fix in **_P0152_** variant)
@@ -191,7 +190,7 @@ A multi-system emulator supporting classic gaming consoles and simulators.
   - stat-mode-window
   - vram
 
-#### Known Issues
+#### Known Issues (other than the ones mentioned above)
 - Fails cgb-acid-hell
 - Fails windesync-validate.gb
 - Fails many docboy-test-suite's APU and CGB tests
@@ -237,7 +236,7 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 - Passes Blargg mmc3_irq_tests suite except:
   - 4-scanline_timing.nes
 
-#### Known Issues
+#### Known Issues (other than the ones mentioned above)
 - Unable to boot Dragon Warrior III
 - DMC DMA timing quirks need proper emulation
 
