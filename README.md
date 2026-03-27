@@ -10,6 +10,23 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 
 ---
 
+## Version
+
+Current Version: **0.7x**
+
+> 🚧 **Beta Notice**  
+> Masquerade is currently in **beta**. All versions before **1.0** are under active development and may contain bugs, incomplete features, or breaking changes.
+>
+> 🔄 **Frequent Updates**  
+> Releases may be frequent as development progresses rapidly.
+>
+> ⚠️ **Breaking Changes**  
+> Backward compatibility is **not guaranteed** between versions. Save states, configs, or behaviors may change without notice.
+>
+> Stability, accuracy, and performance will continue improving toward the **1.x stable release**.
+
+---
+
 ## Supported Systems
 
 - **Game Boy Advance (GBA)**
