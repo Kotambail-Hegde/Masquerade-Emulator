@@ -167,7 +167,10 @@ Current Version: **0.7x**
   - MBC2
   - MBC3
   - MBC5
+  - MBC7
   - MBC30
+  - HuC-1
+  - HuC-3
 
 #### Test Results
 - Completely passes Tom Harte's SingleStepTests (official and unofficial opcodes) for SM83
