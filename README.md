@@ -164,13 +164,18 @@ Current Version: **0.7x**
 - Supports following Memory Bank Controllers:
   - NO MBC
   - MBC1
+  - MBC1M
   - MBC2
   - MBC3
   - MBC5
+  - MBC6
   - MBC7
+  - M161
   - MBC30
   - HuC-1
   - HuC-3
+  - MMM01
+  - WISDOM TREE
 
 #### Test Results
 - Completely passes Tom Harte's SingleStepTests (official and unofficial opcodes) for SM83
@@ -345,7 +350,7 @@ Current Version: **0.7x**
 ### Additional
 - Supports Save States and Load States
 - Supports OTA updates
-- Supports dynamic drag and drop of ROMs including multipart ROMs for Space Invaders and Pacman/MsPacman
+- Supports dynamic drag and drop of ROMs including multiple ROMs for Space Invaders and Pacman/MsPacman
 
 ---
 
