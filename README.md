@@ -133,19 +133,19 @@ Current Version: **0.7x**
 - Passes all tests within the AGB aging catridge test suite except:
   - Prefetch Buffer
 - Passes all mgba-suite tests except for few test-cases within the following tests:
-  - GamePAK prefetch related timing tests
+  - GamePAK prefetch timing tests
   - Few timer count-up tests
   - Few timer IRQ tests
-  - Few SIO tests
-  - Few MISC edge case tests
-- Passes CPU subtests of AGBEEG aging catridge test suite (still fails the Catridge and DMA subtests)
+  - SIO tests
+  - MISC edge case tests
+- Passes CPU subtests of AGBEEG aging catridge test suite (still fails the Cartridge and DMA subtests)
 - Passes all tests in tonc's test suite
 - Passes all belogic's audio tests
 
 #### Known Issues (other than the ones mentioned above)
-- No audio issue while running GBS
-- Minor visual artifacts top left corner in Mode 3 for some video ROMs like Pokemon
-- Some undesired audio artifacts (expected fix in **_P0152_** variant)
+- Audio issue while running GBS
+- Visual artifacts top left corner in Mode 3 for some video ROMs like Pokemon
+- Undesired audio artifacts (expected fix in **_P0152_** variant)
 - Low end devices still need PGOs to run at full speed (expected fix in **_P0152_** variant)
 
 ---
@@ -216,12 +216,11 @@ Current Version: **0.7x**
   - vram
 
 #### Known Issues (other than the ones mentioned above)
+- Link Cable is not supported
 - Fails cgb-acid-hell
 - Fails windesync-validate.gb
-- Fails many docboy-test-suite's APU and CGB tests
-- Fails some of the Mealybug Tearoom tests by a very slight margin (a single pixel offset is seen from the expected!)
-- Link Cable not supported
-- Multiple CGB-specific quirks remain unimplemented
+- Fails many of the docboy-test-suite's tests
+- Fails many of the Mealybug Tearoom tests
 
 ---
 
@@ -263,7 +262,7 @@ Current Version: **0.7x**
 
 #### Known Issues (other than the ones mentioned above)
 - Unable to boot Dragon Warrior III
-- Fails many DMC tests
+- Fails many of the DMC tests
 
 ---
 
