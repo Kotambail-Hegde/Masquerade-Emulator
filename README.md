@@ -263,6 +263,7 @@ Current Version: **0.7x**
 #### Known Issues (other than the ones mentioned above)
 - Unable to boot Dragon Warrior III
 - Fails many of the DMC tests
+- Fails few of the Accuracy coin tests
 
 ---
 
