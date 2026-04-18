@@ -252,7 +252,7 @@ Current Version: **0.7x**
 - Passes blargg_apu_2005.07.30
 - Passes Blargg sprite_overflow_test suite
 - Passes Blargg sprite_hit_tests_2005.10.05
-- Passes all APU tests including DMC
+- Passes all APU tests
 - Passes Blargg vbl_nmi_timing and ppu_vbl_nmi tests
 - Passes Blargg cpu_interrupt_v2 tests
 - Passes OAM stress tests
@@ -263,7 +263,7 @@ Current Version: **0.7x**
 
 #### Known Issues (other than the ones mentioned above)
 - Unable to boot Dragon Warrior III
-- DMC DMA timing quirks need proper emulation
+- Fails many DMC tests
 
 ---
 
