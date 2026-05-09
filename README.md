@@ -261,6 +261,7 @@ Current Version: **0.7x**
   - 4-scanline_timing.nes
 
 #### Known Issues (other than the ones mentioned above)
+- PAL timings are not supported (only NTSC is supported as of now)
 - Unable to boot Dragon Warrior III
 - Fails many of the DMC tests
 - Fails many of the Accuracy coin tests
@@ -332,6 +333,8 @@ Current Version: **0.7x**
 #### Supported Modes
 - Normal Mode
 - Toroidal Mode
+
+#### Planned Support
 - Pan/Zoom support planned
 
 ---
