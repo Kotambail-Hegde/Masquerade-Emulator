@@ -230,11 +230,17 @@ Current Version: **0.7x**
 - 6502 CPU passes Klaus Dormann's 6502_65C02_functional_tests including BCD tests
 - Supports mappers:
   - NROM
-  - MMC1 (including SEROM, SHROM, SH1ROM, SuROM variants)
+  - MMC1 (including SEROM, SHROM, SH1ROM, SUROM sub-mappers)
   - UxROM (002)
   - CNROM
   - MMC3
+  - iNES MAPPER 6
   - AxROM
+  - MMC2
+  - MMC4
+  - COLOR DREAMS
+  - iNES MAPPER 34 (including both NINA and BNROM sub-mappers)
+  - iNES MAPPER 37
   - GxROM
   - Nanjian FC-001 (Mapper 163)
 - Supports GameGenie cheats
