@@ -242,7 +242,7 @@ Current Version: **0.7x**
   - iNES MAPPER 34 (including both NINA and BNROM sub-mappers)
   - iNES MAPPER 37
   - GxROM
-  - Nanjian FC-001 (Mapper 163)
+  - Nanjian FC-001
 - Supports GameGenie cheats
 - Supports Zapper in Port 2 (mouse clicks)
 
