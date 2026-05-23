@@ -417,6 +417,7 @@ Legacy variant based on One Lone Coder's Pixel Game Engine.
 
 #### Nintendo Entertainment System
 - [NES Dev Wiki](https://www.nesdev.org/wiki/Nesdev_Wiki) - Comprehensive NES documentation
+- [AprNes Accuracy Coin Guide](https://github.com/erspicu/AprNes/tree/master/MD/AccuracyCoin_Guide/EN) - Comprehensive accuracy coin Test guide
 
 ### Reference Emulators
 
@@ -425,13 +426,19 @@ Legacy variant based on One Lone Coder's Pixel Game Engine.
 - [NBA](https://github.com/nba-emu/NanoBoyAdvance) - GBA reference and testing
 - [SkyEmu](https://github.com/skylersaleh/SkyEmu) - GBA testing and UI theme inspiration
 - [Dillonb's GBA Emulator](https://github.com/Dillonb/gba/) - CLI logger/debugger inspiration
+- [Mesen2](https://github.com/SourMesen/Mesen2/tree/master) - NES reference and testing
 
 ### Test Suites and Test ROMs
 
+- Tom Harte's SingleStepTests for 6502 and SM83 CPU testing
 - Blargg test ROMs for GB, GBC, and NES
 - jsmolka and alyosha-tas test ROMs for GBA
-- [AGS Test Suite](https://github.com/DenSinH/AGSTests/tree/main) by DenSinH - GBA test ROMs
-- Tom Harte's SingleStepTests for 6502 and SM83 CPU testing
+- [AGS Test Suite](https://github.com/DenSinH/AGSTests/tree/main) by DenSinH for GBA
+- mGBA test suite for GBA
+- tonc test suite for GBA
+- Moon Eye and Wilbert Pol's test suite for GB/GBC
+- Accuracy Coin test suite for NES
+- And other tests suite mentioned in previous sections...
 
 ### Community
 
