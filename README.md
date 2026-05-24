@@ -133,19 +133,19 @@ Current Version: **0.7x**
 - Passes all tests within the AGB aging catridge test suite except:
   - Prefetch Buffer
 - Passes all mgba-suite tests except for few test-cases within the following tests:
-  - GamePAK prefetch timing tests
+  - GamePAK prefetch related timing tests
   - Few timer count-up tests
   - Few timer IRQ tests
-  - SIO tests
-  - MISC edge case tests
-- Passes CPU subtests of AGBEEG aging catridge test suite (still fails the Cartridge and DMA subtests)
+  - Few SIO tests
+  - Few MISC edge case tests
+- Passes CPU subtests of AGBEEG aging catridge test suite (still fails the Catridge and DMA subtests)
 - Passes all tests in tonc's test suite
 - Passes all belogic's audio tests
 
 #### Known Issues (other than the ones mentioned above)
-- Audio issue while running GBS
-- Visual artifacts top left corner in Mode 3 for some video ROMs like Pokemon
-- Undesired audio artifacts (expected fix in **_P0152_** variant)
+- No audio issue while running GBS
+- Minor visual artifacts top left corner in Mode 3 for some video ROMs like Pokemon
+- Some undesired audio artifacts (expected fix in **_P0152_** variant)
 - Low end devices still need PGOs to run at full speed (expected fix in **_P0152_** variant)
 
 ---
@@ -216,11 +216,12 @@ Current Version: **0.7x**
   - vram
 
 #### Known Issues (other than the ones mentioned above)
-- Link Cable is not supported
 - Fails cgb-acid-hell
 - Fails windesync-validate.gb
-- Fails many of the docboy-test-suite's tests
-- Fails many of the Mealybug Tearoom tests
+- Fails many docboy-test-suite's APU and CGB tests
+- Fails some of the Mealybug Tearoom tests by a very slight margin (a single pixel offset is seen from the expected!)
+- Link Cable not supported
+- Multiple CGB-specific quirks remain unimplemented
 
 ---
 
@@ -257,7 +258,7 @@ Current Version: **0.7x**
 - Passes blargg_apu_2005.07.30
 - Passes Blargg sprite_overflow_test suite
 - Passes Blargg sprite_hit_tests_2005.10.05
-- Passes all APU tests
+- Passes all APU tests including DMC
 - Passes Blargg vbl_nmi_timing and ppu_vbl_nmi tests
 - Passes Blargg cpu_interrupt_v2 tests
 - Passes OAM stress tests
@@ -418,6 +419,10 @@ Legacy variant based on One Lone Coder's Pixel Game Engine.
 #### Nintendo Entertainment System
 - [NES Dev Wiki](https://www.nesdev.org/wiki/Nesdev_Wiki) - Comprehensive NES documentation
 - [AprNes Accuracy Coin Guide](https://github.com/erspicu/AprNes/tree/master/MD/AccuracyCoin_Guide/EN) - Comprehensive accuracy coin Test guide
+- [NES Database](https://forums.nesdev.org/viewtopic.php?p=248796&sid=1308dccf364c1c36576f65a65cbb68ee#p248796) - ROM Database for NES ROMs
+
+#### CHIP-8 Family
+- [Chip8 Database](https://github.com/chip-8/chip-8-database) - ROM Database for CHIP-8 family
 
 ### Reference Emulators
 
