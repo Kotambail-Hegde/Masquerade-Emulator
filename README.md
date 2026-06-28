@@ -230,21 +230,73 @@ Current Version: **0.7x**
 #### Features
 - 6502 CPU passes Klaus Dormann's 6502_65C02_functional_tests including BCD tests
 - Supports mappers:
-  - NROM
-  - MMC1 (including SEROM, SHROM, SH1ROM, SUROM sub-mappers)
+  - NROM (000)
+  - MMC1 (001)
+    - SEROM
+    - SHROM
+    - SH1ROM
+    - SUROM
+    - SOROM
+    - SNROM
+    - SXROM
   - UxROM (002)
-  - CNROM
-  - MMC3
-  - iNES MAPPER 6
-  - AxROM
-  - MMC2
-  - MMC4
-  - COLOR DREAMS
-  - iNES MAPPER 34 (including both NINA and BNROM sub-mappers)
-  - iNES MAPPER 37
-  - GxROM
-  - Nanjian FC-001
-- Supports GameGenie cheats
+  - CNROM (003)
+  - MMC3 (004)
+  - MMC5 (005)
+    - MMC6
+  - iNES Mapper 6 (006)
+  - AxROM (007)
+  - MMC2 (009)
+  - MMC4 (010)
+  - Color Dreams (011)
+  - CPROM (013)
+  - Bandai FCG (016)
+    - LZ93D50 + 24C01 EEPROM
+    - FCG-1 / FCG-2
+    - LZ93D50 + 24C02 EEPROM
+  - Jaleco SS88006 (018)
+  - Namco 163 (019)
+  - Konami VRC4 (021)
+    - VRC4ac
+  - Konami VRC2 (022)
+    - VRC2a
+  - Konami VRC2 / VRC4 (023)
+    - VRC2b
+    - VRC2c
+    - VRC4e
+  - Konami VRC6 (024)
+    - VRC6a
+  - Konami VRC2 / VRC4 (025)
+    - VRC4b
+    - VRC4c
+    - VRC4d
+    - VRC4f
+  - Konami VRC6 (026)
+    - VRC6b
+  - iNES Mapper 34 (034)
+    - NINA-001
+    - BNROM
+  - iNES Mapper 37 (037)
+  - iNES Mapper 47 (047)
+  - RAMBO-1 (064)
+  - GxROM (066)
+  - iNES Mapper 67 (067)
+  - Sunsoft-4 (068)
+  - Sunsoft FME-7 (069)
+  - iNES Mapper 70 (070)
+  - J87 (087)
+  - iNES Mapper 105 (105)
+  - iNES Mapper 118 (118)
+  - MMC3 + RAMBO-1 (119)
+  - iNES Mapper 152 (152)
+  - iNES Mapper 155 (155)
+  - iNES Mapper 158 (158)
+  - Nanjing FC-001 (163)
+  - iNES Mapper 180 (180)
+  - Namco 175 / Namco 340 (210)
+    - Namco 175
+    - Namco 340
+- Supports Game Genie cheats
 - Supports Zapper in Port 2 (mouse clicks)
 
 #### Test Results
