@@ -8,40 +8,51 @@ Homepage: https://github.com/Kotambail-Hegde/Masquerade-Emulator
 
 ## LICENSE SUMMARY
 
-This project is a **source-available proprietary software**.
+This project is source-available proprietary software.
 
-The source code is publicly visible for **reference, study, and personal use only**.  
-However, no rights are granted to:
-
-- Copy, redistribute, or mirror the source code
-- Modify or create derivative works
-- Use the code in other projects (open-source or commercial)
-- Distribute compiled binaries
-- Reverse-engineer or reuse parts of the implementation
-
-**Explicit written permission from the author is required** for any of the above.
-
----
+The source code is publicly available for reference, study, personal use,
+community contribution, and non-commercial software development. Making the
+repository public does not grant open-source rights or ownership of the project.
 
 ### What is allowed:
 
 - Viewing the source code on the official repository
-- Cloning/forking strictly for **personal, non-distributed use**
-- Learning from the implementation
+- Cloning and forking the repository for personal use
+- Creating forks for the purpose of contributing improvements back to the project
+- Submitting pull requests, patches, bug fixes, and improvements to the official repository
+- Using, modifying, and incorporating portions of the source code into
+  non-commercial projects, provided that the original repository, a substantial
+  portion of the source code, or a modified version of this project is not
+  redistributed as a separate project
+
+### What is NOT allowed without explicit written permission from the author:
+
+- Redistributing the complete source code or repository
+- Hosting mirrors or copies of the repository
+- Publishing a fork as a separate project
+- Distributing modified versions of this software
+- Using the source code or substantial portions of it in commercial products
+- Creating commercial products or services based on this source code
+- Distributing compiled binaries or releases of this project
+- Claiming ownership of the original project or source code
+
+### Contributions:
+
+Contributors retain copyright ownership of their submitted contributions.
+
+By submitting a contribution through pull requests, patches, or other
+channels, contributors grant the project author a perpetual, worldwide,
+non-exclusive license to use, modify, incorporate, and distribute those
+contributions as part of this project.
+
+The contribution history in the repository may be used to identify authorship
+of individual contributions.
 
 ---
 
-### What is NOT allowed (without permission):
-
-- Reuploading the repository (even unmodified)
-- Using code snippets in your own projects
-- Creating forks for public distribution
-- Commercial or non-commercial redistribution
-- Publishing modified versions
-
----
-
-This repository being public **does NOT imply open-source licensing**.
+This repository being public does **NOT** imply that the software is open source.
+The source is made available to encourage transparency, learning, and
+community collaboration while retaining proprietary rights.
 
 ---
 
@@ -61,8 +72,7 @@ Their terms apply **only to those respective components**, not to the Masquerade
 - emscripten-browser-file – MIT License
 - stb – Public Domain or MIT (depending on module)
 - chip-8-database – MIT License
-- OpenSSL – Apache License 2.0 (OpenSSL is used as a dynamic library (DLL). Our proprietary code does not include OpenSSL source. OpenSSL copyright and license notices are included as required by Apache 2.0.)
-
+- OpenSSL – Apache License 2.0 (OpenSSL is used as a dynamic library (DLL) and does not include OpenSSL source)
 ---
 
 ## LICENSES OF THIRD-PARTY LIBRARIES
@@ -612,6 +622,41 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+```
+
+---
+
+### Game Boy and Game Boy Color Boot ROMs are from the SameBoy project 
+
+```
+Expat License
+
+Copyright (c) 2015-2026 Lior Halphon
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+  
+  The files contained under the iOS directory in this repository are subject to
+  this addition condition:
+  
+  A written permission from Lior Halphon is required to distribute copies or
+  substantial portions of the Software in a digital marketplace, such as
+  Apple's App Store.
 ```
 
 ---
