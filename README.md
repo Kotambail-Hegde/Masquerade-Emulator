@@ -36,9 +36,9 @@ Current Version: **0.7x**
 - **Ms Pac-Man**
 - **Pac-Man (Midway and Namco variants)**
 - **Space Invaders**
-- **CHIP-8**
-- **S-CHIP**
 - **XO-CHIP**
+- **S-CHIP**
+- **CHIP-8**
 - **Game of Life**
 
 ---
@@ -182,15 +182,10 @@ Current Version: **0.7x**
 - Passes all Blargg test suite except:
   - oam_bug.gb
 - Passes Moon Eye tests except:
-  - boot_div-dmgABCmgb.gb
-  - boot_hwio-dmgABCmgb.gb
-- Passes Wilbert Pol's tests except:
-  - GB only:
-    - ly_lyc_153_write-GS.gb
-  - GBC only:
-    - ly_lyc_0_write-C.gb
-    - ly_lyc_153_write-C.gb
-    - ly_lyc_write-C.gb
+  - unused_hwio-C.gb
+  - boot_hwio-C.gb
+  - boot_div-cgbABCDE.gb
+- Passes all Wilbert Pol's tests
 - Passes Daid's GBEmulatorShootout tests except:
   - ppu_scanline_bgp.gb
 - Passes PeachyHardwareAbuse tests including ctf.gb
@@ -201,25 +196,17 @@ Current Version: **0.7x**
 - Passes all Hacktix's tests except:
   - strikethrough.gb
 - Passes TurtleTests
-- Passes MagenTests (GBC)
+- Passes MagenTests
 - Passes mbc3-tester
 - Fails some same-suite tests:
   - apu
-- Fails many age-test-roms tests:
-  - m3-bg-lcdc (few differences)
-  - m3-bg-scx (few differences)
-  - oam
-  - speed-switch
-  - stat-mode (few differences)
-  - stat-mode-sprites
-  - stat-mode-window
-  - vram
+  - sgb
 
 #### Known Issues (other than the ones mentioned above)
 - Fails cgb-acid-hell
-- Fails windesync-validate.gb
+- Fails some age-test-roms
+- Fails some of the Mealybug Tearoom tests
 - Fails many docboy-test-suite's APU and CGB tests
-- Fails some of the Mealybug Tearoom tests by a very slight margin (a single pixel offset is seen from the expected!)
 - Link Cable not supported
 - Multiple CGB-specific quirks remain unimplemented
 
@@ -478,28 +465,40 @@ Legacy variant based on One Lone Coder's Pixel Game Engine.
 
 ### Reference Emulators
 
-- [Gearboy](https://github.com/drhelius/Gearboy) - GB/GBC reference and testing
+- [Gearboy](https://github.com/drhelius/Gearboy) - GB/GBC testing
 - [gbmulator](https://github.com/mpostaire/gbmulator) - GB/GBC testing
-- [NBA](https://github.com/nba-emu/NanoBoyAdvance) - GBA reference and testing
-- [SkyEmu](https://github.com/skylersaleh/SkyEmu) - GBA testing and UI theme inspiration
+- [Emulicious](https://emulicious.net/) - GB/GBC testing
+- [Sameboy](https://github.com/LIJI32/SameBoy) - GB/GBC testing
+- [NBA](https://github.com/nba-emu/NanoBoyAdvance) - GBA testing
+- [SkyEmu](https://github.com/skylersaleh/SkyEmu) - UI theme inspiration
 - [Dillonb's GBA Emulator](https://github.com/Dillonb/gba/) - CLI logger/debugger inspiration
-- [Mesen2](https://github.com/SourMesen/Mesen2/tree/master) - NES reference and testing
+- [Mesen2](https://github.com/SourMesen/Mesen2/tree/master) - NES testing
+- [Hhugboy](https://github.com/tzlion/hhugboy/tree/d86491a3992f2b70b19582ba6f4d16bee781b2fd) - For information in Poke2in1 Mapper
 
 ### Test Suites and Test ROMs
 
 - Tom Harte's SingleStepTests for 6502 and SM83 CPU testing
-- Blargg test ROMs for GB, GBC, and NES
-- jsmolka and alyosha-tas test ROMs for GBA
-- [AGS Test Suite](https://github.com/DenSinH/AGSTests/tree/main) by DenSinH for GBA
-- mGBA test suite for GBA
-- tonc test suite for GBA
-- Moon Eye and Wilbert Pol's test suite for GB/GBC
-- Accuracy Coin test suite for NES
-- And other tests suite mentioned in previous sections...
+- Blargg test ROMs for [GB](https://github.com/retrio/gb-test-roms), [GBC](https://github.com/retrio/gb-test-roms), and [NES](https://github.com/christopherpow/nes-test-roms)
+- [Little Things GB](https://github.com/pinobatch/little-things-gb) test suite for GB and GBC
+- [jsmolka](https://github.com/jsmolka/gba-tests) and [alyosha-tas](https://github.com/alyosha-tas/gba-tests) test ROMs for GBA
+- [AGS Test Suite](https://github.com/DenSinH/AGSTests/tree/main)
+- [MGBA test suite](https://github.com/mgba-emu/suite) for GBA
+- [Tonc test suite](https://gbadev.net/tonc/setup.html) for GBA
+- [Moon Eye](https://github.com/Gekkio/mooneye-test-suite) and [Wilbert Pol's](https://github.com/wilbertpol/mooneye-gb/tree/master/tests) test suite for GB/GBC
+- [Mealybug Tearoom Tests](mealybug-tearoom-tests) for GB/GBC
+- [Accuracy Coin](https://github.com/100thCoin/AccuracyCoin) test suite for NES
+- [Little Things NES](https://github.com/pinobatch/little-things-nes) test suite for NES
+- And all other tests suites mentioned in previous sections...
+
+### Boot ROMs
+
+- [Sameboy](https://github.com/LIJI32/SameBoy) - DMG and CGB BIOS
+- [ReGBA](https://github.com/Nebuleon/ReGBA) - GBA BIOS
 
 ### Community
 
 - [Emulator Development Discord](https://discord.com/invite/emudev) - Active community support and development discussions
+- Special thanks to ScottNash042 for the extensive testing and hence in ironing out some major issues
 
 ---
 
