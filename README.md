@@ -415,7 +415,6 @@ Modern UI framework with enhanced features and performance.
 - SDL3 for windowing and input
 - OpenGL3 for rendering
 - nativefiledialog-extended for file dialogs
-- Boost libraries for INI parsing
 
 ### P0010: OLC (Deprecated)
 
@@ -426,7 +425,6 @@ Legacy variant based on One Lone Coder's Pixel Game Engine.
 **Technology Stack (Legacy):**
 - Forked version of One Lone Coder's Pixel Game Engine
 - One Lone Coder's Sound Wave Engine
-- Boost libraries for INI parsing
 
 ---
 
@@ -489,11 +487,6 @@ Legacy variant based on One Lone Coder's Pixel Game Engine.
 - [Accuracy Coin](https://github.com/100thCoin/AccuracyCoin) test suite for NES
 - [Little Things NES](https://github.com/pinobatch/little-things-nes) test suite for NES
 - And all other tests suites mentioned in previous sections...
-
-### Boot ROMs
-
-- [Sameboy](https://github.com/LIJI32/SameBoy) - DMG and CGB BIOS
-- [ReGBA](https://github.com/Nebuleon/ReGBA) - GBA BIOS
 
 ### Community
 
