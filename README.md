@@ -60,6 +60,14 @@ Current Version: **0.7x**
 
 <kbd><img width="240" height="160" alt="UI Screenshot 1" src="https://github.com/user-attachments/assets/f7af5623-f801-4d18-bcda-f18f7470454f" /></kbd> <kbd><img width="240" height="160" alt="UI Screenshot 2" src="https://github.com/user-attachments/assets/115f97b2-5858-4e2c-80b9-f6ba3049aa4a" /></kbd>
 
+#### 🛠️ Debugger (Work In Progress)
+
+The built-in debugger offers granular execution control, supporting **per-frame, per-line, and per-tick** stepping resolutions. 
+
+_Example: The PPU Debugger inspecting a Game Boy / Game Boy Color state._
+
+<kbd><img width="1625" height="1116" alt="PPU Debugger - GB/GBC Example" src="https://github.com/user-attachments/assets/b756b080-c8c5-4f2b-bc6b-fb7002707d7f" /></kbd>
+
 #### Pokémon Crystal, Pokémon Emerald and Pokémon Blue
 
 <kbd><img width="200" alt="Pokemon Crystal" src="https://github.com/user-attachments/assets/3011b49f-45c6-4f18-bbc5-6ede797e81ad" /></kbd> <kbd><img width="200" alt="Pokemon Emerald" src="https://github.com/user-attachments/assets/d668bc27-9589-4897-bc92-8e1ca14c5d7b" /></kbd> <kbd><img width="200" alt="Pokemon Blue" src="https://github.com/user-attachments/assets/3fa02907-9902-4b73-a75a-af8e74df8ef6" /></kbd>
