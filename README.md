@@ -66,9 +66,9 @@ The built-in debugger offers granular execution control, supporting **per-frame,
 
 _Example: The PPU Debugger inspecting a Game Boy / Game Boy Color state._
 
-<kbd><img width="1618" height="1081" alt="PPUDebugger2" src="https://github.com/user-attachments/assets/2f19cc3a-4959-4ba9-b7b7-e83b46217b42" /></kbd>
+<kbd><img width="1619" height="1078" alt="PPUDebugger3" src="https://github.com/user-attachments/assets/65fe20f8-916f-4c03-85c2-488d1f94adeb" /></kbd>
 
-<kbd><img width="1619" height="1082" alt="PPUDebugger3" src="https://github.com/user-attachments/assets/0f5b5a7c-1c03-4ff0-b123-601464345206" /></kbd>
+<kbd><img width="1618" height="1081" alt="PPUDebugger2" src="https://github.com/user-attachments/assets/2f19cc3a-4959-4ba9-b7b7-e83b46217b42" /></kbd>
 
 #### Pokémon Crystal, Pokémon Emerald and Pokémon Blue
 
