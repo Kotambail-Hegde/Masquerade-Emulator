@@ -188,37 +188,36 @@ _Example: The PPU Debugger inspecting a Game Boy / Game Boy Color state._
   - WISDOM TREE
 
 #### Test Results
-- Completely passes Tom Harte's SingleStepTests (official and unofficial opcodes) for SM83
-- Passes all Blargg test suite except:
-  - oam_bug.gb
-- Passes Moon Eye tests except:
-  - unused_hwio-C.gb
-  - boot_hwio-C.gb
-  - boot_div-cgbABCDE.gb
-- Passes all Wilbert Pol's tests
-- Passes Daid's GBEmulatorShootout tests except:
-  - ppu_scanline_bgp.gb
-- Passes PeachyHardwareAbuse tests including ctf.gb
+- Passes Tom Harte's SingleStepTests (official and unofficial SM83 opcodes)
+- Passes PeachyHardwareAbuse (including ctf.gb)
 - Passes MMIO_exec_1.gb
-- Passes DMG Aging Cartridge test
+- Passes the DMG Aging Cartridge test
 - Passes ax6's rtc3test suite
-- APU plays ISSOtm's smooth-player.gb
-- Passes all Hacktix's tests except:
-  - strikethrough.gb
+- APU successfully plays ISSOtm's smooth-player.gb
 - Passes TurtleTests
 - Passes MagenTests
 - Passes mbc3-tester
-- Fails some same-suite tests:
-  - apu
-  - sgb
+- Passes all Wilbert Pol tests
+- Passes all Blargg tests except:
+  - oam_bug.gb
+- Passes all Mooneye tests except:
+  - unused_hwio-C.gb
+  - boot_hwio-C.gb
+  - boot_div-cgbABCDE.gb
+- Passes all Daid's GBEmulatorShootout tests except:
+  - ppu_scanline_bgp.gb
+- Passes all Hacktix's tests except:
+  - strikethrough.gb
+- Passes all SameSuite's tests except:
+  - APU
+  - SGB
 
 #### Known Issues (other than the ones mentioned above)
-- Fails cgb-acid-hell
-- Fails some age-test-roms
-- Fails some of the Mealybug Tearoom tests
-- Fails many docboy-test-suite's APU and CGB tests
-- Link Cable not supported
-- Multiple CGB-specific quirks remain unimplemented
+- cgb-acid-hell
+- Some age-test-roms tests
+- Some Mealybug Tearoom tests
+- Some docboy-test-suite tests (especially APU)
+- Link Cable emulation is not supported
 
 ---
 
