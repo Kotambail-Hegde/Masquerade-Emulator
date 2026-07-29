@@ -70,6 +70,11 @@ _Example: The PPU Debugger inspecting a Game Boy / Game Boy Color state._
 
 <kbd><img alt="PPUDebugger3" src="https://github.com/user-attachments/assets/65fe20f8-916f-4c03-85c2-488d1f94adeb" /></kbd>
 
+_Example: The Event Debugger inspecting a Game Boy / Game Boy Color state._
+
+<kbd><img alt="image" src="https://github.com/user-attachments/assets/2a6c523c-9bfb-4d54-bbf8-7e5613b48e57" /></kbd>
+
+
 #### Pokémon Crystal, Pokémon Emerald and Pokémon Blue
 
 <kbd><img width="200" alt="Pokemon Crystal" src="https://github.com/user-attachments/assets/3011b49f-45c6-4f18-bbc5-6ede797e81ad" /></kbd> <kbd><img width="200" alt="Pokemon Emerald" src="https://github.com/user-attachments/assets/d668bc27-9589-4897-bc92-8e1ca14c5d7b" /></kbd> <kbd><img width="200" alt="Pokemon Blue" src="https://github.com/user-attachments/assets/3fa02907-9902-4b73-a75a-af8e74df8ef6" /></kbd>
