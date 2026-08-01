@@ -70,7 +70,7 @@ _Example: The PPU Debugger inspecting a Game Boy / Game Boy Color state._
 
 _Example: The PPU Debugger inspecting a Nintendo Entertainment System state._
 
-<kbd><img alt="image" src="https://github.com/user-attachments/assets/222057b4-a797-41f9-a5d9-a07731c008b9" /></kbd>
+<kbd><img alt="image" src="https://github.com/user-attachments/assets/19d602be-14bd-4fc4-9e57-1135c745a038" /></kbd>
 
 _Example: The Event Debugger inspecting a Game Boy / Game Boy Color state._
 
