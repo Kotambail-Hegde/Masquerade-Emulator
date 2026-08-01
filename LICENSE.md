@@ -11,24 +11,20 @@ Homepage: https://github.com/Kotambail-Hegde/Masquerade-Emulator
 This project is source-available proprietary software.
 
 The source code is publicly available for reference, study, personal use,
-community contribution, and non-commercial software development. Making the
-repository public does not grant open-source rights or ownership of the project.
+and non-commercial software development. 
+Making the repository public does not grant open-source rights or ownership of the project.
 
 ### What is allowed:
 
-- Viewing the source code on the official repository
 - Cloning and forking the repository for personal use
-- Creating forks for the purpose of contributing improvements back to the project
-- Submitting pull requests, patches, bug fixes, and improvements to the official repository
-- Using, modifying, and incorporating portions of the source code into
-  non-commercial projects, provided that the original repository, a substantial
-  portion of the source code, or a modified version of this project is not
-  redistributed as a separate project
+- Modifying and incorporating non-substantial portions of the source code into non-commercial projects,
+  provided that explicit attribution to the original project is maintained,
+  and provided that neither this software, a modified version thereof,
+  nor a substantial portion of its source code is redistributed as an independent project.
 
 ### What is NOT allowed without explicit written permission from the author:
 
 - Redistributing the complete source code or repository
-- Hosting mirrors or copies of the repository
 - Publishing a fork as a separate project
 - Distributing modified versions of this software
 - Using the source code or substantial portions of it in commercial products
@@ -36,23 +32,10 @@ repository public does not grant open-source rights or ownership of the project.
 - Distributing compiled binaries or releases of this project
 - Claiming ownership of the original project or source code
 
-### Contributions:
-
-Contributors retain copyright ownership of their submitted contributions.
-
-By submitting a contribution through pull requests, patches, or other
-channels, contributors grant the project author a perpetual, worldwide,
-non-exclusive license to use, modify, incorporate, and distribute those
-contributions as part of this project.
-
-The contribution history in the repository may be used to identify authorship
-of individual contributions.
-
 ---
 
 This repository being public does **NOT** imply that the software is open source.
-The source is made available to encourage transparency, learning, and
-community collaboration while retaining proprietary rights.
+The source is made available to encourage transparency, learning while retaining proprietary rights.
 
 ---
 
