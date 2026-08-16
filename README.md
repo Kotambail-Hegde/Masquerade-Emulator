@@ -196,8 +196,7 @@ _Example: The Event Debugger inspecting a Game Boy / Game Boy Color state._
 
 #### Test Results
 - Completely passes Tom Harte's SingleStepTests (official and unofficial opcodes) for SM83
-- Passes all Blargg test suite except:
-  - oam_bug.gb
+- Passes all of Blargg test suite including OAM bug
 - Passes Moon Eye tests except:
   - unused_hwio-C.gb
   - boot_hwio-C.gb
@@ -209,12 +208,12 @@ _Example: The Event Debugger inspecting a Game Boy / Game Boy Color state._
 - Passes DMG Aging Cartridge test
 - Passes ax6's rtc3test suite
 - APU successfully plays ISSOtm's smooth-player.gb
-- Passes all Hacktix's tests except:
+- Passes all of Hacktix's tests except:
   - strikethrough.gb
 - Passes TurtleTests
 - Passes MagenTests
 - Passes mbc3-tester
-- Fails some same-suite tests:
+- Fails some of the same-suite tests:
   - apu
   - sgb
 - Passes Mealybug-Tearoom tests except for the following:
@@ -266,6 +265,8 @@ _Example: The Event Debugger inspecting a Game Boy / Game Boy Color state._
   - MMC4 (010)
   - Color Dreams (011)
   - CPROM (013)
+  - iNES Mapper 14 (014)
+  - iNES Mapper 15 (015)
   - Bandai FCG (016)
     - LZ93D50 + 24C01 EEPROM
     - FCG-1 / FCG-2
@@ -289,6 +290,9 @@ _Example: The Event Debugger inspecting a Game Boy / Game Boy Color state._
     - VRC4f
   - Konami VRC6 (026)
     - VRC6b
+  - iNES Mapper 28 (028)
+  - iNES Mapper 29 (029)
+  - iNES Mapper 30 (030)
   - iNES Mapper 34 (034)
     - NINA-001
     - BNROM
@@ -300,6 +304,7 @@ _Example: The Event Debugger inspecting a Game Boy / Game Boy Color state._
   - Sunsoft-4 (068)
   - Sunsoft FME-7 (069)
   - iNES Mapper 70 (070)
+  - iNES Mapper 78 (078)
   - J87 (087)
   - iNES Mapper 105 (105)
   - iNES Mapper 118 (118)
@@ -312,6 +317,9 @@ _Example: The Event Debugger inspecting a Game Boy / Game Boy Color state._
   - Namco 175 / Namco 340 (210)
     - Namco 175
     - Namco 340
+  - iNES Mapper 218 (218)
+  - iNES Mapper 232 (232)
+  - iNES Mapper 268 (268)
 - Supports Game Genie cheats
 - Supports Zapper in Port 2 (mouse clicks)
 
@@ -458,7 +466,37 @@ Legacy variant based on One Lone Coder's Pixel Game Engine.
 ---
 
 ## Automated Test Reports
-- Game Boy / Game Boy Color (GB/GBC) : [GB Emulator Shootout](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/gb/GBEmulatorShootout/)
+
+### Masquerade Tests
+
+#### Game Boy / Game Boy Color
+
+- [Game Boy (GB) Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/gb/gb_report.html)
+- [Game Boy Color (GBC) Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/gb/gbc_report.html)
+
+#### Game Boy Advance
+
+- Test report coming soon.
+
+#### NES
+
+- [NES Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/nes/nes_report.html)
+
+#### CHIP-8
+
+- [CHIP-8 Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/chip8/c8_report.html)
+- [SCHIP-8 Legacy Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/chip8/sc8l_report.html)
+- [SCHIP-8 Modern Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/chip8/sc8m_report.html)
+- [XO-CHIP Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/chip8/xoc8_report.html)
+
+### External Test Suites
+
+These reports use external test suites to validate emulator compatibility and
+correctness.
+
+#### Game Boy / Game Boy Color
+
+- [GB Emulator Shootout](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/gb/GBEmulatorShootout/)
 
 ---
 
