@@ -515,6 +515,8 @@ correctness.
 - [Night Shade's Audio Implementation](https://nightshade256.github.io/2021/03/27/gb-sound-emulation.html) - Audio emulation guide
 - [The Ultimate Gameboy Talk](https://github.com/drhelius/Gearboy) - Technical reference
 - [Antonio's Technical Documentation](https://github.com/AntonioND/giibiiadvance/blob/master/docs/TCAGBD.pdf) - Game Boy Advance technical guide
+- [GBDEV Game Boy Printer](https://gbdev.gg8.se/wiki/articles/Gameboy_Printer) - Game Boy Printer technical guide 
+- [Shonumi's Game Boy Printer's RLE compression](https://shonumi.github.io/articles/art2.html) - Game Boy Printer Compression Mode technical guide
 
 #### Game Boy Advance
 - [GBATEK](http://problemkaputt.de/gbatek-gba-reference.htm) - Comprehensive GBA reference
