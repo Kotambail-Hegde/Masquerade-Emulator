@@ -81,11 +81,11 @@ _Example: The Event Debugger inspecting a Game Boy / Game Boy Color state._
 
 <kbd><img width="200" alt="Pokemon Crystal" src="https://github.com/user-attachments/assets/3011b49f-45c6-4f18-bbc5-6ede797e81ad" /></kbd> <kbd><img width="200" alt="Pokemon Emerald" src="https://github.com/user-attachments/assets/d668bc27-9589-4897-bc92-8e1ca14c5d7b" /></kbd> <kbd><img width="200" alt="Pokemon Blue" src="https://github.com/user-attachments/assets/3fa02907-9902-4b73-a75a-af8e74df8ef6" /></kbd>
 
-#### Pokemon Yellow (uncompressed) and Pokemon Trading Card Game (RLE Compression) with Game-Boy Printer
+#### Pokemon Yellow (uncompressed) and Pokemon Trading Card Game (RLE Compression) with Game-Boy Printer (Work In Progress)
 
 <kbd><img width="286" height="195" alt="Image" src="https://github.com/user-attachments/assets/9f91d6de-8ae9-4772-9a02-95b4926844b7" /></kbd> <kbd><img width="286" height="195" alt="Image" src="https://github.com/user-attachments/assets/d4b03fc8-9770-4fc5-a025-5a579792539e" /></kbd>
 
-#### Tetris 2-Player mode with Game-Boy Link Cable
+#### Tetris 2-Player mode with Game-Boy Link Cable (Work In Progress)
 
 <kbd><img width="437" height="226" alt="tetris-serial-link-comp" src="https://github.com/user-attachments/assets/805fce08-d3ad-4ce2-b303-121c5b0b898c" /></kbd>
 
