@@ -60,6 +60,8 @@ Current Version: **0.7x**
 
 <kbd><img width="240" height="160" alt="UI Screenshot 1" src="https://github.com/user-attachments/assets/f7af5623-f801-4d18-bcda-f18f7470454f" /></kbd> <kbd><img width="240" height="160" alt="UI Screenshot 2" src="https://github.com/user-attachments/assets/115f97b2-5858-4e2c-80b9-f6ba3049aa4a" /></kbd>
 
+<kbd><img width="240" height="160" alt="image" src="https://github.com/user-attachments/assets/c3041aaa-7de5-47c2-b45b-3d9c47b2c2e5" /></kbd> <kbd><img width="240" height="160" alt="image" src="https://github.com/user-attachments/assets/7f60032b-5031-4525-8aed-83b341bb0eed" /></kbd>
+
 #### 🛠️ Debugger (Work In Progress)
 
 The built-in debugger offers granular execution control, supporting **per-frame, per-line, and per-tick** stepping resolutions. 
