@@ -95,7 +95,7 @@ _Example: The Event Debugger inspecting a Game Boy / Game Boy Color state._
 
 <kbd><img width="437" height="226" alt="tetris-serial-link-comp" src="https://github.com/user-attachments/assets/805fce08-d3ad-4ce2-b303-121c5b0b898c" /></kbd>
 
-### P0010: OLC (Deprecated)
+### P0010: OLC2 (Deprecated)
 
 #### User Interface
 
@@ -462,10 +462,9 @@ Masquerade is available in two variants, differing in their underlying libraries
 Modern UI framework with enhanced features and performance.
 
 **Technology Stack:**
-- ImGui for interface
-- SDL3 for windowing and input
-- OpenGL3 for rendering
-- nativefiledialog-extended for file dialogs
+- **Dear ImGui:** v1.92.7 WIP for interface
+- **SDL3:** v3.3.7 for windowing and input
+- **OpenGL3:** GLSL v3.30 for rendering
 
 ### P0010: OLC (Deprecated)
 
@@ -474,8 +473,8 @@ Legacy variant based on One Lone Coder's Pixel Game Engine.
 **Note:** P0010 is no longer supported. Users should migrate to P0052 for latest features and updates.
 
 **Technology Stack (Legacy):**
-- Forked version of One Lone Coder's Pixel Game Engine
-- One Lone Coder's Sound Wave Engine
+- One Lone Coder's Pixel Game Engine (Forked): v2.25
+- One Lone Coder's Sound Wave Engine: v0.02
 
 ---
 
