@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Masquerade — per-system details, accuracy, and known issues.">
+  <title>Masquerade — System Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html#top" aria-label="Masquerade home">
+        <span class="brand-mark">M</span>
+        <span>MASQUERADE</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="index.html#systems">Systems</a>
+        <a href="index.html#peripherals">Peripherals</a>
+        <a href="index.html#accuracy">Accuracy</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#gallery">Screenshots</a>
+        <a href="index.html#download">Download</a>
+      </nav>
+
+      <a class="nav-readme" id="readme-link" href="https://github.com/Kotambail-Hegde/Masquerade-Emulator#readme" target="_blank" rel="noopener">README ↗</a>
+      <a class="nav-github" href="https://github.com/Kotambail-Hegde/Masquerade-Emulator" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="detail-hero">
+      <div class="container">
+        <a class="text-link back-link" href="index.html#systems">&larr; Back to Masquerade</a>
+        <div class="eyebrow" id="d-eyebrow">SYSTEM</div>
+        <h1 id="d-title">Loading&hellip;</h1>
+        <p class="hero-copy" id="d-tag"></p>
+      </div>
+    </section>
+
+    <section class="section detail-body">
+      <div class="container">
+        <div class="detail-grid">
+          <div class="report-modal detail-panel detail-panel-wide" id="d-content-panel">
+            <div id="d-content">
+              <p class="detail-loading">Loading from README.md&hellip;</p>
+            </div>
+          </div>
+
+          <div class="report-modal detail-panel" id="d-links-panel">
+            <h3>Reports &amp; Links</h3>
+            <div class="report-links" id="d-links"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-refs">
+      <span>REFERENCES</span>
+      <span>Pan Docs · NESdev Wiki · GBATEK · Mesen2 · SameBoy · Gearboy · Tom Harte's SingleStepTests — <a href="https://github.com/Kotambail-Hegde/Masquerade-Emulator#credits-and-acknowledgments" target="_blank" rel="noopener">full credits ↗</a></span>
+    </div>
+    <div class="container footer-inner">
+      <div class="brand footer-brand"><span class="brand-mark">M</span><span>MASQUERADE</span></div>
+      <p>Source-available multi-system emulator.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Kotambail-Hegde/Masquerade-Emulator" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues" target="_blank" rel="noopener">Issues</a>
+        <a href="https://kotambail-hegde.github.io/Masquerade-Emulator/hosting/masquerade.html" target="_blank" rel="noopener">Web Version</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Only navigation metadata lives here — the actual feature/test/known-issue
+    // text is fetched live from README.md below, so this page can never drift
+    // out of sync with the README.
+    //
+    // headingLevel/headingText/occurrence locate the exact section in
+    // README.md (occurrence handles the doc's few duplicate heading names).
+    // testsHeading (optional) locates the matching entry under "Masquerade Tests".
+    var SYSTEMS = {
+      gb: {
+        eyebrow: "GAME BOY / GAME BOY COLOR", title: "Game Boy / Game Boy Color",
+        tag: "SM83 CPU, Pixel-Fetcher/Pixel-FIFO PPU, 15 Memory Bank Controllers.",
+        headingLevel: 3, headingText: "Game Boy / Game Boy Color (GB / GBC)", occurrence: 1,
+        testsHeading: { level: 4, text: "Game Boy / Game Boy Color" },
+        readmeAnchor: "game-boy-game-boy-color-gb-gbc"
+      },
+      gba: {
+        eyebrow: "GAME BOY ADVANCE", title: "Game Boy Advance",
+        tag: "ARM7TDMI CPU, all 5 PPU modes, all APU channels.",
+        headingLevel: 3, headingText: "Game Boy Advance (GBA)", occurrence: 1,
+        testsHeading: { level: 4, text: "Game Boy Advance" },
+        readmeAnchor: "game-boy-advance-gba"
+      },
+      nes: {
+        eyebrow: "NINTENDO ENTERTAINMENT SYSTEM", title: "Nintendo Entertainment System",
+        tag: "6502 CPU, 49 mappers, extensive Blargg/NESdev coverage.",
+        headingLevel: 3, headingText: "Nintendo Entertainment System (NES)", occurrence: 1,
+        testsHeading: { level: 4, text: "NES" },
+        readmeAnchor: "nintendo-entertainment-system-nes"
+      },
+      chip8: {
+        eyebrow: "CHIP-8 FAMILY", title: "CHIP-8 / S-CHIP / XO-CHIP",
+        tag: "Four variants, auto-detected quirks, palettes, and keybindings.",
+        headingLevel: 3, headingText: "CHIP-8 / S-CHIP / XO-CHIP", occurrence: 1,
+        testsHeading: { level: 4, text: "CHIP-8" },
+        readmeAnchor: "chip-8-s-chip-xo-chip"
+      },
+      pacman: {
+        eyebrow: "ARCADE", title: "Pac-Man &amp; Ms Pac-Man",
+        tag: "Z80 CPU, Midway and Namco variants, plus a growing boot-leg library.",
+        headingLevel: 3, headingText: "Pac-Man and Ms Pac-Man", occurrence: 1,
+        readmeAnchor: "pac-man-and-ms-pac-man"
+      },
+      spaceinvaders: {
+        eyebrow: "ARCADE", title: "Space Invaders",
+        tag: "Classic cabinet emulation with color overlay support.",
+        headingLevel: 3, headingText: "Space Invaders", occurrence: 1,
+        readmeAnchor: "space-invaders-1"
+      },
+      gameoflife: {
+        eyebrow: "SIMULATION", title: "Game of Life",
+        tag: "Conway's cellular automaton \u2014 included as a fantasy machine, not a console.",
+        headingLevel: 3, headingText: "Game of Life", occurrence: 1,
+        readmeAnchor: "game-of-life"
+      }
+    };
+
+    function qs(name) {
+      var m = new RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+      return m ? decodeURIComponent(m[1]) : null;
+    }
+
+    // ---------- Minimal markdown-lite renderer for the README's own style ----------
+    // Handles: #### headings, "- " nested bullet lists (2-space indent steps),
+    // **bold**, `code`, [text](url) links, and plain paragraphs. Enough for
+    // this doc's actual formatting — not a general-purpose parser.
+    function inlineMd(s) {
+      s = s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+      s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+      s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
+      return s;
+    }
+
+    // Split a section's lines into subsections by #### (or deeper) heading.
+    // Content before the first such heading (if any) becomes a titleless
+    // leading subsection.
+    function splitSubsections(lines) {
+      var subs = [];
+      var current = { title: null, level: 0, lines: [] };
+      subs.push(current);
+      lines.forEach(function (raw) {
+        var line = raw.replace(/\r$/, '');
+        var h = /^(#{4,6})\s+(.*)$/.exec(line);
+        if (h) {
+          current = { title: h[2], level: h[1].length, lines: [] };
+          subs.push(current);
+        } else {
+          current.lines.push(raw);
+        }
+      });
+      return subs.filter(function (s) { return s.title || s.lines.some(function (l) { return l.trim(); }); });
+    }
+
+    // Render one subsection's lines as list/paragraph HTML, tagging every
+    // top-level <ul> it opens with listClass (used to auto-style Test
+    // Results with checkmarks and Known Issues with X marks).
+    function renderLines(lines, listClass) {
+      var html = '';
+      var listStack = [];
+      function closeLists(toIndent) {
+        while (listStack.length && listStack[listStack.length - 1] > toIndent) {
+          html += '</ul>';
+          listStack.pop();
+        }
+      }
+      lines.forEach(function (raw) {
+        var line = raw.replace(/\r$/, '');
+        if (/^\s*---\s*$/.test(line)) { return; }
+        if (/^\s*$/.test(line)) { return; }
+
+        var li = /^(\s*)[-*]\s+(.*)$/.exec(line);
+        if (li) {
+          var indent = li[1].length;
+          if (!listStack.length || listStack[listStack.length - 1] < indent) {
+            html += '<ul class="detail-list ' + (indent === 0 ? listClass : 'detail-list-nested') + '">';
+            listStack.push(indent);
+          } else if (listStack[listStack.length - 1] > indent) {
+            closeLists(indent);
+            if (!listStack.length || listStack[listStack.length - 1] < indent) {
+              html += '<ul class="detail-list ' + (indent === 0 ? listClass : 'detail-list-nested') + '">';
+              listStack.push(indent);
+            }
+          }
+          html += '<li>' + inlineMd(li[2]) + '</li>';
+          return;
+        }
+
+        closeLists(-1);
+        html += '<p>' + inlineMd(line.trim()) + '</p>';
+      });
+      closeLists(-1);
+      return html;
+    }
+
+    function buildContent(subs, view) {
+      var hasTestContent = subs.some(function (sub) {
+        var norm = sub.title ? normalizeHeading(sub.title) : '';
+        return /\btest/.test(norm) || /known issue/.test(norm);
+      });
+      var effectiveView = (view === 'tests' && !hasTestContent) ? 'system' : view;
+      var html = '';
+      var shown = 0;
+      subs.forEach(function (sub) {
+        var norm = sub.title ? normalizeHeading(sub.title) : '';
+        var isTest = /\btest/.test(norm);
+        var isIssue = /known issue/.test(norm);
+        if (effectiveView === 'tests' && sub.title && !(isTest || isIssue)) return;
+        var listClass = isTest ? 'detail-list-pass' : (isIssue ? 'detail-list-issue' : '');
+        if (sub.title) html += '<h4 class="md-h">' + inlineMd(sub.title) + '</h4>';
+        html += renderLines(sub.lines, listClass);
+        shown++;
+      });
+      return shown ? { html: html, fellBack: effectiveView !== view } : null;
+    }
+
+    // Normalize a heading for comparison: lowercase, collapse everything
+    // that isn't a letter/digit into single spaces. Makes matching resilient
+    // to small formatting differences (spacing around "/", "()", etc.)
+    // instead of requiring an exact literal match.
+    function normalizeHeading(s) {
+      return s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+    }
+
+    // Extract the lines belonging to a given heading occurrence, stopping at
+    // the next heading whose level is <= the target level. Falls back to the
+    // first occurrence if the requested one isn't found, rather than failing
+    // outright (better to show the closest match than an error).
+    function extractSection(mdLines, headingLevel, headingText, occurrence) {
+      var target = normalizeHeading(headingText);
+      var matches = [];
+      for (var i = 0; i < mdLines.length; i++) {
+        var m = /^(#{1,6})\s+(.*)$/.exec(mdLines[i].replace(/\r$/, ''));
+        if (m && m[1].length === headingLevel && normalizeHeading(m[2]) === target) {
+          matches.push(i);
+        }
+      }
+      if (!matches.length) return null;
+      var idx = matches[occurrence - 1] !== undefined ? occurrence - 1 : 0;
+      var start = matches[idx] + 1;
+      var end = mdLines.length;
+      for (var j = start; j < mdLines.length; j++) {
+        var m2 = /^(#{1,6})\s+/.exec(mdLines[j].replace(/\r$/, ''));
+        if (m2 && m2[1].length <= headingLevel) { end = j; break; }
+      }
+      return mdLines.slice(start, end);
+    }
+
+    function extractLinks(mdLines, headingLevel, headingText) {
+      var section = extractSection(mdLines, headingLevel, headingText, 1);
+      if (!section) return [];
+      var links = [];
+      section.forEach(function (raw) {
+        var m = /\[([^\]]+)\]\(([^)]+)\)/.exec(raw);
+        if (m) links.push([m[1], m[2]]);
+      });
+      return links;
+    }
+
+    var key = qs('s') || 'gb';
+    var view = qs('view') === 'tests' ? 'tests' : 'system';
+    var sys = SYSTEMS[key] || SYSTEMS.gb;
+
+    document.title = 'Masquerade — ' + sys.title.replace(/&amp;/g, '&') + (view === 'tests' ? ' — Accuracy' : '');
+    document.getElementById('d-eyebrow').textContent = sys.eyebrow + (view === 'tests' ? ' · ACCURACY' : '');
+    document.getElementById('d-title').innerHTML = sys.title;
+    document.getElementById('d-tag').innerHTML = view === 'tests'
+      ? 'Test results and known issues for ' + sys.title.replace(/&amp;/g, '&') + '. For the full feature set, see the ' +
+        '<a href="system.html?s=' + key + '">system overview</a>.'
+      : sys.tag;
+    document.getElementById('readme-link').href = 'https://github.com/Kotambail-Hegde/Masquerade-Emulator#' + sys.readmeAnchor;
+
+    fetch('README.md')
+      .then(function (r) {
+        if (!r.ok) throw new Error('README.md not found (' + r.status + ')');
+        return r.text();
+      })
+      .then(function (text) {
+        var mdLines = text.split('\n');
+
+        var section = extractSection(mdLines, sys.headingLevel, sys.headingText, sys.occurrence);
+        var contentEl = document.getElementById('d-content');
+        var built = section ? buildContent(splitSubsections(section), view) : null;
+        if (built) {
+          contentEl.innerHTML = built.html;
+          applyLongListColumns(contentEl);
+          if (built.fellBack) {
+            document.getElementById('d-tag').innerHTML = sys.tag;
+            document.getElementById('d-eyebrow').textContent = sys.eyebrow;
+          }
+        } else {
+          var reason = section ? 'This system has no Test Results or Known Issues documented yet' : 'Couldn\u2019t locate this section in README.md';
+          contentEl.innerHTML = '<p class="detail-loading">' + reason + ' \u2014 ' +
+            '<a href="https://github.com/Kotambail-Hegde/Masquerade-Emulator#' + sys.readmeAnchor + '" target="_blank" rel="noopener">view it on the README instead ↗</a></p>';
+        }
+
+        var links = sys.testsHeading ? extractLinks(mdLines, sys.testsHeading.level, sys.testsHeading.text) : [];
+        var linksEl = document.getElementById('d-links');
+        if (links.length) {
+          linksEl.innerHTML = links.map(function (l) {
+            return '<a href="' + l[1] + '" target="_blank" rel="noopener">' + l[0] + '<span>&#8599;</span></a>';
+          }).join('');
+        } else if (sys.testsHeading) {
+          linksEl.innerHTML = '<span class="report-link-pending">Automated report not published yet<span>SOON</span></span>';
+        } else {
+          document.getElementById('d-links-panel').style.display = 'none';
+        }
+        if (sys.testsHeading || links.length) {
+          linksEl.insertAdjacentHTML('beforeend',
+            '<a href="https://github.com/Kotambail-Hegde/Masquerade-Emulator#' + sys.readmeAnchor + '" target="_blank" rel="noopener">Full section in README<span>&#8599;</span></a>'
+          );
+        }
+      })
+      .catch(function (err) {
+        document.getElementById('d-content').innerHTML =
+          '<p class="detail-loading">Couldn\u2019t load README.md locally (' + err.message + '). ' +
+          '<a href="https://github.com/Kotambail-Hegde/Masquerade-Emulator#' + sys.readmeAnchor + '" target="_blank" rel="noopener">View this section on the hosted README instead ↗</a></p>';
+        document.getElementById('d-links-panel').style.display = 'none';
+      });
+
+    // Long flat mapper-style lists (no nested items) read better as a
+    // multi-column grid than one long vertical scroll.
+    function applyLongListColumns(root) {
+      root.querySelectorAll('ul.detail-list').forEach(function (ul) {
+        if (ul.classList.contains('detail-list-nested')) return;
+        var hasNested = ul.querySelector('ul');
+        var itemCount = 0;
+        for (var n = ul.firstElementChild; n; n = n.nextElementSibling) itemCount++;
+        if (!hasNested && itemCount > 14) ul.classList.add('detail-list-cols');
+      });
+    }
+  </script>
+</body>
+</html>
