@@ -47,7 +47,7 @@ Current Version: **0.7x**
 
 ### Quick Access
 
-- **[Try Web Version](https://kotambail-hegde.github.io/Masquerade-Emulator/hosting/)** - Play directly in your browser
+- **[Try Web Version](https://kotambail-hegde.github.io/Masquerade-Emulator/wasm/masquerade.html)** - Play directly in your browser
 - **[Download Desktop Build](https://github.com/Kotambail-Hegde/Masquerade-Emulator/releases)** - Available for Windows
 
 ---
