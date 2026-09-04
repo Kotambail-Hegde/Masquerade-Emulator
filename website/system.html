@@ -286,7 +286,7 @@
       : sys.tag;
     document.getElementById('readme-link').href = 'https://github.com/Kotambail-Hegde/Masquerade-Emulator#' + sys.readmeAnchor;
 
-    fetch('README.md')
+    fetch('../README.md')
       .then(function (r) {
         if (!r.ok) throw new Error('README.md not found (' + r.status + ')');
         return r.text();
