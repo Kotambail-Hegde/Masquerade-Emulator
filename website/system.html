@@ -75,13 +75,6 @@
   </footer>
 
   <script>
-    // Only navigation metadata lives here — the actual feature/test/known-issue
-    // text is fetched live from README.md below, so this page can never drift
-    // out of sync with the README.
-    //
-    // headingLevel/headingText/occurrence locate the exact section in
-    // README.md (occurrence handles the doc's few duplicate heading names).
-    // testsHeading (optional) locates the matching entry under "Masquerade Tests".
     var SYSTEMS = {
       gb: {
         eyebrow: "GAME BOY / GAME BOY COLOR", title: "Game Boy / Game Boy Color",
@@ -136,10 +129,6 @@
       return m ? decodeURIComponent(m[1]) : null;
     }
 
-    // ---------- Minimal markdown-lite renderer for the README's own style ----------
-    // Handles: #### headings, "- " nested bullet lists (2-space indent steps),
-    // **bold**, `code`, [text](url) links, and plain paragraphs. Enough for
-    // this doc's actual formatting — not a general-purpose parser.
     function inlineMd(s) {
       s = s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
       s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
@@ -148,9 +137,6 @@
       return s;
     }
 
-    // Split a section's lines into subsections by #### (or deeper) heading.
-    // Content before the first such heading (if any) becomes a titleless
-    // leading subsection.
     function splitSubsections(lines) {
       var subs = [];
       var current = { title: null, level: 0, lines: [] };
@@ -168,9 +154,6 @@
       return subs.filter(function (s) { return s.title || s.lines.some(function (l) { return l.trim(); }); });
     }
 
-    // Render one subsection's lines as list/paragraph HTML, tagging every
-    // top-level <ul> it opens with listClass (used to auto-style Test
-    // Results with checkmarks and Known Issues with X marks).
     function renderLines(lines, listClass) {
       var html = '';
       var listStack = [];
@@ -230,18 +213,10 @@
       return shown ? { html: html, fellBack: effectiveView !== view } : null;
     }
 
-    // Normalize a heading for comparison: lowercase, collapse everything
-    // that isn't a letter/digit into single spaces. Makes matching resilient
-    // to small formatting differences (spacing around "/", "()", etc.)
-    // instead of requiring an exact literal match.
     function normalizeHeading(s) {
       return s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
     }
 
-    // Extract the lines belonging to a given heading occurrence, stopping at
-    // the next heading whose level is <= the target level. Falls back to the
-    // first occurrence if the requested one isn't found, rather than failing
-    // outright (better to show the closest match than an error).
     function extractSection(mdLines, headingLevel, headingText, occurrence) {
       var target = normalizeHeading(headingText);
       var matches = [];
@@ -286,11 +261,28 @@
       : sys.tag;
     document.getElementById('readme-link').href = 'https://github.com/Kotambail-Hegde/Masquerade-Emulator#' + sys.readmeAnchor;
 
-    fetch('../README.md')
-      .then(function (r) {
-        if (!r.ok) throw new Error('README.md not found (' + r.status + ')');
-        return r.text();
-      })
+    // Resilient multi-path fetcher
+    function fetchReadme() {
+      return fetch('../README.md')
+        .then(function (r) {
+          if (!r.ok) throw new Error('Local relative path 404');
+          return r.text();
+        })
+        .catch(function () {
+          return fetch('/Masquerade-Emulator/README.md').then(function (r) {
+            if (!r.ok) throw new Error('Domain root path 404');
+            return r.text();
+          });
+        })
+        .catch(function () {
+          return fetch('https://raw.githubusercontent.com/Kotambail-Hegde/Masquerade-Emulator/main/README.md').then(function (r) {
+            if (!r.ok) throw new Error('GitHub Raw 404');
+            return r.text();
+          });
+        });
+    }
+
+    fetchReadme()
       .then(function (text) {
         var mdLines = text.split('\n');
 
@@ -329,13 +321,11 @@
       })
       .catch(function (err) {
         document.getElementById('d-content').innerHTML =
-          '<p class="detail-loading">Couldn\u2019t load README.md locally (' + err.message + '). ' +
+          '<p class="detail-loading">Couldn\u2019t load README.md (' + err.message + '). ' +
           '<a href="https://github.com/Kotambail-Hegde/Masquerade-Emulator#' + sys.readmeAnchor + '" target="_blank" rel="noopener">View this section on the hosted README instead ↗</a></p>';
         document.getElementById('d-links-panel').style.display = 'none';
       });
 
-    // Long flat mapper-style lists (no nested items) read better as a
-    // multi-column grid than one long vertical scroll.
     function applyLongListColumns(root) {
       root.querySelectorAll('ul.detail-list').forEach(function (ul) {
         if (ul.classList.contains('detail-list-nested')) return;
