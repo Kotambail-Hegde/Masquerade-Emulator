@@ -75,6 +75,9 @@
   </footer>
 
   <script>
+    // Only navigation metadata lives here — the actual feature/test/known-issue
+    // text is fetched live from README.md below, so this page can never drift
+    // out of sync with the README.
     var SYSTEMS = {
       gb: {
         eyebrow: "GAME BOY / GAME BOY COLOR", title: "Game Boy / Game Boy Color",
@@ -261,24 +264,22 @@
       : sys.tag;
     document.getElementById('readme-link').href = 'https://github.com/Kotambail-Hegde/Masquerade-Emulator#' + sys.readmeAnchor;
 
-    // Resilient multi-path fetcher
+    // Fetch README safely with fallback to prevent 400 Bad Requests
     function fetchReadme() {
-      return fetch('../README.md')
+      var rawUrl = 'https://raw.githubusercontent.com/Kotambail-Hegde/Masquerade-Emulator/main/README.md';
+
+      return fetch(rawUrl)
         .then(function (r) {
-          if (!r.ok) throw new Error('Local relative path 404');
+          if (!r.ok) throw new Error('Raw fetch status: ' + r.status);
           return r.text();
         })
         .catch(function () {
-          return fetch('/Masquerade-Emulator/README.md').then(function (r) {
-            if (!r.ok) throw new Error('Domain root path 404');
-            return r.text();
-          });
-        })
-        .catch(function () {
-          return fetch('https://raw.githubusercontent.com/Kotambail-Hegde/Masquerade-Emulator/main/README.md').then(function (r) {
-            if (!r.ok) throw new Error('GitHub Raw 404');
-            return r.text();
-          });
+          // If GitHub raw gets blocked or throws 400 in browser, use API proxy fallback
+          return fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(rawUrl))
+            .then(function (r) {
+              if (!r.ok) throw new Error('Proxy status: ' + r.status);
+              return r.text();
+            });
         });
     }
 
