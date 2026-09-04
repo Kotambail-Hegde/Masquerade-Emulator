@@ -77,6 +77,7 @@ h1 em, h2 span { color: var(--accent); font-style: normal; }
   display: inline-flex; align-items: center; justify-content: center; gap: 15px;
   min-height: 48px; padding: 0 20px; font-size: 13px; font-weight: 750;
   border: 1px solid var(--line); transition: transform .2s, background .2s, border-color .2s;
+  cursor: pointer;
 }
 .button:hover { transform: translateY(-2px); }
 .button-primary { background: var(--accent); color: #090a0b; border-color: var(--accent); }
