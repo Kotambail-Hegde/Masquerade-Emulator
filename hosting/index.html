@@ -1,53 +1,85 @@
-<section class="hero-emulator-section">
-  <div class="hero-emulator-frame">
-    <div class="window-bar">
-      <span class="window-title">MASQUERADE — WEBEMU</span>
-      <button id="fullscreen-btn" title="Toggle Fullscreen" type="button">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
-        </svg>
-      </button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masquerade Emulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation / Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">MASQUERADE</a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="system.html">Systems</a>
+        <a href="https://github.com/Kotambail-Hegde/Masquerade-Emulator" target="_blank" rel="noopener">GitHub</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="window-content" id="emulator-container">
-      <iframe 
-        id="masquerade-frame" 
-        src="wasm/masquerade.html" 
-        allow="autoplay; gamepad; fullscreen"
-        scrolling="no">
-      </iframe>
+  <!-- Hero Section with Embedded Window Frame -->
+  <main class="hero-section">
+    <div class="hero-emulator-frame">
+      <div class="window-bar">
+        <div class="window-controls">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="window-title">MASQUERADE — WEBEMU</span>
+        </div>
+        <button id="fullscreen-btn" title="Toggle Fullscreen" type="button" aria-label="Toggle Fullscreen">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="window-content" id="emulator-container">
+        <iframe 
+          id="masquerade-frame" 
+          src="wasm/masquerade.html" 
+          allow="autoplay; gamepad; fullscreen"
+          scrolling="no">
+        </iframe>
+      </div>
     </div>
-  </div>
-</section>
+  </main>
 
-<script>
-  // Fullscreen and Focus Management
-  const fsBtn = document.getElementById('fullscreen-btn');
-  const container = document.getElementById('emulator-container');
-  const iframe = document.getElementById('masquerade-frame');
+  <script>
+    const fsBtn = document.getElementById('fullscreen-btn');
+    const container = document.getElementById('emulator-container');
+    const iframe = document.getElementById('masquerade-frame');
 
-  fsBtn.addEventListener('click', () => {
-    if (!document.fullscreenElement) {
-      if (container.requestFullscreen) {
-        container.requestFullscreen();
-      } else if (container.webkitRequestFullscreen) {
-        container.webkitRequestFullscreen();
+    // Handle HTML5 fullscreen toggle
+    fsBtn.addEventListener('click', () => {
+      if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+        if (container.requestFullscreen) {
+          container.requestFullscreen();
+        } else if (container.webkitRequestFullscreen) {
+          container.webkitRequestFullscreen();
+        }
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        }
       }
-    } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      }
-    }
-  });
+    });
 
-  // Focus canvas inside iframe on click for keyboard inputs
-  iframe.addEventListener('load', () => {
-    try {
-      iframe.contentWindow.addEventListener('click', () => {
-        iframe.contentWindow.focus();
-      });
-    } catch (e) {
-      // Handles potential cross-origin restrictions if served across different domains
-    }
-  });
-</script>
+    // Delegate canvas focus inside the iframe upon user click
+    iframe.addEventListener('load', () => {
+      try {
+        iframe.contentWindow.addEventListener('click', () => {
+          iframe.contentWindow.focus();
+        });
+      } catch (e) {
+        // Safe fallback for cross-origin restrictions
+      }
+    });
+  </script>
+</body>
+</html>
