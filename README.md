@@ -466,9 +466,9 @@ Modern UI framework with enhanced features and performance.
 - **SDL3:** v3.3.7 for windowing and input
 - **OpenGL3:** GLSL v3.30 for rendering
 
-### P0010: OLC (Deprecated)
+### P0010: OLC2 (Deprecated)
 
-Legacy variant based on One Lone Coder's Pixel Game Engine.
+Legacy variant based on One Lone Coder's Pixel Game Engine v2.x.
 
 **Note:** P0010 is no longer supported. Users should migrate to P0052 for latest features and updates.
 
