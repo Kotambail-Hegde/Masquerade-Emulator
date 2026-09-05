@@ -484,8 +484,8 @@ Legacy variant based on One Lone Coder's Pixel Game Engine.
 
 #### Game Boy / Game Boy Color
 
-- [Game Boy (GB) Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/hosting/tests/gb/gb_report.html)
-- [Game Boy Color (GBC) Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/hosting/tests/gb/gbc_report.html)
+- [Game Boy (GB) Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/gb/gb_report.html)
+- [Game Boy Color (GBC) Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/gb/gbc_report.html)
 
 #### Game Boy Advance
 
@@ -493,14 +493,14 @@ Legacy variant based on One Lone Coder's Pixel Game Engine.
 
 #### NES
 
-- [NES Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/hosting/tests/nes/nes_report.html)
+- [NES Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/nes/nes_report.html)
 
 #### CHIP-8
 
-- [CHIP-8 Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/hosting/tests/chip8/c8_report.html)
-- [SCHIP-8 Legacy Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/hosting/tests/chip8/sc8l_report.html)
-- [SCHIP-8 Modern Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/hosting/tests/chip8/sc8m_report.html)
-- [XO-CHIP Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/hosting/tests/chip8/xoc8_report.html)
+- [CHIP-8 Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/chip8/c8_report.html)
+- [SCHIP-8 Legacy Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/chip8/sc8l_report.html)
+- [SCHIP-8 Modern Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/chip8/sc8m_report.html)
+- [XO-CHIP Test Report](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/chip8/xoc8_report.html)
 
 ### External Test Suites
 
@@ -509,7 +509,7 @@ correctness.
 
 #### Game Boy / Game Boy Color
 
-- [GB Emulator Shootout](https://kotambail-hegde.github.io/Masquerade-Emulator/hosting/tests/gb/GBEmulatorShootout/)
+- [GB Emulator Shootout](https://kotambail-hegde.github.io/Masquerade-Emulator/tests/gb/GBEmulatorShootout/)
 
 ---
 
