@@ -413,6 +413,14 @@ footer { border-top: 1px solid var(--line); padding: 35px 0; }
   h1 { font-size: 58px; }
   .hero-copy { font-size: 16px; }
   .hero-shot-wrap { margin-top: 50px; }
+  .hero-launch-btn {
+    bottom: 14px;
+    padding: 8px 12px;
+    font-size: 10px;
+    max-width: 90%;
+    white-space: nowrap;
+  }
+  .hero-launch-icon { font-size: 8px; }
   .system-grid, .feature-grid { grid-template-columns: 1fr; }
   .peripheral-grid { grid-template-columns: 1fr 1fr; }
   .carousel-stage { flex-direction: column; min-height: 0; }
