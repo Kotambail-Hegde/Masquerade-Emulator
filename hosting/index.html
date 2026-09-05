@@ -127,9 +127,10 @@
         <div class="hero-shot">
           <div class="window-bar">
             <span></span><span></span><span></span>
-            <label>MASQUERADE</label>
+            <label id="hero-window-label">MASQUERADE</label>
+            <button class="hero-live-close" id="hero-live-close" onclick="closeInlineEmulator()" aria-label="Close live emulator">&times;</button>
           </div>
-          <div class="shot-screen shot-slideshow">
+          <div class="shot-screen shot-slideshow" id="hero-slideshow">
             <img class="slide slide-debug" src="https://github.com/user-attachments/assets/dc1fcb2b-a15d-4e11-ad71-f22533fef250" alt="" style="animation-delay:0s">
             <img class="slide slide-debug" src="https://github.com/user-attachments/assets/19d602be-14bd-4fc4-9e57-1135c745a038" alt="" style="animation-delay:4s">
             <img class="slide slide-debug" src="https://github.com/user-attachments/assets/2a6c523c-9bfb-4d54-bbf8-7e5613b48e57" alt="" style="animation-delay:8s">
@@ -140,6 +141,12 @@
               <span class="fallback-title">EMULATOR</span>
               <span class="fallback-subtitle">IMGUI · SDL3 · OPENGL3</span>
             </div>
+            <button class="hero-launch-btn" onclick="launchInlineEmulator()">
+              <span class="hero-launch-icon">&#9654;</span> Launch in browser
+            </button>
+          </div>
+          <div class="shot-screen hero-live" id="hero-live">
+            <iframe id="hero-live-frame" src="" allow="autoplay; gamepad; keyboard" loading="lazy"></iframe>
           </div>
         </div>
       </div>
@@ -441,6 +448,22 @@
       if (e.target === this) closeEmulatorModal();
     });
 
+    // ---------- Inline hero embed (swap slideshow for the live emulator) ----------
+    function launchInlineEmulator() {
+      document.getElementById('hero-live-frame').src = 'wasm/masquerade.html';
+      document.getElementById('hero-slideshow').classList.add('is-hidden');
+      document.getElementById('hero-live').classList.add('active');
+      document.getElementById('hero-window-label').textContent = 'MASQUERADE — LIVE';
+      document.getElementById('hero-live-close').classList.add('visible');
+    }
+    function closeInlineEmulator() {
+      document.getElementById('hero-live-frame').src = ''; // unload Wasm/audio context
+      document.getElementById('hero-live').classList.remove('active');
+      document.getElementById('hero-slideshow').classList.remove('is-hidden');
+      document.getElementById('hero-window-label').textContent = 'MASQUERADE';
+      document.getElementById('hero-live-close').classList.remove('visible');
+    }
+
     // ---------- Peripherals & hardware capabilities (rotating) ----------
     var PERIPHERALS = [
       { icon: "ZAP", title: "NES Zapper", desc: "Supported through mouse input in Port 2.", link: "https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues/82", external: true },
@@ -458,7 +481,7 @@
     function renderPeripherals() {
       var grid = document.getElementById('peripheral-grid');
       var html = '';
-      for (var k = 0; k < 5; k++) {
+      for (var k = 0; k < 6; k++) {
         var item = PERIPHERALS[(periphIndex + k) % PERIPHERALS.length];
         html += '<a class="peripheral-card" href="' + item.link + '" target="' + (item.external ? '_blank' : '_self') + '"' + (item.external ? ' rel="noopener"' : '') + '>' +
           '<div class="peripheral-icon">' + item.icon + '</div>' +
