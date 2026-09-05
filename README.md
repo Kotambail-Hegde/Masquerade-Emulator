@@ -149,6 +149,22 @@ _Example: The Event Debugger inspecting a Game Boy / Game Boy Color state._
 
 ---
 
+## Accessories & Peripherals
+
+Masquerade supports the following hardware accessories and peripherals used by several of the emulated systems.
+### Nintendo Entertainment System (NES)
+* **Zapper** — Supported through mouse input in Port 2.
+  * [NES Zapper support](https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues/82)
+### Game Boy / Game Boy Color (GB / GBC)
+* **Accelerometer** — Support for cartridges and games using the Game Boy Color's accelerometer hardware, including *Kirby Tilt 'n' Tumble*.
+  * [Accelerometer support](https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues/25)
+* **Game Boy Printer** — Support for emulating the Game Boy Printer.
+  * [Game Boy Printer support](https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues/200)
+* **Game Boy Camera** — Support for emulating the Game Boy Camera.
+  * [Game Boy Camera support](https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues/143)
+* **Game Boy Link Cable** — Support for emulating the Game Boy Serial Link Cable.
+  * [Game Boy Link Cable](https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues/199)
+
 ## Detailed System Information
 
 ### Game Boy Advance (GBA)
@@ -207,6 +223,11 @@ _Example: The Event Debugger inspecting a Game Boy / Game Boy Color state._
   - HuC-3
   - MMM01
   - WISDOM TREE
+  - Pocket Camera
+- Supports Game Boy Printer
+- Supports Game Boy Camera
+- Supports Link Cable for multiplayer mode (Work In Progress)
+- Supports accelerometer-equipped Game Boy Color cartridges
 
 #### Test Results
 - Completely passes Tom Harte's SingleStepTests (official and unofficial opcodes) for SM83
@@ -335,7 +356,7 @@ _Example: The Event Debugger inspecting a Game Boy / Game Boy Color state._
   - iNES Mapper 232 (232)
   - iNES Mapper 268 (268)
 - Supports Game Genie cheats
-- Supports Zapper in Port 2 (mouse clicks)
+- Supports Zapper in Port 2
 
 #### Test Results
 - Passes Nestest (official and unofficial opcodes)
@@ -354,11 +375,11 @@ _Example: The Event Debugger inspecting a Game Boy / Game Boy Color state._
 - Passes OAM stress tests
 - Passes Blargg and Bisqwit's ppu_open_bus tests
 - Passes Bisqwit's cpu_exec_space tests
+- Passes "holydiverbatman" test suite
 - Passes Blargg mmc3_irq_tests suite except:
   - 4-scanline_timing.nes
 
 #### Known Issues (other than the ones mentioned above)
-- PAL timings are not supported (only NTSC is supported as of now)
 - Fails many of the DMC tests
 - Fails many of the Accuracy coin tests
 
@@ -526,6 +547,8 @@ correctness.
 - [Antonio's Technical Documentation](https://github.com/AntonioND/giibiiadvance/blob/master/docs/TCAGBD.pdf) - Game Boy Advance technical guide
 - [GBDEV Game Boy Printer](https://gbdev.gg8.se/wiki/articles/Gameboy_Printer) - Game Boy Printer technical guide 
 - [Shonumi's Game Boy Printer's RLE compression](https://shonumi.github.io/articles/art2.html) - Game Boy Printer Compression Mode technical guide
+- [Antonio's Game Boy Camera Technical Information](https://codeberg.org/SkyLyrac/gbcam-rev-engineer/src/branch/master/doc/gb_camera_doc_v1_1_1.pdf) - Game Boy Camera technical guide
+- [Shonumi's Game Boy 4-Player Adapter](https://shonumi.github.io/articles/art9.html) - Game Boy 4-Player Adapter technical guide
 
 #### Game Boy Advance
 - [GBATEK](http://problemkaputt.de/gbatek-gba-reference.htm) - Comprehensive GBA reference
