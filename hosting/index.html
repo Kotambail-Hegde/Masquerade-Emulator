@@ -141,13 +141,13 @@
               <span class="fallback-title">EMULATOR</span>
               <span class="fallback-subtitle">IMGUI · SDL3 · OPENGL3</span>
             </div>
-            <button class="hero-launch-btn" onclick="launchInlineEmulator()">
-              <span class="hero-launch-icon">&#9654;</span> Launch in browser
-            </button>
           </div>
           <div class="shot-screen hero-live" id="hero-live">
             <iframe id="hero-live-frame" src="" allow="autoplay; gamepad; keyboard" loading="lazy"></iframe>
           </div>
+          <button class="hero-launch-btn" id="hero-launch-btn" onclick="launchInlineEmulator()">
+            <span class="hero-launch-icon">&#9654;</span> Launch in browser
+          </button>
         </div>
       </div>
     </section>
@@ -453,6 +453,7 @@
       document.getElementById('hero-live-frame').src = 'wasm/masquerade.html';
       document.getElementById('hero-slideshow').classList.add('is-hidden');
       document.getElementById('hero-live').classList.add('active');
+      document.getElementById('hero-launch-btn').classList.add('is-hidden');
       document.getElementById('hero-window-label').textContent = 'MASQUERADE — LIVE';
       document.getElementById('hero-live-close').classList.add('visible');
     }
@@ -460,6 +461,7 @@
       document.getElementById('hero-live-frame').src = ''; // unload Wasm/audio context
       document.getElementById('hero-live').classList.remove('active');
       document.getElementById('hero-slideshow').classList.remove('is-hidden');
+      document.getElementById('hero-launch-btn').classList.remove('is-hidden');
       document.getElementById('hero-window-label').textContent = 'MASQUERADE';
       document.getElementById('hero-live-close').classList.remove('visible');
     }
