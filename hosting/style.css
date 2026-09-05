@@ -414,23 +414,39 @@ footer { border-top: 1px solid var(--line); padding: 35px 0; }
   .hero-copy { font-size: 16px; }
   .hero-shot-wrap { margin-top: 50px; }
 
-  /* Responsive Launch Button Fix */
-  .hero-launch-btn {
-    bottom: 8px;
-    padding: 5px 10px;
-    font-size: 9px;
-    letter-spacing: .02em;
-    max-width: 85%;
-    white-space: nowrap;
-  }
-  .hero-launch-icon {
-    font-size: 7px;
+  /* Change hero screen aspect ratio on mobile to fit the button inside naturally */
+  .shot-screen {
+    aspect-ratio: auto;
+    min-height: 260px;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
   }
 
-  /* Scale fallback text down so the button does not overlap it */
-  .fallback-label { font-size: 9px; letter-spacing: .15em; }
-  .fallback-title { font-size: clamp(18px, 5vw, 32px); margin-top: 2px; }
-  .fallback-subtitle { font-size: 8px; margin-top: 4px; letter-spacing: .08em; }
+  /* Make fallback text scale smaller so it doesn't push elements out */
+  .fallback-label { font-size: 10px; letter-spacing: .2em; }
+  .fallback-title { font-size: 28px; margin-top: 2px; }
+  .fallback-subtitle { font-size: 9px; margin-top: 4px; letter-spacing: .12em; }
+
+  /* Position the button inside the hero shot below the fallback text */
+  .hero-launch-btn {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    margin-top: 10px;
+    padding: 8px 14px;
+    font-size: 10px;
+    width: auto;
+    max-width: 90%;
+  }
+
+  .hero-launch-btn:hover {
+    transform: translateY(-2px);
+  }
 
   .system-grid, .feature-grid { grid-template-columns: 1fr; }
   .peripheral-grid { grid-template-columns: 1fr 1fr; }
