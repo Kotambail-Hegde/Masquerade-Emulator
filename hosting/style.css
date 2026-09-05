@@ -104,12 +104,14 @@ h1 em, h2 span { color: var(--accent); font-style: normal; }
 .shot-screen {
   aspect-ratio: 16 / 8.5;
   display: grid; place-items: center; overflow: hidden;
+  isolation: isolate;
   background:
     radial-gradient(circle at center, #22272d, #090a0c 65%);
 }
 .shot-screen img { height: 100%; width: 100%; object-fit: cover; }
 .shot-slideshow .slide {
   grid-area: 1 / 1;
+  position: relative; z-index: 1;
   filter: brightness(.34) saturate(.7);
   opacity: 0;
   animation: shot-slide-fade 20s infinite;
@@ -127,7 +129,7 @@ h1 em, h2 span { color: var(--accent); font-style: normal; }
 }
 .shot-slideshow .shot-fallback { grid-area: 1 / 1; position: relative; z-index: 2; }
 .hero-launch-btn {
-  grid-area: 1 / 1; position: relative; z-index: 4; align-self: end; justify-self: center;
+  grid-area: 1 / 1; position: relative; z-index: 10; align-self: end; justify-self: center;
   margin-bottom: 26px;
   display: inline-flex; align-items: center; gap: 9px; padding: 11px 20px;
   background: rgba(8,9,11,.78); border: 1px solid var(--accent); color: var(--accent);
