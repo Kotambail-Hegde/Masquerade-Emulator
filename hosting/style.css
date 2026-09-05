@@ -87,6 +87,7 @@ h1 em, h2 span { color: var(--accent); font-style: normal; }
 
 .hero-shot-wrap { position: relative; z-index: 2; margin-top: 74px; }
 .hero-shot {
+  position: relative;
   border: 1px solid rgba(255,255,255,.13);
   background: #101216;
   box-shadow: 0 40px 100px rgba(0,0,0,.55);
@@ -129,14 +130,15 @@ h1 em, h2 span { color: var(--accent); font-style: normal; }
 }
 .shot-slideshow .shot-fallback { grid-area: 1 / 1; position: relative; z-index: 2; }
 .hero-launch-btn {
-  grid-area: 1 / 1; position: relative; z-index: 10; align-self: end; justify-self: center;
-  margin-bottom: 26px;
+  position: absolute; left: 50%; bottom: 28px; transform: translateX(-50%);
+  z-index: 20;
   display: inline-flex; align-items: center; gap: 9px; padding: 11px 20px;
-  background: rgba(8,9,11,.78); border: 1px solid var(--accent); color: var(--accent);
+  background: rgba(8,9,11,.85); border: 1px solid var(--accent); color: var(--accent);
   font: 700 12px monospace; letter-spacing: .06em; text-transform: uppercase; cursor: pointer;
   backdrop-filter: blur(6px); transition: background .2s, transform .2s;
 }
-.hero-launch-btn:hover { background: rgba(183,255,60,.16); transform: translateY(-2px); }
+.hero-launch-btn:hover { background: rgba(183,255,60,.16); transform: translateX(-50%) translateY(-2px); }
+.hero-launch-btn.is-hidden { display: none; }
 .hero-launch-icon { font-size: 10px; }
 .hero-live { display: none; background: #000; }
 .hero-live.active { display: grid; }
