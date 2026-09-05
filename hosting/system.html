@@ -241,13 +241,54 @@
     }
 
     function extractLinks(mdLines, headingLevel, headingText) {
-      var section = extractSection(mdLines, headingLevel, headingText, 1);
-      if (!section) return [];
+      var target = normalizeHeading(headingText);
       var links = [];
-      section.forEach(function (raw) {
-        var m = /\[([^\]]+)\]\(([^)]+)\)/.exec(raw);
-        if (m) links.push([m[1], m[2]]);
-      });
+
+      // Find boundaries for "Automated Test Reports" section (between its ## header and the next ## header)
+      var autoTestStart = -1;
+      var autoTestEnd = mdLines.length;
+
+      for (var k = 0; k < mdLines.length; k++) {
+        var secLine = mdLines[k].replace(/\r$/, '');
+        var secMatch = /^(#{1,6})\s+(.*)$/.exec(secLine);
+        if (secMatch) {
+          var normTitle = normalizeHeading(secMatch[2]);
+          if (autoTestStart === -1) {
+            if (normTitle.indexOf("automated test") !== -1) {
+              autoTestStart = k + 1;
+            }
+          } else if (secMatch[1].length <= 2) {
+            autoTestEnd = k;
+            break;
+          }
+        }
+      }
+
+      var startIdx = autoTestStart !== -1 ? autoTestStart : 0;
+      var endIdx = autoTestStart !== -1 ? autoTestEnd : mdLines.length;
+
+      // Restrict system header lookup strictly to the automated test region
+      for (var i = startIdx; i < endIdx; i++) {
+        var line = mdLines[i].replace(/\r$/, '');
+        var m = /^(#{1,6})\s+(.*)$/.exec(line);
+
+        if (m && m[1].length === headingLevel && normalizeHeading(m[2]) === target) {
+          var subStart = i + 1;
+          for (var j = subStart; j < endIdx; j++) {
+            var nextLine = mdLines[j].replace(/\r$/, '');
+            var m2 = /^(#{1,6})\s+/.exec(nextLine);
+            if (m2 && m2[1].length <= headingLevel) { break; }
+
+            var linkMatch = /\[([^\]]+)\]\(([^)]+)\)/.exec(nextLine);
+            if (linkMatch) {
+              if (!links.some(function (l) { return l[1] === linkMatch[2]; })) {
+                links.push([linkMatch[1], linkMatch[2]]);
+              }
+            }
+          }
+        }
+      }
+
       return links;
     }
 
@@ -264,7 +305,6 @@
       : sys.tag;
     document.getElementById('readme-link').href = 'https://github.com/Kotambail-Hegde/Masquerade-Emulator#' + sys.readmeAnchor;
 
-    // Fetch README safely with fallback to prevent 400 Bad Requests
     function fetchReadme() {
       var rawUrl = 'https://raw.githubusercontent.com/Kotambail-Hegde/Masquerade-Emulator/main/README.md';
 
@@ -274,7 +314,6 @@
           return r.text();
         })
         .catch(function () {
-          // If GitHub raw gets blocked or throws 400 in browser, use API proxy fallback
           return fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(rawUrl))
             .then(function (r) {
               if (!r.ok) throw new Error('Proxy status: ' + r.status);
