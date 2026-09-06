@@ -118,7 +118,10 @@
 
         <div class="hero-meta">
           <span>BETA · v0.7x</span>
-          <span>ImGui + SDL3 + OpenGL3</span>
+          <span>
+            ImGui + SDL3 + OpenGL3 
+            <span style="opacity: 0.5;">+ <s style="text-decoration-thickness: 1.5px;">OLC2</s> (deprecated)</span>
+          </span>
           <span>Windows · Web</span>
         </div>
       </div>
@@ -139,7 +142,12 @@
             <div class="shot-fallback">
               <span class="fallback-label">MASQUERADE</span>
               <span class="fallback-title">EMULATOR</span>
-              <span class="fallback-subtitle">IMGUI · SDL3 · OPENGL3</span>
+              <span class="fallback-subtitle">
+                IMGUI + SDL3 + OPENGL3
+                <span style="opacity: 0.5; font-size: 0.85em; margin-left: 6px;">
+                  · OLC2 <span style="font-size: 0.75em; border: 1px solid currentColor; padding: 0 3px; border-radius: 3px; text-transform: uppercase;">deprecated</span>
+                </span>
+              </span>
             </div>
           </div>
           <div class="shot-screen hero-live" id="hero-live">
@@ -306,7 +314,7 @@
           <article class="feature">
             <span class="feature-index">02</span>
             <h3>Hardware features</h3>
-            <p>Game Boy Camera, Game Boy Printer, serial peripherals, cheats, save states, and more.</p>
+            <p>Game Boy Camera, Game Boy Printer, Barcode Boy, serial peripherals, cheats, save states, and more.</p>
             <kbd class="feature-shot feature-slideshow">
               <img src="https://github.com/user-attachments/assets/805fce08-d3ad-4ce2-b303-121c5b0b898c" alt="Game Boy Link Cable multiplayer" style="animation-delay:0s">
               <img src="https://github.com/user-attachments/assets/d4b03fc8-9770-4fc5-a025-5a579792539e" alt="Game Boy Printer output" style="animation-delay:4s">
@@ -317,7 +325,7 @@
           <article class="feature">
             <span class="feature-index">03</span>
             <h3>Modern architecture</h3>
-            <p>Built on Dear ImGui, SDL3, OpenGL3, and native file dialogs.</p>
+            <p> Offers two backend variants: a modern Dear ImGui, SDL3, and OpenGL3 stack, alongside a legacy olcPixelGameEngine 2.x variant (deprecated).</p>
             <kbd class="feature-shot feature-slideshow feature-slideshow-4">
               <img src="https://github.com/user-attachments/assets/f7af5623-f801-4d18-bcda-f18f7470454f" alt="Masquerade interface" style="animation-delay:0s">
               <img src="https://github.com/user-attachments/assets/115f97b2-5858-4e2c-80b9-f6ba3049aa4a" alt="Masquerade interface" style="animation-delay:4s">
@@ -473,6 +481,7 @@
       { icon: "PRN", title: "Game Boy Printer", desc: "Emulated thermal-printer output.", link: "https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues/200", external: true },
       { icon: "CAM", title: "Game Boy Camera", desc: "Live webcam-backed capture.", link: "https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues/143", external: true },
       { icon: "LINK", title: "Game Boy Link Cable", desc: "Serial multiplayer.", wip: true, link: "https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues/199", external: true },
+      { icon: "BAR", title: "Game Boy Barcode Boy", desc: "Barcode Scanner.", wip: true, link: "https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues/201", external: true },
       { icon: "RTC", title: "MBC3 Real-Time Clock", desc: "Passes ax6's rtc3test suite.", link: "system.html?s=gb", external: false },
       { icon: "MAP", title: "Mappers & MBCs", desc: "49 NES mappers, 15 Game Boy Memory Bank Controllers.", link: "https://github.com/Kotambail-Hegde/Masquerade-Emulator#readme", external: true },
       { icon: "SAV", title: "Save & Load States", desc: "BESS-specification save states, plus GameGenie/GameShark cheats.", link: "https://github.com/Kotambail-Hegde/Masquerade-Emulator#readme", external: true }
