@@ -1,0 +1,229 @@
+#shader vertex
+#if defined(WEBGL)
+#version 300 es
+precision mediump float;
+#else
+#version 330 core
+#endif
+
+layout(location = 0) in vec2 pos;
+layout(location = 1) in vec2 uv;
+
+out vec2 TexCoord;
+
+void main()
+{
+	TexCoord = uv;
+	gl_Position = vec4(pos, 0.0, 1.0);
+}
+
+#shader fragment
+#if defined(WEBGL)
+#version 300 es
+precision mediump float;
+#else
+#version 330 core
+#endif
+
+// NTSC composite-artifact simulation for VIDEO_FILTERS::CRT_FILTER.
+// Ported from Mesen's BisqwitNtscFilter (Core/BisqwitNtscFilter.cpp, Core/BisqwitNtscFilter.h),
+// which implements Bisqwit's algorithm: https://forums.nesdev.com/viewtopic.php?p=172329
+// This is a faithful per-pixel adaptation of that algorithm for a live GPU fragment shader --
+// the original decodes a whole scanline buffer on the CPU with a running sum; here each output
+// pixel independently reconstructs the same signal window and sums it directly, since the box
+// filter widths involved (~12 sub-samples) are small enough to do that cheaply per-fragment.
+//
+// Key idea vs. the earlier version of this shader: NES composite signal is generated at 8
+// sub-samples per pixel (not 1 sample per pixel), and each sub-sample is an actual square-wave
+// voltage level (not a single averaged value) -- that finer resolution is what lets luma stay
+// sharp while chroma still demodulates cleanly, without needing separate narrow/wide Y vs I/Q
+// windows measured in whole pixels like the previous version did.
+
+in vec2 TexCoord;
+out vec4 FragColor;
+
+uniform sampler2D u_IndexTexture; // R = NES palette index (0-63), G = emphasis bits (0-7), both 0-255 normalized
+uniform float u_ScreenWidth;
+uniform float u_ScreenHeight;
+uniform int u_OddFrame;
+uniform float u_PhaseOffsetDegrees; // calibration constant, tuned against palScreen -- see chat notes
+
+const int SIGNALS_PER_PIXEL = 8;
+
+// Refer : Core/BisqwitNtscFilter.cpp BisqwitNtscFilter::BisqwitNtscFilter() constructor
+// signalLumaLow/High by level (0-3); hue $0 forced achromatic-high, hue $D forced achromatic-low,
+// hues $E/$F treated as hue $D level 1 (not forced to literal black -- this differs from the
+// earlier version of this shader, which was a guess; this is the real Mesen behavior).
+const float SIGNAL_LUMA_LOW[4]  = float[4](-29.0, -15.0, 22.0, 71.0);
+const float SIGNAL_LUMA_HIGH[4] = float[4](32.0, 66.0, 105.0, 105.0);
+
+const int BITMASK_LUT[12] = int[12](0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x100, 0x200, 0x400, 0x800);
+
+// Refer : constructor's precompute loop -- returns (low, high) voltage pair for a raw 6-bit palette index
+void getSignalLowHigh(int paletteIndex, out float low, out float high)
+{
+	int hue = paletteIndex & 0xF;
+	int r = (hue >= 0xE) ? 0x1D : paletteIndex; // $E/$F treated as $1D (hue $D, level 1)
+	int level = (r >> 4) & 0x3;
+	int rHue = r & 0xF;
+
+	float m = SIGNAL_LUMA_LOW[level];
+	float q = SIGNAL_LUMA_HIGH[level];
+
+	if (rHue == 13)
+	{
+		q = m;
+	}
+	else if (rHue == 0)
+	{
+		m = q;
+	}
+
+	low = m;
+	high = q;
+}
+
+// Refer : BisqwitNtscFilter::GenerateNtscSignal -- generates the 8 sub-sample voltages for one NES
+// pixel. absolutePhase is this pixel's own copy of the running "phase" counter from the original
+// (phase += SIGNALS_PER_PIXEL per pixel, deterministic from x position + row + frame parity), so
+// each pixel's signal is fully self-contained and doesn't depend on neighboring pixels' state.
+void generatePixelSignal(int paletteIndex, int emphasis, int absolutePhase, out float subSamples[8])
+{
+	float low, high;
+	getSignalLowHigh(paletteIndex, low, high);
+
+	int hue = paletteIndex & 0xF;
+	int phaseBitmask = BITMASK_LUT[int(mod(float(abs(absolutePhase - hue)), 12.0))];
+
+	for (int j = 0; j < 8; ++j)
+	{
+		phaseBitmask <<= 1;
+		float voltage = high;
+		if (phaseBitmask >= 0x40)
+		{
+			if (phaseBitmask == 0x1000)
+			{
+				phaseBitmask = 1;
+			}
+			else
+			{
+				voltage = low;
+			}
+		}
+		if ((phaseBitmask & emphasis) != 0)
+		{
+			voltage -= voltage / 4.0;
+		}
+		subSamples[j] = voltage;
+	}
+}
+
+void main()
+{
+	float texelW = 1.0 / u_ScreenWidth;
+	int centerPixelX = int(floor(TexCoord.x * u_ScreenWidth));
+
+	// Refer : DecodeFrame's startPhase = (IsOddFrame() ? 8 : 0) + overscanTop*341*8 -- simplified here
+	// to just the odd/even frame term (dot-crawl animation) plus a per-pixel-column running phase,
+	// since this shader doesn't track absolute scanline/overscan the way the original's full-frame
+	// decode does. u_PhaseOffsetDegrees folds in the calibration this shader already had tuned.
+	// Refer : Mesen's DecodeFrame -- startPhase = (IsOddFrame() ? 8 : 0) + row*341*8, wrapped mod 12*8=96 to
+	// keep the integer from growing unbounded across many scanlines while preserving the same phase relationship
+	// (341*8 mod 96 = 88, so this is equivalent to accumulating that per-row without ever overflowing int range).
+	int row = int(floor(TexCoord.y * u_ScreenHeight));
+	int rowPhaseTerm = (row * 88) % 96;
+	// Reduced from a full 8 sub-sample shift to 2 (half the 12-step cycle's max distance) -- softens the
+	// visible dot-crawl flicker while keeping the effect present, rather than the full-amplitude hardware value.
+	int basePhaseAtOrigin = ((u_OddFrame == 1) ? 2 : 0) + rowPhaseTerm;
+	float phaseOffsetSubSamples = u_PhaseOffsetDegrees / 30.0; // 30 degrees per hue step == 1 sub-sample-phase-unit here
+
+	// Refer : NtscDecodeLine's Cos/Sin lambdas, built from _sinetable[i] = 8*sin(i*2pi/12 + hue*pi).
+	// hue (picture-settings hue rotation) defaults to 0 in the original; folded here into
+	// u_PhaseOffsetDegrees instead, so this stays a plain sin/cos pair.
+	float demodPhase0 = radians((phaseOffsetSubSamples) * 30.0);
+
+	// Refer : _yWidth = _iWidth = _qWidth = 12 + FilterLength*22, defaulting to 12 sub-samples when
+	// FilterLength is at its default (0) setting -- "All widths at 12 produce the best signal quality"
+	const int Y_WIDTH = 12;
+	const int I_WIDTH = 12;
+	const int Q_WIDTH = 12;
+	const int MAX_WIDTH = 12;
+
+	// Target sub-sample: the center of this output pixel's own 8 sub-samples.
+	int targetSubSample = 4;
+
+	// Need MAX_WIDTH-1 sub-samples of history before the target, so gather enough neighboring NES
+	// pixels to cover that: ceil(MAX_WIDTH/8) + 1 pixels back is always enough with margin.
+	const int PIXEL_RADIUS = 3;
+
+	float ysum = 0.0;
+	float isum = 0.0;
+	float qsum = 0.0;
+
+	for (int dp = -PIXEL_RADIUS; dp <= 0; ++dp)
+	{
+		int px = centerPixelX + dp;
+		if (px < 0)
+		{
+			continue;
+		}
+		float sampleX = (float(px) + 0.5) * texelW;
+		if (sampleX > 1.0)
+		{
+			continue;
+		}
+
+		vec2 texel = texture(u_IndexTexture, vec2(sampleX, TexCoord.y)).rg;
+		int paletteIndex = int(texel.r * 255.0 + 0.5);
+		int emphasis = int(texel.g * 255.0 + 0.5);
+
+		int pixelAbsolutePhase = basePhaseAtOrigin + px * SIGNALS_PER_PIXEL;
+		float subSamples[8];
+		generatePixelSignal(paletteIndex, emphasis, pixelAbsolutePhase, subSamples);
+
+		for (int j = 0; j < 8; ++j)
+		{
+			int s = dp * 8 + j; // this sub-sample's position relative to the target sub-sample's pixel origin
+			int distFromTarget = targetSubSample - s;
+			if (distFromTarget < 0 || distFromTarget >= MAX_WIDTH)
+			{
+				continue;
+			}
+
+			// Bugfix: must include basePhaseAtOrigin (the odd/even-frame dot-crawl shift) here too, matching
+			// generatePixelSignal()'s use of pixelAbsolutePhase above -- encode and decode need to shift together
+			// for dot-crawl to be a subtle per-pixel shimmer rather than a full-frame color swing every other
+			// frame. Previously subtracting it back out here broke that lock and caused visible strobing.
+			float absoluteSubSamplePos = float(pixelAbsolutePhase + j);
+			float cosVal = 8.0 * cos(radians(absoluteSubSamplePos * 30.0) + demodPhase0);
+			float sinVal = 8.0 * sin(radians(absoluteSubSamplePos * 30.0) + demodPhase0);
+
+			if (distFromTarget < Y_WIDTH) { ysum += subSamples[j]; }
+			if (distFromTarget < I_WIDTH) { isum += subSamples[j] * cosVal; }
+			if (distFromTarget < Q_WIDTH) { qsum -= subSamples[j] * sinVal; }
+		}
+	}
+
+	// Refer : NtscDecodeLine's final RGB combine. Contrast/saturation/brightness/hue picture-settings
+	// terms use the original's default (0,0,0,0) values baked in as constants -- not exposed as
+	// tunables in this port yet. Coefficients are the exact hardcoded constants from the source.
+	const float CONTRAST = 167941.0;
+	const float SATURATION = 144044.0;
+	const float BRIGHTNESS = 0.0;
+
+	float yTerm = CONTRAST / float(Y_WIDTH);
+	float ir = CONTRAST * 1.994681e-6 * SATURATION / float(I_WIDTH);
+	float qr = CONTRAST * 9.915742e-7 * SATURATION / float(Q_WIDTH);
+	float ig = CONTRAST * 9.151351e-8 * SATURATION / float(I_WIDTH);
+	float qg = CONTRAST * -6.334805e-7 * SATURATION / float(Q_WIDTH);
+	float ib = CONTRAST * -1.012984e-6 * SATURATION / float(I_WIDTH);
+	float qb = CONTRAST * 1.667217e-6 * SATURATION / float(Q_WIDTH);
+
+	float ysumWithBrightness = ysum + BRIGHTNESS;
+
+	float r = clamp((ysumWithBrightness * yTerm + isum * ir + qsum * qr) / 65536.0, 0.0, 255.0);
+	float g = clamp((ysumWithBrightness * yTerm + isum * ig + qsum * qg) / 65536.0, 0.0, 255.0);
+	float b = clamp((ysumWithBrightness * yTerm + isum * ib + qsum * qb) / 65536.0, 0.0, 255.0);
+
+	FragColor = vec4(r / 255.0, g / 255.0, b / 255.0, 1.0);
+}
