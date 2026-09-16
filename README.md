@@ -95,7 +95,7 @@ _Example: The Event Debugger inspecting a Game Boy / Game Boy Color state._
 
 <kbd><img width="437" height="226" alt="tetris-serial-link-comp" src="https://github.com/user-attachments/assets/805fce08-d3ad-4ce2-b303-121c5b0b898c" /></kbd>
 
-### P0010: OLC2 (Deprecated)
+### P0010: OLC2 + OpenGL1 (Deprecated)
 
 #### User Interface
 
@@ -489,7 +489,7 @@ Modern UI framework with enhanced features and performance.
 - **SDL3:** v3.3.7 for windowing and input
 - **OpenGL3:** GLSL v3.30 for rendering
 
-### P0010: OLC2 (Deprecated)
+### P0010: OLC2 + OpenGL1 (Deprecated)
 
 Legacy variant based on One Lone Coder's Pixel Game Engine v2.x
 
@@ -498,6 +498,7 @@ Legacy variant based on One Lone Coder's Pixel Game Engine v2.x
 **Technology Stack (Legacy):**
 - One Lone Coder's Pixel Game Engine (Forked): v2.25
 - One Lone Coder's Sound Wave Engine: v0.02
+- OpenGL1 for rendering
 
 ---
 
