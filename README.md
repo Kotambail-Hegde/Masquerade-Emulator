@@ -153,18 +153,18 @@ _Example: The Event Debugger inspecting a Game Boy / Game Boy Color state._
 
 Masquerade supports the following hardware accessories and peripherals used by several of the emulated systems.
 ### Nintendo Entertainment System (NES)
-* **Zapper** — Supported through mouse input in Port 2.
+* **Zapper** - Supported through mouse input in Port 2.
   * [NES Zapper support](https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues/82)
 ### Game Boy / Game Boy Color (GB / GBC)
-* **Accelerometer** — Support for cartridges and games using the Game Boy Color's accelerometer hardware, including *Kirby Tilt 'n' Tumble*.
+* **Accelerometer** - Support for cartridges and games using the Game Boy Color's accelerometer hardware, including *Kirby Tilt 'n' Tumble*.
   * [Accelerometer support](https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues/25)
-* **Game Boy Printer** — Support for emulating the Game Boy Printer.
+* **Game Boy Printer** - Support for emulating the Game Boy Printer.
   * [Game Boy Printer support](https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues/200)
-* **Game Boy Camera** — Support for emulating the Game Boy Camera.
+* **Game Boy Camera** - Support for emulating the Game Boy Camera.
   * [Game Boy Camera support](https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues/143)
-* **Barcode Boy** — Support for emulating the Game Boy's Barcode Boy.
+* **Barcode Boy** - Support for emulating the Game Boy's Barcode Boy.
   * [Game Boy's Barcode Boy support](https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues/201)
-* **Game Boy Link Cable** — Support for emulating the Game Boy Serial Link Cable.
+* **Game Boy Link Cable** - Support for emulating the Game Boy Serial Link Cable.
   * [Game Boy Link Cable](https://github.com/Kotambail-Hegde/Masquerade-Emulator/issues/199)
 
 ## Detailed System Information
