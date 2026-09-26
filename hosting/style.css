@@ -235,7 +235,6 @@ h2 { font-size: clamp(45px, 6vw, 76px); line-height: .96; letter-spacing: -.055e
   padding: 10px 0;
 }
 .carousel-frame {
-.carousel-frame {
   --img-scale: 1;
   display: inline-block; font: inherit;
   padding: 6px;
@@ -247,11 +246,9 @@ h2 { font-size: clamp(45px, 6vw, 76px); line-height: .96; letter-spacing: -.055e
   max-width: min(88%, 900px);
   line-height: 0;
 }
-
 .carousel-frame.is-scaled-down {
   --img-scale: 0.5; /* Change this to any scale (0.4, 0.7, etc.) */
 }
-
 .carousel-frame img {
   display: block;
   /* Use transform or explicit width calculation so it cannot be ignored */
