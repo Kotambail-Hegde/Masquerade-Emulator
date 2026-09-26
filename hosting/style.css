@@ -204,14 +204,14 @@ h2 { font-size: clamp(45px, 6vw, 76px); line-height: .96; letter-spacing: -.055e
 .test-footer { padding: 19px 23px; display: flex; justify-content: space-between; gap: 25px; color: #626870; font: 9px monospace; }
 .test-footer span:first-child { color: var(--accent); }
 
-.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 55px; }
-.feature { background: var(--bg); min-height: 235px; padding: 30px; }
+.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 55px; align-items: stretch; }
+.feature { background: var(--bg); min-height: 235px; padding: 30px; display: flex; flex-direction: column; height: 100%; }
 .feature:hover { background: var(--bg-soft); }
 .feature-index { color: var(--accent); font: 10px monospace; }
 .feature h3 { margin: 55px 0 10px; font-size: 18px; }
-.feature p { color: var(--muted); font-size: 13px; max-width: 290px; }
+.feature p { color: var(--muted); font-size: 13px; max-width: 290px; flex-grow: 1; }
 .feature-shot {
-  display: block; margin-top: 14px; padding: 4px; line-height: 0;
+  display: block; margin-top: auto; padding: 4px; line-height: 0;
   background: #14171b; border: 1px solid #34373d; border-radius: 6px;
   width: 178px; height: 121px; position: relative;
 }
