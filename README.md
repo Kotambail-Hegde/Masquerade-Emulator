@@ -95,6 +95,12 @@ _Example: The Event Debugger inspecting a Game Boy / Game Boy Color state._
 
 <kbd><img width="437" height="226" alt="tetris-serial-link-comp" src="https://github.com/user-attachments/assets/805fce08-d3ad-4ce2-b303-121c5b0b898c" /></kbd>
 
+#### Pokemon Gold and Silver in SGB Mode (Work In Progress)
+
+<kbd><img width="226" height="206" alt="Image" src="https://github.com/user-attachments/assets/15bda46b-abbf-4ae5-b5a3-930e523485ba" /></kbd> <kbd><img width="226" height="206" alt="Image" src="https://github.com/user-attachments/assets/e630b35a-d62d-4df8-87d6-0524c641e691" /></kbd> 
+
+_Also supports customer SGB borders!_
+
 ### P0010: OLC2 + OpenGL1 (Deprecated)
 
 #### User Interface
