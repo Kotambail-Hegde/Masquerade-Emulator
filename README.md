@@ -32,6 +32,7 @@ Current Version: **0.7x**
 - **Game Boy Advance (GBA)**
 - **Game Boy Color (GBC)**
 - **Game Boy (GB)**
+- **Super Game Boy (SGB) - [<ins>Work In Progress</ins>]**
 - **Nintendo Entertainment System (NES)**
 - **Ms Pac-Man**
 - **Pac-Man (Midway and Namco variants)**
@@ -236,6 +237,7 @@ Masquerade supports the following hardware accessories and peripherals used by s
 - Supports Game Boy Camera
 - Supports Link Cable for multiplayer mode (Work In Progress)
 - Supports accelerometer-equipped Game Boy Color cartridges
+- Supports Super Game Boy Borders and Color Palettes
 
 #### Test Results
 - Completely passes Tom Harte's SingleStepTests (official and unofficial opcodes) for SM83
@@ -279,7 +281,7 @@ Masquerade supports the following hardware accessories and peripherals used by s
 - Fails cgb-acid-hell
 - Fails few age-test-roms
 - Fails docboy-test-suite's APU tests
-- Link Cable not supported
+- Link Cable is not completely supported
 
 ---
 
