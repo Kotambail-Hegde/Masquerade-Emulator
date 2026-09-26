@@ -235,7 +235,8 @@ h2 { font-size: clamp(45px, 6vw, 76px); line-height: .96; letter-spacing: -.055e
   padding: 10px 0;
 }
 .carousel-frame {
-  --img-scale: 1; /* Default scale factor */
+.carousel-frame {
+  --img-scale: 1;
   display: inline-block; font: inherit;
   padding: 6px;
   background: #14171b;
@@ -246,15 +247,19 @@ h2 { font-size: clamp(45px, 6vw, 76px); line-height: .96; letter-spacing: -.055e
   max-width: min(88%, 900px);
   line-height: 0;
 }
+
 .carousel-frame.is-scaled-down {
-  --img-scale: 0.5; /* Change this value to scale to any size (e.g. 0.5, 0.75, etc.) */
+  --img-scale: 0.5; /* Change this to any scale (0.4, 0.7, etc.) */
 }
+
 .carousel-frame img {
   display: block;
-  max-width: calc(100% * var(--img-scale));
+  /* Use transform or explicit width calculation so it cannot be ignored */
+  width: calc(100% * var(--img-scale));
+  max-width: 100%;
   max-height: calc(62vh * var(--img-scale));
-  width: auto; height: auto;
-  margin: 0 auto; /* Keeps the scaled image centered */
+  height: auto;
+  margin: 0 auto;
   border-radius: 3px;
   transition: opacity .25s ease;
 }
