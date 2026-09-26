@@ -115,7 +115,7 @@ h1 em, h2 span { color: var(--accent); font-style: normal; }
   position: relative; z-index: 1;
   filter: brightness(.34) saturate(.7);
   opacity: 0;
-  animation: shot-slide-fade 20s infinite;
+  animation: shot-slide-fade 30s infinite;
 }
 .shot-slideshow .slide-cover { height: 100%; width: 100%; object-fit: cover; object-position: center; }
 .shot-slideshow .slide-debug {
@@ -218,7 +218,7 @@ h2 { font-size: clamp(45px, 6vw, 76px); line-height: .96; letter-spacing: -.055e
 .feature-shot img { display: block; width: 170px; height: 113px; object-fit: cover; border-radius: 3px; }
 .feature-shot.feature-slideshow img {
   position: absolute; inset: 4px; width: calc(100% - 8px); height: calc(100% - 8px);
-  opacity: 0; animation: fs-fade 12s ease-in-out infinite;
+  opacity: 0; animation: fs-fade 20s ease-in-out infinite;
 }
 @keyframes fs-fade { 0% { opacity: 0; } 3% { opacity: 1; } 27% { opacity: 1; } 30% { opacity: 0; } 100% { opacity: 0; } }
 .feature-shot.feature-slideshow-4 img { animation-duration: 16s; }
@@ -235,6 +235,7 @@ h2 { font-size: clamp(45px, 6vw, 76px); line-height: .96; letter-spacing: -.055e
   padding: 10px 0;
 }
 .carousel-frame {
+  --img-scale: 1; /* Default scale factor */
   display: inline-block; font: inherit;
   padding: 6px;
   background: #14171b;
@@ -245,11 +246,15 @@ h2 { font-size: clamp(45px, 6vw, 76px); line-height: .96; letter-spacing: -.055e
   max-width: min(88%, 900px);
   line-height: 0;
 }
+.carousel-frame.is-scaled-down {
+  --img-scale: 0.5; /* Change this value to scale to any size (e.g. 0.5, 0.75, etc.) */
+}
 .carousel-frame img {
   display: block;
   max-width: 100%;
   max-height: 62vh;
   width: auto; height: auto;
+  margin: 0 auto; /* Keeps the scaled image centered */
   border-radius: 3px;
   transition: opacity .25s ease;
 }
