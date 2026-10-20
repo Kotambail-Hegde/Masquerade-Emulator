@@ -55,7 +55,7 @@ Current Version: **0.7x**
 
 ## Gameplay Gallery
 
-### P0052: ImGui + SDL3 + OpenGL3 (Recommended)
+### P0x52: ImGui + SDL3 + OpenGL3 (Recommended)
 
 #### User Interface
 
@@ -180,7 +180,7 @@ Masquerade supports the following hardware accessories and peripherals used by s
 
 #### Features
 - Supports GBA BIOS
-- Supports all PPU modes
+- Supports all 5 PPU modes
 - Supports all APU channels
 
 #### Test Results
@@ -485,7 +485,7 @@ Masquerade supports the following hardware accessories and peripherals used by s
 
 Masquerade is available in two variants, differing in their underlying libraries:
 
-### P0052: ImGui + SDL3 + OpenGL3 (Recommended)
+### P0x52: ImGui + SDL3 + OpenGL3 (Recommended)
 
 Modern UI framework with enhanced features and performance.
 
@@ -494,11 +494,21 @@ Modern UI framework with enhanced features and performance.
 - **SDL3:** v3.3.7 for windowing and input
 - **OpenGL3:** GLSL v3.30 for rendering
 
+**Design Philosopy:**
+- **P0052**: Above mentioned Technology Stack with Synchronous Per-Cycle Polling (or CPU-Tick-Driven) implementation
+- **P0152**: Above mentioned Technology Stack with Asynchronous Event-Driven (with Lazy-Synchronization)
+
+Currently, **Event-Driven** implementation is done only for GBA as FPS boost was needed for this.
+Other emulation platforms are hitting the target FPS even with **CPU-Tick-Driven** implementation.
+To clarify this, the **Build Type** is mentioned as **P0152 (Partial)**
+
+Recomendation is to use P0152 builds for better peformance.
+
 ### P0010: OLC2 + OpenGL1 (Deprecated)
 
 Legacy variant based on One Lone Coder's Pixel Game Engine v2.x
 
-**Note:** P0010 is no longer supported. Users should migrate to P0052 for latest features and updates.
+**Note:** P0010 is no longer supported. Users should migrate to P0x52 for latest features and updates.
 
 **Technology Stack (Legacy):**
 - One Lone Coder's Pixel Game Engine (Forked): v2.25
