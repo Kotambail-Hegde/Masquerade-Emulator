@@ -199,7 +199,7 @@ Masquerade supports the following hardware accessories and peripherals used by s
 - Passes all belogic's audio tests
 
 #### Known Issues (other than the ones mentioned above)
-- Minor visual artifacts top left corner in Mode 3 for some video ROMs like Pokemon etc.
+- Few Unintentional audio artifacts are heard in some cases
 
 ---
 
