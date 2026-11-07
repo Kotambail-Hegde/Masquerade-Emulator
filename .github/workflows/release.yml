@@ -1,0 +1,98 @@
+name: Upload Modular Binaries to Release
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  upload-binaries:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [windows] # Extensible to [windows, linux, macos] later
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build and Package Modular Archives
+        run: |
+          PLATFORM_DIR="${{ matrix.platform }}"
+          TAG_NAME="${{ github.ref_name }}"
+          
+          if [ ! -d "$PLATFORM_DIR" ]; then
+            echo "Directory $PLATFORM_DIR does not exist. Skipping."
+            exit 0
+          fi
+
+          cd "$PLATFORM_DIR"
+
+          if [ "$PLATFORM_DIR" = "windows" ]; then
+            EXT=".exe"
+          else
+            EXT=""
+          fi
+
+          # Define all core system executables and their output suffix
+          CORES=(
+            "masquerade:windows"
+            "masquerade-GBc:GBc-windows"
+            "masquerade-GBA:GBA-windows"
+            "masquerade-NES:NES-windows"
+            "masquerade-Chip8:Chip8-windows"
+            "masquerade-SpaceInvaders:SpaceInvaders-windows"
+            "masquerade-PacMan:PacMan-windows"
+          )
+
+          for core_info in "${CORES[@]}"; do
+            EXE_NAME="${core_info%%:*}${EXT}"
+            SUFFIX="${core_info##*:}"
+
+            # Check if this specific core executable exists
+            if [ -f "$EXE_NAME" ]; then
+              echo "Found $EXE_NAME. Creating package..."
+              
+              STAGING_DIR="staging_${SUFFIX}"
+              mkdir -p "$STAGING_DIR"
+
+              # 1. Copy all non-executable files and folders (assets/, DLLs, etc.)
+              find . -maxdepth 1 ! -name '.' ! -name '*.exe' ! -name 'README.md' ! -name '.gitkeep' -exec cp -r {} "$STAGING_DIR/" 2>/dev/null || true
+
+              # 2. Always include OTA and Server utilities in every package
+              [ -f "masquerade-OTA${EXT}" ] && cp "masquerade-OTA${EXT}" "$STAGING_DIR/"
+              [ -f "masquerade-Server${EXT}" ] && cp "masquerade-Server${EXT}" "$STAGING_DIR/"
+
+              # 3. Copy the specific core emulator executable
+              cp "$EXE_NAME" "$STAGING_DIR/"
+
+              # 4. Create the zip archive
+              ZIP_NAME="../masquerade-${SUFFIX}-${TAG_NAME}.zip"
+              (cd "$STAGING_DIR" && zip -r "$ZIP_NAME" .)
+              
+              rm -rf "$STAGING_DIR"
+              echo "Successfully created $ZIP_NAME"
+            else
+              echo "Skipping $EXE_NAME (not compiled yet)."
+            fi
+          done
+
+          cd ..
+
+      - name: Generate Checksums
+        run: |
+          cd ${{ matrix.platform }}
+          sha256sum ../masquerade-*.zip > ../SHA256SUMS.txt || true
+          cd ..
+
+      - name: Upload Assets to Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            masquerade-*.zip
+            SHA256SUMS.txt
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
