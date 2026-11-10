@@ -1,6 +1,6 @@
  masquerade
 
- Timestamp is 6af0fbd4 (Sun Nov  8 22:46:44 2026)
+ Timestamp is 6af27abb (Tue Nov 10 02:00:27 2026)
 
  Preferred load address is 0000000140000000
 
@@ -3825,8 +3825,8 @@
  0002:00009168       ??_C@_07NGFJPNPN@Version@  00000001402dc168     masquerade.obj
  0002:00009170       ??_C@_07MFBPEBHH@?3?5v?$CF?44f@ 00000001402dc170     masquerade.obj
  0002:00009178       ??_C@_08EAOCPMNG@Built?5On@ 00000001402dc178     masquerade.obj
- 0002:00009188       ??_C@_08KOBFEAGB@22?331?350@ 00000001402dc188     masquerade.obj
- 0002:00009198       ??_C@_0M@HJNHHGF@Nov?5?58?52026@ 00000001402dc198     masquerade.obj
+ 0002:00009188       ??_C@_08JJOADLNL@01?350?345@ 00000001402dc188     masquerade.obj
+ 0002:00009198       ??_C@_0M@IEGDAILH@Nov?510?52026@ 00000001402dc198     masquerade.obj
  0002:000091a8       ??_C@_0P@NICGLKKN@?3?5?$CFs?5at?5?$CFs?5IST@ 00000001402dc1a8     masquerade.obj
  0002:000091b8       ??_C@_0L@JCDCDOIF@Build?5Type@ 00000001402dc1b8     masquerade.obj
  0002:000091c8       ??_C@_09MMJLHOLD@?3?5Release@ 00000001402dc1c8     masquerade.obj
@@ -10748,7 +10748,7 @@
  0002:0004bb40       __real@3c888889            000000014031eb40     imgui_impl_sdl3.obj
  0002:0004bb44       __real@3ca3d70a            000000014031eb44     pacMan.obj
  0002:0004bb48       __real@3caaaaab            000000014031eb48     chip8.obj
- 0002:0004bb4c       __real@3cba2e8c            000000014031eb4c     gbc_mods.obj
+ 0002:0004bb4c       __real@3cba2e8c            000000014031eb4c     nes_mods.obj
  0002:0004bb50       __real@3d000000            000000014031eb50     pacMan.obj
  0002:0004bb54       __real@3d088889            000000014031eb54     imgui.obj
  0002:0004bb58       __real@3d23d70a            000000014031eb58     imgui_widgets.obj
