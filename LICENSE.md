@@ -17,20 +17,22 @@ Making the repository public does not grant open-source rights or ownership of t
 ### What is allowed:
 
 - Cloning and forking the repository for personal use
-- Modifying and incorporating non-substantial portions of the source code into non-commercial projects,
-  provided that explicit attribution to the original project is maintained,
-  and provided that neither this software, a modified version thereof,
-  nor a substantial portion of its source code is redistributed as an independent project.
+- Modifying the source code for personal, non-commercial use.
+- Incorporating portions of the source code into independent, non-commercial projects.
+- Sharing copies or modified versions of this project for personal, non-commercial use.
+
+### All permitted modifications, in-corporations, and sharing are subject to the following conditions:
+
+- Explicit attribution to the original project must be maintained.
+- Neither the original software, modified versions thereof, nor substantial portions of its source code may be publicly redistributed as a separate project.
 
 ### What is NOT allowed without explicit written permission from the author:
 
-- Redistributing the complete source code or repository
-- Publishing a fork as a separate project
-- Distributing modified versions of this software
+- Publicly redistributing the complete source code or repository.
+- Publishing or publicly distributing forks or modified versions of this software as separate projects.
 - Using the source code or substantial portions of it in commercial products
 - Creating commercial products or services based on this source code
-- Distributing compiled binaries or releases of this project
-- Claiming ownership of the original project or source code
+- Claiming ownership of the original project or its source code.
 
 ---
 
