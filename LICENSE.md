@@ -56,14 +56,14 @@ Nothing in this license is intended to restrict rights granted by the licenses o
 - SDL_net – zlib License
 - Glad – MIT License
 - Boost – Boost Software License 1.0
-- RapidJSON – MIT License
 - NativeFileDialog-Extended – zlib License
 - Miniz – MIT License
 - emscripten-browser-file – MIT License
 - stb – Public Domain or MIT (depending on module)
 - chip-8-database – MIT License
-- Waveshare – MIT License
 - OpenSSL – Apache License 2.0 (OpenSSL is used as a dynamic library (DLL) and does not include OpenSSL source)
+- RapidJSON – MIT License
+- Waveshare – MIT License
 ---
 
 ## LICENSES OF THIRD-PARTY LIBRARIES
@@ -641,41 +641,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-```
-
----
-
-### Game Boy and Game Boy Color Boot ROMs are from the SameBoy project 
-
-```
-Expat License
-
-Copyright (c) 2015-2026 Lior Halphon
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-  
-  The files contained under the iOS directory in this repository are subject to
-  this addition condition:
-  
-  A written permission from Lior Halphon is required to distribute copies or
-  substantial portions of the Software in a digital marketplace, such as
-  Apple's App Store.
 ```
 
 ---
