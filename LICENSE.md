@@ -405,9 +405,6 @@ THE SOFTWARE.
 
 ---
 
-
----
-
 ### OpenSSL
 
 ```
