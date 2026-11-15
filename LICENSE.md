@@ -21,7 +21,7 @@ Making the repository public does not grant open-source rights or ownership of t
 - Incorporating portions of the source code into independent, non-commercial projects.
 - Sharing copies or modified versions of this project for personal, non-commercial use.
 
-### All permitted modifications, in-corporations, and sharing are subject to the following conditions:
+#### All permitted modifications, in-corporations, and sharing are subject to the following conditions:
 
 - Explicit attribution to the original project must be maintained.
 - Neither the original software, modified versions thereof, nor substantial portions of its source code may be publicly redistributed as a separate project.
