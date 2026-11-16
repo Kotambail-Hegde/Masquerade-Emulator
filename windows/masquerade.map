@@ -1,6 +1,6 @@
  masquerade
 
- Timestamp is 6afb1dca (Mon Nov 16 15:14:18 2026)
+ Timestamp is 6afb2aec (Mon Nov 16 16:10:20 2026)
 
  Preferred load address is 0000000140000000
 
@@ -3826,13 +3826,13 @@
  0002:00009168       ??_C@_07NGFJPNPN@Version@  00000001402c5168     masquerade.obj
  0002:00009170       ??_C@_07MFBPEBHH@?3?5v?$CF?44f@ 00000001402c5170     masquerade.obj
  0002:00009178       ??_C@_08EAOCPMNG@Built?5On@ 00000001402c5178     masquerade.obj
- 0002:00009188       ??_C@_08PBJJFCHJ@15?305?301@ 00000001402c5188     masquerade.obj
+ 0002:00009188       ??_C@_08PKPBPCHE@16?300?336@ 00000001402c5188     masquerade.obj
  0002:00009198       ??_C@_0M@OHLDDNIN@Nov?516?52026@ 00000001402c5198     masquerade.obj
  0002:000091a8       ??_C@_0P@NICGLKKN@?3?5?$CFs?5at?5?$CFs?5IST@ 00000001402c51a8     masquerade.obj
  0002:000091b8       ??_C@_0L@JCDCDOIF@Build?5Type@ 00000001402c51b8     masquerade.obj
  0002:000091c8       ??_C@_09MMJLHOLD@?3?5Release@ 00000001402c51c8     masquerade.obj
  0002:000091d4       ??_C@_06EKGJCCJF@Commit@   00000001402c51d4     masquerade.obj
- 0002:000091e0       ??_C@_0CJ@DHAJPDCB@a4ddf4bba7082efe5d575318971b950b@ 00000001402c51e0     masquerade.obj
+ 0002:000091e0       ??_C@_0CJ@MGGGDAGP@2b36c039088f7b048462c8d1072ecf9a@ 00000001402c51e0     masquerade.obj
  0002:0000920c       ??_C@_04EIOKKJMF@?3?5?$CFs@ 00000001402c520c     masquerade.obj
  0002:00009218       ??_C@_0N@LGLJKIHJ@C?$CL?$CL?5Standard@ 00000001402c5218     masquerade.obj
  0002:00009228       ??_C@_0BB@EFJINMFJ@?3?5C?$CL?$CL23?5or?5newer@ 00000001402c5228     masquerade.obj
