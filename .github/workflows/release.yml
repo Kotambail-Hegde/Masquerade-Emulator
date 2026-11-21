@@ -23,13 +23,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: main
+          lfs: true
 
       - name: Build and Package Modular Archives
         run: |
           PLATFORM_DIR="${{ matrix.platform }}"
           TAG_NAME="${{ inputs.tag || github.ref_name }}"
           ROOT_DIR="$PWD"
-          
+
           if [ ! -d "$PLATFORM_DIR" ]; then
             echo "Directory $PLATFORM_DIR does not exist. Skipping."
             exit 0
@@ -61,24 +64,27 @@ jobs:
             # Check if this specific core executable exists
             if [ -f "$EXE_NAME" ]; then
               echo "Found $EXE_NAME. Creating package..."
-              
+
               STAGING_DIR="staging_${SUFFIX}"
               mkdir -p "$STAGING_DIR"
 
               # 1. Copy all non-executable files and folders (assets/, DLLs, etc.)
-              find . -maxdepth 1 ! -name '.' ! -name '*.exe' ! -name 'README.md' ! -name '.gitkeep' -exec cp -r {} "$STAGING_DIR/" 2>/dev/null || true
+              find . -maxdepth 1 ! -name '.' ! -name 'staging_*' ! -name '*.exe' ! -name 'README.md' ! -name '.gitkeep' -exec cp -r {} "$STAGING_DIR/" 2>/dev/null || true
 
-              # 2. Always include OTA and Server utilities in every package
+              # 2. Include LICENSE.md from repository root
+              [ -f "$ROOT_DIR/LICENSE.md" ] && cp "$ROOT_DIR/LICENSE.md" "$STAGING_DIR/"
+
+              # 3. Always include OTA and Server utilities in every package
               [ -f "masquerade-OTA${EXT}" ] && cp "masquerade-OTA${EXT}" "$STAGING_DIR/"
               [ -f "masquerade-Server${EXT}" ] && cp "masquerade-Server${EXT}" "$STAGING_DIR/"
 
-              # 3. Copy the specific core emulator executable
+              # 4. Copy the specific core emulator executable
               cp "$EXE_NAME" "$STAGING_DIR/"
 
-              # 4. Create the zip archive
+              # 5. Create the zip archive
               ZIP_NAME="$ROOT_DIR/masquerade-${SUFFIX}-${TAG_NAME}.zip"
               (cd "$STAGING_DIR" && zip -r "$ZIP_NAME" .)
-              
+
               rm -rf "$STAGING_DIR"
               echo "Successfully created $ZIP_NAME"
             else
