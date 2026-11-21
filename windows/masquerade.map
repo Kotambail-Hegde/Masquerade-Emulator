@@ -1,6 +1,6 @@
  masquerade
 
- Timestamp is 6afb2aec (Mon Nov 16 16:10:20 2026)
+ Timestamp is 6afe493e (Thu Nov 19 00:56:30 2026)
 
  Preferred load address is 0000000140000000
 
@@ -3826,8 +3826,8 @@
  0002:00009168       ??_C@_07NGFJPNPN@Version@  00000001402c5168     masquerade.obj
  0002:00009170       ??_C@_07MFBPEBHH@?3?5v?$CF?44f@ 00000001402c5170     masquerade.obj
  0002:00009178       ??_C@_08EAOCPMNG@Built?5On@ 00000001402c5178     masquerade.obj
- 0002:00009188       ??_C@_08PKPBPCHE@16?300?336@ 00000001402c5188     masquerade.obj
- 0002:00009198       ??_C@_0M@OHLDDNIN@Nov?516?52026@ 00000001402c5198     masquerade.obj
+ 0002:00009188       ??_C@_08CFEHBLG@00?347?336@ 00000001402c5188     masquerade.obj
+ 0002:00009198       ??_C@_0M@BBPLENGE@Nov?519?52026@ 00000001402c5198     masquerade.obj
  0002:000091a8       ??_C@_0P@NICGLKKN@?3?5?$CFs?5at?5?$CFs?5IST@ 00000001402c51a8     masquerade.obj
  0002:000091b8       ??_C@_0L@JCDCDOIF@Build?5Type@ 00000001402c51b8     masquerade.obj
  0002:000091c8       ??_C@_09MMJLHOLD@?3?5Release@ 00000001402c51c8     masquerade.obj
