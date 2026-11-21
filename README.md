@@ -7,6 +7,8 @@ A multi-system emulator supporting classic gaming consoles and simulators.
 [![Linux](https://img.shields.io/github/actions/workflow/status/Kotambail-Hegde/Masquerade-Source/build.yml?branch=master&label=Linux)](https://github.com/Kotambail-Hegde/Masquerade-Source/actions/workflows/build.yml)
 [![Windows](https://img.shields.io/github/actions/workflow/status/Kotambail-Hegde/Masquerade-Source/build.yml?branch=master&label=Windows)](https://github.com/Kotambail-Hegde/Masquerade-Source/actions/workflows/build.yml)
 [![Emscripten](https://img.shields.io/github/actions/workflow/status/Kotambail-Hegde/Masquerade-Source/build.yml?branch=master&label=Emscripten)](https://github.com/Kotambail-Hegde/Masquerade-Source/actions/workflows/build.yml)
+[![Android](https://img.shields.io/badge/Android-under%20testing-yellow)](https://github.com/Kotambail-Hegde/Masquerade-Source/actions/workflows/build.yml)
+[![macOS](https://img.shields.io/badge/macOS-planned-lightgrey)](https://github.com/Kotambail-Hegde/Masquerade-Source/actions/workflows/build.yml)
 
 ---
 
