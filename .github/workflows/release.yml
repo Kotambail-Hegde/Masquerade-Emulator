@@ -4,6 +4,11 @@ on:
   release:
     types: [published]
   workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag (e.g. 0.7015)'
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -22,7 +27,8 @@ jobs:
       - name: Build and Package Modular Archives
         run: |
           PLATFORM_DIR="${{ matrix.platform }}"
-          TAG_NAME="${{ github.ref_name }}"
+          TAG_NAME="${{ inputs.tag || github.ref_name }}"
+          ROOT_DIR="$PWD"
           
           if [ ! -d "$PLATFORM_DIR" ]; then
             echo "Directory $PLATFORM_DIR does not exist. Skipping."
@@ -70,13 +76,13 @@ jobs:
               cp "$EXE_NAME" "$STAGING_DIR/"
 
               # 4. Create the zip archive
-              ZIP_NAME="../masquerade-${SUFFIX}-${TAG_NAME}.zip"
+              ZIP_NAME="$ROOT_DIR/masquerade-${SUFFIX}-${TAG_NAME}.zip"
               (cd "$STAGING_DIR" && zip -r "$ZIP_NAME" .)
               
               rm -rf "$STAGING_DIR"
               echo "Successfully created $ZIP_NAME"
             else
-              echo "Skipping $EXE_NAME (not compiled yet)."
+              echo "Skipping $EXE_NAME (not found)."
             fi
           done
 
@@ -84,15 +90,16 @@ jobs:
 
       - name: Generate Checksums
         run: |
-          cd ${{ matrix.platform }}
-          sha256sum ../masquerade-*.zip > ../SHA256SUMS.txt || true
-          cd ..
+          sha256sum masquerade-*.zip > SHA256SUMS.txt
 
       - name: Upload Assets to Release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ inputs.tag || github.ref_name }}
           files: |
             masquerade-*.zip
             SHA256SUMS.txt
+          overwrite_files: true
+          token: ${{ secrets.GITHUB_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
