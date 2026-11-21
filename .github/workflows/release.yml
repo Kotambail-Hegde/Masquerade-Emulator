@@ -40,6 +40,14 @@ jobs:
 
           cd "$PLATFORM_DIR"
 
+          echo "=== DEBUG: windows/ directory contents and LFS status ==="
+          ls -la
+          echo "--- assets/ ---"
+          ls -la assets 2>&1 || true
+          echo "--- git lfs ls-files ---"
+          git lfs ls-files 2>&1 || true
+          echo "======================================================"
+
           if [ "$PLATFORM_DIR" = "windows" ]; then
             EXT=".exe"
           else
@@ -68,8 +76,13 @@ jobs:
               STAGING_DIR="staging_${SUFFIX}"
               mkdir -p "$STAGING_DIR"
 
-              # 1. Copy all non-executable files and folders (assets/, DLLs, etc.)
-              find . -maxdepth 1 ! -name '.' ! -name 'staging_*' ! -name '*.exe' ! -name 'README.md' ! -name '.gitkeep' -exec cp -r {} "$STAGING_DIR/" 2>/dev/null || true
+              # 1. Copy assets folder and DLLs explicitly
+              if [ -d "assets" ]; then
+                cp -r "assets" "$STAGING_DIR/"
+              else
+                echo "DEBUG: 'assets' directory not found in $(pwd)"
+              fi
+              cp -v ./*.dll "$STAGING_DIR/" 2>&1 || echo "DEBUG: no .dll files matched in $(pwd)"
 
               # 2. Include LICENSE.md from repository root
               [ -f "$ROOT_DIR/LICENSE.md" ] && cp "$ROOT_DIR/LICENSE.md" "$STAGING_DIR/"
@@ -81,9 +94,13 @@ jobs:
               # 4. Copy the specific core emulator executable
               cp "$EXE_NAME" "$STAGING_DIR/"
 
-              # 5. Create the zip archive
+              echo "=== DEBUG: staging_${SUFFIX} contents ==="
+              ls -la "$STAGING_DIR"
+
+              # 5. Create the zip archive at repo root and verify contents
               ZIP_NAME="$ROOT_DIR/masquerade-${SUFFIX}-${TAG_NAME}.zip"
               (cd "$STAGING_DIR" && zip -r "$ZIP_NAME" .)
+              unzip -l "$ZIP_NAME"
 
               rm -rf "$STAGING_DIR"
               echo "Successfully created $ZIP_NAME"
