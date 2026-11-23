@@ -1,6 +1,6 @@
  masquerade
 
- Timestamp is 6b02d5d3 (Sun Nov 22 11:45:23 2026)
+ Timestamp is 6b0382c2 (Mon Nov 23 00:03:14 2026)
 
  Preferred load address is 0000000140000000
 
@@ -3836,13 +3836,13 @@
  0002:00009148       ??_C@_07NGFJPNPN@Version@  0000000140263148     masquerade.obj
  0002:00009150       ??_C@_07MFBPEBHH@?3?5v?$CF?44f@ 0000000140263150     masquerade.obj
  0002:00009158       ??_C@_08EAOCPMNG@Built?5On@ 0000000140263158     masquerade.obj
- 0002:00009168       ??_C@_08BEAHBJDG@11?338?350@ 0000000140263168     masquerade.obj
+ 0002:00009168       ??_C@_08HLLBILLH@23?356?355@ 0000000140263168     masquerade.obj
  0002:00009178       ??_C@_0M@JNHDBOHN@Nov?522?52026@ 0000000140263178     masquerade.obj
  0002:00009188       ??_C@_0P@NICGLKKN@?3?5?$CFs?5at?5?$CFs?5IST@ 0000000140263188     masquerade.obj
  0002:00009198       ??_C@_0L@JCDCDOIF@Build?5Type@ 0000000140263198     masquerade.obj
  0002:000091a8       ??_C@_09MMJLHOLD@?3?5Release@ 00000001402631a8     masquerade.obj
  0002:000091b4       ??_C@_06EKGJCCJF@Commit@   00000001402631b4     masquerade.obj
- 0002:000091c0       ??_C@_0CJ@NIBMJPNP@1de4ef270682c2872a4931770355da1c@ 00000001402631c0     masquerade.obj
+ 0002:000091c0       ??_C@_0CJ@DDAJOIOG@3eb543412c3c1c5cc36400cc0c4b9db2@ 00000001402631c0     masquerade.obj
  0002:000091ec       ??_C@_04EIOKKJMF@?3?5?$CFs@ 00000001402631ec     masquerade.obj
  0002:000091f8       ??_C@_0N@LGLJKIHJ@C?$CL?$CL?5Standard@ 00000001402631f8     masquerade.obj
  0002:00009208       ??_C@_0BB@EFJINMFJ@?3?5C?$CL?$CL23?5or?5newer@ 0000000140263208     masquerade.obj
@@ -10827,7 +10827,7 @@
  0002:0004ad3c       __real@40555555            00000001402a4d3c     imgui.obj
  0002:0004ad40       __real@4060000000000000    00000001402a4d40     chip8.obj
  0002:0004ad48       __real@4079999a            00000001402a4d48     masquerade.obj
- 0002:0004ad4c       __real@40800000            00000001402a4d4c     masquerade.obj
+ 0002:0004ad4c       __real@40800000            00000001402a4d4c     imgui.obj
  0002:0004ad50       __real@408f400000000000    00000001402a4d50     masquerade.obj
  0002:0004ad58       __real@409f400000000000    00000001402a4d58     masquerade.obj
  0002:0004ad60       __real@40a00000            00000001402a4d60     masquerade.obj
