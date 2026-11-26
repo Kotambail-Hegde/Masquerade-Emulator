@@ -188,7 +188,7 @@ Masquerade supports the following hardware accessories and peripherals used by s
 #### Test Results
 - Passes jsmolka/alyosha-tas's arm.gba, thumb.gba, memory.gba, flash and PPU tests
 - Passes FuzzARM.gba
-- Passes all tests in the AGBEEG Aging Cartridge test suite.
+- Passes all tests in the AGBEEG Aging Cartridge test suite
 - Passes all tests in the AGB aging catridge test suite
 - Passes all mgba-suite tests except for few test-cases within the following tests:
   - Few timer count-up tests
@@ -197,9 +197,6 @@ Masquerade supports the following hardware accessories and peripherals used by s
   - Few MISC edge case tests
 - Passes all tests in tonc's test suite
 - Passes all belogic's audio tests
-
-#### Known Issues (other than the ones mentioned above)
-- Few Unintentional audio artifacts is still present
 
 ---
 
